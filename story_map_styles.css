@@ -6,6 +6,12 @@ body {
     color: #333;
 }
 
+.image-attribution {
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 2px;
+}
+
 .map-container {
     display: flex;
     height: 100vh; /* 100% of the viewport height */
