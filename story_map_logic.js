@@ -67,7 +67,7 @@ fetch('Henry_V_Leaflet.geojson')
 
             // Show the tooltip of the currently focused point and hide others
             storyLayers.eachLayer(function(layer) {
-                if (layer.feature.properties.title === storyData[currentSectionIndex].properties.title) {
+                if (layer.getTooltip() && layer.getTooltip().getContent() === storyData[currentSectionIndex].properties.title) {
                     layer.openTooltip();
                 } else {
                     layer.closeTooltip();
@@ -79,4 +79,3 @@ fetch('Henry_V_Leaflet.geojson')
 }).catch(error => {
     console.error("There was an error fetching the GeoJSON:", error);
 });
-
