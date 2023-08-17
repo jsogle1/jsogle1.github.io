@@ -1,0 +1,95 @@
+body {
+    font-family: 'Lato', sans-serif; 
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#map {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.leaflet-popup-content-wrapper {
+    background-color: #ffffff;
+    border-radius: 4px;.map-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+#story-details {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px 0 0 8px;
+}
+
+#map {
+    flex: 2;
+    height: 500px;
+    border-radius: 0 8px 8px 0;
+}
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.13);
+}
+
+.leaflet-popup-tip {
+    background-color: #ffffff;
+}
+
+.map-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+#story-details {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;   /* This allows vertical scrolling when content overflows */
+    max-height: 500px;  /* Matches the height of the map */
+    background-color: #ffffff;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px 0 0 8px;
+}
+
+#map {
+    flex: 2;
+    height: 500px;
+    border-radius: 0 8px 8px 0;
+}
+
+.story-section {
+    height: 500px; /* Each story section matches the height of the map */
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+
+.story-section img {
+    max-width: 100%; /* ensure image doesn't overflow container */
+    height: auto; /* maintain aspect ratio */
+    margin-top: 10px; /* some spacing */
+    display: block; /* make it a block element to ensure it takes its own line */
+}
+
+.story-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
