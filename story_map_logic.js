@@ -35,9 +35,17 @@ fetch('Henry_V_Leaflet.geojson')
         if (props.image && props.image.trim() !== "") {
             var imgElement = document.createElement('img');
             imgElement.src = props.image;
-            imgElement.alt = "Image for " + props.title;
+            imgElement.alt = "Image for " + props.content; // Keeping the alt for accessibility
             storyDiv.appendChild(imgElement);
+        
+            if (props.image_attribution && props.image_attribution.trim() !== "") {
+                var attributionElement = document.createElement('p');
+                attributionElement.className = 'image-attribution';
+                attributionElement.innerHTML = props.image_attribution;
+                storyDiv.appendChild(attributionElement);
+            }
         }
+
         
         document.getElementById('story-details').appendChild(storyDiv);
 
