@@ -69,7 +69,3 @@ fetch('file.geojson')
 .catch(error => {
     console.error("There was an error fetching the GeoJSON:", error);
 });
-
-    .catch(error => {
-        console.error("Error fetching the GeoJSON data: ", error);
-    });
