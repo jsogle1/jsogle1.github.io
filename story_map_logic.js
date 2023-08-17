@@ -46,10 +46,11 @@ fetch('Henry_V_Leaflet.geojson')
 
         var index = Math.floor(top / height);
 
-        var coords = storyData[index].geometry.coordinates;
+        var lat = storyData[index].properties.lat;
+        var lon = storyData[index].properties.lon;
 
         if (storyData[index]) {
-            map.flyTo([coords[1], coords[0]], storyData[index].properties.zoom);
+            map.flyTo([lat, lon], storyData[index].properties.zoom);
         }
     });
 
