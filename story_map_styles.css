@@ -1,64 +1,45 @@
-body {
-    font-family: 'Lato', sans-serif; 
-    background-color: #f4f4f4;
+body, html {
+    height: 100%;
     margin: 0;
-    padding: 20px;
-    color: #333;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+    overflow: hidden; /* Prevents double scrolling bars */
 }
 
 .map-container {
     display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
+    height: 100vh; /* Viewport height - this ensures the container takes up the full height of the view */
+    width: 100vw; /* Viewport width - this ensures the container takes up the full width of the view */
 }
 
 #story-details {
-    flex: 1;
-    max-width: 300px;
+    flex: 1; /* This gives the story details 1/4 of the total width */
+    overflow-y: auto; /* Allows vertical scrolling */
+    max-height: 100vh; /* This ensures the story div doesn't exceed the height of the viewport */
     padding: 20px;
-    border-right: 1px solid #ddd;
-    overflow-y: auto;   /* This ensures the storyDiv container is scrollable */
-    height: 500px;      /* This is a fixed height, adjust as required */
     background-color: #ffffff;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12);
     border-radius: 8px 0 0 8px;
 }
 
 #map {
-    flex: 2;
-    height: 500px;
-    border-radius: 0 8px 8px 0;
+    flex: 3; /* This gives the map 3/4 of the total width */
+    height: 100vh; /* Ensures the map occupies the full height of the viewport */
 }
 
 .story-section {
-    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
     padding: 20px;
-    padding-bottom: 40px; /* Added to prevent overlap and give some space between stories */
+    background-color: #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .story-section img {
     max-width: 100%;
     height: auto;
-    margin-top: 10px;
     display: block;
-}
-
-.story-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.leaflet-popup-content-wrapper {
-    background-color: #ffffff;
-    border-radius: 4px;
-    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.13);
-}
-
-.leaflet-popup-tip {
-    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
