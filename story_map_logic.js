@@ -40,17 +40,39 @@ fetch('Henry_V_Leaflet.geojson')
         document.getElementById('story-details').appendChild(storyDiv);
     });
 
+    var storyLayers = L.geoJSON(storyData, {
+        pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, { radius: 5, color: '#ff0000' });
+        },
+        onEachFeature: function (feature, layer) {
+            if (feature.properties && feature.properties.title) {
+                layer.bindTooltip(feature.properties.title, {
+                    permanent: false, 
+                    direction: 'top', 
+                    offset: L.point({x: 0, y: -10})
+                });
+            }
+        }
+    }).addTo(map);
+
     document.getElementById('story-details').addEventListener('scroll', function(e) {
         var top = e.target.scrollTop;
-        var height = e.target.clientHeight;
+        var height = document.querySelector('.story-section').clientHeight; // Get height of a single story section
 
         var index = Math.floor(top / height);
-
         var coords = storyData[index].geometry.coordinates;
 
         if (storyData[index]) {
             map.flyTo([coords[1], coords[0]], storyData[index].properties.zoom);
 
+            // Show the tooltip of the currently focused point and hide others
+            storyLayers.eachLayer(function(layer) {
+                if (layer.feature.properties.title === storyData[index].properties.title) {
+                    layer.openTooltip();
+                } else {
+                    layer.closeTooltip();
+                }
+            });
         }
     });
 
