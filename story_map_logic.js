@@ -15,7 +15,7 @@ L.control.layers(basemaps).addTo(map);
 basemaps.Topography.addTo(map);
 
 // Fetch GeoJSON
-fetch('file.geojson')
+fetch('Henry_V_Leaflet.geojson')
 .then(response => response.json())
 .then(data => {
     var storyData = L.geoJSON(data, {
