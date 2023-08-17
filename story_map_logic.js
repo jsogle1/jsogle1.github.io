@@ -35,7 +35,7 @@ fetch('Henry_V_Leaflet.geojson')
         if (props.image && props.image.trim() !== "") {
             var imgElement = document.createElement('img');
             imgElement.src = props.image;
-            imgElement.alt = "Image for " + props.content;
+            imgElement.alt = "Image for " + props.title;
             storyDiv.appendChild(imgElement);
         }
         
