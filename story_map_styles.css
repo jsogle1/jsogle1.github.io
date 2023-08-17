@@ -1,69 +1,63 @@
-body, html {
-    height: 100%;
-    margin: 0;
+body {
     font-family: 'Lato', sans-serif;
     background-color: #f4f4f4;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
 .map-container {
     display: flex;
-    flex-direction: column; /* Stack children vertically by default (for mobile) */
-    height: 100vh;
-    width: 100vw;
+    height: 100vh; /* 100% of the viewport height */
+    flex-direction: row; /* Default direction */
 }
 
 #story-details {
-    order: 2; /* Place this below the map for mobile */
+    flex: 0.3; /* Now takes up about 30% of the container width */
     overflow-y: auto;
-    max-height: 50vh; /* Half the screen height for mobile */
     padding: 20px;
+    border-right: 1px solid #ddd;
+    max-height: 100vh;
     background-color: #ffffff;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px 0 0 8px;
 }
 
 #map {
-    order: 1; /* This ensures the map is on top for mobile */
-    height: 50vh; /* Half the screen height for mobile */
+    flex: 0.7; /* Takes up the rest of the container width */
+    height: 100vh;
+    border-radius: 0 8px 8px 0;
 }
 
 .story-section {
-    margin-bottom: 40px;
+    border: 1px solid #e0e0e0;
     padding: 20px;
-    background-color: #eaeaea;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .story-section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 100%;
     margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
 }
 
-/* CSS for larger screens (e.g., desktops) */
-@media (min-width: 768px) { /* 768px is a common breakpoint for tablets and larger */
+/* Mobile view styles */
+@media (max-width: 768px) {
     .map-container {
-        flex-direction: row; /* Stack children horizontally for larger screens */
+        flex-direction: column-reverse;
     }
 
     #story-details {
-        flex: 1;
-        order: 1; /* Reset order to default */
-        max-height: 100vh;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        height: auto;
+        max-height: 50vh; /* Limit height to 50% of the viewport height */
     }
 
     #map {
-        flex: 3;
-        height: 100vh; 
-        order: 2;
+        height: 50vh; /* Use half of the viewport height */
     }
-}
-
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
