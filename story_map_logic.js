@@ -8,6 +8,8 @@ const basemaps = {
 L.control.layers(basemaps).addTo(map);
 basemaps.Topography.addTo(map);
 
+var storyLayers = L.featureGroup().addTo(map);  // Group for all story point markers
+
 fetch('Henry_V_Leaflet.geojson')
 .then(response => response.json())
 .then(data => {
@@ -38,36 +40,34 @@ fetch('Henry_V_Leaflet.geojson')
         }
         
         document.getElementById('story-details').appendChild(storyDiv);
+
+        var coords = storyPoint.geometry.coordinates;
+        var marker = L.marker([coords[1], coords[0]]);
+        marker.bindTooltip(props.title, { permanent: false, direction: 'top' }).addTo(storyLayers);
     });
 
-    var storyLayers = L.geoJSON(storyData, {
-        pointToLayer: function (feature, latlng) {
-            return L.circleMarker(latlng, { radius: 5, color: '#ff0000' });
-        },
-        onEachFeature: function (feature, layer) {
-            if (feature.properties && feature.properties.title) {
-                layer.bindTooltip(feature.properties.title, {
-                    permanent: false, 
-                    direction: 'top', 
-                    offset: L.point({x: 0, y: -10})
-                });
-            }
-        }
-    }).addTo(map);
-
     document.getElementById('story-details').addEventListener('scroll', function(e) {
-        var top = e.target.scrollTop;
-        var height = document.querySelector('.story-section').clientHeight; // Get height of a single story section
+        var storySections = document.querySelectorAll('.story-section');
+        var currentSectionIndex;
 
-        var index = Math.floor(top / height);
-        var coords = storyData[index].geometry.coordinates;
+        storySections.forEach((section, index) => {
+            var bounds = section.getBoundingClientRect();
+            var parentBounds = e.target.getBoundingClientRect();
 
-        if (storyData[index]) {
-            map.flyTo([coords[1], coords[0]], storyData[index].properties.zoom);
+            // If the top of the section is close to the top of the parent container, treat it as the current section.
+            if (Math.abs(bounds.top - parentBounds.top) < 20) {  
+                currentSectionIndex = index;
+            }
+        });
+
+        var coords = storyData[currentSectionIndex].geometry.coordinates;
+
+        if (storyData[currentSectionIndex]) {
+            map.flyTo([coords[1], coords[0]], storyData[currentSectionIndex].properties.zoom);
 
             // Show the tooltip of the currently focused point and hide others
             storyLayers.eachLayer(function(layer) {
-                if (layer.feature.properties.title === storyData[index].properties.title) {
+                if (layer.feature.properties.title === storyData[currentSectionIndex].properties.title) {
                     layer.openTooltip();
                 } else {
                     layer.closeTooltip();
@@ -79,3 +79,4 @@ fetch('Henry_V_Leaflet.geojson')
 }).catch(error => {
     console.error("There was an error fetching the GeoJSON:", error);
 });
+
