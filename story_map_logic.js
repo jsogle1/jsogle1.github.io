@@ -27,7 +27,7 @@ const basemaps = {
 
 // 4. Add Layer Control and default map
 L.control.layers(basemaps).addTo(map);
-basemaps.Places.addTo(map);
+basemaps.Watercolor.addTo(map);
 // 5. Fetch the Geojson
 fetch('Henry_V_Leaflet.geojson')
     .then(response => response.json())
