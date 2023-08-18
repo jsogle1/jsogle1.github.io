@@ -12,7 +12,6 @@ fetch('Henry_V_Leaflet.geojson')
     .then(response => response.json())
     .then(data => {
         var storyData = data.features;
-
         var markers = []; // Store all markers for reference
 
         storyData.forEach((storyPoint, index) => {
@@ -48,16 +47,13 @@ fetch('Henry_V_Leaflet.geojson')
             document.getElementById('story-nav').appendChild(navButton);
             document.getElementById('story-content').appendChild(contentDiv);
 
-            // Add the point to the map
             var coords = storyPoint.geometry.coordinates;
             var marker = L.marker([coords[1], coords[0]]).addTo(map);
 
-            // Bind title as popup (callout) to marker
             if (storyPoint.properties.title) {
                 marker.bindPopup(storyPoint.properties.title);
             }
 
-            // Store the marker
             markers.push(marker);
         });
 
@@ -68,10 +64,17 @@ fetch('Henry_V_Leaflet.geojson')
 
                 if (storyData[index]) {
                     map.flyTo([coords[1], coords[0]], storyData[index].properties.zoom);
-                    markers[index].openPopup(); // Open the marker's popup (title callout)
+                    markers[index].openPopup();
+
+                    // Hide all content sections
+                    document.querySelectorAll('.content-section').forEach(el => el.style.display = 'none');
+
+                    // Show the content section associated with the clicked nav item
+                    document.querySelector('.content-section[data-index="' + index + '"]').style.display = 'block';
                 }
             }
         });
+
     })
     .catch(error => {
         console.error("There was an error fetching the GeoJSON:", error);
