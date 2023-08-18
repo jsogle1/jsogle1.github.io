@@ -19,14 +19,30 @@ body {
 }
 
 #story-details {
-    flex: 0.3; /* Now takes up about 30% of the container width */
-    overflow-y: auto;
-    padding: 20px;
-    border-right: 1px solid #ddd;
-    max-height: 100vh;
-    background-color: #ffffff;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12);
-    border-radius: 8px 0 0 8px;
+    width: 30%; 
+    height: 100vh;
+    overflow-y: scroll; /* Adds an outer scrollbar if nav and content together are taller than the viewport */
+}
+
+#story-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Align the titles to the start */
+}
+
+#story-nav button {
+    padding: 8px 12px;
+    background-color: #e9e9e9;
+    border: none;
+    cursor: pointer;
+    margin: 2px 0;
+    width: 100%; /* Take up full width of the nav */
+}
+
+#story-content {
+    overflow-y: auto; /* Inner scrollbar */
+    max-height: calc(100vh - (29 * (the height of each nav button + margins))); /* Adjust this as needed */
 }
 
 #map {
