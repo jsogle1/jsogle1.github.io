@@ -12,7 +12,7 @@ var terrain = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain-backgro
 var hillshade = L.tileLayer.wms('http://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}.png', {
     layers: 'TOPO-WMS', 
     transparent: true,
-    opacity: 0.5
+    opacity: 0.6
 });
 
 // 2. Combine into a Layer Group
