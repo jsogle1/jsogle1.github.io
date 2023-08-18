@@ -5,9 +5,11 @@ var watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercol
     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
 });
 
-var terrain = L.tileLayer('https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=034c27a11e3d4821ae0cc18e4d28bb26', {
+var terrain = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}.png', {
     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
 });
+
+var satellite = L.tileLayer.wms('http://mt0.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}'
 
 var hillshade = L.tileLayer.wms('http://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}.png', {
     layers: 'TOPO-WMS', 
@@ -21,7 +23,7 @@ var watercolorWithHillshade = L.layerGroup([watercolor, hillshade]);
 // 3. Integrate into Base Maps
 const basemaps = {
     Terrain: terrain,
-    Topography: hillshade,
+    Satellite: satellite,
     Watercolor: watercolor,
     WatercolorHillshade: watercolorWithHillshade
 };
