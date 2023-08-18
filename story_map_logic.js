@@ -13,7 +13,6 @@ fetch('Henry_V_Leaflet.geojson')
     .then(response => response.json())
     .then(data => {
         var storyData = data.features;
-
         var markers = []; // Store all markers for reference
 
         storyData.forEach((storyPoint, index) => {
@@ -72,6 +71,18 @@ fetch('Henry_V_Leaflet.geojson')
 
                 var index = parseInt(e.target.dataset.index);
                 var coords = storyData[index].geometry.coordinates;
+
+                // Hide all content sections
+                var allContentSections = document.querySelectorAll('.content-section');
+                allContentSections.forEach(function(contentDiv) {
+                    contentDiv.style.display = 'none';
+                });
+
+                // Show the content section for the clicked nav section
+                var contentSectionToShow = document.querySelector('.content-section[data-index="' + index + '"]');
+                if (contentSectionToShow) {
+                    contentSectionToShow.style.display = 'block';
+                }
 
                 if (storyData[index]) {
                     map.flyTo([coords[1], coords[0]], storyData[index].properties.zoom);
