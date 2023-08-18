@@ -55,7 +55,7 @@ fetch('Henry_V_Leaflet.geojson')
             }
 
             var contentElement = document.createElement('p');
-            contentElement.innerHTML = props.content;
+            contentElement.innerHTML = props.content.replace(/\n/g, '<br>');
             storyDiv.appendChild(contentElement);
 
             if (props.image && props.image.trim() !== "") {
