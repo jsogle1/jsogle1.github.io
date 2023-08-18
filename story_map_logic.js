@@ -11,7 +11,8 @@ var terrain = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain-backgro
 
 var hillshade = L.tileLayer.wms('http://ows.mundialis.de/services/service?', {
     layers: 'TOPO-WMS', 
-    transparent: true
+    transparent: true,
+    opacity: 0.5
 });
 
 // 2. Combine into a Layer Group
