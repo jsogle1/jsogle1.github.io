@@ -27,19 +27,25 @@ fetch('Henry_V_Leaflet.geojson')
             var navButton = document.createElement('button');
             navButton.textContent = props.title;
             navButton.onclick = function() {
+                // Collapse all the other sections first
+                var allContentSections = document.querySelectorAll('.story-content-section');
+                allContentSections.forEach(function(contentSection) {
+                    contentSection.style.display = 'none';
+                });
+            
+                // Now, handle the current section
                 var contentDiv = this.nextElementSibling;
                 var isVisible = contentDiv.style.display === 'block';
                 contentDiv.style.display = isVisible ? 'none' : 'block';
-
-                // Close all popups
-                markers.forEach(marker => marker.closePopup());
-
-                // Open the popup for the associated marker
+                
                 if (!isVisible) {
                     map.flyTo([storyPoint.geometry.coordinates[1], storyPoint.geometry.coordinates[0]], props.zoom);
+                    
+                    // Open the popup related to this story point.
                     markers[index].openPopup();
                 }
             };
+
 
             navSection.appendChild(navButton);
 
