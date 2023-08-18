@@ -26,9 +26,24 @@ const basemaps = {
     WatercolorHillshade: watercolorWithHillshade
 };
 
-// 4. Add Layer Control and default map
-L.control.layers(basemaps).addTo(map);
-basemaps.Watercolor.addTo(map);
+hillshade.on('tileload', function(event) {
+    var tile = event.tile;
+    tile.style.mixBlendMode = 'multiply';
+});
+
+var combinedLayer = L.layerGroup([basemaps.Watercolor, hillshade]);
+
+L.control.layers({
+    'Street View': basemaps.StreetView,
+    'Topography': basemaps.Topography,
+    'Watercolor + Hillshade': combinedLayer
+}).addTo(map);
+
+combinedLayer.addTo(map);
+
+var currentStoryContentSection = null;
+var currentPopup = null;
+
 // 5. Fetch the Geojson
 fetch('Henry_V_Leaflet.geojson')
     .then(response => response.json())
