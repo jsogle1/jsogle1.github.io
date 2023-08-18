@@ -9,7 +9,7 @@ var terrain = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain-backgro
     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
 });
 
-var hillshade = L.tileLayer.wms('http://ows.mundialis.de/services/service?', {
+var hillshade = L.tileLayer.wms('http://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}.png', {
     layers: 'TOPO-WMS', 
     transparent: true,
     opacity: 0.5
