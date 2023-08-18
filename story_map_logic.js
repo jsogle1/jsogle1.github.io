@@ -1,16 +1,30 @@
 var map = L.map('map').setView([50, 0], 5);
 
+// 1. Define the Layers
+var watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg', {
+    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+});
+
+var hillshade = L.tileLayer.wms('http://ows.mundialis.de/services/service?', {
+    layers: 'TOPO-WMS', 
+    transparent: true
+});
+
+// 2. Combine into a Layer Group
+var watercolorWithHillshade = L.layerGroup([watercolor, hillshade]);
+
+// 3. Integrate into Base Maps
 const basemaps = {
     StreetView: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '© OpenStreetMap contributors'}),
     Topography: L.tileLayer.wms('http://ows.mundialis.de/services/service?', {layers: 'TOPO-WMS'}),
-    Places: L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg', {
-        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
-    })
+    Places: watercolor,
+    WatercolorHillshade: watercolorWithHillshade
 };
 
+// 4. Add Layer Control and default map
 L.control.layers(basemaps).addTo(map);
 basemaps.Places.addTo(map);
-
+// 5. Fetch the Geojson
 fetch('Henry_V_Leaflet.geojson')
     .then(response => response.json())
     .then(data => {
