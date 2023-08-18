@@ -1,30 +1,34 @@
 var map = L.map('map').setView([50, 0], 5);
 
-// Base maps
+// 1. Define the Layers
+var watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg', {
+    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+});
+
+var terrain = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}.png', {
+    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+});
+
+var hillshade = L.tileLayer.wms('http://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}.png', {
+    layers: 'TOPO-WMS', 
+    transparent: true,
+    opacity: 0.7
+});
+
+// 2. Combine into a Layer Group
+var watercolorWithHillshade = L.layerGroup([watercolor, hillshade]);
+
+// 3. Integrate into Base Maps
 const basemaps = {
-    StreetView: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
-        attribution: '© OpenStreetMap contributors' 
-    }),
-    Topography: L.tileLayer.wms('http://ows.mundialis.de/services/service?', { 
-        layers: 'TOPO-WMS' 
-    }),
-    WatercolorHillshade: L.layerGroup([
-        L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg', {
-            attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
-        }),
-        L.tileLayer('http://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}.png', {
-            opacity: 0.5,
-            zIndex: -1
-        }).setBlendMode('multiply')
-    ])
+    Terrain: terrain,
+    Topography: hillshade,
+    Watercolor: watercolor,
+    WatercolorHillshade: watercolorWithHillshade
 };
 
+// 4. Add Layer Control and default map
 L.control.layers(basemaps).addTo(map);
-basemaps.WatercolorHillshade.addTo(map);
-
-var currentStoryContentSection = null;
-var currentPopup = null;
-
+basemaps.Watercolor.addTo(map);
 // 5. Fetch the Geojson
 fetch('Henry_V_Leaflet.geojson')
     .then(response => response.json())
