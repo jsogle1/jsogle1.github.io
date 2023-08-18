@@ -9,29 +9,13 @@ body {
     position: absolute;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;  /* ensure left-to-right layout */
-    height: 100%;
-}
-
-nav {
-    order: 0; /* This ensures the nav is on the left */
-    flex: 0.3;  /* using up 30% of container width */
-    overflow-y: auto;  /* for scrolling if the content exceeds the height */
-    background-color: #f4f4f4;  /* just a shade for differentiation */
-    height: 100%;
-    box-sizing: border-box; /* ensures padding doesn't expand the element */
-    padding: 10px;
-}
-
 #story-details {
-    order: 1; /* This ensures the story details are on the right */
-    flex: 0.7;  /* using up 70% of container width */
-    overflow-y: auto;  /* for scrolling if the content exceeds the height */
-    padding: 10px;
-    height: 100%;
-    box-sizing: border-box; /* ensures padding doesn't expand the element */
+    height: 100vh;
+    width: 30vw;
+    position: absolute;
+    right: 0;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .nav-section {
