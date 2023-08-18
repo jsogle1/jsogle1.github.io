@@ -27,22 +27,20 @@ fetch('Henry_V_Leaflet.geojson')
             var navButton = document.createElement('button');
             navButton.textContent = props.title;
             navButton.onclick = function() {
-                // Collapse all the other sections first
-                var allContentSections = document.querySelectorAll('.story-content-section');
-                allContentSections.forEach(function(contentSection) {
-                    contentSection.style.display = 'none';
-                });
-            
-                // Now, handle the current section
                 var contentDiv = this.nextElementSibling;
                 var isVisible = contentDiv.style.display === 'block';
+            
+                // Close all story-content-sections
+                var allContentDivs = document.querySelectorAll('.story-content-section');
+                allContentDivs.forEach(div => div.style.display = 'none');
+            
+                // If the clicked contentDiv was already visible, keep it closed, otherwise open it
                 contentDiv.style.display = isVisible ? 'none' : 'block';
-                
+            
+                // Fly to the map position only when the content section is shown
                 if (!isVisible) {
                     map.flyTo([storyPoint.geometry.coordinates[1], storyPoint.geometry.coordinates[0]], props.zoom);
-                    
-                    // Open the popup related to this story point.
-                    markers[index].openPopup();
+                    markers[index].openPopup(); // Make sure to open the related popup
                 }
             };
 
