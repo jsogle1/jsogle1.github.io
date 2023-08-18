@@ -37,8 +37,9 @@ fetch('Henry_V_Leaflet.geojson')
                 // If the clicked contentDiv was already visible, keep it closed, otherwise open it
                 contentDiv.style.display = isVisible ? 'none' : 'block';
             
-                // Fly to the map position only when the content section is shown
+                // Scroll to the top of the opened section
                 if (!isVisible) {
+                    document.getElementById('story-details').scrollTop = navSection.offsetTop;
                     map.flyTo([storyPoint.geometry.coordinates[1], storyPoint.geometry.coordinates[0]], props.zoom);
                     markers[index].openPopup(); // Make sure to open the related popup
                 }
