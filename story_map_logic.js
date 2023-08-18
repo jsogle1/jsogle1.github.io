@@ -8,7 +8,6 @@ const basemaps = {
     })
 };
 
-
 L.control.layers(basemaps).addTo(map);
 basemaps.Places.addTo(map);
 
@@ -67,6 +66,14 @@ fetch('Henry_V_Leaflet.geojson')
 
         navSection.appendChild(storyDiv);
         document.getElementById('story-details').appendChild(navSection);
+
+        // Add the point to the map
+        var marker = L.marker([storyPoint.geometry.coordinates[1], storyPoint.geometry.coordinates[0]]).addTo(map);
+
+        // Bind popup (callout) to marker
+        if (storyPoint.properties.title) {
+            marker.bindPopup(storyPoint.properties.title);
+        }
     });
 
 }).catch(error => {
