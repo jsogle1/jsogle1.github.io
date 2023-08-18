@@ -1,3 +1,4 @@
+/* Overall styling */
 body, html {
     height: 100%;
     margin: 0;
@@ -13,8 +14,7 @@ body, html {
 #story-details {
     height: 100%;
     width: 30%;
-    overflow-y: scroll;
-    float: left;
+    float: right; /* Float to the right */
     background-color: #f4f4f4;
 }
 
@@ -31,7 +31,7 @@ body, html {
     padding: 10px;
     cursor: pointer;
     text-align: center;
-    background-color: lightgray; /* Set the button background to light gray */
+    background-color: lightgray;
     border: 1px solid #ccc;
     box-sizing: border-box; /* To make sure the width includes padding and border */
 }
