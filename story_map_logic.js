@@ -1,4 +1,4 @@
-var map = L.map('map').setView([50,0], 5);
+var map = L.map('map').setView([50, 0], 5);
 
 const basemaps = {
     StreetView: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '© OpenStreetMap contributors'}),
@@ -12,70 +12,76 @@ L.control.layers(basemaps).addTo(map);
 basemaps.Places.addTo(map);
 
 fetch('Henry_V_Leaflet.geojson')
-.then(response => response.json())
-.then(data => {
-    var storyData = data.features;
+    .then(response => response.json())
+    .then(data => {
+        var storyData = data.features;
+        var markers = []; // To store all markers
 
-    storyData.forEach((storyPoint, index) => {
-        var props = storyPoint.properties;
-        
-        var navSection = document.createElement('div');
-        navSection.className = 'nav-section';
+        storyData.forEach((storyPoint, index) => {
+            var props = storyPoint.properties;
 
-        // Populate the navigation
-        var navButton = document.createElement('button');
-        navButton.textContent = props.title;
-        navButton.onclick = function() {
-            var contentDiv = this.nextElementSibling;
-            var isVisible = contentDiv.style.display === 'block';
-            contentDiv.style.display = isVisible ? 'none' : 'block';
-            if(!isVisible) {
-                map.flyTo([storyPoint.geometry.coordinates[1], storyPoint.geometry.coordinates[0]], props.zoom);
+            var navSection = document.createElement('div');
+            navSection.className = 'nav-section';
+
+            // Populate the navigation
+            var navButton = document.createElement('button');
+            navButton.textContent = props.title;
+            navButton.onclick = function() {
+                var contentDiv = this.nextElementSibling;
+                var isVisible = contentDiv.style.display === 'block';
+                contentDiv.style.display = isVisible ? 'none' : 'block';
+
+                // Close all popups
+                markers.forEach(marker => marker.closePopup());
+
+                // Open the popup for the associated marker
+                if (!isVisible) {
+                    map.flyTo([storyPoint.geometry.coordinates[1], storyPoint.geometry.coordinates[0]], props.zoom);
+                    markers[index].openPopup();
+                }
+            };
+
+            navSection.appendChild(navButton);
+
+            // Populate the story content
+            var storyDiv = document.createElement('div');
+            storyDiv.className = 'story-content-section';
+            storyDiv.style.display = 'none';
+
+            if (props.title) {
+                var titleElement = document.createElement('h2');
+                titleElement.textContent = props.title;
+                storyDiv.appendChild(titleElement);
             }
-        };
 
-        navSection.appendChild(navButton);
+            var contentElement = document.createElement('p');
+            contentElement.innerHTML = props.content;
+            storyDiv.appendChild(contentElement);
 
-        // Populate the story content
-        var storyDiv = document.createElement('div');
-        storyDiv.className = 'story-content-section';
-        storyDiv.style.display = 'none';
+            if (props.image && props.image.trim() !== "") {
+                var imgElement = document.createElement('img');
+                imgElement.src = props.image;
+                imgElement.alt = "Image for " + props.content;
+                storyDiv.appendChild(imgElement);
+            }
 
-        if (props.title) {
-            var titleElement = document.createElement('h2');
-            titleElement.textContent = props.title;
-            storyDiv.appendChild(titleElement);
-        }
-        
-        var contentElement = document.createElement('p');
-        contentElement.innerHTML = props.content;
-        storyDiv.appendChild(contentElement);
+            if (props.attribution) {
+                var attributionElement = document.createElement('p');
+                attributionElement.innerHTML = props.attribution;
+                storyDiv.appendChild(attributionElement);
+            }
 
-        if (props.image && props.image.trim() !== "") {
-            var imgElement = document.createElement('img');
-            imgElement.src = props.image;
-            imgElement.alt = "Image for " + props.content;
-            storyDiv.appendChild(imgElement);
-        }
-        
-        if (props.attribution) {
-            var attributionElement = document.createElement('p');
-            attributionElement.innerHTML = props.attribution;
-            storyDiv.appendChild(attributionElement);
-        }
+            navSection.appendChild(storyDiv);
+            document.getElementById('story-details').appendChild(navSection);
 
-        navSection.appendChild(storyDiv);
-        document.getElementById('story-details').appendChild(navSection);
+            // Add the point to the map and bind the popup
+            var marker = L.marker([storyPoint.geometry.coordinates[1], storyPoint.geometry.coordinates[0]])
+                .bindPopup(props.title)
+                .addTo(map);
+            
+            markers.push(marker); // Store the marker
+        });
 
-        // Add the point to the map
-        var marker = L.marker([storyPoint.geometry.coordinates[1], storyPoint.geometry.coordinates[0]]).addTo(map);
-
-        // Bind popup (callout) to marker
-        if (storyPoint.properties.title) {
-            marker.bindPopup(storyPoint.properties.title);
-        }
+    }).catch(error => {
+        console.error("There was an error fetching the GeoJSON:", error);
     });
-
-}).catch(error => {
-    console.error("There was an error fetching the GeoJSON:", error);
-});
