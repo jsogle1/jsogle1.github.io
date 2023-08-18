@@ -1,45 +1,26 @@
 var map = L.map('map').setView([50, 0], 5);
 
-// 1. Define the Layers
-var watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg', {
-    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
-});
-
-var terrain = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}.png', {
-    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
-});
-
-var hillshade = L.tileLayer.wms('http://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}.png', {
-    layers: 'TOPO-WMS', 
-    transparent: true,
-    opacity: 0.6
-});
-
-// 2. Combine into a Layer Group
-var watercolorWithHillshade = L.layerGroup([watercolor, hillshade]);
-
-// 3. Integrate into Base Maps
+// Base maps
 const basemaps = {
-    Terrain: terrain,
-    Topography: L.tileLayer.wms('http://ows.mundialis.de/services/service?', {layers: 'TOPO-WMS'}),
-    Watercolor: watercolor,
-    WatercolorHillshade: watercolorWithHillshade
+    StreetView: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
+        attribution: '© OpenStreetMap contributors' 
+    }),
+    Topography: L.tileLayer.wms('http://ows.mundialis.de/services/service?', { 
+        layers: 'TOPO-WMS' 
+    }),
+    WatercolorHillshade: L.layerGroup([
+        L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg', {
+            attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+        }),
+        L.tileLayer('http://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}.png', {
+            opacity: 0.5,
+            zIndex: -1
+        }).setBlendMode('multiply')
+    ])
 };
 
-hillshade.on('tileload', function(event) {
-    var tile = event.tile;
-    tile.style.mixBlendMode = 'multiply';
-});
-
-var combinedLayer = L.layerGroup([basemaps.Watercolor, hillshade]);
-
-L.control.layers({
-    'Street View': basemaps.StreetView,
-    'Topography': basemaps.Topography,
-    'Watercolor + Hillshade': combinedLayer
-}).addTo(map);
-
-combinedLayer.addTo(map);
+L.control.layers(basemaps).addTo(map);
+basemaps.WatercolorHillshade.addTo(map);
 
 var currentStoryContentSection = null;
 var currentPopup = null;
