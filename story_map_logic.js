@@ -21,18 +21,27 @@ fetch('Henry_V_Leaflet.geojson')
     storyData.forEach((storyPoint, index) => {
         var props = storyPoint.properties;
         
+        var navSection = document.createElement('div');
+        navSection.className = 'nav-section';
+
         // Populate the navigation
         var navButton = document.createElement('button');
         navButton.textContent = props.title;
         navButton.onclick = function() {
-            document.getElementById('story-content').scrollTop = index * document.getElementById('story-content').clientHeight;
+            var contentDiv = this.nextElementSibling;
+            var isVisible = contentDiv.style.display === 'block';
+            contentDiv.style.display = isVisible ? 'none' : 'block';
+            if(!isVisible) {
+                map.flyTo([storyPoint.geometry.coordinates[1], storyPoint.geometry.coordinates[0]], props.zoom);
+            }
         };
-        document.getElementById('story-nav').appendChild(navButton);
+
+        navSection.appendChild(navButton);
 
         // Populate the story content
         var storyDiv = document.createElement('div');
-        storyDiv.className = 'story-section';
-        storyDiv.dataset.index = index;
+        storyDiv.className = 'story-content-section';
+        storyDiv.style.display = 'none';
 
         if (props.title) {
             var titleElement = document.createElement('h2');
@@ -57,20 +66,8 @@ fetch('Henry_V_Leaflet.geojson')
             storyDiv.appendChild(attributionElement);
         }
 
-        document.getElementById('story-content').appendChild(storyDiv);
-    });
-
-    // Handle the scrolling within the story-content
-    document.getElementById('story-content').addEventListener('scroll', function(e) {
-        var top = e.target.scrollTop;
-        var height = e.target.clientHeight;
-
-        var index = Math.floor(top / height);
-        var coords = storyData[index].geometry.coordinates;
-
-        if (storyData[index]) {
-            map.flyTo([coords[1], coords[0]], storyData[index].properties.zoom);
-        }
+        navSection.appendChild(storyDiv);
+        document.getElementById('story-details').appendChild(navSection);
     });
 
 }).catch(error => {
