@@ -72,6 +72,3 @@ fetch('Henry_V_Leaflet.geojson')
 }).catch(error => {
     console.error("There was an error fetching the GeoJSON:", error);
 });
-    .catch(error => {
-        console.error("There was an error fetching the GeoJSON:", error);
-    });
