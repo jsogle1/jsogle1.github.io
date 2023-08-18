@@ -13,6 +13,7 @@ fetch('Henry_V_Leaflet.geojson')
     .then(response => response.json())
     .then(data => {
         var storyData = data.features;
+
         var markers = []; // Store all markers for reference
 
         storyData.forEach((storyPoint, index) => {
@@ -45,6 +46,8 @@ fetch('Henry_V_Leaflet.geojson')
                 }
             }
 
+            console.log('Content section created for index:', index); // Debugging line
+
             document.getElementById('story-nav').appendChild(navButton);
             document.getElementById('story-content').appendChild(contentDiv);
 
@@ -62,19 +65,14 @@ fetch('Henry_V_Leaflet.geojson')
         });
 
         document.getElementById('story-nav').addEventListener('click', function (e) {
+            console.log('Navigation button clicked'); // Debugging line
+
             if (e.target && e.target.nodeName == "DIV") {
+                console.log('Trying to display content for index:', e.target.dataset.index); // Debugging line
+
                 var index = parseInt(e.target.dataset.index);
-                
-                // Hide all content-sections
-                document.querySelectorAll('.content-section').forEach(el => el.style.display = 'none');
-
-                // Display the clicked section's content
-                var contentSection = document.querySelector(`.content-section[data-index="${index}"]`);
-                if (contentSection) {
-                    contentSection.style.display = 'block';
-                }
-
                 var coords = storyData[index].geometry.coordinates;
+
                 if (storyData[index]) {
                     map.flyTo([coords[1], coords[0]], storyData[index].properties.zoom);
                     markers[index].openPopup(); // Open the marker's popup (title callout)
