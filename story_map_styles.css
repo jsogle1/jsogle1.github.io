@@ -1,85 +1,73 @@
-body {
-    font-family: 'Lato', sans-serif;
-    background-color: #f4f4f4;
+body, html {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    color: #333;
+    font-family: 'Arial', sans-serif;
 }
 
-.image-attribution {
-    font-size: 0.8em;
-    color: #777;
-    margin-top: 2px;
-}
-
-.map-container {
-    display: flex;
-    height: 100vh; /* 100% of the viewport height */
-    flex-direction: row; /* Default direction */
+#map {
+    height: 70%;
+    width: 70%;
+    float: left;
 }
 
 #story-details {
-    width: 30%; 
-    height: 100vh;
-    overflow-y: scroll; /* Adds an outer scrollbar if nav and content together are taller than the viewport */
+    height: 100%;
+    width: 30%;
+    overflow-y: scroll;
+    float: left;
+    background-color: #f4f4f4;
 }
 
 #story-nav {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Align the titles to the start */
+    float: left;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+    max-height: 300%; /* Increased the height for easy navigation */
 }
 
-#story-nav button {
-    padding: 8px 12px;
-    background-color: #e9e9e9;
-    border: none;
+.nav-section {
+    width: 100%;
+    padding: 10px;
     cursor: pointer;
-    margin: 2px 0;
-    width: 100%; /* Take up full width of the nav */
+    text-align: center;
+    background-color: lightgray; /* Set the button background to light gray */
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* To make sure the width includes padding and border */
+}
+
+.nav-section:hover {
+    background-color: #d4d4d4; /* Slightly darker hover effect */
 }
 
 #story-content {
-    overflow-y: auto; /* Inner scrollbar */
-    max-height: calc(100vh - (29 * (the height of each nav button + margins))); /* Adjust this as needed */
-}
-
-#map {
-    flex: 0.7; /* Takes up the rest of the container width */
-    height: 100vh;
-    border-radius: 0 8px 8px 0;
-}
-
-.story-section {
-    border: 1px solid #e0e0e0;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.story-section img {
+    display: none; /* Hide by default */
     width: 100%;
-    margin-top: 20px;
-    border-radius: 4px;
+    float: left;
+    background-color: #f4f4f4;
+    padding: 10px;
 }
 
-/* Mobile view styles */
-@media (max-width: 768px) {
-    .map-container {
-        flex-direction: column-reverse;
+.content-section {
+    display: none; /* Hide by default */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* To make sure the width includes padding */
+}
+
+.image-attribution {
+    font-size: 0.8em;
+    color: gray;
+}
+
+@media screen and (max-width: 768px) {
+    #map {
+        width: 100%;
+        height: 50%;
     }
 
     #story-details {
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-        height: auto;
-        max-height: 50vh; /* Limit height to 50% of the viewport height */
-    }
-
-    #map {
-        height: 50vh; /* Use half of the viewport height */
+        width: 100%;
+        height: 50%;
     }
 }
