@@ -1,16 +1,17 @@
-var map = L.map('map').setView([50,0], 7);
+var map = L.map('map').setView([50,0], 5);
 
 const basemaps = {
-    Watercolor: L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg', {
-        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }),
+    StreetView: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '© OpenStreetMap contributors'}),
     Topography: L.tileLayer.wms('http://ows.mundialis.de/services/service?', {layers: 'TOPO-WMS'}),
-    Places: L.tileLayer.wms('http://ows.mundialis.de/services/service?', {layers: 'OSM-Overlay-WMS'})
+    Places: L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
+      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under ODbL',
+      subdomains: 'abcd',
+      ext: 'png'
+    })
 };
-L.control.layers(basemaps).addTo(map);
-basemaps.StreetView.addTo(map);
 
-var storyLayers = L.featureGroup().addTo(map);  // Group for all story point markers
+L.control.layers(basemaps).addTo(map);
+basemaps.Places.addTo(map);
 
 fetch('Henry_V_Leaflet.geojson')
 .then(response => response.json())
@@ -18,11 +19,20 @@ fetch('Henry_V_Leaflet.geojson')
     var storyData = data.features;
 
     storyData.forEach((storyPoint, index) => {
+        var props = storyPoint.properties;
+        
+        // Populate the navigation
+        var navButton = document.createElement('button');
+        navButton.textContent = props.title;
+        navButton.onclick = function() {
+            document.getElementById('story-content').scrollTop = index * document.getElementById('story-content').clientHeight;
+        };
+        document.getElementById('story-nav').appendChild(navButton);
+
+        // Populate the story content
         var storyDiv = document.createElement('div');
         storyDiv.className = 'story-section';
         storyDiv.dataset.index = index;
-
-        var props = storyPoint.properties;
 
         if (props.title) {
             var titleElement = document.createElement('h2');
@@ -31,58 +41,35 @@ fetch('Henry_V_Leaflet.geojson')
         }
         
         var contentElement = document.createElement('p');
-        contentElement.innerHTML = props.content.replace(/\n/g, '<br>');
+        contentElement.innerHTML = props.content;
         storyDiv.appendChild(contentElement);
 
         if (props.image && props.image.trim() !== "") {
             var imgElement = document.createElement('img');
             imgElement.src = props.image;
-            imgElement.alt = "Image for " + props.content; // Keeping the alt for accessibility
+            imgElement.alt = "Image for " + props.content;
             storyDiv.appendChild(imgElement);
+        }
         
-            if (props.image_attribution && props.image_attribution.trim() !== "") {
-                var attributionElement = document.createElement('p');
-                attributionElement.className = 'image-attribution';
-                attributionElement.innerHTML = props.image_attribution;
-                storyDiv.appendChild(attributionElement);
-            }
+        if (props.attribution) {
+            var attributionElement = document.createElement('p');
+            attributionElement.innerHTML = props.attribution;
+            storyDiv.appendChild(attributionElement);
         }
 
-        
-        document.getElementById('story-details').appendChild(storyDiv);
-
-        var coords = storyPoint.geometry.coordinates;
-        var marker = L.marker([coords[1], coords[0]]);
-        marker.bindTooltip(props.title, { permanent: false, direction: 'top' }).addTo(storyLayers);
+        document.getElementById('story-content').appendChild(storyDiv);
     });
 
-    document.getElementById('story-details').addEventListener('scroll', function(e) {
-        var storySections = document.querySelectorAll('.story-section');
-        var currentSectionIndex;
+    // Handle the scrolling within the story-content
+    document.getElementById('story-content').addEventListener('scroll', function(e) {
+        var top = e.target.scrollTop;
+        var height = e.target.clientHeight;
 
-        storySections.forEach((section, index) => {
-            var bounds = section.getBoundingClientRect();
-            var parentBounds = e.target.getBoundingClientRect();
+        var index = Math.floor(top / height);
+        var coords = storyData[index].geometry.coordinates;
 
-            // If the top of the section is close to the top of the parent container, treat it as the current section.
-            if (Math.abs(bounds.top - parentBounds.top) < 20) {  
-                currentSectionIndex = index;
-            }
-        });
-
-        var coords = storyData[currentSectionIndex].geometry.coordinates;
-
-        if (storyData[currentSectionIndex]) {
-            map.flyTo([coords[1], coords[0]], storyData[currentSectionIndex].properties.zoom);
-
-            // Show the tooltip of the currently focused point and hide others
-            storyLayers.eachLayer(function(layer) {
-                if (layer.getTooltip() && layer.getTooltip().getContent() === storyData[currentSectionIndex].properties.title) {
-                    layer.openTooltip();
-                } else {
-                    layer.closeTooltip();
-                }
-            });
+        if (storyData[index]) {
+            map.flyTo([coords[1], coords[0]], storyData[index].properties.zoom);
         }
     });
 
