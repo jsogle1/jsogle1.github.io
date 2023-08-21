@@ -87,7 +87,7 @@ fetch('Henry_IV_Part_I_Leaflet.geojson')
             if (props.image && props.image.trim() !== "") {
                 var imgElement = document.createElement('img');
                 imgElement.src = props.image;
-                imgElement.alt = "Image for " + props.content;
+                imgElement.alt = "Image for " + props.alt_text;
                 storyDiv.appendChild(imgElement);
             }
 
