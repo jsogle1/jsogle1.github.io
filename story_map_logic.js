@@ -1,4 +1,6 @@
 var map = L.map('map').setView([50, 0], 5);
+var mapElement = document.getElementById('map');
+var geojsonPath = mapElement.getAttribute('data-geojson');
 
 // 1. Define the Layers
 var watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg', {
@@ -32,7 +34,7 @@ const basemaps = {
 L.control.layers(basemaps).addTo(map);
 basemaps.Watercolor.addTo(map);
 // 5. Fetch the Geojson
-fetch('Henry_V_Leaflet.geojson')
+fetch(geojsonPath)
     .then(response => response.json())
     .then(data => {
         var storyData = data.features;
