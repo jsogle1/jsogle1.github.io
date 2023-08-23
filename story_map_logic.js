@@ -76,6 +76,13 @@ fetch(geojsonPath)
             storyDiv.className = 'story-content-section';
             storyDiv.style.display = 'none';
 
+            if (props.image && props.image.trim() !== "") {
+                var imgElement = document.createElement('img');
+                imgElement.src = props.image;
+                imgElement.alt = props.content;
+                storyDiv.appendChild(imgElement);
+            }
+
             if (props.title) {
                 var titleElement = document.createElement('h2');
                 titleElement.textContent = props.title;
@@ -85,13 +92,6 @@ fetch(geojsonPath)
             var contentElement = document.createElement('p');
             contentElement.innerHTML = props.content.replace(/\n/g, '<br>');
             storyDiv.appendChild(contentElement);
-
-            if (props.image && props.image.trim() !== "") {
-                var imgElement = document.createElement('img');
-                imgElement.src = props.image;
-                imgElement.alt = props.content;
-                storyDiv.appendChild(imgElement);
-            }
 
             if (props.attribution) {
                 var attributionElement = document.createElement('p');
