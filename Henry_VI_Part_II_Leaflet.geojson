@@ -10,7 +10,10 @@
     "properties": {
     "zoom":8,
     "title":"Henry VI Part II",
-    "content":""
+    "content":"",
+    "image":"media/King_Henry_VI_from_NPG.jpg",
+    "alt_text":"King Henry VI from the National Portrait Gallery",
+    "attribution":"National Portrait Gallery, Public domain, via Wikimedia Commons"
     }
   },
   {
