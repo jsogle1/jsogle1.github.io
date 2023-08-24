@@ -84,7 +84,7 @@ fetch(geojsonPath)
             }
 
             if (props.attribution) {
-                var attributionElement = document.createElement('p');
+                var attributionElement = document.createElement('h6');
                 attributionElement.innerHTML = props.attribution;
                 storyDiv.appendChild(attributionElement);
             }
