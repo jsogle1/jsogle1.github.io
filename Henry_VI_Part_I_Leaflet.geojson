@@ -311,7 +311,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -0.604167,51.483333 ]
+       "coordinates":  [ -0.124722,51.499167 ]
     },
     "properties": {
     "zoom":13,
@@ -362,7 +362,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -0.604167,51.483333 ]
+       "coordinates":  [ -0.124722,51.499167 ]
     },
     "properties": {
     "zoom":13,
