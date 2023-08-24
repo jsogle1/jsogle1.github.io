@@ -83,6 +83,12 @@ fetch(geojsonPath)
                 storyDiv.appendChild(imgElement);
             }
 
+            if (props.attribution) {
+                var attributionElement = document.createElement('p');
+                attributionElement.innerHTML = props.attribution;
+                storyDiv.appendChild(attributionElement);
+            }
+
             if (props.title) {
                 var titleElement = document.createElement('h2');
                 titleElement.textContent = props.title;
@@ -92,12 +98,6 @@ fetch(geojsonPath)
             var contentElement = document.createElement('p');
             contentElement.innerHTML = props.content.replace(/\n/g, '<br>');
             storyDiv.appendChild(contentElement);
-
-            if (props.attribution) {
-                var attributionElement = document.createElement('p');
-                attributionElement.innerHTML = props.attribution;
-                storyDiv.appendChild(attributionElement);
-            }
 
             navSection.appendChild(storyDiv);
             document.getElementById('story-details').appendChild(navSection);
