@@ -59,7 +59,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 1.495277778,53.67944444 ]
+       "coordinates":  [ -1.495277778,53.67944444 ]
     },
     "properties": {
     "zoom":"13",
