@@ -1,0 +1,50 @@
+
+
+.navbar-inverse {
+  background-color: rgb(40, 50, 57);
+  border-color: rgb(40, 50, 57);
+}
+
+.navbar {
+  background-color: rgb(40, 50, 57);
+  border-color: rgb(40, 50, 57);
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  font-family: "UnifrakturCook", serif;
+  text-align: center;
+}
+
+
+
+.h3 {
+  color:white;
+}
+.ul {
+  color:white;
+}
+/* Middle column */
+.column.middle {
+  height: 100%;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
