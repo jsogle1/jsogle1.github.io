@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>World of William Shakespeare</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Shakespeare.css">
+    <script>
+        function loadInIframe(e, url) {
+            e.preventDefault();  // This prevents the browser from navigating to the link directly
+            document.getElementById('contentFrame').src = url;  // This sets the iframe's source to the provided URL
+        }
+    </script>
+</head>
+<body>
+
+<div class="header">
+    <h1>The World of William Shakespeare</h1>
+    <p><h2>Explore His World and Works.</h2></p>
+</div>
+
+<div class="column side">
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+</div>
+<div class="leftnav">
+    <ul><a href="The_Life_and_Death_of_King_John.html" onclick="loadInIframe(event, 'The_Life_and_Death_of_King_John.html')"><h3>King John</h3></a></ul>
+    <ul><a href="Richard_II.html" onclick="loadInIframe(event, 'Richard_II.html')"><h3>Richard II</h3></a></ul>
+    <ul><a href="Henry_IV_I.html" onclick="loadInIframe(event, 'Henry_IV_I.html')"><h3>Henry IV, Part I</h3></a></ul>
+    <ul><a href="Henry_IV_II.html" onclick="loadInIframe(event, 'Henry_IV_II.html')"><h3>Henry IV, Part II</h3></a></ul>
+    <ul><a href="Henry_V.html" onclick="loadInIframe(event, 'Henry_V.html')"><h3>Henry V</h3></a></ul>
+    <ul><a href="Henry_VI_I.html" onclick="loadInIframe(event, 'Henry_VI_I.html')"><h3>Henry VI, Part I</h3></a></ul>
+    <ul><a href="Henry_VI_II.html" onclick="loadInIframe(event, 'Henry_VI_II.html')"><h3>Henry VI, Part II</h3></a></ul>
+    <ul><a href="Henry_VI_III.html" onclick="loadInIframe(event, 'Henry_VI_III.html')"><h3>Henry VI, Part III</h3></a></ul>
+    <ul><a href="Richard_III.html" onclick="loadInIframe(event, 'Richard_III.html')"><h3>Richard III</h3></a></ul>
+    <ul><a href="Henry_VIII.html" onclick="loadInIframe(event, 'Henry_VIII.html')"><h3>Henry VIII</h3></a></ul>
+</div>
+  
+<div class="column middle">
+    <p><iframe id="contentFrame" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=""></iframe></p>
+</div>
+  
+</body>
+</html>
