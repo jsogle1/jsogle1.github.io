@@ -1,13 +1,6 @@
 
-
-.navbar-inverse {
-  background-color: rgb(40, 50, 57);
-  border-color: rgb(40, 50, 57);
-}
-
-.navbar {
-  background-color: rgb(40, 50, 57);
-  border-color: rgb(40, 50, 57);
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -16,12 +9,49 @@ body {
 
 /* Style the header */
 .header {
-  font-family: "UnifrakturCook", serif;
   text-align: center;
 }
 
+/* Style the top navigation bar */
+.leftnav {
+  overflow: hidden;
+  background-color: rgb(40,50,57);
+}
 
+/* Style the topnav links */
+.leftnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2px 8px;
+  text-decoration: none;
+}
 
+/* Change color on hover */
+.leftnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  
+}
+
+/* Left and right column */
+.column.side {
+  width: 0%;
+  background-color: #333;
+  color: #f2f2f2;
+  height: 516px;
+
+}
+
+.a {
+  color:white;
+}
 .h3 {
   color:white;
 }
@@ -30,7 +60,6 @@ body {
 }
 /* Middle column */
 .column.middle {
-  height: 100%;
   width: 100%;
 }
 
@@ -40,7 +69,6 @@ body {
   display: table;
   clear: both;
 }
-
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
