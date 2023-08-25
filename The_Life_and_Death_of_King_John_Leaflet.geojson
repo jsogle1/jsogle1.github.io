@@ -20,7 +20,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -1.098698302,53.1766403 ]
+       "coordinates":  [ 0.048056,51.447222 ]
     },
     "properties": {
     "zoom":13,
@@ -119,7 +119,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ -1.098698302,53.1766403 ]
+       "coordinates":  [ 0.048056,51.447222 ]
     },
     "properties": {
     "zoom":13,
