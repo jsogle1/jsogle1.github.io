@@ -12,6 +12,13 @@ body {
   text-align: center;
 }
 
+.attribution {
+    font-size: 10px;   /* Set the font size */
+    color: #777;       /* Set the text color */
+    text-align: right; /* Right-align the text */
+    margin-top: -10px; /* Reduce the gap between the image and the attribution */
+}
+
 /* Style the top navigation bar */
 .leftnav {
   overflow: hidden;
