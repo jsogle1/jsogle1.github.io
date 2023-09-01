@@ -173,8 +173,8 @@
     "zoom":15,
     "title":"1597 - Stratford-upon-Avon, New Place",
     "content":"William Shakespeare buys New Place in Stratford-upon-Avon.",
-    "image":"media/Shakespeare's_home_at_New_Place,_Stratford-upon-Avon_(1863)_(14762038116).jpg",
-    "alt_text":"Local plan of Shakespeare's New Place",
+    "image":"media/Shakespeare's_home_at_New_Place,_Stratford-upon-Avon_(1863)_(14782677654)",
+    "alt_text":"Shakespeare's New Place",
     "attribution":"Internet Archive Book Images, No restrictions, via Wikimedia Commons"
     }
   },
@@ -307,7 +307,7 @@
     "properties": {
     "zoom":15,
     "title":"1613-1616 - Stratford-upon-Avon, New Place",
-    "content":"Sometime between 1613 and 1616 Shakespeare retires to New Place.",
+    "content":"Sometime between 1613 and 1616 Shakespeare retires to New Place. The plan shows so many features familiar and relevant to his life: home, a garden, familiar from many works and present around his theatres in London, a grammar school, like the one he would have attended, and a chapel. Life, learning, religion, and theatre are all accessible there from his aptly named New Place.",
     "image":"media/Shakespeare's_home_at_New_Place,_Stratford-upon-Avon_(1863)_(14762038116).jpg",
     "alt_text":"Map of Shakespeare's New Place",
     "attribution":"Internet Archive Book Images, No restrictions, via Wikimedia Commons"
@@ -323,7 +323,7 @@
     "zoom":15,
     "title":"04/23/1616 - Stratford-upon-Avon, Holy Trinity Church",
     "content":"William Shakespeare dies at Stratford-upon-Avon and is buried at Holy Trinity Church.",
-    "image":"media/Shakespeare's_grave_epitaph.jpg",
+    "image":"media/Shakespeare's_grave_epitaph.JPG",
     "alt_text":"Shakespeare's grave epitaph",
     "attribution":"Tom Reedy, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"
     }
