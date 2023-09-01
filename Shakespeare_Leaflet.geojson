@@ -1,0 +1,332 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.708,52.1939 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"04/23/1564 - Stratford-upon-Avon, Henley St.",
+    "content":"William Shakespeare was born on Henley Street in Stratford-upon-Avon  1born on or around April 23, 1564.",
+    "image":"media/640px-Shakespeare's_birthplace_1769.jpg",
+    "alt_text":"Shakespeare's Birthplace on Henley Street",
+    "attribution":"Drawn by Richard Greene (antiquary), engraving by Benjamin Cole, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.7075,52.186667 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"04/26/1564 - Stratford-upon-Avon, Holy Trinity Church",
+    "content":"William Shakespeare was baptized at Holy Trinity Church at Stratford-upon-avon on April 26, 1564.",
+    "image":"media/640px-View_of_Stratford-upon-Avon_Cathedral_(gcf00886).jpg",
+    "alt_text":"A Painting of Stratford-upon-Avon's Holy Trinity Cathedral",
+    "attribution":"National Library of Wales, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.7075,52.19 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1571-1578 - Stratford-upon-Avon, King’s New School",
+    "content":"William Shakepeare likely attended King's New School, a grammar school for boys and learned Greek, Latin, and the Classics from 1571 to 1578..",
+    "image":"media/The_Guild_Chapel_-_Stratford_Upon_Avon_(3638870827).jpg",
+    "alt_text":"Shakespeare's School, King's New School with Adjacent Guild Chapel",
+    "attribution":"Elliott Brown from Birmingham, United Kingdom, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.822102,52.191338 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"11/28/1582 - Temple Grafton",
+    "content":"William Shakespeare married Anne Hathaway in Worchester and possibly in the parish of Temple Grafton on November 28, 1582. What is known is that it did not occur in Stratford-upon-Avon, for the bride was three months pregnant and the couple was seeking to avoid scandal by having the marriage",
+    "image":"media/800px-AnneHathaway_CUL_Page4DetailB .jpg",
+    "alt_text":"Very early sketch of Anne Hathaway",
+    "attribution":"JschneiderWiki, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.7075,52.186667 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"05/26/1583 - Stratford-upon-Avon, Holy Trinity Church",
+    "content":"Susanna Shakespeare, their first daughter, was baptized in Holy Trinity Church, like her father on May 26, 1583.",
+    "image":"media/640px-Shakespeare's_family_circle.jpg",
+    "alt_text":"illustration of William Shakespeare reciting his play Hamlet to his family. His wife, Anne Hathaway, is sitting in the chair on the right; his son Hamnet is behind him on the left; his two daughters Susanna and Judith are on the right and left of him.",
+    "attribution":"Perine, George Edward, 1837-1885, printmaker., Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.7075,52.186667 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"02-02-1585 - Stratford-upon-Avon, Holy Trinity Church",
+    "content":"Hamnet and Judith, fraternal twins, were baptized in Holy Trinity Church on February 2nd, 1585.",
+    "image":"media/Parish_Register_of_Holy_Trinity_Church,_Stratford-upon-Avon.png",
+    "alt_text":"Parish Register of Hamnet's and Judith's Baptism",
+    "attribution":"the vicar or clerk of the Holy Trinity Church, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.7075,52.186667 ]
+    },
+    "properties": {
+    "zoom":14,
+    "title":"1585-1592 - \"Lost Years\"",
+    "content":"From 1585 to 1592 are known as the 'Lost Years,' of this period nothing is known of Shakespeare's existence."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.10147,51.51425 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1592 - London",
+    "content":"William Shakespeare was referenced in Robert Greene's pamphlet printed by the Worshipful Company of Stationers and Newsmakers. It makes allusion to Shakespeare's Henry VI Part III with the mocking line \"Tygers hart wrapt in a Players hyde\" and refers to him as an \"upstart crow.\"",
+    "image":"media/rgreene.jpg",
+    "alt_text":"Woodcarving of Robert Greene",
+    "attribution":"John Dickenson, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.08,51.524583 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1594 - the Theatre, Shoreditch London",
+    "content":"Joins Lord Chamberlain's Men as actor and shareholder, writes and performs plays in the Theatre in Shoreditch.",
+    "image":"media/800px-Burbage's_Theatre,_Holywell,_London_-_site_plan.png",
+    "alt_text":"The Theatre at Shoreditch",
+    "attribution":"Joseph Quincy Adams - no image credit, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.7075,52.186667 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1596 - Hamnet, Shakespeare's son dies",
+    "content":"Hamnet Shakespeare dies at Stratford-upon-Avon of \"pestilence,\" most probably the bubonic plague.",
+    "image":"media/HamnetDeath.jpg",
+    "alt_text":"Death Record of Hamnet Shakespeare",
+    "attribution":"Wrad at en.wikipedia, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.081,51.51346 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1596 - St. Helen's Parish at Bishop's Gate",
+    "content":"William Shakespeare is listed as owing tax on a rented house near shoreditch in an affluent neighborhood, St. Helens.",
+    "image":"media/e-179-146-369-s3.jpg",
+    "alt_text":"Tax records",
+    "attribution":"National Archives, U.K"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.7076,52.1907 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1597 - Stratford-upon-Avon, New Place",
+    "content":"William Shakespeare buys New Place in Stratford-upon-Avon.",
+    "image":"media/Shakespeare's_home_at_New_Place,_Stratford-upon-Avon_(1863)_(14762038116).jpg",
+    "alt_text":"Local plan of Shakespeare's New Place",
+    "attribution":"Internet Archive Book Images, No restrictions, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.091667,51.506667 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1597 - Shakespeare resides at Bankside",
+    "content":"Shakespeare lived at Bankside near the globe",
+    "image":"media/Shakespeare_the_player,_and_other_papers_illustrative_of_Shakespeare's_individuality_(1916)_(14783087703).jpg",
+    "alt_text":"Bankside and the Globe",
+    "attribution":"Internet Archive Book Images, No restrictions, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.094722,51.506667 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1599 - London, South bank of the River Thames",
+    "content":"Construction of Globe Theatre",
+    "image":"media/Hodge's_conjectural_Globe_reconstruction.jpg",
+    "alt_text":"Reconstruction of the Globe Theatre",
+    "attribution":"C. Walter Hodges, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.110866,51.512122 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1602 - Middle Temple Hall",
+    "content":"Shakespeare's play Twelfth Night debut here, at Middle Temple, on February 2nd, 1602.",
+    "image":"media/Middle_Temple_by_Thomas_Shepherd_c.1830.jpg",
+    "alt_text":"Middle Temple",
+    "attribution":"Middle Temple, London, sketch by Thomas Shepherd, c.1830"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1025,51.512778 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1603 - London",
+    "content":"Lord Chamberlain’s Men renamed to King's Men",
+    "image":"media/533px-JamesIEngland.jpg",
+    "alt_text":"Picture of the King's Men patron, James VI and I.",
+    "attribution":"Attributed to John de Critz, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.09396,51.5177 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1604 - Barbican - London",
+    "content":"Shakespeare rents at a house on the corner of Silver and Monkwell",
+    "image":"media/Cobbe_portrait_of_Shakespeare.jpg",
+    "alt_text":"Cobbe Portrait of Shakespeare",
+    "attribution":"Cobbe Collection, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1025,51.512778 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1608 - London, Blackfriars Theatre",
+    "content":"King's Men take over Blackfriars Theatre",
+    "image":"media/Blackfriars_theatre_conjectural_reconstruction_1921.png",
+    "alt_text":"Blackfriars Conjectural Reconstrustion",
+    "attribution":"G. Topham Forrest, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.094722,51.506667 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1613 - London, South bank of the River Thames",
+    "content":"Globe Theatre burns down",
+    "image":"media/London_theatres_C16—C17,_after_Redwood.png",
+    "alt_text":"Map of the theatres in London",
+    "attribution":"London_theatres_C16—C17,_after_Redwood.svg: *London_map_showing_Shakespearean_theatres.png: Joseph Quincy Adams. Image credit C. W. Redwood, formerly technical artist at Cornell Universityderivative work: Old Moonrakerderivative work: Old Moonraker, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.101464,51.512713 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1613 - London, near Blackfriars",
+    "content":"Shakespeare buys house near the Blackfriars Theatre in London from William Underhill.",
+    "image":"media/Shakespeare.jpg",
+    "alt_text":"Portrait of William Shakespeare",
+    "attribution":"Attributed to John Taylor, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.7076,52.1907 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"1613-1616 - Stratford-upon-Avon, New Place",
+    "content":"Sometime between 1613 and 1616 Shakespeare retires to New Place.",
+    "image":"media/Shakespeare's_home_at_New_Place,_Stratford-upon-Avon_(1863)_(14762038116).jpg",
+    "alt_text":"Map of Shakespeare's New Place",
+    "attribution":"Internet Archive Book Images, No restrictions, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.7075,52.186667 ]
+    },
+    "properties": {
+    "zoom":6,
+    "title":"04/23/1616 - Stratford-upon-Avon, Holy Trinity Church",
+    "content":"William Shakespeare dies at Stratford-upon-Avon and is buried at Holy Trinity Church.",
+    "image":"media/Shakespeare's_grave_epitaph.jpg",
+    "alt_text":"Shakespeare's grave epitaph",
+    "attribution":"Tom Reedy, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons"
+    }
+  }
+]
+}
