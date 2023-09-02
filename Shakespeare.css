@@ -18,10 +18,10 @@ body {
 
 .leftnav a {
   float: left;
-  width: calc(100% / 11); /* Divide by the number of nav items */
-  color: white;
+  display: block; /* Divide by the number of nav items */
+  color: #f2f2f2;
   text-align: center;
-  /*padding: 14px 16px;*/
+  /*padding: 2px 8px;*/
   text-decoration: none;
 }
 
