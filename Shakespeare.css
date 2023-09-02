@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-nav	{	
+.leftnav	{	
 		background:#0033FF;
 		width: 100%;
 		font-weight: bold;
@@ -17,23 +17,23 @@ nav	{
 		border-bottom: 1px solid #000000;
 }	
 
-nav a{
+.leftnav a{
 		text-decoration: none;
 }		
 
-nav a:link{
+.leftnav a:link{
 		color: #FFFFFF;
 }
 
-nav a:visited{
+.leftnav a:visited{
 		color: #FFFFFF;
 }
 
-nav a:hover{
+.leftnav a:hover{
 		color: #6495ED;
 }
 
-nav ul{
+.leftnav ul{
 		list-style-type: none;
 		overflow: hidden;
 		margin: 0;
@@ -41,7 +41,7 @@ nav ul{
 }
 	
 
-nav li {
+.leftnav li {
 		width: 25%;
 		text-decoration: none;
 		background: #0033FF;
