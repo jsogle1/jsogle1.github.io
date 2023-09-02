@@ -7,14 +7,14 @@ body {
     height: 100vh;
     width: 70vw;
     position: absolute;
-    right: 0; /* Set the map to be on the right */
+    right: 0;
 }
 
 #story-details {
     height: 100vh;
     width: 30vw;
     position: absolute;
-    left: 0;  /* Set the story details to be on the left */
+    left: 0;
     overflow-y: scroll;
     background-color: rgba(255, 255, 255, 0.8);
 }
@@ -56,12 +56,16 @@ img {
     #map {
         width: 100vw;
         height: 50vh;
+        position: relative; /* Reset the position */
+        right: initial; /* Reset right */
     }
 
     #story-details {
         width: 100vw;
         height: 50vh;
-        top: 50vh;
-        right: initial;
+        position: relative; /* Reset the position */
+        top: 0; /* Reset top */
+        left: 0; /* Reset left */
+        overflow-y: auto; /* Enable scroll only when needed */
     }
 }
