@@ -65,4 +65,7 @@ body {
   .nav-links.show {
     display: block;  /* Show when toggled */
   }
+  .leftnav a.show {
+    display: block; /* Show when toggled */
+  }
 }
