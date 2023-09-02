@@ -1,4 +1,5 @@
 
+/* Existing styles */
 * {
   box-sizing: border-box;
 }
@@ -7,25 +8,15 @@ body {
   margin: 0;
 }
 
-/* Style the header */
 .header {
   text-align: center;
 }
 
-.attribution {
-    font-size: 10px;   /* Set the font size */
-    color: #777;       /* Set the text color */
-    text-align: right; /* Right-align the text */
-    margin-top: -10px; /* Reduce the gap between the image and the attribution */
-}
-
-/* Style the top navigation bar */
 .leftnav {
   overflow: hidden;
   background-color: rgb(40,50,57);
 }
 
-/* Style the topnav links */
 .leftnav a {
   float: left;
   display: block;
@@ -35,51 +26,39 @@ body {
   text-decoration: none;
 }
 
-/* Change color on hover */
 .leftnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  
 }
 
-/* Left and right column */
 .column.side {
   width: 0%;
   background-color: #333;
   color: #f2f2f2;
   height: 516px;
-
 }
 
-.a {
-  color:white;
-}
-.h3 {
-  color:white;
-}
-.ul {
-  color:white;
-}
-/* Middle column */
 .column.middle {
   width: 100%;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* Responsive styles */
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
     width: 100%;
+  }
+  
+  .leftnav a {
+    float: none;  /* Remove float to stack links vertically */
   }
 }
