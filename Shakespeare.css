@@ -1,13 +1,11 @@
-/* General styling */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+font-family: Arial, sans-serif;
 }
 
-.leftnav{	
+nav	{	
 		background:#0033FF;
+		width: 100%;
 		font-weight: bold;
-		float: left;
+		font-size: 125%;	
 		padding-top : 0px;
 		padding-bottom : 0px;
 		margin-left: auto;
@@ -16,38 +14,38 @@ body {
 		border-bottom: 1px solid #000000;
 }	
 
-.leftnav a{
+nav a{
 		text-decoration: none;
 }		
 
-.leftnav a:link{
+nav a:link{
 		color: #FFFFFF;
 }
 
-.leftnav a:visited{
+nav a:visited{
 		color: #FFFFFF;
 }
 
-.leftnav a:hover{
+nav a:hover{
 		color: #6495ED;
 }
 
-.leftnav ul{
+nav ul{
 		list-style-type: none;
 		overflow: hidden;
 		margin: 0;
 		padding-left: 0;
 }
-	
 
-.leftnav li {
+
+nav li {
 		width: 25%;
 		text-decoration: none;
 		background: #0033FF;
 		color: #000;
 		float: left;
-		padding-top: 2px;
-		padding-bottom: 4px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		text-align: center;
 }
 
@@ -63,14 +61,4 @@ header {
 
 /* Story content */
 .column.middle {
-  width: 100%;
- /* padding: 20px;*/
-}
-
-/* Responsive styling */
-@media screen and (max-width: 768px) {
-  .leftnav a {
-    float: none;
-    width: 100%;
-  }
-}
+	
