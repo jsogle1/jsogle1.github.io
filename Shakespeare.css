@@ -61,4 +61,8 @@ body {
   .leftnav a {
     float: none;  /* Remove float to stack links vertically */
   }
+  .leftnav {
+  min-height: 100px; 
+  min-width: 100px;
+}
 }
