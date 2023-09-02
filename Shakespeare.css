@@ -1,28 +1,13 @@
-
-/* Existing styles */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-.header {
-  text-align: center;
-}
-
+/* Common Styles */
 .leftnav {
-  overflow: hidden;
-  background-color: rgb(40,50,57);
+  background-color: rgb(40, 50, 57);
+  overflow: auto;
 }
 
 .leftnav a {
-  float: left;
   display: block;
   color: #f2f2f2;
-  text-align: center;
-  padding: 2px 8px;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -31,38 +16,27 @@ body {
   color: black;
 }
 
-.column {
-  float: left;
-}
-
-.column.side {
-  width: 0%;
-  background-color: #333;
-  color: #f2f2f2;
-  height: 516px;
-}
-
-.column.middle {
-  width: 100%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive styles */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .leftnav {
     width: 100%;
   }
-  
-  .leftnav a {
-    float: none;  /* Remove float to stack links vertically */
-  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 769px) {
   .leftnav {
-  min-height: 100px; 
-  min-width: 100px;
+    width: 20%; /* or whatever width you want */
+    float: left;
+  }
+
+  .column.middle {
+    width: 80%; /* should be 100% - leftnav width */
+    float: left;
+  }
 }
-}
+
+
+
+
+
