@@ -33,6 +33,15 @@ body {
   color: black;
 }
 
+.nav-link {
+  float: left;
+  display: block; 
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2px 8px;
+  text-decoration: none;
+}
+
 /* Navigation links */
 .nav-links {
   width: 100%;
@@ -67,5 +76,13 @@ body {
   }
   .leftnav a.show {
     display: block; /* Show when toggled */
+  }
+   .nav-link {
+    display: none;
+  }
+
+  /* Show nav-links when toggled */
+  .nav-link.show {
+    display: block;
   }
 }
