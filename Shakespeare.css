@@ -39,10 +39,27 @@ body {
  /* padding: 20px;*/
 }
 
-/* Responsive styling */
-@media screen and (max-width: 768px) {
-  .leftnav a {
-    float: none;
-    width: 100%;
+/* Hide the hamburger by default */
+.hamburger {
+  display: none;
+}
+
+/* Show the hamburger button and hide the nav items on small screens */
+@media screen and (max-width: 760px) {
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
   }
+
+  .leftnav a {
+    display: none; /* Hide all */
+  }
+
+  .leftnav.show a {
+    display: block; /* Show when menu is toggled */
+  }
+}
 }
