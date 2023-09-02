@@ -1,12 +1,26 @@
-/* Common Styles */
+/* General styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  text-align: center;
+}
+
+/* Navigation */
 .leftnav {
-  background-color: rgb(40, 50, 57);
-  overflow: auto;
+  width: 100%;
+  background-color: rgb(40,50,57);
+  overflow: hidden;
 }
 
 .leftnav a {
-  display: block;
-  color: #f2f2f2;
+  float: left;
+  width: calc(100% / 11); /* Divide by the number of nav items */
+  color: white;
+  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -16,27 +30,16 @@
   color: black;
 }
 
-/* Mobile styles */
+/* Story content */
+.column.middle {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Responsive styling */
 @media screen and (max-width: 768px) {
-  .leftnav {
+  .leftnav a {
+    float: none;
     width: 100%;
   }
 }
-
-/* Desktop styles */
-@media screen and (min-width: 769px) {
-  .leftnav {
-    width: 20%; /* or whatever width you want */
-    float: left;
-  }
-
-  .column.middle {
-    width: 80%; /* should be 100% - leftnav width */
-    float: left;
-  }
-}
-
-
-
-
-
