@@ -21,7 +21,7 @@ body {
   display: block; /* Divide by the number of nav items */
   color: #f2f2f2;
   text-align: center;
-  /*padding: 2px 8px;*/
+  padding: 2px 8px;
   text-decoration: none;
 }
 
