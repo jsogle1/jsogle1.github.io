@@ -21,7 +21,7 @@ body {
   width: calc(100% / 11); /* Divide by the number of nav items */
   color: white;
   text-align: center;
-  padding: 4px 6px;
+  /*padding: 14px 16px;*/
   text-decoration: none;
 }
 
@@ -33,7 +33,7 @@ body {
 /* Story content */
 .column.middle {
   width: 100%;
-  padding: 20px;
+ /* padding: 20px;*/
 }
 
 /* Responsive styling */
