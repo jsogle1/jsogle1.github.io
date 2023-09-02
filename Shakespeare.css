@@ -21,7 +21,7 @@ body {
 
 .leftnav a {
   float: left;
-  display: block; /* Divide by the number of nav items */
+  display: block; 
   color: #f2f2f2;
   text-align: center;
   padding: 2px 8px;
@@ -33,10 +33,14 @@ body {
   color: black;
 }
 
+/* Navigation links */
+.nav-links {
+  width: 100%;
+}
+
 /* Story content */
 .column.middle {
   width: 100%;
- /* padding: 20px;*/
 }
 
 /* Hide the hamburger by default */
@@ -54,12 +58,11 @@ body {
     cursor: pointer;
   }
 
-  .leftnav a {
-    display: none; /* Hide all */
+  .nav-links {
+    display: none;  /* Hide by default */
   }
 
-  .leftnav.show a {
-    display: block; /* Show when menu is toggled */
+  .nav-links.show {
+    display: block;  /* Show when toggled */
   }
-}
 }
