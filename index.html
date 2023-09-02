@@ -46,10 +46,13 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.leftnav a');  // grab all the 'a' tags under '.leftnav'
 
   hamburger.addEventListener('click', function() {
-    navLinks.classList.toggle('show');
+    // Toggle show for each 'a' tag
+    navLinks.forEach(link => {
+      link.classList.toggle('show');
+    });
   });
 });
 </script>
