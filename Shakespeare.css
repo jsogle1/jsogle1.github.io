@@ -4,11 +4,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.leftnav	{	
+.leftnav{	
 		background:#0033FF;
-		width: 100%;
 		font-weight: bold;
-		font-size: 125%;	
+		float: left;
 		padding-top : 0px;
 		padding-bottom : 0px;
 		margin-left: auto;
