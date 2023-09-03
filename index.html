@@ -38,15 +38,25 @@
     }
 
     document.addEventListener("DOMContentLoaded", function() {
-      const hamburger = document.querySelector('.hamburger');
-      const navLinks = document.querySelectorAll('.nav-link');
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelectorAll('.nav-link');
 
-      hamburger.addEventListener('click', function() {
-        navLinks.forEach(link => {
-          link.classList.toggle('show');
-        });
+  hamburger.addEventListener('click', function() {
+    navLinks.forEach(link => {
+      link.classList.toggle('show');
+    });
+  });
+
+  // Add this part to remove the 'show' class from each nav-link when it is clicked
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      navLinks.forEach(link => {
+        link.classList.remove('show');
       });
     });
+  });
+});
+
 </script>
   
 </body>
