@@ -89,11 +89,11 @@ fetch(geojsonPath)
                 storyDiv.appendChild(attributionElement);
             }
 
-            if (props.title) {
-                var titleElement = document.createElement('h2');
-                titleElement.textContent = props.title;
-                storyDiv.appendChild(titleElement);
-            }
+            //if (props.title) {
+                //var titleElement = document.createElement('h2');
+                //titleElement.textContent = props.title;
+                //storyDiv.appendChild(titleElement);
+            //}
 
             var contentElement = document.createElement('p');
             contentElement.innerHTML = props.content.replace(/\n/g, '<br>');
