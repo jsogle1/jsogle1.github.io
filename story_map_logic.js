@@ -26,8 +26,7 @@ var watercolorWithHillshade = L.layerGroup([watercolor, hillshade]);
 const basemaps = {
     Terrain: terrain,
     Satellite: satellite,
-    Watercolor: watercolor,
-    WatercolorHillshade: watercolorWithHillshade
+    Watercolor: watercolor
 };
 
 // 4. Add Layer Control and default map
@@ -38,7 +37,7 @@ fetch(geojsonPath)
     .then(response => response.json())
     .then(data => {
         var storyData = data.features;
-        var markers = []; // To store all markers
+       var markers = []; // To store all markers
 
         storyData.forEach((storyPoint, index) => {
             var props = storyPoint.properties;
