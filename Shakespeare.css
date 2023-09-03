@@ -12,9 +12,7 @@ body {
 /* Navigation */
 .leftnav {
   width: 100%;
-  background-color: rgb(40,50,57);
   overflow: hidden;
-  border: 1px solid #aaa;
   padding: 0;
   margin: 0;
 }
