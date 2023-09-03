@@ -5,12 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Shakespeare.css">
-    <script>
-        function loadInIframe(e, url) {
-            e.preventDefault();  // This prevents the browser from navigating to the link directly
-            document.getElementById('contentFrame').src = url;  // This sets the iframe's source to the provided URL
-        }
-    </script>
 </head>
 <body>
 
@@ -19,24 +13,19 @@
     <p><h2>Explore His World and Works.</h2></p>
 </div>
 
-<div class="column side">
-    <a href="#"></a>
-    <a href="#"></a>
-    <a href="#"></a>
-</div>
 <div class="leftnav">
-        <button class="hamburger">&#9776;</button>
-        <ul><a class="nav-link" href="Home.html" onclick="loadInIframe(event, 'Home.html')"><h3>Shakespeare's Life</h3></a></ul>
-        <ul><a class="nav-link" href="The_Life_and_Death_of_King_John.html" onclick="loadInIframe(event, 'The_Life_and_Death_of_King_John.html')"><h3>King John</h3></a></ul>
-        <ul><a class="nav-link" href="The_Life_and_Death_of_King_Richard_II.html" onclick="loadInIframe(event, 'The_Life_and_Death_of_King_Richard_II.html')"><h3>Richard II</h3></a></ul>
-        <ul><a class="nav-link" href="Henry_IV_Part_I.html" onclick="loadInIframe(event, 'Henry_IV_Part_I.html')"><h3>Henry IV, Part I</h3></a></ul>
-        <ul><a class="nav-link" href="Henry_IV_Part_II.html" onclick="loadInIframe(event, 'Henry_IV_Part_II.html')"><h3>Henry IV, Part II</h3></a></ul>
-        <ul><a class="nav-link" href="Henry_V.html" onclick="loadInIframe(event, 'Henry_V.html')"><h3>Henry V</h3></a></ul>
-        <ul><a class="nav-link" href="Henry_VI_Part_I.html" onclick="loadInIframe(event, 'Henry_VI_Part_I.html')"><h3>Henry VI, Part I</h3></a></ul>
-        <ul><a class="nav-link" href="Henry_VI_Part_II.html" onclick="loadInIframe(event, 'Henry_VI_Part_II.html')"><h3>Henry VI, Part II</h3></a></ul>
-        <ul><a class="nav-link" href="Henry_VI_Part_III.html" onclick="loadInIframe(event, 'Henry_VI_Part_III.html')"><h3>Henry VI, Part III</h3></a></ul>
-        <ul><a class="nav-link" href="Richard_III.html" onclick="loadInIframe(event, 'Richard_III.html')"><h3>Richard III</h3></a></ul>
-        <ul><a class="nav-link" href="Henry_VIII.html" onclick="loadInIframe(event, 'Henry_VIII.html')"><h3>Henry VIII</h3></a></ul>
+    <button class="hamburger">&#9776;</button>
+    <a class="nav-link" href="Home.html" onclick="loadInIframe(event, 'Home.html')"><h3>Shakespeare's Life</h3></a>
+    <a class="nav-link" href="The_Life_and_Death_of_King_John.html" onclick="loadInIframe(event, 'The_Life_and_Death_of_King_John.html')"><h3>King John</h3></a>
+    <a class="nav-link" href="The_Life_and_Death_of_King_Richard_II.html" onclick="loadInIframe(event, 'The_Life_and_Death_of_King_Richard_II.html')"><h3>Richard II</h3></a>
+    <a class="nav-link" href="Henry_IV_Part_I.html" onclick="loadInIframe(event, 'Henry_IV_Part_I.html')"><h3>Henry IV, Part I</h3></a>
+    <a class="nav-link" href="Henry_IV_Part_II.html" onclick="loadInIframe(event, 'Henry_IV_Part_II.html')"><h3>Henry IV, Part II</h3></a>
+    <a class="nav-link" href="Henry_V.html" onclick="loadInIframe(event, 'Henry_V.html')"><h3>Henry V</h3></a>
+    <a class="nav-link" href="Henry_VI_Part_I.html" onclick="loadInIframe(event, 'Henry_VI_Part_I.html')"><h3>Henry VI, Part I</h3></a>
+    <a class="nav-link" href="Henry_VI_Part_II.html" onclick="loadInIframe(event, 'Henry_VI_Part_II.html')"><h3>Henry VI, Part II</h3></a>
+    <a class="nav-link" href="Henry_VI_Part_III.html" onclick="loadInIframe(event, 'Henry_VI_Part_III.html')"><h3>Henry VI, Part III</h3></a>
+    <a class="nav-link" href="Richard_III.html" onclick="loadInIframe(event, 'Richard_III.html')"><h3>Richard III</h3></a>
+    <a class="nav-link" href="Henry_VIII.html" onclick="loadInIframe(event, 'Henry_VIII.html')"><h3>Henry VIII</h3></a>
 </div>
   
 <div class="column middle">
@@ -44,18 +33,23 @@
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelectorAll('.nav-link');  // grab all the 'a' tags with the class '.nav-link'
+    function loadInIframe(e, url) {
+        e.preventDefault();
+        document.getElementById('contentFrame').src = url;
+    }
 
-  hamburger.addEventListener('click', function() {
-    // Toggle 'show' for each 'nav-link'
-    navLinks.forEach(link => {
-      link.classList.toggle('show');
+    document.addEventListener("DOMContentLoaded", function() {
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      hamburger.addEventListener('click', function() {
+        navLinks.forEach(link => {
+          link.classList.toggle('show');
+        });
+      });
     });
-  });
-});
 </script>
   
 </body>
 </html>
+
