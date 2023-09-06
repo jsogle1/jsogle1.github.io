@@ -50,6 +50,10 @@ body {
   text-decoration: none;
 }
 
+.nav-link.hidden {
+  display: none;
+}
+
 /* Story content */
 .column.middle {
   width: 100%;
