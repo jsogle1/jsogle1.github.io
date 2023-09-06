@@ -19,7 +19,7 @@
         <ul id="about" class="nav-link">
           <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'Home.html')">Shakespeare's Life</a></h3></li>
         </ul>
-        <div class="submenu" onclick="toggleSubmenu('about')"><h3>Histories</h3></div>
+        <div class="submenu" onclick="toggleSubmenu('histories')"><h3>Histories</h3></div>
         <ul id="about" class="nav-link">
           <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'The_Life_and_Death_of_King_John.html')">King John</a></h3></li>
             <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'The_Raigne_of_King_Edward_the_Third.html')">King Edward III</a></h3></li>
@@ -34,11 +34,11 @@
             <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'Henry_VIII.html')">Henry VIII</a></h3></li>
             
         </ul>
-        <div class="submenu" onclick="toggleSubmenu('Tragedy')"><h3>Tragedies</h3></div>
+        <div class="submenu" onclick="toggleSubmenu('tragedies')"<h3>Tragedies</h3></div>
         <ul id="about" class="nav-link">
           <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'Macbeth.html')">Macbeth</a></h3></li>
         </ul>
-        <div class="submenu" onclick="toggleSubmenu('about')"><h3>Comedies</h3></div>
+        <div class="submenu" onclick="toggleSubmenu('comedies')"><h3>Comedies</h3></div>
         <ul id="about" class="nav-link">
           <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'As_You_Like_It.html')">As You Like It</a></h3></li>
         </ul>
@@ -51,21 +51,26 @@
 </div>
 
 <script>
+    // Function to load URL in iframe
     function loadInIframe(e, url) {
         e.preventDefault();
         document.getElementById('contentFrame').src = url;
     }
 
+    // Function that runs once the DOM is fully loaded
     document.addEventListener("DOMContentLoaded", function() {
+        // Get the hamburger button element
         const hamburger = document.querySelector('.hamburger');
-
-        // Toggle main menu
+      
+        // Add click event listener to the hamburger button
         hamburger.addEventListener('click', function() {
+            // Toggle the 'show' class to the menu
             document.querySelector('.menu').classList.toggle('show');
         });
 
-        // Function to toggle individual submenu
+        // Function to toggle individual submenus
         window.toggleSubmenu = function(id) {
+            // Toggle the 'show' class to the submenu with the given id
             document.getElementById(id).classList.toggle('show');
         };
     });
