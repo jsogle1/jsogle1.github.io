@@ -49,6 +49,18 @@ body {
   display: none;
 }
 
+.submenu {
+  cursor: pointer;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2px 8px;
+}
+
+.submenu:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 /* Show the hamburger button and hide the nav items on small screens */
 @media screen and (max-width: 760px) {
   .hamburger {
