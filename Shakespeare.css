@@ -34,7 +34,7 @@ body {
 }
 
 .menu {
-  display: none;  /* Initially, hide the menu */
+  display: float:left;  /* Initially, hide the menu */
 }
 
 .menu.show {
