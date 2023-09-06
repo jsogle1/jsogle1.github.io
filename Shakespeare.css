@@ -12,6 +12,8 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .leftnav a, .submenu {
@@ -25,8 +27,9 @@ body {
   background-color: #ddd;
 }
 
-.column.middle {
-  width: 100%;
+.submenu {
+  cursor: pointer;
+  margin: 0 10px;
 }
 
 .hamburger {
@@ -37,20 +40,21 @@ body {
   display: block;
 }
 
-.submenu {
-  cursor: pointer;
-}
-
 .nav-link {
   display: none;
 }
 
-.nav-link.show {
-  display: block;
-}
-
 /* Responsive styles */
 @media screen and (max-width: 760px) {
+  .leftnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .submenu {
+    margin: 0;
+  }
+
   .hamburger {
     display: block;
     background: none;
@@ -60,18 +64,10 @@ body {
   }
 
   .menu {
-    display: none;  /* Hide the menu initially on mobile */
-  }
-
-  .menu.show {
-    display: block;  /* Show the menu when .show is added on mobile */
+    display: none;
   }
 
   .nav-link, .submenu {
-    display: none;  /* Hide submenu initially on mobile */
-  }
-
-  .nav-link.show, .submenu.show {
-    display: block;  /* Show submenu when .show is added on mobile */
+    display: none;
   }
 }
