@@ -34,23 +34,19 @@ body {
 }
 
 .menu {
-  display: block;  /* Initially, hide the menu */
-}
-
-.menu.show {
-  display: block;  /* Show the menu when .show is added */
-}
-
-.menu .nav-link {
-  display: none; /* Hide submenus by default */
-}
-
-.menu .nav-link.show {
-  display: block; /* Show submenu when .show is added */
+  display: block;
 }
 
 .submenu {
   cursor: pointer;
+}
+
+.nav-link {
+  display: none;
+}
+
+.nav-link.show {
+  display: block;
 }
 
 /* Responsive styles */
@@ -70,16 +66,12 @@ body {
   .menu.show {
     display: block;  /* Show the menu when .show is added on mobile */
   }
-  
+
   .nav-link, .submenu {
-    display: none;
-  }
-  
-  .nav-link.show, .submenu.show {
-    display: block;
+    display: none;  /* Hide submenu initially on mobile */
   }
 
-  .header {
-    height: 50px;
+  .nav-link.show, .submenu.show {
+    display: block;  /* Show submenu when .show is added on mobile */
   }
 }
