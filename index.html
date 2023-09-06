@@ -51,30 +51,31 @@
 </div>
 
 <script>
-    // Function to load URL in iframe
-    function loadInIframe(e, url) {
-        e.preventDefault();
-        document.getElementById('contentFrame').src = url;
-    }
+  // Function to load URL in iframe
+  function loadInIframe(e, url) {
+      e.preventDefault();
+      document.getElementById('contentFrame').src = url;
+  }
 
-    // Function that runs once the DOM is fully loaded
-    document.addEventListener("DOMContentLoaded", function() {
-        // Get the hamburger button element
-        const hamburger = document.querySelector('.hamburger');
+  // Function that runs once the DOM is fully loaded
+  document.addEventListener("DOMContentLoaded", function() {
+      // Get the hamburger button element
+      const hamburger = document.querySelector('.hamburger');
       
-        // Add click event listener to the hamburger button
-        hamburger.addEventListener('click', function() {
-            // Toggle the 'show' class to the menu
-            document.querySelector('.menu').classList.toggle('show');
-        });
+      // Add click event listener to the hamburger button
+      hamburger.addEventListener('click', function() {
+          // Toggle the 'show' class to the menu
+          document.querySelector('.menu').classList.toggle('show');
+      });
 
-        // Function to toggle individual submenus
-        window.toggleSubmenu = function(id) {
-            // Toggle the 'show' class to the submenu with the given id
-            document.getElementById(id).classList.toggle('show');
-        };
-    });
+      // Function to toggle individual submenus
+      window.toggleSubmenu = function(id) {
+          // Toggle the 'show' class to the submenu with the given id
+          document.getElementById(id).classList.toggle('show');
+      };
+  });
 </script>
+
   
 </body>
 </html>
