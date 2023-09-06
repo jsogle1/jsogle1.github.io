@@ -1,0 +1,341 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.5977,57.6157 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"An open Place.",
+    "Act_Scene":"Act I Scene I"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.605144,57.611189 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"A Camp near Forres.",
+    "Act_Scene":"Act I Scene II"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.5977,57.6157 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"A heath.",
+    "Act_Scene":"Act I Scene III"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.6181784,57.608187 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"Forres. A Room in the Palace.",
+    "Act_Scene":"Act I Scene IV"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.22535,57.4765361 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"Inverness. A Room in Macbeth’s Castle.",
+    "Act_Scene":"Act I Scene V"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.225489,57.475509 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"The same. Before the Castle.",
+    "Act_Scene":"Act I Scene VI"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.22535,57.4765361 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"The same. A Lobby in the Castle.",
+    "Act_Scene":"Act I Scene VII"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.22535,57.4765361 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"Inverness. Court within the Castle.",
+    "Act_Scene":"Act II Scene I"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.22535,57.4765361 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"The same.",
+    "Act_Scene":"Act II Scene II"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.22535,57.4765361 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"The same.",
+    "Act_Scene":"Act II Scene III"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.2213584,57.4771472 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"The same. Without the Castle.",
+    "Act_Scene":"Act II Scene IV"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.6181784,57.608187 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"Forres. A Room in the Palace.",
+    "Act_Scene":"Act III Scene I"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.6181784,57.608187 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"The same. Another Room in the Palace.",
+    "Act_Scene":"Act III Scene II"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.6181784,57.608187 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"The same. A Park or Lawn, with a gate leading to the Palace.",
+    "Act_Scene":"Act III Scene III "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.6181784,57.608187 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"The same. A Room of state in the Palace.",
+    "Act_Scene":"Act III Scene IV"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.5977,57.6157 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"The heath.",
+    "Act_Scene":"Act III Scene V"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.6181784,57.608187 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"Forres. A Room in the Palace.",
+    "Act_Scene":"Act III Scene VI"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.058786,56.161227 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"A dark Cave. In the middle, a Cauldron Boiling",
+    "Act_Scene":"Act IV Scene I"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.057957,56.162426 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"Fife. A Room in Macduff’s Castle.",
+    "Act_Scene":"Act IV Scene II"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.17685,51.6149 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"England. Before the King’s Palace.",
+    "Act_Scene":"Act IV Scene III"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.278,56.4704 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"Dunsinane. A Room in the Castle.",
+    "Act_Scene":"Act V Scene I"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.708264,56.533836 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"The Country near Dunsinane.",
+    "Act_Scene":"Act V Scene II"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.278,56.4704 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"Dunsinane. A Room in the Castle.",
+    "Act_Scene":"Act V Scene III"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.5766,56.5609 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"Country near Dunsinane: a Wood in view.",
+    "Act_Scene":"Act V Scene IV"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.278,56.4704 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"Dunsinane. Within the castle.",
+    "Act_Scene":"Act V Scene V"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.287853,56.473904 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"The same. A Plain before the Castle.",
+    "Act_Scene":"Act V Scene VI"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.289398,56.48208 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"The same. Another part of the Plain.",
+    "Act_Scene":"Act V Scene VII"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.277725,56.482838 ]
+    },
+    "properties": {
+    "Play":"Macbeth",
+    "Setting":"The same. Another part of the field.",
+    "Act_Scene":"Act V Scene VIII"
+    }
+  }
+]
+}
