@@ -4,32 +4,17 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Header */
 .header {
   text-align: center;
 }
 
-/* Navigation */
 .leftnav {
   width: 100%;
-  overflow: hidden;
   padding: 0;
   margin: 0;
 }
 
-.leftnav ul.nav-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;  /* Added */
-}
-
-.leftnav li.submenu {
-  flex: 1;  /* Added */
-}
-
-.leftnav a {
-  float: left;
+.leftnav a, .submenu {
   color: black;
   text-align: center;
   padding: 2px 8px;
@@ -38,40 +23,21 @@ body {
 
 .leftnav a:hover, .submenu:hover {
   background-color: #ddd;
-  color: black;
 }
 
-.nav-link {
-  float: left;
-  display: none;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 2px 8px;
-  text-decoration: none;
-}
-
-.nav-link.hidden {
-  display: none;
-}
-
-/* Story content */
 .column.middle {
   width: 100%;
 }
 
-/* Hide the hamburger by default */
 .hamburger {
   display: none;
 }
 
 .submenu {
   cursor: pointer;
-  color: #ffffff;
-  text-align: center;
-  padding: 2px 8px;
 }
 
-/* Show the hamburger button and hide the nav items on small screens */
+/* Responsive styles */
 @media screen and (max-width: 760px) {
   .hamburger {
     display: block;
@@ -82,15 +48,14 @@ body {
   }
   
   .nav-link, .submenu {
-    display: none; /* Hide by default on small screens */
+    display: none;
   }
   
   .nav-link.show, .submenu.show {
-    display: block; /* Show when clicked */
+    display: block;
   }
 
   .header {
-    text-align: center;
     height: 50px;
   }
 }
