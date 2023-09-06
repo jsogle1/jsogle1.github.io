@@ -51,29 +51,41 @@
 </div>
 
 <script>
-  // Function to load URL in iframe
-  function loadInIframe(e, url) {
-      e.preventDefault();
-      document.getElementById('contentFrame').src = url;
-  }
+// Function to load URL in iframe
+function loadInIframe(e, url) {
+  e.preventDefault();
+  document.getElementById('contentFrame').src = url;
+}
 
-  // Function that runs once the DOM is fully loaded
-  document.addEventListener("DOMContentLoaded", function() {
-      // Get the hamburger button element
-      const hamburger = document.querySelector('.hamburger');
-      
-      // Add click event listener to the hamburger button
-      hamburger.addEventListener('click', function() {
-          // Toggle the 'show' class to the menu
-          document.querySelector('.menu').classList.toggle('show');
-      });
-
-      // Function to toggle individual submenus
-      window.toggleSubmenu = function(id) {
-          // Toggle the 'show' class to the submenu with the given id
-          document.getElementById(id).classList.toggle('show');
-      };
+// Function that runs once the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the hamburger button element
+  const hamburger = document.querySelector('.hamburger');
+  
+  // Add click event listener to the hamburger button
+  hamburger.addEventListener('click', function() {
+    // Toggle the 'show' class to the menu
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('show');
+    
+    // Hide/show the submenus accordingly
+    let submenus = menu.querySelectorAll('.submenu');
+    let navlinks = menu.querySelectorAll('.nav-link');
+    
+    if(menu.classList.contains('show')) {
+      submenus.forEach((submenu) => submenu.style.display = 'block');
+    } else {
+      submenus.forEach((submenu) => submenu.style.display = 'none');
+      navlinks.forEach((navlink) => navlink.classList.remove('show'));
+    }
   });
+
+  // Function to toggle individual submenus
+  window.toggleSubmenu = function(id) {
+    // Toggle the 'show' class to the submenu with the given id
+    document.getElementById(id).classList.toggle('show');
+  };
+});
 </script>
 
   
