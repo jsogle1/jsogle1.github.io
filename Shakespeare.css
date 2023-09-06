@@ -33,6 +33,14 @@ body {
   display: none;
 }
 
+.menu .nav-link {
+  display: none; /* Hide submenus by default */
+}
+
+.menu .nav-link.show {
+  display: block; /* Show submenu when .show is added */
+}
+
 .submenu {
   cursor: pointer;
 }
