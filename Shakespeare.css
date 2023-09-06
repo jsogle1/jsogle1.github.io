@@ -34,7 +34,7 @@ body {
 }
 
 .menu {
-  display: float:left;  /* Initially, hide the menu */
+  display: block;  /* Initially, hide the menu */
 }
 
 .menu.show {
@@ -63,8 +63,12 @@ body {
     cursor: pointer;
   }
 
+  .menu {
+    display: none;  /* Hide the menu initially on mobile */
+  }
+
   .menu.show {
-    display: block;  /* Show the menu when .show is added for mobile screens */
+    display: block;  /* Show the menu when .show is added on mobile */
   }
   
   .nav-link, .submenu {
