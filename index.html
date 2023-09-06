@@ -5,12 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Shakespeare.css">
-    <script>
-        function loadInIframe(e, url) {
-            e.preventDefault();
-            document.getElementById('contentFrame').src = url;
-        }
-    </script>
 </head>
 <body>
 
@@ -19,89 +13,63 @@
 </div>
 
 <div class="leftnav">
-        <button class="hamburger">&#9776;</button>
-        <ul class="nav-list"> <!-- New wrapper -->
-          <li class="submenu" onclick="toggleSubmenu('about')"><h3>About</h3>
-            <ul id="about" class="nav-link hidden">
-              <li onclick="loadInIframe(event, 'Home.html')"><h3>Shakespeare's Life</h3></li>
-            </ul>
-          </li>
-        
-          <li class="submenu" onclick="toggleSubmenu('histories')"><h3>Histories</h3>
-                <ul id="histories" class="nav-link hidden">
-                    <li onclick="loadInIframe(event, 'The_Life_and_Death_of_King_John.html')"><h3>King John</h3></li>
-                    <li onclick="loadInIframe(event, 'The_Raigne_of_King_Edward_the_Third.html')"><h3>Edward III</h3></li>
-                    <li onclick="loadInIframe(event, 'The_Life_and_Death_of_King_Richard_II.html')"><h3>Richard II</h3></li>
-                    <li onclick="loadInIframe(event, 'Henry_IV_Part_I.html')"><h3>Henry IV, Part I</h3></li>
-                    <li onclick="loadInIframe(event, 'Henry_IV_Part_II.html')"><h3>Henry IV, Part II</h3></li>
-                    <li onclick="loadInIframe(event, 'Henry_V.html')"><h3>Henry V</h3></li>
-                    <li onclick="loadInIframe(event, 'Henry_VI_Part_I.html')"><h3>Henry VI, Part I</h3></li>
-                    <li onclick="loadInIframe(event, 'Henry_VI_Part_II.html')"><h3>Henry VI, Part II</h3></li>
-                    <li onclick="loadInIframe(event, 'Henry_VI_Part_III.html')"><h3>Henry VI, Part III</h3></li>
-                    <li onclick="loadInIframe(event, 'Richard_III.html')"><h3>Richard III</h3></li>
-                    <li onclick="loadInIframe(event, 'Henry_VIII.html')"><h3>Henry VIII</h3></li>
-                </ul>
-            </li>
-
-        
-          <li class="submenu" onclick="toggleSubmenu('tragedy')"><h3>Tragedy</h3>
-            <ul id="tragedy" class="nav-link hidden">
-              <li onclick="loadInIframe(event, 'Macbeth.html')"><h3>Macbeth</h3></li>
-            </ul>
-          </li>
-        
-          <li class="submenu" onclick="toggleSubmenu('comedy')"><h3>Comedy</h3>
-            <ul id="comedy" class="nav-link hidden">
-              <li onclick="loadInIframe(event, 'As_You_Like_It.html')"><h3>As You Like It</h3></li>
-            </ul>
-          </li>
+    <button class="hamburger">&#9776;</button>
+    <div class="menu"> <!-- Updated wrapper -->
+        <div class="submenu" onclick="toggleSubmenu('about')"><h3>About</h3></div>
+        <ul id="about" class="nav-link">
+          <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'Home.html')">Shakespeare's Life</a></h3></li>
         </ul>
+        <div class="submenu" onclick="toggleSubmenu('about')"><h3>Histories</h3></div>
+        <ul id="about" class="nav-link">
+          <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'The_Life_and_Death_of_King_John.html')">King John</a></h3></li>
+            <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'The_Raigne_of_King_Edward_the_Third.html')">King Edward III</a></h3></li>
+            <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'The_Life_and_Death_of_King_Richard_II.html')">King Richard II</a></h3></li>
+            <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'Henry_IV_Part_I.html')"Henry IV Part I</a></h3></li>
+            <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'Henry_IV_Part_II.html')">Henry IV Part II</a></h3></li>
+            <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'Henry_V.html')">Henry V</a></h3></li>
+            <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'Henry_VI_Part_I.html')">Henry VI Part I</a></h3></li>
+            <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'Henry_VI_Part_II.html')">Henry VI Part II</a></h3></li>
+            <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'Henry_VI_Part_III.html')">Henry VI Part III</a></h3></li>
+            <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'Richard_III.html')">Richard III</a></h3></li>
+            <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'Henry_VIII.html')">Henry VIII</a></h3></li>
+            
+        </ul>
+        <div class="submenu" onclick="toggleSubmenu('Tragedy')"><h3>Tragedies</h3></div>
+        <ul id="about" class="nav-link">
+          <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'Macbeth.html')">Macbeth</a></h3></li>
+        </ul>
+        <div class="submenu" onclick="toggleSubmenu('about')"><h3>Comedies</h3></div>
+        <ul id="about" class="nav-link">
+          <li><h3><a href="javascript:void(0);" onclick="loadInIframe(event, 'As_You_Like_It.html')">As You Like It</a></h3></li>
+        </ul>
+        
+    </div>
 </div>
-  
+
 <div class="column middle">
     <p><iframe id="contentFrame" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="Home.html"></iframe></p>
 </div>
+
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelectorAll('.nav-link');
-  const submenus = document.querySelectorAll('.submenu');
+    function loadInIframe(e, url) {
+        e.preventDefault();
+        document.getElementById('contentFrame').src = url;
+    }
 
-  // Toggle submenus and nav-links when the hamburger is clicked
-  hamburger.addEventListener('click', function() {
-    navLinks.forEach(link => {
-      link.classList.toggle('show');
+    document.addEventListener("DOMContentLoaded", function() {
+        const hamburger = document.querySelector('.hamburger');
+
+        // Toggle main menu
+        hamburger.addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('show');
+        });
+
+        // Function to toggle individual submenu
+        window.toggleSubmenu = function(id) {
+            document.getElementById(id).classList.toggle('show');
+        };
     });
-    submenus.forEach(submenu => {
-      submenu.classList.toggle('show');
-    });
-  });
-
-  // Function to toggle individual submenu
-  function toggleSubmenu(id) {
-    const submenu = document.getElementById(id);
-    submenu.classList.toggle('show');
-  }
-
-  // Attach the toggleSubmenu function to the window object so it can be accessed in inline HTML onclick attributes
-  window.toggleSubmenu = toggleSubmenu;
-
-  // Close submenus when a link inside is clicked
-  navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      navLinks.forEach(link => {
-        link.classList.remove('show');
-      });
-      submenus.forEach(submenu => {
-        submenu.classList.remove('show');
-      });
-    });
-  });
-});
 </script>
   
 </body>
 </html>
-
-</html>
-
