@@ -51,12 +51,6 @@
 </div>
 
 <script>
-// Function to load URL in iframe
-function loadInIframe(e, url) {
-  e.preventDefault();
-  document.getElementById('contentFrame').src = url;
-}
-
 // Function that runs once the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function() {
   // Get the hamburger button element
@@ -82,8 +76,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Function to toggle individual submenus
   window.toggleSubmenu = function(id) {
+    // Remove the 'show' class from all submenus
+    let allNavLinks = document.querySelectorAll('.nav-link');
+    allNavLinks.forEach((navlink) => navlink.classList.remove('show'));
+    
     // Toggle the 'show' class to the submenu with the given id
-    document.getElementById(id).classList.toggle('show');
+    let activeNavlink = document.getElementById(id);
+    activeNavlink.classList.add('show');
   };
 });
 </script>
