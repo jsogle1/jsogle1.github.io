@@ -80,29 +80,13 @@ body {
     font-size: 24px;
     cursor: pointer;
   }
-
-  .leftnav ul.nav-list {
-    display: block;  /* Added */
+  
+  .nav-link, .submenu {
+    display: none; /* Hide by default on small screens */
   }
   
-  .leftnav li.submenu {
-    flex: auto;  /* Added */
-  }
-
-  .nav-link {
-    display: none;
-  }
-
-  .nav-link.show {
-    display: block;
-  }
-
-  .nav-list {
-    display: none;  /* Added */
-  }
-
-  .nav-list.show {
-    display: block;  /* Added */
+  .nav-link.show, .submenu.show {
+    display: block; /* Show when clicked */
   }
 
   .header {
