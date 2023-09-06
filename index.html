@@ -22,13 +22,13 @@
         <button class="hamburger">&#9776;</button>
         <ul class="nav-list"> <!-- New wrapper -->
           <li class="submenu" onclick="toggleSubmenu('about')"><h3>About</h3>
-            <ul id="about" class="nav-link">
+            <ul id="about" class="nav-link hidden">
               <li onclick="loadInIframe(event, 'Home.html')"><h3>Shakespeare's Life</h3></li>
             </ul>
           </li>
         
           <li class="submenu" onclick="toggleSubmenu('histories')"><h3>Histories</h3>
-                <ul id="histories" class="nav-link">
+                <ul id="histories" class="nav-link hidden">
                     <li onclick="loadInIframe(event, 'The_Life_and_Death_of_King_John.html')"><h3>King John</h3></li>
                     <li onclick="loadInIframe(event, 'The_Raigne_of_King_Edward_the_Third.html')"><h3>Edward III</h3></li>
                     <li onclick="loadInIframe(event, 'The_Life_and_Death_of_King_Richard_II.html')"><h3>Richard II</h3></li>
@@ -45,13 +45,13 @@
 
         
           <li class="submenu" onclick="toggleSubmenu('tragedy')"><h3>Tragedy</h3>
-            <ul id="tragedy" class="nav-link">
+            <ul id="tragedy" class="nav-link hidden">
               <li onclick="loadInIframe(event, 'Macbeth.html')"><h3>Macbeth</h3></li>
             </ul>
           </li>
         
           <li class="submenu" onclick="toggleSubmenu('comedy')"><h3>Comedy</h3>
-            <ul id="comedy" class="nav-link">
+            <ul id="comedy" class="nav-link hidden">
               <li onclick="loadInIframe(event, 'As_You_Like_It.html')"><h3>As You Like It</h3></li>
             </ul>
           </li>
@@ -77,7 +77,7 @@
     // Function to toggle submenu
     function toggleSubmenu(id) {
       const submenu = document.getElementById(id);
-      submenu.classList.toggle('show');
+      submenu.classList.toggle('hidden');
     }
 </script>
   
