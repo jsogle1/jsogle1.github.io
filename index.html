@@ -51,41 +51,48 @@
 </div>
 
 <script>
-// Function that runs once the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", function() {
-  // Get the hamburger button element
-  const hamburger = document.querySelector('.hamburger');
-  
-  // Add click event listener to the hamburger button
-  hamburger.addEventListener('click', function() {
-    // Toggle the 'show' class to the menu
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('show');
-    
-    // Hide/show the submenus accordingly
-    let submenus = menu.querySelectorAll('.submenu');
-    let navlinks = menu.querySelectorAll('.nav-link');
-    
-    if(menu.classList.contains('show')) {
-      submenus.forEach((submenu) => submenu.style.display = 'block');
-    } else {
-      submenus.forEach((submenu) => submenu.style.display = 'none');
-      navlinks.forEach((navlink) => navlink.classList.remove('show'));
-    }
-  });
+  // Function to load URL in iframe
+  function loadInIframe(e, url) {
+    e.preventDefault();
+    document.getElementById('contentFrame').src = url;
+  }
 
-  // Function to toggle individual submenus
-  window.toggleSubmenu = function(id) {
-    // Remove the 'show' class from all submenus
-    let allNavLinks = document.querySelectorAll('.nav-link');
-    allNavLinks.forEach((navlink) => navlink.classList.remove('show'));
+  // Function that runs once the DOM is fully loaded
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get the hamburger button element
+    const hamburger = document.querySelector('.hamburger');
+  
+    // Add click event listener to the hamburger button
+    hamburger.addEventListener('click', function() {
+      // Toggle the 'show' class to the menu
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('show');
     
-    // Toggle the 'show' class to the submenu with the given id
-    let activeNavlink = document.getElementById(id);
-    activeNavlink.classList.add('show');
-  };
-});
+      // Hide/show the submenus accordingly
+      let submenus = menu.querySelectorAll('.submenu');
+      let navlinks = menu.querySelectorAll('.nav-link');
+    
+      if(menu.classList.contains('show')) {
+        submenus.forEach((submenu) => submenu.style.display = 'block');
+      } else {
+        submenus.forEach((submenu) => submenu.style.display = 'none');
+        navlinks.forEach((navlink) => navlink.classList.remove('show'));
+      }
+    });
+
+    // Function to toggle individual submenus
+    window.toggleSubmenu = function(id) {
+      // Remove the 'show' class from all submenus
+      let allNavLinks = document.querySelectorAll('.nav-link');
+      allNavLinks.forEach((navlink) => navlink.classList.remove('show'));
+    
+      // Toggle the 'show' class to the submenu with the given id
+      let activeNavlink = document.getElementById(id);
+      activeNavlink.classList.add('show');
+    };
+  });
 </script>
+
 
   
 </body>
