@@ -78,13 +78,16 @@ document.addEventListener("DOMContentLoaded", function() {
     
     dropdowns.forEach(dropdown => {
       dropdown.addEventListener('click', function() {
-        let content = this.querySelector('.dropdown-content');
-        let isShown = getComputedStyle(content).display === "block";
-        content.style.display = isShown ? 'none' : 'block';
+        let contentItems = this.querySelectorAll('.dropdown-content li');
+        let isShown = getComputedStyle(contentItems[0]).display === "block"; // check the first item
+        contentItems.forEach(item => {
+          item.style.display = isShown ? 'none' : 'block';
+        });
       });
     });
   }
 });
+
 
 </script>
   
