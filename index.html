@@ -84,28 +84,22 @@
     });
 
     // Function to toggle individual submenus
-// Function to toggle individual submenus
-window.toggleSubmenu = function(id) {
-  // Get the clicked submenu
-  let activeNavlink = document.getElementById(id);
-  
-  // If the clicked submenu is already open, close it
-  if(activeNavlink.classList.contains('show')) {
-    activeNavlink.classList.remove('show');
-    return;
-  }
-
-  // If another submenu is open, close it
-  let allNavLinks = document.querySelectorAll('.nav-link');
-  allNavLinks.forEach((navlink) => navlink.classList.remove('show'));
-
-  // Open the clicked submenu
-  activeNavlink.classList.add('show');
-};
-
+    window.toggleSubmenu = function(id) {
+      // Remove the 'show' class from all submenus
+      let allNavLinks = document.querySelectorAll('.nav-link');
+      let activeNavlink = document.getElementById(id);
+    
+      if(activeNavlink.classList.contains('show')) {
+        // If the submenu is already open, close it.
+        activeNavlink.classList.remove('show');
+      } else {
+        // Otherwise, close all other submenus and open the clicked one.
+        allNavLinks.forEach((navlink) => navlink.classList.remove('show'));
+        activeNavlink.classList.add('show');
+      }
+    };
+  });
 </script>
-
-
   
 </body>
 </html>
