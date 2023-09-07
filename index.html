@@ -18,7 +18,7 @@
         <!-- About Dropdown -->
         <div class="dropdown">
             <a href="#" class="submenu">About</a>
-            <ul class="nav-link">
+            <ul class="dropdown-content">
                 <li><a href="#" onclick="loadInIframe(event, 'Home.html')">Shakespeare's Life</a></li>
                 <!-- Add more links as needed -->
             </ul>
@@ -27,7 +27,7 @@
         <!-- Histories Dropdown -->
         <div class="dropdown">
             <a href="#" class="submenu">Histories</a>
-            <ul class="nav-link">
+            <ul class="dropdown-content">
                 <li><a href="#" onclick="loadInIframe(event, 'The_Life_and_Death_of_King_John.html')">King John</a></li>
                 <li><a href="#" onclick="loadInIframe(event, 'The_Raigne_of_King_Edward_the_Third.html')">King Edward III</a></li>
                 <li><a href="#" onclick="loadInIframe(event, 'The_Life_and_Death_of_King_Richard_II.html')">King Richard II</a></li>
@@ -45,7 +45,7 @@
         <!-- Comedies Dropdown -->
         <div class="dropdown">
             <a href="#" class="submenu">Comedies</a>
-            <ul class="nav-link">
+            <ul class="dropdown-content">
                 <li><a href="#" onclick="loadInIframe(event, 'As_You_Like_It.html')">As You Like It</a></li>
             </ul>
         </div>
@@ -53,7 +53,7 @@
         <!-- Tragedies Dropdown -->
         <div class="dropdown">
             <a href="#" class="submenu">Tragedies</a>
-            <ul class="nav-link">
+            <ul class="dropdown-content">
                 <li><a href="#" onclick="loadInIframe(event, 'Macbeth.html')">Macbeth</a></li>
             </ul>
         </div>
@@ -71,17 +71,6 @@ function loadInIframe(e, url) {
     e.preventDefault();
     document.getElementById('contentFrame').src = url;
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    // Get the hamburger button element
-    const hamburger = document.querySelector('.hamburger');
-  
-    // Add click event listener to the hamburger button
-    hamburger.addEventListener('click', function() {
-        const menu = document.querySelector('.menu');
-        menu.classList.toggle('show');
-    });
-});
 
 document.addEventListener("DOMContentLoaded", function() {
   if(window.innerWidth <= 760) {
