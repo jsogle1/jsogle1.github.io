@@ -15,49 +15,51 @@
 <div class="leftnav">
     <button class="hamburger">&#9776;</button>
     <div class="menu">
-    <!-- About Dropdown -->
-    <div class="dropdown">
-        <a href="#" class="submenu">About</a>
-        <ul class="nav-link">
-            <li><a href="Home.html">Shakespeare's Life</a></li>
-            <!-- Add more links as needed -->
-        </ul>
-    </div>
+        <!-- About Dropdown -->
+        <div class="dropdown">
+            <a href="#" class="submenu">About</a>
+            <ul class="nav-link">
+                <li><a href="#" onclick="loadInIframe(event, 'Home.html')">Shakespeare's Life</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </div>
 
-    <!-- Histories Dropdown -->
-    <div class="dropdown">
-        <a href="#" class="submenu">Histories</a>
-        <ul class="nav-link">
-            <li><a href="The_Life_and_Death_of_King_John.html">King John</a></li>
-            <li><a href="The_Raigne_of_King_Edward_the_Third.html">King Edward III</a></li>
-            <li><a href="The_Life_and_Death_of_King_Richard_II.html">King Richard II</a></li>
-            <li><a href="Henry_IV_Part_I.html">Henry IV Part I</a></li>
-            <li><a href="Henry_IV_Part_II.html">Henry IV Part II</a></li>
-            <li><a href="Henry_V.html">Henry V</a></li>
-            <li><a href="Henry_VI_Part_I.html">Henry VI Part I</a></li>
-            <li><a href="Henry_VI_Part_II.html">Henry VI Part II</a></li>
-            <li><a href="Henry_VI_Part_III.html">Henry VI Part III</a></li>
-            <li><a href="Richard_III.html">Richard III</a></li>
-            <li><a href="Henry_VIII.html">Henry VIII</a></li>
-        </ul>
-    </div>
+        <!-- Histories Dropdown -->
+        <div class="dropdown">
+            <a href="#" class="submenu">Histories</a>
+            <ul class="nav-link">
+                <li><a href="#" onclick="loadInIframe(event, 'The_Life_and_Death_of_King_John.html')">King John</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'The_Raigne_of_King_Edward_the_Third.html')">King Edward III</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'The_Life_and_Death_of_King_Richard_II.html')">King Richard II</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Henry_IV_Part_I.html')">Henry IV Part I</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Henry_IV_Part_II.html')">Henry IV Part II</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Henry_V.html')">Henry V</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Henry_VI_Part_I.html')">Henry VI Part I</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Henry_VI_Part_II.html')">Henry VI Part II</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Henry_VI_Part_III.html')">Henry VI Part III</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Richard_III.html')">Richard III</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Henry_VIII.html')">Henry VIII</a></li>
+            </ul>
+        </div>
 
-    <!-- Comedies Dropdown -->
-    <div class="dropdown">
-        <a href="#" class="submenu">Comedies</a>
-        <ul class="nav-link">
-            <li><a href="As_You_Like_It.html">As You Like It</a></li>
-        </ul>
-    </div>
+        <!-- Comedies Dropdown -->
+        <div class="dropdown">
+            <a href="#" class="submenu">Comedies</a>
+            <ul class="nav-link">
+                <li><a href="#" onclick="loadInIframe(event, 'As_You_Like_It.html')">As You Like It</a></li>
+            </ul>
+        </div>
 
-    <!-- Tragedies Dropdown -->
-    <div class="dropdown">
-        <a href="#" class="submenu">Tragedies</a>
-        <ul class="nav-link">
-            <li><a href="Macbeth.html">Macbeth</a></li>
-        </ul>
+        <!-- Tragedies Dropdown -->
+        <div class="dropdown">
+            <a href="#" class="submenu">Tragedies</a>
+            <ul class="nav-link">
+                <li><a href="#" onclick="loadInIframe(event, 'Macbeth.html')">Macbeth</a></li>
+            </ul>
+        </div>
     </div>
 </div>
+
 
 <div class="column middle">
     <p><iframe id="contentFrame" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="Home.html"></iframe></p>
