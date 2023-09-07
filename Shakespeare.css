@@ -45,14 +45,13 @@ body {
 }
 
 .nav-link {
-  display: none;
-}
-
-.nav-link.show {
-  display: block;
+  display: none; /* Keep this line */
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0; /* Remove default padding */
 }
 
 .nav-link li {
+  width: 200px;  /* Set the width */
   border: 1px solid gray;  /* Adds a gray border */
   background-color: white;  /* Makes the background white */
 }
@@ -61,6 +60,11 @@ body {
   font-size: 14px;  /* Adjusts the font size */
   color: black;
   text-decoration: none;
+}
+
+
+.nav-link.show {
+  display: block;
 }
 
 /* Responsive styles */
