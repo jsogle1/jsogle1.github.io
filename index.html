@@ -87,13 +87,18 @@
     window.toggleSubmenu = function(id) {
       // Remove the 'show' class from all submenus
       let allNavLinks = document.querySelectorAll('.nav-link');
-      allNavLinks.forEach((navlink) => navlink.classList.remove('show'));
-    
-      // Toggle the 'show' class to the submenu with the given id
+      
       let activeNavlink = document.getElementById(id);
-      activeNavlink.classList.add('show');
-    };
-  });
+    
+      if(activeNavlink.classList.contains('show')) {
+        // If the submenu is already open, close it.
+        activeNavlink.classList.remove('show');
+      } else {
+        // Otherwise, close all other submenus and open the clicked one.
+        allNavLinks.forEach((navlink) => navlink.classList.remove('show'));
+        activeNavlink.classList.add('show');
+      }
+};
 </script>
 
 
