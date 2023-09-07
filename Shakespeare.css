@@ -34,17 +34,13 @@ body {
 }
 
 .menu {
-  display: inline-flex;
+  display: block;
   text-align: center;  /* Center-aligns the whole menu */
 }
 
-  .menu.show {
-    display: inline-flex;  /* Show the menu when .show is added on mobile */
-  }
-
 .submenu {
   cursor: pointer;
-  display: inline-flex;  /* Makes it horizontal */
+  display: inline-block;  /* Makes it horizontal */
   margin: 0 20px;  
 }
 
@@ -98,7 +94,7 @@ body {
   }
 
   .menu.show {
-    display: inline-flex;  /* Show the menu when .show is added on mobile */
+    display: block;  /* Show the menu when .show is added on mobile */
   }
 
   .nav-link, .submenu {
@@ -106,6 +102,6 @@ body {
   }
 
   .nav-link.show, .submenu.show {
-    display: inline-flex;  /* Show submenu when .show is added on mobile */
+    display: block;  /* Show submenu when .show is added on mobile */
   }
 }
