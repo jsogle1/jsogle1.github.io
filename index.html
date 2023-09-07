@@ -81,6 +81,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  if(window.innerWidth <= 760) {
+    let dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('click', function() {
+        let content = this.querySelector('.dropdown-content');
+        let isShown = getComputedStyle(content).display === "block";
+        content.style.display = isShown ? 'none' : 'block';
+      });
+    });
+  }
+});
+
 </script>
   
 </body>
