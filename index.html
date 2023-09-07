@@ -55,6 +55,9 @@
   function loadInIframe(e, url) {
     e.preventDefault();
     document.getElementById('contentFrame').src = url;
+        // Close all open submenus
+    let allNavLinks = document.querySelectorAll('.nav-link');
+    allNavLinks.forEach((navlink) => navlink.classList.remove('show'));
   }
 
   // Function that runs once the DOM is fully loaded
