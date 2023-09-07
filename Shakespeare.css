@@ -38,28 +38,34 @@ body {
   text-align: center;  /* Center-aligns the whole menu */
 }
 
-.submenu {
-  cursor: pointer;
-  display: inline-block;  /* Makes it horizontal */
-  margin: 0 20px;  
+/* New/Updated styles for hoverable dropdowns */
+.dropdown {
+  position: relative;  /* This is needed for absolute positioning of child elements */
+  display: inline-block;  /* So multiple dropdowns can sit side by side */
 }
 
 .nav-link {
-  display: none; /* Keep this line */
-  list-style-type: none; /* Remove bullet points */
-  padding-left: 0; /* Remove default padding */
+  display: none;  /* Initially hidden */
+  position: absolute;  /* Takes it out of the normal flow, so it floats below */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  /* Optional shadow for effect */
+  z-index: 1;  /* Ensures it appears on top of other content */
+  list-style-type: none;  /* Remove bullet points */
+  padding-left: 0;  /* Remove default padding */
+  box-sizing: border-box;  /* Ensures padding doesn't affect width */
+  background-color: white;  /* Sets a default background color */
+}
+
+.dropdown:hover .nav-link {
+  display: block;  /* Shows the dropdown content when hovering over the dropdown container */
 }
 
 .nav-link li {
   list-style-type: none;  /* Remove bullets */
-  width: 200px;  /* Set the width */
-  background-color: white;  /* Makes the background white */
   margin: 0;  /* Remove margin */
   padding: 0;  /* Remove padding */
-  height: auto; /* Ensure the height is auto so it can expand with content */
 }
 
-.nav-link li a {
+.nav-link a {
   display: block;  /* Makes the anchor take up the entire list item */
   height: 100%;  /* Makes sure it takes up all vertical space */
   width: 100%;  /* Makes sure it takes up all horizontal space */
@@ -70,13 +76,10 @@ body {
   color: black;
   text-decoration: none;
   box-sizing: border-box;  /* Padding and border will be included in width and height */
-  margin: 0;  /* Remove margin */
 }
 
-
-
-.nav-link.show {
-  display: block;
+.nav-link a:hover {
+  background-color: #ddd;  /* A hover effect for dropdown items */
 }
 
 /* Responsive styles */
@@ -103,5 +106,14 @@ body {
 
   .nav-link.show, .submenu.show {
     display: block;  /* Show submenu when .show is added on mobile */
+  }
+
+  .nav-link {
+    display: block;  /* Always shown on mobile? */
+    position: relative;  /* Not floating on mobile? */
+  }
+
+  .dropdown:hover .nav-link {
+    display: block;  /* Still shown when hovered */
   }
 }
