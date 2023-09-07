@@ -56,12 +56,16 @@ body {
   background-color: white;  /* Makes the background white */
 }
 
-.nav-link li h3 a {
+.nav-link li a {
+  display: block;  /* Makes the anchor take up the entire list item */
+  height: 100%;  /* Makes sure it takes up all vertical space */
+  width: 100%;  /* Makes sure it takes up all horizontal space */
+  text-align: center;  /* Center-align text */
+  padding: 2px 8px;  /* Add padding to text */
   font-size: 14px;  /* Adjusts the font size */
   color: black;
   text-decoration: none;
 }
-
 
 .nav-link.show {
   display: block;
