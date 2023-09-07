@@ -30,16 +30,9 @@ body {
     width: 100%;
 }
 
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
 .menu {
     text-align: center;
+    display: block;
 }
 
 .dropdown {
@@ -71,17 +64,6 @@ body {
 
 /* Responsive styles */
 @media screen and (max-width: 760px) {
-    .hamburger {
-        display: block;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .menu.show {
-        display: block;
-    }
 
     .dropdown-content {
         position: relative;  /* Relative positioning for mobile view */
