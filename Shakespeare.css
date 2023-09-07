@@ -57,6 +57,7 @@ body {
   background-color: white;  /* Makes the background white */
   margin: 0;  /* Remove margin */
   padding: 0;  /* Remove padding */
+  height: auto; /* Ensure the height is auto so it can expand with content */
 }
 
 .nav-link li a {
@@ -64,12 +65,15 @@ body {
   height: 100%;  /* Makes sure it takes up all vertical space */
   width: 100%;  /* Makes sure it takes up all horizontal space */
   text-align: center;  /* Center-align text */
-  padding: 2px 8px;  /* Add padding to text */
+  padding: 10px 8px;  /* Add padding to text (adjust these values as needed) */
+  line-height: 1.2;  /* Adjusts line height */
   font-size: 14px;  /* Adjusts the font size */
   color: black;
   text-decoration: none;
   box-sizing: border-box;  /* Padding and border will be included in width and height */
+  margin: 0;  /* Remove margin */
 }
+
 
 
 .nav-link.show {
