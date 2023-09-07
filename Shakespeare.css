@@ -52,6 +52,17 @@ body {
   display: block;
 }
 
+.nav-link li {
+  border: 1px solid gray;  /* Adds a gray border */
+  background-color: white;  /* Makes the background white */
+}
+
+.nav-link li h3 a {
+  font-size: 14px;  /* Adjusts the font size */
+  color: black;
+  text-decoration: none;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 760px) {
   .hamburger {
