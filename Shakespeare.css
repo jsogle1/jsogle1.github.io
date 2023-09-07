@@ -51,9 +51,12 @@ body {
 }
 
 .nav-link li {
+  list-style-type: none;  /* Remove bullets */
   width: 200px;  /* Set the width */
   border: 1px solid gray;  /* Adds a gray border */
   background-color: white;  /* Makes the background white */
+  margin: 0;  /* Remove margin */
+  padding: 0;  /* Remove padding */
 }
 
 .nav-link li a {
@@ -65,7 +68,9 @@ body {
   font-size: 14px;  /* Adjusts the font size */
   color: black;
   text-decoration: none;
+  box-sizing: border-box;  /* Padding and border will be included in width and height */
 }
+
 
 .nav-link.show {
   display: block;
