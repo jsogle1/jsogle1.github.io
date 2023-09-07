@@ -1,119 +1,87 @@
 /* General styling */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .header {
-  text-align: center;
+    text-align: center;
 }
 
 .leftnav {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-.leftnav a, .submenu {
-  color: black;
-  text-align: center;
-  padding: 2px 8px;
-  text-decoration: none;
+.leftnav a, .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
-.leftnav a:hover, .submenu:hover {
-  background-color: #ddd;
+.leftnav a:hover, .dropdown-content a:hover {
+    background-color: #ddd;
 }
 
 .column.middle {
-  width: 100%;
+    width: 100%;
 }
 
 .hamburger {
-  display: none;
-}
-
-.menu {
-  display: block;
-  text-align: center;  /* Center-aligns the whole menu */
-}
-
-/* New/Updated styles for hoverable dropdowns */
-.dropdown {
-  position: relative;  /* This is needed for absolute positioning of child elements */
-  display: inline-block;  /* So multiple dropdowns can sit side by side */
-}
-
-.nav-link {
-  display: none;  /* Initially hidden */
-  position: absolute;  /* Takes it out of the normal flow, so it floats below */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  /* Optional shadow for effect */
-  z-index: 1;  /* Ensures it appears on top of other content */
-  list-style-type: none;  /* Remove bullet points */
-  padding-left: 0;  /* Remove default padding */
-  box-sizing: border-box;  /* Ensures padding doesn't affect width */
-  background-color: white;  /* Sets a default background color */
-}
-
-.dropdown:hover .nav-link {
-  display: block;  /* Shows the dropdown content when hovering over the dropdown container */
-}
-
-.nav-link li {
-  list-style-type: none;  /* Remove bullets */
-  margin: 0;  /* Remove margin */
-  padding: 0;  /* Remove padding */
-}
-
-.nav-link a {
-  display: block;  /* Makes the anchor take up the entire list item */
-  height: 100%;  /* Makes sure it takes up all vertical space */
-  width: 100%;  /* Makes sure it takes up all horizontal space */
-  text-align: center;  /* Center-align text */
-  padding: 10px 8px;  /* Add padding to text (adjust these values as needed) */
-  line-height: 1.2;  /* Adjusts line height */
-  font-size: 14px;  /* Adjusts the font size */
-  color: black;
-  text-decoration: none;
-  box-sizing: border-box;  /* Padding and border will be included in width and height */
-}
-
-.nav-link a:hover {
-  background-color: #ddd;  /* A hover effect for dropdown items */
-}
-
-/* Responsive styles */
-@media screen and (max-width: 760px) {
-  .hamburger {
-    display: block;
+    display: none;
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
-  }
+}
 
-  .menu {
-    display: none;  /* Hide the menu initially on mobile */
-  }
+.menu {
+    text-align: center;
+}
 
-  .menu.show {
-    display: block;  /* Show the menu when .show is added on mobile */
-  }
+.dropdown {
+    display: inline-block;
+}
 
-  .nav-link, .submenu {
-    display: none;  /* Hide submenu initially on mobile */
-  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    z-index: 1;
+    border: 1px solid gray;  /* Adds a gray border */
+}
 
-  .nav-link.show, .submenu.show {
-    display: block;  /* Show submenu when .show is added on mobile */
-  }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-  .nav-link {
-    display: block;  /* Always shown on mobile? */
-    position: relative;  /* Not floating on mobile? */
-  }
+/* Responsive styles */
+@media screen and (max-width: 760px) {
+    .hamburger {
+        display: block;
+    }
 
-  .dropdown:hover .nav-link {
-    display: block;  /* Still shown when hovered */
-  }
+    .menu {
+        display: none;
+    }
+
+    .menu.show {
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+    }
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
 }
