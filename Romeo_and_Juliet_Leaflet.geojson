@@ -170,7 +170,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  { }
+       "coordinates":  [ 10.99673,10.99673]
     },
     "properties": {
     "zoom":10,
