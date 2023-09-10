@@ -380,7 +380,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 10.9976293,45.4336743 ]
+       "coordinates":  [ 10.797894,45.160578 ]
     },
     "properties": {
     "zoom":10,
