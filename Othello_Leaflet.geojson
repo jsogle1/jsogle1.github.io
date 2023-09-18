@@ -1,0 +1,245 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.339432,45.434062 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Othello",
+    "content":"",
+    "image":"media/Othello_title_page.jpg",
+    "alt_text":"Othello Title Page",
+    "attribution":"Original page produced by the publishers, presumably.Barney Jenkins at en.wikipedia, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.339432,45.434062 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act I Scene I: Venice. A street.",
+    "content":"",
+    "image":"media/640px-Otello-act-1-set-1887-design-Giovanni_Zuccarelli.jpg",
+    "alt_text":"Othello Act I set",
+    "attribution":"Giovanni Zuccarelli, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.3375,45.4340216 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act I Scene II: Venice. Another street.",
+    "content":"",
+    "image":"media/Othello-cwcope-1853.jpg",
+    "alt_text":"Othello, Desdemona, and Barbantio",
+    "attribution":"Charles Knight (picture by CW Cope), Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.3404,45.4337 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act I Scene III: Venice. A council chamber.",
+    "content":"",
+    "image":"media/Desdemona and Othello by Jack Leigh Wardleworth (Hartlepool).jpg",
+    "alt_text":"Before the Duke",
+    "attribution":"Jack Leigh Wardleworth (1863–1925), Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.95016,35.13 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act II Scene I. A seaport in Cyprus. A Platform.",
+    "content":"",
+    "image":"media/640px-Ammoxostos,jpg",
+    "alt_text":"Famagusta Port and City",
+    "attribution":"Olfert Dapper, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.941791,35.1298 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act II Scene II: A street.",
+    "content":"",
+    "image":"media/Thomas_Stothard_-_The_Return_of_Othello,_from__Othello,__Act_II,_Scene_ii_-_Google_Art_Project.jpg",
+    "alt_text":"Return of Othello",
+    "attribution":"Yale Center for British Art, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.94325,35.127694 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act II Scene III: A Hall in the Castle.",
+    "content":"",
+    "image":"media/John_Opie_(1761-1807)_-_A_Council_Chamber_(from_William_Shakespeare's_'Othello',_Act_II,_Scene_iii)_-_485088_-_National_Trust.jpg",
+    "alt_text":"Night Brawl",
+    "attribution":"John Opie, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.943772,35.127654 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act III Scene I: Cyprus. Before the Castle.",
+    "content":"",
+    "image":"media/Othello_Castle,_Famagusta_(05).jpg",
+    "alt_text":"",
+    "attribution":"Chris06, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.943007,35.12779 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act III Scene II:  Cyprus. A Room in the Castle.",
+    "content":"",
+    "image":"media/Othello_costume.jpg",
+    "alt_text":"Othello Costume",
+    "attribution":"illustration by Percy Anderson for Costume Fanciful, Historical and Theatrical, 1906, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.94321,35.127635 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act III Scene III: Cyprus. The Garden of the Castle.",
+    "content":"",
+    "image":"media/Brooklyn_Museum_-_Desdemona_Cursed_by_her_Father_(Desdemona_maudite_par_son_père)_-_Eugène_Delacroix.jpg",
+    "alt_text":"Recalling Desdemona's Father's Curse",
+    "attribution":"Eugène Delacroix, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.943772,35.127654 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act III Scene IV: Cyprus. Before the Castle.",
+    "content":"",
+    "image":"media/William_Holman_Hunt_-_Bianca.jpg",
+    "alt_text":"Bianca",
+    "attribution":"William Holman Hunt, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.943772,35.127654 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act IV Scene I: Cyprus. Before the Castle.",
+    "content":"",
+    "image":"media/Frederick_Richard_Pickersgill_-_Othello_and_Desdemona.jpg",
+    "alt_text":"Before the Castle",
+    "attribution":"Frederick Richard Pickersgill, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.943007,35.12779 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act IV Scene II: Cyprus. A Room in the Castle.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.94349,35.1278 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act IV Scene III: Cyprus. Another Room in the Castle.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.944,35.1265 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act V Scene I: Cyprus. A Street.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.943061,35.127505 ]
+    },
+    "properties": {
+    "zoom":"",
+    "title":"Act V Scene II: Cyprus. A Bedchamber in the castle.",
+    "content":"",
+    "image":"media/609px-Othello's_Lamentation.jpg",
+    "alt_text":"Othello Weeps over Desdemona",
+    "attribution":"William Salter, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+    }
+  }
+]
+}
