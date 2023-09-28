@@ -1,0 +1,290 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.4904639,41.890585 ]
+    },
+    "properties": {
+    "zoom":8,
+    "title":"Julius Caesar",
+    "content":"",
+    "image":"media/Julius_Caesar_MET_ES7940.jpg",
+    "alt_text":"Bust of Julius Caesar",
+    "attribution":"Metropolitan Museum of Art, CC0, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.4904639,41.890585 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act I Scene I: Rome. A street.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.485786,41.89195 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Act I Scene II: Rome. A public place.",
+    "content":"",
+    "image":"media/Mr._Jamieson_as_Brutus-__I_would_not_Cassius;_Yet_I_love_him_well__(Julius_Caesar_Act_I,_Scene_II)_MET_DP873608.jpg",
+    "alt_text":"Mr. Jamieson as Brutus",
+    "attribution":"Metropolitan Museum of Art, CC0, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.490732,41.8911601 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Act I Scene III: Rome. A street.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.48201,41.893688 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Act II Scene I: Rome. Brutus's orchard.",
+    "content":"",
+    "image":"media/Elisabetta_Sirani_-_Portia_wounding_her_thigh.jpg",
+    "alt_text":"Portia wounding her thigh",
+    "attribution":"Elisabetta Sirani, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.46617402,41.8834 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Act II Scene II: Rome. A room in Caesar's house.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.482342,41.8936 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Act II Scene III: Rome. A street near the Capitol.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.481924,41.893784 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Act II Scene IV: Another part of the same street, before the house of Brutus.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.485278,41.893056 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Act III Scene I: Rome. Before the Capitol; the Senate sitting above.",
+    "content":"",
+    "image":"media/Vincenzo_Camuccini_-_La_morte_di_Cesare.jpg",
+    "alt_text":"Et tu Brute?",
+    "attribution":"Vincenzo Camuccini, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.476944,41.895278 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Act III Scene II: Rome. The Forum.",
+    "content":"",
+    "image":"media/Marc_Antony's_Oration_at_Caesar's_Funeral_by_George_Edward_Robertson.jpg",
+    "alt_text":"Anthony's Oration",
+    "attribution":"George Edward Robertson b. 1864, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.490732,41.8911601 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Act III Scene III: Rome. A street.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.482847,41.891532 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Act IV Scene I: A room in Antony’s house.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.041335,38.48872 ]
+    },
+    "properties": {
+    "zoom":8,
+    "title":"Act IV Scene II: Before Brutus’ tent, in the camp near Sardis.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.041335,38.48872 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act IV Scene III: Within the tent of Brutus.",
+    "content":"",
+    "image":"media/472px-Edwin_Austin_Abbey_-_Within_the_Tent_of_Brutus,_Enter_the_Ghost_of_Caesar,_Julius_Caesar,_Act_IV,_Scene_III_-_1937.1148_-_Yale_University_Art_Gallery.jpg",
+    "alt_text":"Ghost of Caesar",
+    "attribution":"Edwin Austin Abbey, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.2864,41.0131 ]
+    },
+    "properties": {
+    "zoom":8,
+    "title":"Act V Scene I: The plains of Philippi.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.27284,41.015691 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act V Scene II: The same. The field of battle.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.2864,41.008372 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Act V Scene III: Another part of the field.",
+    "content":"",
+    "image":"media/Pseudo-Corbulo_Musei_Capitolini_MC561.jpg",
+    "alt_text":"Cassius",
+    "attribution":"Capitoline Museums, CC BY 2.5 <https://creativecommons.org/licenses/by/2.5>, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.25413,40.999 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Act V Scene IV: Another part of the field.",
+    "content":"",
+    "image":"media/800px-Brutus_and_his_companions_after_the_battle_of_Philippi.jpg",
+    "alt_text":"Brutus and Companions, Philippi",
+    "attribution":"Weston, W H; Plutarch; Rainey, W, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.283,41.019 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Act V Scene V: Another part of the field.",
+    "content":"",
+    "image":"media/1199px-Matthias_Stom_-_The_death_of_Brutus.jpg",
+    "alt_text":"Death of Brutus",
+    "attribution":"Matthias Stom, Public domain, via Wikimedia Commons"
+    }
+  }
+]
+}
