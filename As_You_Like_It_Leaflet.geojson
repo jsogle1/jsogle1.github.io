@@ -50,7 +50,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 49.701944,49.701944 ]
+       "coordinates":  [ 4.949444,49.701944 ]
     },
     "properties": {
     "zoom":15,
@@ -80,7 +80,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 49.701944,49.701944 ]
+       "coordinates":  [ 4.949444,49.701944 ]
     },
     "properties": {
     "zoom":15,
@@ -170,7 +170,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 49.701944,49.701944 ]
+       "coordinates":  [ 4.949444,49.701944 ]
     },
     "properties": {
     "zoom":15,
