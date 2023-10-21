@@ -3,11 +3,11 @@ var mapElement = document.getElementById('map');
 var geojsonPath = mapElement.getAttribute('data-geojson');
 
 // 1. Define the Layers
-var watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg', {
+var watercolor = L.tileLayer('https://watercolormaps.collection.cooperhewitt.org/tile/watercolor/{Z}/{X}/{Y}.jpg', {
     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
 });
 
-var terrain = L.tileLayer('https://watercolormaps.collection.cooperhewitt.org/tile/watercolor/{z}/{x}/{y}.jpg', {
+var terrain = L.tileLayer('https://watercolormaps.collection.cooperhewitt.org/tile/terrain/{z}/{x}/{y}.jpg', {
     attribution: 'Map tiles by <a href="https://watercolormaps.collection.cooperhewitt.org/">Smithsonian Cooper-Hewitt</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
 });
 
