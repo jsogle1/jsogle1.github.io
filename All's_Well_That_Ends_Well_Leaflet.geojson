@@ -1,0 +1,380 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8318,45.0683 ]
+    },
+    "properties": {
+    "zoom":8,
+    "title":"All's Well That Ends Well",
+    "content":"",
+    "image":"media/759px-First_Folio,_Shakespeare_-_0248.jpg",
+    "alt_text":"Play in the First Folio",
+    "attribution":"William Shakespeare, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8318,45.0683 ]
+    },
+    "properties": {
+    "zoom":10,
+    "title":"Act I Scene I: Rossillon. A room in the Countess’s palace.",
+    "content":"",
+    "image":"media/Château_de_Tournon_12,jpg",
+    "alt_text":"Château de Tournon",
+    "attribution":"John Samuel, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.336389,48.861111 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act I Scene II: Paris. A room in the King’s palace.",
+    "content":"",
+    "image":"media/View_of_Pont_Neuf_in_Paris_(detail_with_the_Louvre_Palace)_by_Jean_Petit_-_Louvre_1660s.jpg",
+    "alt_text":"King's Palace",
+    "attribution":"Jean Petit, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8318,45.0683 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act I Scene III: Rossillon. A Room in the Palace.",
+    "content":"",
+    "image":"media/Helena_and_the_Countess.jpg",
+    "alt_text":"Helena and the Countess",
+    "attribution":"John Masey Wright, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.336389,48.861111 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act II Scene I: Paris. A room in the King’s palace.",
+    "content":"",
+    "image":"media/Galerie_d'Apollon,_Louvre_Palace,_57687-Paris_(35487021084).jpg",
+    "alt_text":"Gallery in the Louvre",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8318,45.0683 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act II Scene II: Rossillon. A room in the Countess’s palace.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.336389,48.861111 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act II Scene III: Paris. The King’s palace.",
+    "content":"",
+    "image":"media/Helena_and_the_King,_Michael_Goodman,_1880.jpg",
+    "alt_text":"Helen and the King",
+    "attribution":"Michael Goodman, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.336389,48.861111 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act II Scene IV: Paris. The King’s palace.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.336389,48.861111 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act II Scene V: Another room in the same.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.255989,43.775278 ]
+    },
+    "properties": {
+    "zoom":11,
+    "title":"Act III Scene I: Florence. A room in the Duke’s palace.",
+    "content":"",
+    "image":"media/Florence_Medici_Riccardi_Palace.jpg",
+    "alt_text":"Room in Palace",
+    "attribution":"Sky arth, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8318,45.0683 ]
+    },
+    "properties": {
+    "zoom":11,
+    "title":"Act III Scene II: Rossillon. A room in the Countess’s palace.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.255989,43.775278 ]
+    },
+    "properties": {
+    "zoom":11,
+    "title":"Act III Scene III: Florence. Before the Duke’s palace.",
+    "content":"",
+    "image":"media/Firenze_-_Florence_-_Via_Cavour_-_Palazzo_Medici-Riccardi_1444-1460_by_Michelozzo_di_Bartolomeo.jpg",
+    "alt_text":"Room in Palace",
+    "attribution":"Txllxt TxllxT, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8318,45.0683 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act III Scene IV: Rossillon. A room in the Countess’s palace.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.23600654,43.77651358 ]
+    },
+    "properties": {
+    "zoom":11,
+    "title":"Act III Scene V: Without the walls of Florence.",
+    "content":"",
+    "image":"media/Colored_woodcut_town_view_of_Florence.jpg",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.22171573,43.78094452 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act III Scene VI: Camp before Florence.",
+    "content":"",
+    "image":"media/Colored_woodcut_town_view_of_Florence.jpg",
+    "alt_text":"Town View of Florence and it's Walls",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.25631086,43.77739476 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act III Scene VII: Florence. A room in the Widow’s house.",
+    "content":"",
+    "image":"media/House_on_the_hill_(c.1887),_by_Telemaco_Signorini.jpg",
+    "alt_text":"Widow's House",
+    "attribution":"Telemaco Signorini, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.22926883,43.77772205 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act IV Scene I: Without the Florentine camp.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.25631086,43.77739476 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act IV Scene II: Florence. A room in the Widow’s house.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.22171573,43.78094452 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act IV Scene III: The Florentine camp.",
+    "content":"",
+    "image":"media/640px-All's_Well_That_Ends_Well,jpg",
+    "alt_text":"At the Florentine Camp",
+    "attribution":"Arthur Boyd Houghton, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.25631086,43.77739476 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act IV Scene IV: Florence. A room in the Widow’s house.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8318,45.0683 ]
+    },
+    "properties": {
+    "zoom":11,
+    "title":"Act IV Scene V: Rossillon. A room in the Countess’s palace.",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.376857602,43.29330852 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act V Scene I: Marseilles. A street.",
+    "content":"",
+    "image":"media/(Toulouse)_Paysage_aux_lavandières_-_Gustave_Courbet_-_Marseille,_musée_des_beaux-art.jpg",
+    "alt_text":"Street of Toulose",
+    "attribution":"Gustave Courbet, Public domain, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8318,45.0683 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act V Scene II: Rossillon. The inner court of the Countess’s palace.",
+    "content":"",
+    "image":"media/A_l'intérieur_du_Château_de_Tournon_sur_Rhône_02.jpg",
+    "alt_text":"Inner Courtyard",
+    "attribution":"Celeda, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8318,45.0683 ]
+    },
+    "properties": {
+    "zoom":13,
+    "title":"Act V Scene III: The same. A room in the Countess’s palace.",
+    "content":"",
+    "image":"media/Georg_Siegmund_Facius_-_All's_Well_that_Ends_Well_-_B1977.14.14505_-_Yale_Center_for_British_Art.jpg",
+    "alt_text":"Room in the King's Palace",
+    "attribution":"Georg Siegmund Facius, CC0, via Wikimedia Commons"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8318,45.0683 ]
+    },
+    "properties": {
+    "zoom":8,
+    "title":"Act V Epilogue",
+    "content":"",
+    "image":"",
+    "alt_text":"",
+    "attribution":""
+    }
+  }
+]
+}
