@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mythos and Monarchs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Shakespeare.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Mythos and Monarchs</h1>
+</div>
+
+<div class="leftnav">
+    <div class="menu">
+        <!-- Ancient Britainn -->
+        <div class="dropdown">
+            <a href="#" class="submenu">Ancient Britain</a>
+            <ul class="dropdown-content">
+                <li><a href="#" onclick="loadInIframe(event, 'Britons.html')">Ancient Britons</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Celts.html')">Ancient Celts</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Romans.html')">Ancient Romans</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </div>
+
+        <!-- Medieval and Early Modern -->
+        <div class="dropdown">
+            <a href="#" class="submenu">Medieval and Early Modern</a>
+            <ul class="dropdown-content">
+                <li><a href="#" onclick="loadInIframe(event, 'Anglo-Saxon.html')">Anglo-Saxon</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Norse.html')">Norse</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Normans.html')">Normans</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Angevins.html')">Angevins</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Plantagenants.html')">Plantagenants</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Tudors.html')">Tudors</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Stuarts.html')">Stuarts</a></li>
+            </ul>
+        </div>
+
+        <!-- Western Literature -->
+        <div class="dropdown">
+            <a href="#" class="submenu">Western Literature</a>
+            <ul class="dropdown-content">
+                <li><a href="#" onclick="loadInIframe(event, 'The_Odyssey.html')">Homer's Odyssey</a></li>									
+                <li><a href="#" onclick="loadInIframe(event, 'Greek_Tragedy.html')">Greek Tragedy</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'English_Language.html')">History of the English Language</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Canterbury_Tales.html')">Canterbury Tales</a></li>																	
+                <li><a href="shakespeare.html">Shakespeare's Plays</a></li>																		
+                <li><a href="#" onclick="loadInIframe(event, 'British_Literary_Geniuses.html')">British Literary Greats</a></li>																	
+            </ul>
+        </div>
+
+        <!-- Miscellaneous -->
+        <div class="dropdown">
+            <a href="#" class="submenu">Miscellaneous</a>
+            <ul class="dropdown-content">
+                <li><a href="#" onclick="loadInIframe(event, 'Castles.html')">Castles</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Genealogy.html')">Genealogy</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'Othello.html')">Othello</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="column middle">
+    <p><iframe id="contentFrame" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="Home.html"></iframe></p>
+</div>
+
+<script>
+// Function to load URL in iframe
+function loadInIframe(e, url) {
+    e.preventDefault();
+    document.getElementById('contentFrame').src = url;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  if(window.innerWidth <= 760) {
+    let dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('click', function() {
+        let contentItems = this.querySelectorAll('.dropdown-content li');
+        let isShown = getComputedStyle(contentItems[0]).display === "block"; // check the first item
+        contentItems.forEach(item => {
+          item.style.display = isShown ? 'none' : 'block';
+        });
+      });
+    });
+  }
+});
+
+
+</script>
+  
+</body>
+</html>
