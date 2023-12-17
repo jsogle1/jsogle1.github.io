@@ -25,7 +25,6 @@ var watercolorWithHillshade = L.layerGroup([watercolor, hillshade]);
 
 // 3. Integrate into Base Maps
 const basemaps = {
-    Terrain: terrain,
     Satellite: satellite,
     Watercolor: watercolor
 };
