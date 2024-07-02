@@ -1,0 +1,320 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.15,52.35 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Aldreth Castle",
+    "content":"Place: Aldreth Castle\\nBuilt: Unknown\\nHouse: Norman\\nCounty: Cambridgeshire",
+    "image":"media/Aldreth_top_view.jpg",
+    "attribution":"",
+    "alt_text":"Historic Site of Aldreth Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.0636,52.1851 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Bourn Castle",
+    "content":"Place: Bourn Castle\\nBuilt: 11th century\\nHouse: Norman\\nCounty: Cambridgeshire",
+    "image":"",
+    "attribution":"",
+    "alt_text":"Historic Site of Bourn Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.3342,52.2761 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Burwell Castle",
+    "content":"Place: Burwell Castle\\nBuilt: 12th century\\nHouse: Norman\\nCounty: Cambridgeshire",
+    "image":"media/Burwell_Castle_Site_-_geograph.org.uk_-_642593.jpg",
+    "attribution":"Ajay Tegala / Burwell Castle Site",
+    "alt_text":"Historic Site of Burwell Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.119,52.2139 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Cambridge Castle",
+    "content":"Place: Cambridge Castle\\nBuilt: 1068\\nHouse: Norman\\nCounty: Cambridgeshire",
+    "image":"media/640px-Cambridge_Castle_gateway_1841.jpg",
+    "attribution":"Photograph taken by Verbcatcher, Public domain, via Wikimedia Commons",
+    "alt_text":"Historic Site of Cambridge Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.3711,52.0751 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Castle Camps",
+    "content":"Place: Castle Camps\\nBuilt: 11th century\\nHouse: Norman\\nCounty: Cambridgeshire",
+    "image":"media/Castle_Camps_church_-_geograph.org.uk_-_4310170.jpg",
+    "attribution":"Castle Camps church by Robin Webster, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons",
+    "alt_text":"Historic Site of Castle Camps"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.47,52.216 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Cheveley Castle",
+    "content":"Place: Cheveley Castle\\nBuilt: 14th century\\nHouse: Angevin\\nCounty: Cambridgeshire",
+    "image":"",
+    "attribution":"",
+    "alt_text":"Historic Site of Cheveley Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.2933,52.2158 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Eaton Socon Castle",
+    "content":"Place: Eaton Socon Castle\\nBuilt: 12th century\\nHouse: Norman\\nCounty: Cambridgeshire",
+    "image":"media/640px-Eaton_Socon_Castle.jpg",
+    "attribution":"Chris Jefferies., CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons",
+    "alt_text":"Historic Site of Eaton Socon Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.2621,52.3992 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Ely Castle",
+    "content":"Place: Ely Castle\\nBuilt: 1070\\nHouse: Norman\\nCounty: Cambridgeshire",
+    "image":"",
+    "attribution":"",
+    "alt_text":"Historic Site of Ely Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1864,52.3307 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Huntingdon Castle",
+    "content":"Place: Huntingdon Castle\\nBuilt: 1068\\nHouse: Norman\\nCounty: Cambridgeshire",
+    "image":"media/The_site_of_Huntingdon_Castle_-_geograph.org.uk_-_6157529.jpg",
+    "attribution":"",
+    "alt_text":"Historic Site of Huntingdon Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.3105,52.657 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Maxey Castle",
+    "content":"Place: Maxey Castle\\nBuilt: 14th century\\nHouse: Angevin\\nCounty: Cambridgeshire",
+    "image":"media/Cherry_Tree_Cottage,_Maxey,_Peterborough_-_geograph.org.uk_-_243928.jpg",
+    "attribution":"Rodney Burton / Cherry Tree Cottage, Maxey, Peterborough",
+    "alt_text":"Historic Site of Maxey Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.24,52.573 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Peterborough Castle",
+    "content":"Place: Peterborough Castle\\nBuilt: 11th century\\nHouse: Norman\\nCounty: Cambridgeshire",
+    "image":"media/Tout_Hill_or_Mount_Thorold_-_Turold_(Peterborough_Castle)_-_geograph.org.uk_-_3402546.jpg",
+    "attribution":"Tout Hill or Mount Thorold / Turold (Peterborough Castle) by Julian Dowse, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons",
+    "alt_text":"Historic Site of Peterborough Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.118,52.2725 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Rampton Castle",
+    "content":"Place: Rampton Castle\\nBuilt: 11th century\\nHouse: Norman\\nCounty: Cambridgeshire",
+    "image":"media/Giant's_Hill_-_geograph.org.uk_-_679994.jpg",
+    "attribution":"By Keith Edkins, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=13215699",
+    "alt_text":"Historic Site of Rampton Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.162,52.6645 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Wisbech Castle",
+    "content":"Place: Wisbech Castle\\nBuilt: 1072\\nHouse: Norman\\nCounty: Cambridgeshire",
+    "image":"media/'The_Castle'_Wisbech_-_geograph.org.uk_-_1589388.jpg",
+    "attribution":"In the garden at Wisbech Castle by Richard Humphrey, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons",
+    "alt_text":"Historic Site of Wisbech Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.2355,52.4417 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Woodwalton Castle",
+    "content":"Place: Woodwalton Castle\\nBuilt: 12th century\\nHouse: Angevin\\nCounty: Cambridgeshire",
+    "image":"media/Woodwalton Castle.jpg",
+    "attribution":"By Rob enwiki - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=12067004",
+    "alt_text":"Historic Site of Woodwalton Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.2575,52.2846 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Buckden Palace",
+    "content":"Place: Buckden Palace\\nBuilt: 13th century\\nHouse: Plantagenet\\nCounty: Cambridgeshire",
+    "image":"media/Buckden_Towers_and_St_Mary's_Church.jpg",
+    "attribution":"By Richard Kelly - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=139442119",
+    "alt_text":"Historic Site of Buckden Palace"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.4112,52.5274 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Elton Hall",
+    "content":"Place: Elton Hall\\nBuilt: 15th century\\nHouse: Plantagenet\\nCounty: Cambridgeshire",
+    "image":"media/Elton_Hall_and_gardens_(geograph_5515547)Buckden_Towers_and_St_Mary's_Church.jpg",
+    "attribution":"By Richard Humphrey, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=65625766",
+    "alt_text":"Site of Elton Hall"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.3878,52.2965 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Kimbolton Castle",
+    "content":"Place: Kimbolton Castle\\nBuilt: 1530\\nHouse: Tudor\\nCounty: Cambridgeshire",
+    "image":"media/Kimboltonmorris_edited.jpg",
+    "attribution":"Public Domain, https://commons.wikimedia.org/w/index.php?curid=559883",
+    "alt_text":"Site of Kimbolton Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.4667,52.1958 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Kirtling Tower",
+    "content":"Place: Kirtling Tower\\nBuilt: \\nHouse: \\nCounty: Cambridgeshire",
+    "image":"media/Kirtling_Tower,_from,_A_series_of_picturesque_views_of_seats_of_the_noblemen_and_gentlemen_of_Great_Britain_and_Ireland_(1840).jpg",
+    "attribution":"By Internet Archive Book Images - https://www.flickr.com/photos/internetarchivebookimages/14763999942/Source book page: https://archive.org/stream/seriesofpictures04morr/seriesofpictures04morr#page/n145/mode/1up, No restrictions, https://commons.wikimedia.org/w/index.php?curid=43917616",
+    "alt_text":"Site of Kirtling Tower"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.2773,52.5773 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Longthorpe Tower",
+    "content":"Place: Longthorpe Tower\\nBuilt: \\nHouse: \\nCounty: Cambridgeshire",
+    "image":"media/Longthorpe_Tower_(geograph_3865288).jpg",
+    "attribution":"Richard Croft / Longthorpe Tower",
+    "alt_text":"Site of Longthorpe Tower"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.32,52.6319 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Northborough Castle",
+    "content":"Place: Northborough Castle\\nBuilt: 14th century\\nHouse: York\\nCounty: Cambridgeshire",
+    "image":"media/The_gatehouse,_Northborough_Hall_-_geograph.org.uk_-_672519.jpg",
+    "attribution":"Alan Murray-Rust / The gatehouse, Northborough Hall",
+    "alt_text":"Site of Northborough Castle"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.3375,52.6341 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Woodcroft Castle",
+    "content":"Place: Woodcroft Castle\\nBuilt: 13th century\\nHouse: Lancaster\\nCounty: Cambridgeshire",
+    "image":"media/WoodcroftCastle.jpg",
+    "attribution":"Andrew Kerr, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons",
+    "alt_text":"Site of Woodcroft Castle"
+    }
+  }
+]
+}
