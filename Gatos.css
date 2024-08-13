@@ -1,0 +1,123 @@
+/* Base styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+.header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Base styling for leftnav */
+.leftnav {
+    width: 10%;
+    position: fixed; /* Fixes the nav to the top left */
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Adds a slight shadow for depth */
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    padding-top: 20px; /* Space at the top for aesthetic purposes */
+}
+
+/* Styling for links in the leftnav */
+.leftnav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease, border 0.3s ease;
+    border-left: 5px solid transparent; /* Space for the active outline */
+}
+
+.leftnav a:hover {
+    background-color: grey;
+}
+
+.leftnav a:focus,
+.leftnav a:active {
+    border-left: 5px solid black; /* Shows the outline when clicked or focused */
+}
+
+/* Menu and Dropdown Styling */
+.leftnav .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.leftnav .dropdown {
+    position: relative;
+}
+
+.leftnav .submenu {
+    cursor: pointer;
+}
+
+.leftnav .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%; /* Makes the dropdown appear to the right of the nav */
+    top: 0;
+    background-color: white;
+    border: 1px solid black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.leftnav .dropdown:hover .dropdown-content {
+    display: block; /* Shows the dropdown on hover */
+}
+
+.leftnav .dropdown-content a {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.leftnav .dropdown-content a:hover {
+    background-color: grey;
+}
+
+/* Single Link Items */
+.leftnav .single-link {
+    margin-top: 20px; /* Adds some space between dropdowns and single links */
+}
+
+/* Middle content column */
+.column.middle {
+    margin-left: 10%; /* Aligns the content beside the left navigation */
+    padding: 20px;
+    overflow: auto;
+}
+
+/* Responsive styling for tablets and smaller desktops */
+@media (max-width: 768px) {
+    .leftnav {
+        width: 20%; /* Slightly wider for smaller screens */
+    }
+    .column.middle {
+        margin-left: 20%; /* Aligns the content beside the left navigation */
+    }
+}
+
+/* For very small screens, make sure the layout adjusts accordingly */
+@media (max-width: 480px) {
+    .leftnav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .column.middle {
+        margin-left: 0;
+    }
+}
