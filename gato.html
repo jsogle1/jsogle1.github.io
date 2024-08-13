@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gatos Borincoon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Gatos.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Gatos Borincoon</h1>
+</div>
+
+<div class="leftnav">
+    <div class="menu">
+        <!-- Adopt -->
+        <div class="dropdown">
+            <a href="#" class="submenu">Adopt</a>
+            <ul class="dropdown-content">
+                <li><a href="#" onclick="loadInIframe(event, 'adopt_cats.html')">Adopt Cats</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'stories.html')">Adoption Stories</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'application.html')">Adoption Application</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'terms_and_conditions.html')">Adoption Terms and Conditions</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'adoption_costs.html')">Adoption Contract</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'rescue_costs.html')">Rescue Costs</a></li>
+            </ul>
+        </div>
+
+        <div class="single-link">
+            <a href="#" onclick="loadInIframe(event, 'cat_tales.html')">Cat Tales</a>
+        </div>
+
+        <!-- Gallery -->
+        <div class="single-link">
+            <a href="#" onclick="loadInIframe(event, 'gallery.html')">Gallery</a>
+        </div>
+
+        <!-- About -->
+        <div class="single-link">
+            <a href="#" onclick="loadInIframe(event, 'about.html')">About</a>
+        </div>
+
+        <!-- contact -->
+        <div class="single-link">
+            <a href="#" onclick="loadInIframe(event, 'contact.html')">About</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="column middle">
+    <p><iframe id="contentFrame" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="Home.html"></iframe></p>
+</div>
+
+<script>
+// Function to load URL in iframe
+function loadInIframe(e, url) {
+    e.preventDefault();
+    document.getElementById('contentFrame').src = url;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  if(window.innerWidth <= 760) {
+    let dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('click', function() {
+        let contentItems = this.querySelectorAll('.dropdown-content li');
+        let isShown = getComputedStyle(contentItems[0]).display === "block"; // check the first item
+        contentItems.forEach(item => {
+          item.style.display = isShown ? 'none' : 'block';
+        });
+      });
+    });
+  }
+});
+
+
+</script>
+  
+</body>
+</html>
