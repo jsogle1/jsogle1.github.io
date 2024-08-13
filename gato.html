@@ -12,44 +12,30 @@
     <h1>Gatos Borincoon</h1>
 </div>
 
-<div class="leftnav">
+<div class="topnav">
     <div class="menu">
-        <!-- Adopt -->
+        <!-- Adopt (with dropdown) -->
         <div class="dropdown">
             <a href="#" class="submenu">Adopt</a>
             <ul class="dropdown-content">
                 <li><a href="#" onclick="loadInIframe(event, 'adopt_cats.html')">Adopt Cats</a></li>
                 <li><a href="#" onclick="loadInIframe(event, 'stories.html')">Adoption Stories</a></li>
                 <li><a href="#" onclick="loadInIframe(event, 'application.html')">Adoption Application</a></li>
-                <li><a href="#" onclick="loadInIframe(event, 'terms_and_conditions.html')">Adoption Terms and Conditions</a></li>
+                <li><a href="#" onclick="loadInIframe(event, 'terms_and_conditions.html')">Terms and Conditions</a></li>
                 <li><a href="#" onclick="loadInIframe(event, 'adoption_costs.html')">Adoption Contract</a></li>
                 <li><a href="#" onclick="loadInIframe(event, 'rescue_costs.html')">Rescue Costs</a></li>
             </ul>
         </div>
 
-        <div class="single-link">
-            <a href="#" onclick="loadInIframe(event, 'cat_tales.html')">Cat Tales</a>
-        </div>
-
-        <!-- Gallery -->
-        <div class="single-link">
-            <a href="#" onclick="loadInIframe(event, 'gallery.html')">Gallery</a>
-        </div>
-
-        <!-- About -->
-        <div class="single-link">
-            <a href="#" onclick="loadInIframe(event, 'about.html')">About</a>
-        </div>
-
-        <!-- contact -->
-        <div class="single-link">
-            <a href="#" onclick="loadInIframe(event, 'contact.html')">About</a>
-        </div>
+        <!-- Other menu items -->
+        <a href="#" onclick="loadInIframe(event, 'cat_tales.html')">Cat Tales</a>
+        <a href="#" onclick="loadInIframe(event, 'gallery.html')">Gallery</a>
+        <a href="#" onclick="loadInIframe(event, 'about.html')">About</a>
+        <a href="#" onclick="loadInIframe(event, 'contact.html')">Contact</a>
     </div>
 </div>
 
-
-<div class="column middle">
+<div class="content">
     <p><iframe id="contentFrame" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="Home.html"></iframe></p>
 </div>
 
@@ -59,22 +45,10 @@ function loadInIframe(e, url) {
     e.preventDefault();
     document.getElementById('contentFrame').src = url;
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-  if(window.innerWidth <= 760) {
-    let dropdowns = document.querySelectorAll('.dropdown');
-    
-    dropdowns.forEach(dropdown => {
-      dropdown.addEventListener('click', function() {
-        let contentItems = this.querySelectorAll('.dropdown-content li');
-        let isShown = getComputedStyle(contentItems[0]).display === "block"; // check the first item
-        contentItems.forEach(item => {
-          item.style.display = isShown ? 'none' : 'block';
-        });
-      });
-    });
-  }
-});
+</script>
+  
+</body>
+</html>
 
 
 </script>
