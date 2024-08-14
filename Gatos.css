@@ -180,13 +180,15 @@ body {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1001; /* Sits on top */
-    padding-top: 60px; /* Padding at the top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+    display: flex; /* Center the modal content */
+    justify-content: center;
+    align-items: center;
 }
 
 /* Modal content (image) */
