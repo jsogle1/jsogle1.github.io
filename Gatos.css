@@ -115,6 +115,40 @@ body {
     overflow: auto;
 }
 
+/* Gallery container styling */
+.gallery-container {
+    padding: 20px;
+    margin-top: 10%; /* Adjust if necessary to position below the top nav */
+    text-align: center;
+}
+
+/* Gallery title */
+.gallery-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Gallery grid styling */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns wide */
+    grid-gap: 10px; /* Space between images */
+}
+
+/* Gallery item styling */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Optional: adds rounded corners to images */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a slight shadow */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
 /* Responsive styling for tablets and smaller desktops */
 @media (max-width: 768px) {
     .topnav {
