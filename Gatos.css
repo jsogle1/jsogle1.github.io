@@ -43,7 +43,6 @@ body {
 /* Topnav logo styling */
 .topnav-logo {
     height: 100%; /* Ensure logo fits the height of the nav */
-    max-height: 50px; /* Optional: Limit max height for the logo */
 }
 
 /* Menu item styling */
