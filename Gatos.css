@@ -20,13 +20,14 @@ body {
     height: 10%; /* Takes up 10% of the viewport height */
     background-color: white;
     display: flex;
-    justify-content: space-around; /* Evenly spaces out the nav links */
+    justify-content: flex-end; /* Moves nav links to the right */
     align-items: center;
     border-bottom: 1px solid #ddd;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000; /* Ensures the nav is above other content */
+    padding-right: 20px; /* Adds some right padding for spacing */
 }
 
 /* Menu item styling */
@@ -34,12 +35,12 @@ body {
     padding: 10px;
     text-decoration: none;
     color: black;
-    transition: background-color 0.3s ease, border 0.3s ease;
+    transition: color 0.3s ease, border 0.3s ease; /* Transition on text color instead of background */
     position: relative;
 }
 
 .topnav .menu a:hover, .topnav .submenu:hover {
-    background-color: silver;
+    color: silver; /* Change text color on hover */
 }
 
 .topnav .menu a:focus,
@@ -63,21 +64,26 @@ body {
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
     border: 1px solid black;
+    top: 100%; /* Adjust position to be directly below the menu */
+    left: 0; /* Align dropdown directly with the parent item */
 }
 
 .dropdown-content li {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 8px 16px; /* Reduce padding for closer spacing */
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: silver;
+    color: silver; /* Change text color on hover */
+    background-color: white; /* Ensure background stays white on hover */
 }
 
 /* Show the dropdown content on hover */
@@ -97,6 +103,7 @@ body {
     .topnav {
         flex-direction: column;
         height: auto;
+        padding-right: 0;
     }
     .topnav .menu a,
     .topnav .submenu {
@@ -114,4 +121,3 @@ body {
         padding: 10px;
     }
 }
-
