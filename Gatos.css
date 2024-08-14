@@ -32,9 +32,10 @@ body {
 
 /* Menu item styling */
 .topnav .menu a, .topnav .submenu {
-    padding: 10px;
+    padding: 15px 20px; /* Increase padding for more spacing */
     text-decoration: none;
     color: black;
+    font-size: 1.2em; /* Increase font size */
     transition: color 0.3s ease, border 0.3s ease; /* Transition on text color instead of background */
     position: relative;
 }
@@ -64,8 +65,8 @@ body {
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
     border: 1px solid black;
-    top: 100%; /* Adjust position to be directly below the menu */
-    left: 0; /* Align dropdown directly with the parent item */
+    top: 100%; /* Align directly below the menu item */
+    left: 0; /* Align dropdown text directly under the parent menu */
 }
 
 .dropdown-content li {
@@ -76,9 +77,10 @@ body {
 
 .dropdown-content a {
     color: black;
-    padding: 8px 16px; /* Reduce padding for closer spacing */
+    padding: 12px 20px; /* Increase padding for better spacing */
     text-decoration: none;
     display: block;
+    text-align: left; /* Align text to the left */
 }
 
 .dropdown-content a:hover {
@@ -107,7 +109,8 @@ body {
     }
     .topnav .menu a,
     .topnav .submenu {
-        padding: 15px;
+        padding: 20px;
+        font-size: 1.2em;
     }
 }
 
@@ -118,6 +121,7 @@ body {
     }
     .topnav .menu a,
     .topnav .submenu {
-        padding: 10px;
+        padding: 15px;
+        font-size: 1.1em;
     }
 }
