@@ -39,7 +39,7 @@ body {
 }
 
 .topnav .menu a:hover, .topnav .submenu:hover {
-    background-color: grey;
+    background-color: silver;
 }
 
 .topnav .menu a:focus,
@@ -77,7 +77,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: grey;
+    background-color: silver;
 }
 
 /* Show the dropdown content on hover */
