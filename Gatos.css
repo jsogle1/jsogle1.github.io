@@ -93,11 +93,18 @@ body {
     display: block;
 }
 
-/* Content area styling */
-.content {
-    margin-top: 10%; /* Adds space for the fixed topnav */
-    padding: 20px;
-    overflow: auto;
+/* New main image section styling */
+.main-image {
+    margin-top: 10%; /* Ensure it starts below the top nav */
+    width: 100%;
+    height: calc(90vh - 40px); /* Takes up the rest of the viewport, minus header */
+    overflow: hidden;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
 }
 
 /* Responsive styling for tablets and smaller desktops */
@@ -112,6 +119,10 @@ body {
         padding: 20px;
         font-size: 1.2em;
     }
+    .main-image {
+        margin-top: 20%; /* Adjust margin for smaller screens */
+        height: calc(80vh - 40px); /* Adjust height for smaller screens */
+    }
 }
 
 /* For very small screens, make sure the layout adjusts accordingly */
@@ -123,5 +134,9 @@ body {
     .topnav .submenu {
         padding: 15px;
         font-size: 1.1em;
+    }
+    .main-image {
+        margin-top: 20%; /* Adjust margin for very small screens */
+        height: calc(80vh - 40px); /* Adjust height for very small screens */
     }
 }
