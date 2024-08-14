@@ -15,6 +15,23 @@ body {
     margin: 0; /* Ensure no margin adds extra space */
 }
 
+/* Topnav container styling */
+.topnav-container {
+    width: 100%;
+    height: 100%; /* Matches the height of the topnav */
+    display: flex;
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center;
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+/* Topnav logo styling */
+.topnav-logo {
+    height: 100%; /* Ensure logo fits the height of the nav */
+    max-height: 50px; /* Optional: Limit max height for the logo */
+}
+
 /* Top Navigation bar styling */
 .topnav {
     width: 100%;
@@ -29,20 +46,6 @@ body {
     left: 0;
     z-index: 1000; /* Ensures the nav is above other content */
     padding: 0; /* Removes padding from the nav */
-}
-
-/* Topnav container styling */
-.topnav-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; /* Space between logo and menu */
-    align-items: center;
-    padding: 0 20px; /* Adds padding between content and the edges */
-}
-
-/* Topnav logo styling */
-.topnav-logo {
-    height: 100%; /* Ensure logo fits the height of the nav */
 }
 
 /* Menu item styling */
