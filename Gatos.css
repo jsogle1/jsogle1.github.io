@@ -21,7 +21,7 @@ body {
     background-color: white;
     display: flex;
     justify-content: space-around; /* Evenly spaces out the nav links */
-    align-items: right;
+    align-items: center;
     border-bottom: 1px solid #ddd;
     position: fixed;
     top: 0;
