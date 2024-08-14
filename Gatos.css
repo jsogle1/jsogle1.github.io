@@ -21,15 +21,29 @@ body {
     height: 10%; /* Takes up 10% of the viewport height */
     background-color: white;
     display: flex;
-    justify-content: flex-end; /* Moves nav links to the right */
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid #ddd;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000; /* Ensures the nav is above other content */
-    padding-right: 20px; /* Adds some right padding for spacing */
-    margin: 0; /* Ensure no margin adds extra space */
+    padding: 0; /* Removes padding from the nav */
+}
+
+/* Topnav container styling */
+.topnav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center;
+    padding: 0 20px; /* Adds padding between content and the edges */
+}
+
+/* Topnav logo styling */
+.topnav-logo {
+    height: 100%; /* Ensure logo fits the height of the nav */
+    max-height: 50px; /* Optional: Limit max height for the logo */
 }
 
 /* Menu item styling */
@@ -118,7 +132,6 @@ body {
 /* Gallery container styling */
 .gallery-container {
     padding: 20px;
-    margin-top: 10%; /* Adjust if necessary to position below the top nav */
     text-align: center;
 }
 
@@ -152,7 +165,6 @@ body {
     .topnav {
         flex-direction: column;
         height: auto;
-        padding-right: 0;
     }
     .topnav .menu a,
     .topnav .submenu {
