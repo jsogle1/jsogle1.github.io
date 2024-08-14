@@ -97,7 +97,6 @@ body {
 
 /* New main image section styling */
 .main-image {
-    margin-top: 10%; /* Ensure it starts below the top nav */
     width: 100%;
     height: auto; /* Allows the height to adjust based on the image */
 }
@@ -112,7 +111,6 @@ body {
 
 /* Content area styling */
 .content {
-    margin-top: 10%; /* Adds space for the fixed topnav */
     padding: 20px;
     overflow: auto;
 }
@@ -130,7 +128,6 @@ body {
         font-size: 1.2em;
     }
     .main-image {
-        margin-top: 20%; /* Adjust margin for smaller screens */
         height: calc(80vh - 40px); /* Adjust height for smaller screens */
     }
 }
@@ -145,7 +142,6 @@ body {
         font-size: 1.1em;
     }
     .main-image {
-        margin-top: 20%; /* Adjust margin for very small screens */
         height: calc(80vh - 40px); /* Adjust height for very small screens */
     }
 }
