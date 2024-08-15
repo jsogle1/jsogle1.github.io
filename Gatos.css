@@ -15,7 +15,7 @@ body {
     padding-top: 120px; /* Add padding equal to the navbar height to prevent overlap */
 }
 
-/* Topnav container styling 
+/* Topnav container styling */
 .topnav-container {
     width: 100%;
     height: 100%; 
@@ -24,7 +24,7 @@ body {
     align-items: center;
     padding: 0; 
     margin: 0; 
-}*/
+}
 
 /* Topnav logo styling */
 .topnav-logo {
