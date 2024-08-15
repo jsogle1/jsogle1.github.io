@@ -303,6 +303,68 @@ body {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns wide on smaller screens */
     }
+    /* Modal container styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Sits on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+    display: flex; /* Center the modal content */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content (image) */
+.modal-content {
+    width: 90%; /* Take up 90% of the width */
+    max-width: 600px; /* Limit maximum width */
+    max-height: 80%; /* Limit maximum height */
+    object-fit: contain; /* Scale image down to fit within these dimensions */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
+
+/* Caption text */
+.modal-caption {
+    color: #ccc;
+    padding: 10px;
+    text-align: center;
+    max-width: 90%;
+}
+
+/* Close button */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Position the hamburger icon on the right */
+    top: 20px;   /* Adjust the top position for alignment */
+    z-index: 1001; /* Ensure it stays above other content */
+}
 }
 
 @media (max-width: 480px) {
