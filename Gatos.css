@@ -199,20 +199,58 @@ body {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column; /* Stacks the left and right columns vertically */
-    }
+/* Modal container styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Sits on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+    display: flex; /* Center the modal content */
+    justify-content: center;
+    align-items: center;
+}
 
-    .left-column {
-        width: 100%;
-        margin-bottom: 20px; /* Adds space below the form when stacked */
-    }
+/* Modal content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
 
-    .right-column {
-        width: 100%;
-        margin-left: 0; /* Removes the left margin when stacked */
-    }
+/* Caption text */
+.modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+/* Close button */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* New main image section styling */
@@ -279,60 +317,6 @@ body {
 
 .gallery-item img:hover {
     transform: translate(-50%, -50%) scale(1.05); /* Slight zoom effect on hover */
-}
-
-/* Modal container styling */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1001; /* Sits on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
-    display: flex; /* Center the modal content */
-    justify-content: center;
-    align-items: center;
-}
-
-/* Modal content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption text */
-.modal-caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-}
-
-/* Close button */
-.modal-close {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    color: #fff;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 /* Responsive styling for tablets and smaller desktops */
