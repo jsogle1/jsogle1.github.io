@@ -7,13 +7,13 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Header styling 
+/* Header styling*/ 
 .header {
     text-align: center;
     border-bottom: 1px solid #ddd;
     margin: 0;
-    padding-top: 120px;
-}*/
+    padding-top: 0px;
+}
 
 /* Topnav container styling
 .topnav-container {
