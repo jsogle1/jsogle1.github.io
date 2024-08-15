@@ -35,7 +35,16 @@
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         </div>
+         <div class="hamburger" onclick="toggleMenu()">
+        &#9776; <!-- This is the hamburger icon -->
+        </div>
     </div>
+    <script>
+    function toggleMenu() {
+        var menu = document.querySelector(".topnav .menu");
+        menu.classList.toggle("active");
+    }
+    </script>
 </div>
 
 <!-- New section for the cat image -->
