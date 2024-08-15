@@ -38,28 +38,40 @@
     </div>
 </div>
 
-<!-- Contact Form Section -->
-<div class="contact-container">
-    <h2>Contact Us</h2>
-    <form id="contactForm" action="submit_contact.php" method="POST">
-        <div class="form-group">
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name" required>
-        </div>
-        <div class="form-group">
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="submit-button">Send Message</button>
-    </form>
+<!-- Main Content Section -->
+<div class="main-content">
+    <!-- Left Column: Contact Form -->
+    <div class="left-column">
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="submit_contact.php" method="POST">
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Right Column: Text and Pictures -->
+    <div class="right-column">
+        <h2>Our Story</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi cursus sapien, ac pretium erat nisl et turpis.</p>
+        <img src="story_image1.jpg" alt="Story Image 1" class="story-image">
+        <p>Phasellus eget felis sit amet lorem consectetur auctor. Sed nec sapien vel felis efficitur vehicula.</p>
+        <img src="story_image2.jpg" alt="Story Image 2" class="story-image">
+    </div>
 </div>
 
 </body>
