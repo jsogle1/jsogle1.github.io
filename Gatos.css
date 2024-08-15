@@ -142,7 +142,7 @@ body {
 }
 
 .story-image {
-    width: 100%; /* Ensure images take up the full width of the container */
+    width: 10px; /* Ensure takes up only one inch */
     height: auto;
     border-radius: 5px;
     margin-bottom: 20px;
