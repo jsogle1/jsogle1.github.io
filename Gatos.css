@@ -7,75 +7,56 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Header styling */
-.header {
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-    margin: 0; /* Ensure no margin adds extra space */
-    padding-top: 120px; /* Add padding equal to the navbar height to prevent overlap */
-}
-
-/* Topnav container styling */
-.topnav-container {
-    width: 100%;
-    height: 100%; /* Matches the height of the topnav */
-    display: flex;
-    justify-content: space-between; /* Space between logo and menu */
-    align-items: center;
-    padding: 0; /* No padding */
-    margin: 0; /* No margin */
-}
-
-/* Topnav logo styling */
-.topnav-logo {
-    height: 100%; /* Ensure logo fits the height of the nav */
-    max-height: 100px; /* Optional: Limit max height for the logo */
-}
-
 /* Top Navigation bar styling */
 .topnav {
     width: 100%;
     height: 120px; /* Takes up 10% of the viewport height */
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ddd;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000; /* Ensures the nav is above other content */
-    padding: 0; /* Removes padding from the nav */
+    padding: 0 20px; /* Adds padding to the sides */
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Menu item styling */
-.topnav .menu a, .topnav .submenu {
-    padding: 15px 20px; /* Increase padding for more spacing */
+/* Topnav logo styling */
+.topnav-logo {
+    height: 100%;
+    max-height: 100px; /* Limit max height for the logo */
+}
+
+/* Menu styling */
+.menu {
+    display: flex;
+    gap: 15px; /* Space between menu items */
+}
+
+.menu a, .submenu {
+    padding: 15px 20px;
     text-decoration: none;
     color: black;
-    font-size: 1.2em; /* Increase font size */
-    transition: color 0.3s ease, border 0.3s ease; /* Transition on text color instead of background */
+    font-size: 1.2em;
+    transition: color 0.3s ease, border 0.3s ease;
     position: relative;
 }
 
-.topnav .menu a:hover, .topnav .submenu:hover {
+.menu a:hover, .submenu:hover {
     color: silver; /* Change text color on hover */
 }
 
-.topnav .menu a:focus,
-.topnav .menu a:active,
-.topnav .submenu:focus,
-.topnav .submenu:active {
-    border-bottom: 2px solid black; /* Indicates the active page */
+.menu a:focus,
+.menu a:active,
+.submenu:focus,
+.submenu:active {
+    border-bottom: 2px solid black;
 }
 
-/* Dropdown styling */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
+/* Dropdown content styling */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -84,8 +65,8 @@ body {
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
     border: 1px solid black;
-    top: 100%; /* Align directly below the menu item */
-    left: 0; /* Align dropdown text directly under the parent menu */
+    top: 100%;
+    left: 0;
 }
 
 .dropdown-content li {
@@ -96,286 +77,78 @@ body {
 
 .dropdown-content a {
     color: black;
-    padding: 12px 20px; /* Increase padding for better spacing */
+    padding: 12px 20px;
     text-decoration: none;
     display: block;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .dropdown-content a:hover {
-    color: silver; /* Change text color on hover */
-    background-color: white; /* Ensure background stays white on hover */
+    color: silver;
+    background-color: white;
 }
 
-/* Show the dropdown content on hover */
+/* Show dropdown content on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Main content container styling */
-.main-content {
-    display: flex;
-    flex-direction: row; /* Ensure columns are side by side on larger screens */
-    padding: 20px;
-    flex-wrap: nowrap; /* Prevent wrapping on large screens */
-    width: 100%; /* Ensure it doesn't exceed the viewport width */
-    margin-top: 120px; /* Add margin equal to navbar height to prevent overlap */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-/* Left column styling (Contact Form) */
-.left-column {
-    width: 40%;
-    padding: 20px;
-    background-color: #ffffff; /* Brighter white background */
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Right column styling (Text and Pictures) */
-.right-column {
-    width: 60%;
-    padding: 20px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column; /* Align items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    min-height: 100%; /* Ensure the right-column takes up full height */
-}
-
-/* Story image styling */
-.story-image {
-    width: 100px; /* Set the image width */
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    display: block; /* Ensure it's treated as a block element */
-    align-self: center; /* Center image horizontally if needed */
-}
-
-/* Form group styling */
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #666;
-}
-
-/* Submit button styling */
-.submit-button {
-    width: 100%;
-    padding: 10px 15px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-button:hover {
-    background-color: #555;
-}
-
-/* Modal container styling */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1001; /* Sits on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
-    display: flex; /* Center the modal content */
-    justify-content: center;
-    align-items: center;
-}
-
-/* Modal content (image) */
-.modal-content {
-    width: 90%; /* Take up 90% of the width */
-    max-width: 600px; /* Limit maximum width */
-    max-height: 80%; /* Limit maximum height */
-    object-fit: contain; /* Scale image down to fit within these dimensions */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
-}
-
-/* Caption text */
-.modal-caption {
-    color: #ccc;
-    padding: 10px;
-    text-align: center;
-    max-width: 90%;
-}
-
-/* Close button */
-.modal-close {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    color: #fff;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-    color: #bbb;
-    text-decoration: none;
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    font-size: 30px;
     cursor: pointer;
 }
 
-/* Responsive styling for tablets and smaller desktops */
+/* Responsive styling for smaller screens */
 @media (max-width: 768px) {
-    .main-content {
-        flex-direction: column; /* Stacks the left and right columns vertically on small screens */
-        margin-top: 140px; /* Increase margin to ensure no overlap on small screens */
+    .menu {
+        display: none; /* Hide menu items */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1001;
     }
 
-    .left-column,
-    .right-column {
-        width: 100%; /* Each column takes full width when stacked */
-        margin-left: 0; /* Remove left margin when stacked */
-        margin-bottom: 20px; /* Add space between the stacked columns */
+    .menu.active {
+        display: flex; /* Show menu when active */
     }
 
-    .right-column {
-        margin-bottom: 0; /* Remove bottom margin from the last element */
-    }
-
-    .modal-content {
-        width: 90%; /* Take up more width on smaller screens */
-        max-height: 70%; /* Adjust height for smaller screens */
+    .menu a, .submenu {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
     }
 
     .topnav {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
+        padding: 10px 20px;
     }
 
-    .topnav .menu a,
-    .topnav .submenu {
-        padding: 20px;
-        font-size: 1.2em;
+    .hamburger {
+        display: block; /* Show hamburger icon */
     }
 
-    .main-image {
-        height: calc(80vh - 40px); /* Adjust height for smaller screens */
+    .topnav-logo {
+        height: 60px;
     }
 
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns wide on smaller screens */
+    .dropdown-content {
+        position: static; /* Make dropdowns static in hamburger menu */
+        box-shadow: none;
+    }
+
+    .dropdown-content a {
+        padding: 10px 15px;
     }
 }
 
 @media (max-width: 480px) {
-    .topnav {
-        height: auto;
-    }
-
-    .topnav .menu a,
-    .topnav .submenu {
-        padding: 15px;
+    .menu a, .submenu {
         font-size: 1.1em;
     }
-
-    .main-image {
-        height: calc(80vh - 40px); /* Adjust height for very small screens */
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr; /* Adjust to 1 column wide on very small screens */
-    }
-}
-
-/* New main image section styling */
-.main-image {
-    width: 100%;
-    height: auto; /* Allows the height to adjust based on the image */
-}
-
-.main-image img {
-    width: 100%;
-    height: auto;
-    display: block; /* Removes any default padding or margins */
-    object-fit: contain; /* Ensures the entire image is visible */
-    object-position: center; /* Centers the image within the container */
-}
-
-/* Content area styling */
-.content {
-    padding: 20px;
-    overflow: auto;
-}
-
-/* Gallery container styling */
-.gallery-container {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Gallery title */
-.gallery-container h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Gallery grid styling */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns wide */
-    grid-gap: 10px; /* Space between images */
-    align-items: center;
-}
-
-/* Gallery item styling */
-.gallery-item {
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%; /* Creates a square aspect ratio */
-    position: relative;
-    overflow: hidden;
-}
-
-.gallery-item img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire grid item */
-    transform: translate(-50%, -50%);
-    border-radius: 5px; /* Optional: adds rounded corners to images */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a slight shadow */
-    transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-    transform: translate(-50%, -50%) scale(1.05); /* Slight zoom effect on hover */
 }
