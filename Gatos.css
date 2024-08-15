@@ -123,6 +123,72 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* New main image section styling */
+.main-image {
+    width: 100%;
+    height: auto; /* Allows the height to adjust based on the image */
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes any default padding or margins */
+    object-fit: contain; /* Ensures the entire image is visible */
+    object-position: center; /* Centers the image within the container */
+}
+
+/* Content area styling */
+.content {
+    padding: 20px;
+    overflow: auto;
+}
+
+/* Gallery container styling */
+.gallery-container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Gallery title */
+.gallery-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Gallery grid styling */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns wide */
+    grid-gap: 10px; /* Space between images */
+    align-items: center;
+}
+
+/* Gallery item styling */
+.gallery-item {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* Creates a square aspect ratio */
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire grid item */
+    transform: translate(-50%, -50%);
+    border-radius: 5px; /* Optional: adds rounded corners to images */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a slight shadow */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: translate(-50%, -50%) scale(1.05); /* Slight zoom effect on hover */
+}
+
 /* Left column styling (Contact Form) */
 .left-column {
     width: 40%;
@@ -251,6 +317,16 @@ body {
     cursor: pointer;
 }
 
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Position the hamburger icon on the right */
+    top: 20px;   /* Adjust the top position for alignment */
+    z-index: 1001; /* Ensure it stays above other content */
+}
+
 /* Responsive styling for tablets and smaller desktops */
 @media (max-width: 768px) {
     .main-content {
@@ -274,15 +350,37 @@ body {
         max-height: 70%; /* Adjust height for smaller screens */
     }
 
-    .topnav {
+ .topnav {
         flex-direction: column;
         height: auto;
+        align-items: flex-start; /* Align the menu to the left on smaller screens */
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger icon on smaller screens */
+    }
+
+    .topnav .menu {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        width: 100%; /* Full-width menu on smaller screens */
+        background-color: white;
+        position: absolute;
+        top: 100%; /* Position below the navbar */
+        left: 0;
+        z-index: 1000; /* Ensure the menu is on top */
+    }
+
+    .topnav .menu.active {
+        display: flex; /* Display the menu when active */
     }
 
     .topnav .menu a,
     .topnav .submenu {
-        padding: 20px;
-        font-size: 1.2em;
+        padding: 15px 20px;
+        text-align: left;
+        border-bottom: 1px solid #ddd; /* Add borders between items */
+        width: 100%; /* Make the links full width */
     }
 
     .main-image {
@@ -292,19 +390,24 @@ body {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns wide on smaller screens */
     }
+
+     .dropdown-content {
+        position: static; /* Make dropdowns flow within the menu */
+        box-shadow: none;
+    }
+
+    .dropdown-content a {
+        padding: 10px 15px;
+    }
 }
 
 @media (max-width: 480px) {
-    .topnav {
-        height: auto;
-    }
-
-    .topnav .menu a,
+   .topnav .menu a,
     .topnav .submenu {
         padding: 15px;
         font-size: 1.1em;
     }
-
+    
     .main-image {
         height: calc(80vh - 40px); /* Adjust height for very small screens */
     }
@@ -314,68 +417,4 @@ body {
     }
 }
 
-/* New main image section styling */
-.main-image {
-    width: 100%;
-    height: auto; /* Allows the height to adjust based on the image */
-}
 
-.main-image img {
-    width: 100%;
-    height: auto;
-    display: block; /* Removes any default padding or margins */
-    object-fit: contain; /* Ensures the entire image is visible */
-    object-position: center; /* Centers the image within the container */
-}
-
-/* Content area styling */
-.content {
-    padding: 20px;
-    overflow: auto;
-}
-
-/* Gallery container styling */
-.gallery-container {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Gallery title */
-.gallery-container h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Gallery grid styling */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns wide */
-    grid-gap: 10px; /* Space between images */
-    align-items: center;
-}
-
-/* Gallery item styling */
-.gallery-item {
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%; /* Creates a square aspect ratio */
-    position: relative;
-    overflow: hidden;
-}
-
-.gallery-item img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire grid item */
-    transform: translate(-50%, -50%);
-    border-radius: 5px; /* Optional: adds rounded corners to images */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a slight shadow */
-    transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-    transform: translate(-50%, -50%) scale(1.05); /* Slight zoom effect on hover */
-}
