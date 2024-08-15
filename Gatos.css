@@ -131,6 +131,10 @@ body {
     width: 60%;
     padding: 20px;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
 }
 
 .right-column h2 {
@@ -142,12 +146,14 @@ body {
 }
 
 .story-image {
-    width: 100px; /* Ensure images take up the full width of the container */
+    width: 100px; /* Set the image width */
     height: auto;
     border-radius: 5px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: block; /* Ensure it's treated as a block element */
 }
+
 
 /* Form group styling */
 .form-group {
