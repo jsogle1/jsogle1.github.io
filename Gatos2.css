@@ -162,6 +162,81 @@ body {
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
+/* Left column styling (Contact Form) */
+.left-column {
+    width: 40%;
+    padding: 20px;
+    background-color: #ffffff; /* Brighter white background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right column styling (Text and Pictures) */
+.right-column {
+    width: 60%;
+    padding: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    min-height: 100%; /* Ensure the right-column takes up full height */
+}
+
+/* Story image styling */
+.story-image {
+    width: 100px; /* Set the image width */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: block; /* Ensure it's treated as a block element */
+    align-self: center; /* Center image horizontally if needed */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #666;
+}
+
+/* Submit button styling */
+.submit-button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #555;
+}
+
 /* Responsive styling for tablets and smaller desktops */
 @media (max-width: 768px) {
     .topnav {
