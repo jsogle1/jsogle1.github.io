@@ -11,8 +11,8 @@ body {
 .header {
     text-align: center;
     border-bottom: 1px solid #ddd;
-    margin: 0; /* Ensure no margin adds extra space */
-    padding-top: 120px; /* Add padding equal to the navbar height to prevent overlap */
+    margin: 0;
+    padding-top: 120px;
 }*/
 
 /* Topnav container styling
