@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gatos Borincoon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Gatos.css">
+</head>
+<body>
+
+<div class="header">
+</div>
+
+<div class="topnav">
+    <div class="topnav-container">
+        <img src="media/logo1.jpg" alt="Gatos Borincoon Logo" class="topnav-logo">
+        <div class="menu">
+            <a href="cat_home.html">Home</a>
+            <!-- Adopt (with dropdown) -->
+            <div class="dropdown">
+                <a href="#" class="submenu">Adopt</a>
+                <ul class="dropdown-content">
+                    <li><a href="adopt_cats.html">Adopt Cats</a></li>
+                    <li><a href="stories.html">Adoption Stories</a></li>
+                    <li><a href="application.html">Adoption Application</a></li>
+                    <li><a href="terms_and_conditions.html">Terms and Conditions</a></li>
+                    <li><a href="adoption_costs.html">Adoption Contract</a></li>
+                    <li><a href="rescue_costs.html">Rescue Costs</a></li>
+                </ul>
+            </div>
+
+        <!-- Other menu items -->
+        <a href="cat_tales.html">Cat Tales</a>
+        <a href="gallery.html">Cat Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Form Section -->
+<div class="contact-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm" action="submit_contact.php" method="POST">
+        <div class="form-group">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+        </div>
+        <div class="form-group">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Send Message</button>
+    </form>
+</div>
+
+</body>
+</html>
