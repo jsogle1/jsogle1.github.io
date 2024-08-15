@@ -1,7 +1,7 @@
 /* Base styling for the entire page */
 body {
     font-family: Arial, sans-serif;
-    margin: 0; /* Removes default browser margin */
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -10,10 +10,10 @@ body {
 /* Top Navigation bar styling */
 .topnav {
     width: 100%;
-    height: 120px; /* Takes up 10% of the viewport height */
+    height: 120px; /* Height of the navbar */
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Adjusted to keep logo on the left, menu on the right */
     align-items: center;
     border-bottom: 1px solid #ddd;
     position: fixed;
@@ -21,12 +21,12 @@ body {
     left: 0;
     z-index: 1000; /* Ensures the nav is above other content */
     padding: 0 20px; /* Adds padding to the sides */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 /* Topnav logo styling */
 .topnav-logo {
-    height: 100%;
+    height: 100%; /* Ensure logo fits the height of the nav */
     max-height: 100px; /* Limit max height for the logo */
 }
 
@@ -95,7 +95,7 @@ body {
 
 /* Hamburger menu */
 .hamburger {
-    display: none;
+    display: none; /* Hidden by default */
     font-size: 30px;
     cursor: pointer;
 }
@@ -103,7 +103,7 @@ body {
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
     .menu {
-        display: none; /* Hide menu items */
+        display: none; /* Hide menu items by default on smaller screens */
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -114,27 +114,22 @@ body {
     }
 
     .menu.active {
-        display: flex; /* Show menu when active */
-    }
-
-    .menu a, .submenu {
-        padding: 15px;
-        text-align: center;
-        border-bottom: 1px solid #ddd;
+        display: flex; /* Show menu when hamburger is clicked */
     }
 
     .topnav {
-        flex-direction: row;
-        height: auto;
+        height: auto; /* Adjust navbar height for smaller screens */
         padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start */
     }
 
     .hamburger {
-        display: block; /* Show hamburger icon */
+        display: block; /* Show hamburger icon on smaller screens */
     }
 
     .topnav-logo {
-        height: 60px;
+        height: 60px; /* Adjust logo size for smaller screens */
     }
 
     .dropdown-content {
@@ -144,6 +139,12 @@ body {
 
     .dropdown-content a {
         padding: 10px 15px;
+    }
+
+    .menu a, .submenu {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #ddd; /* Add border between menu items */
     }
 }
 
