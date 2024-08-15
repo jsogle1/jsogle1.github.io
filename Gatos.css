@@ -4,6 +4,7 @@ body {
     margin: 0; /* Removes default browser margin */
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header styling */
@@ -11,6 +12,7 @@ body {
     text-align: center;
     border-bottom: 1px solid #ddd;
     margin: 0; /* Ensure no margin adds extra space */
+    padding-top: 120px; /* Add padding equal to the navbar height to prevent overlap */
 }
 
 /* Topnav container styling */
@@ -44,6 +46,7 @@ body {
     left: 0;
     z-index: 1000; /* Ensures the nav is above other content */
     padding: 0; /* Removes padding from the nav */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Menu item styling */
@@ -115,6 +118,9 @@ body {
     flex-direction: row; /* Ensure columns are side by side on larger screens */
     padding: 20px;
     flex-wrap: nowrap; /* Prevent wrapping on large screens */
+    width: 100%; /* Ensure it doesn't exceed the viewport width */
+    margin-top: 120px; /* Add margin equal to navbar height to prevent overlap */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Left column styling (Contact Form) */
@@ -245,99 +251,11 @@ body {
     cursor: pointer;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column; /* Stacks the left and right columns vertically on small screens */
-    }
-
-    .left-column,
-    .right-column {
-        width: 100%; /* Each column takes full width when stacked */
-        margin-left: 0; /* Remove left margin when stacked */
-        margin-bottom: 20px; /* Add space between the stacked columns */
-    }
-
-    .right-column {
-        margin-bottom: 0; /* Remove bottom margin from the last element */
-    }
-
-    .modal-content {
-        width: 90%; /* Take up more width on smaller screens */
-        max-height: 70%; /* Adjust height for smaller screens */
-    }
-}
-
-/* New main image section styling */
-.main-image {
-    width: 100%;
-    height: auto; /* Allows the height to adjust based on the image */
-}
-
-.main-image img {
-    width: 100%;
-    height: auto;
-    display: block; /* Removes any default padding or margins */
-    object-fit: contain; /* Ensures the entire image is visible */
-    object-position: center; /* Centers the image within the container */
-}
-
-/* Content area styling */
-.content {
-    padding: 20px;
-    overflow: auto;
-}
-
-/* Gallery container styling */
-.gallery-container {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Gallery title */
-.gallery-container h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Gallery grid styling */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns wide */
-    grid-gap: 10px; /* Space between images */
-    align-items: center;
-}
-
-/* Gallery item styling */
-.gallery-item {
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%; /* Creates a square aspect ratio */
-    position: relative;
-    overflow: hidden;
-}
-
-.gallery-item img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire grid item */
-    transform: translate(-50%, -50%);
-    border-radius: 5px; /* Optional: adds rounded corners to images */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a slight shadow */
-    transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-    transform: translate(-50%, -50%) scale(1.05); /* Slight zoom effect on hover */
-}
-
 /* Responsive styling for tablets and smaller desktops */
 @media (max-width: 768px) {
     .main-content {
         flex-direction: column; /* Stacks the left and right columns vertically on small screens */
+        margin-top: 140px; /* Increase margin to ensure no overlap on small screens */
     }
 
     .left-column,
@@ -360,11 +278,13 @@ body {
         flex-direction: column;
         height: auto;
     }
+
     .topnav .menu a,
     .topnav .submenu {
         padding: 20px;
         font-size: 1.2em;
     }
+
     .main-image {
         height: calc(80vh - 40px); /* Adjust height for smaller screens */
     }
@@ -378,14 +298,17 @@ body {
     .topnav {
         height: auto;
     }
+
     .topnav .menu a,
     .topnav .submenu {
         padding: 15px;
         font-size: 1.1em;
     }
+
     .main-image {
         height: calc(80vh - 40px); /* Adjust height for very small screens */
     }
+
     .gallery-grid {
         grid-template-columns: 1fr; /* Adjust to 1 column wide on very small screens */
     }
