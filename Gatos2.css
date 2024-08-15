@@ -41,7 +41,7 @@ body {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     left: 0;
     z-index: 1000; /* Ensures the nav is above other content */
@@ -169,6 +169,7 @@ body {
     background-color: #ffffff; /* Brighter white background */
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    float: left;
 }
 
 /* Right column styling (Text and Pictures) */
@@ -181,6 +182,7 @@ body {
     justify-content: center; /* Center items vertically */
     align-items: center; /* Center items horizontally */
     min-height: 100%; /* Ensure the right-column takes up full height */
+    float: right;
 }
 
 /* Story image styling */
