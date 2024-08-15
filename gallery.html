@@ -34,6 +34,9 @@
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         </div>
+    <div class="hamburger" onclick="toggleMenu()">
+        &#9776; <!-- This is the hamburger icon -->
+    </div>
 </div>
 <div class="gallery-container">
     <h2>Gallery</h2>
@@ -87,6 +90,12 @@
             modal.style.display = "none";
         }
     };
+</script>
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector(".topnav .menu");
+        menu.classList.toggle("active");
+    }
 </script>
 
 
