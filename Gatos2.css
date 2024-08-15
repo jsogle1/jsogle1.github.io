@@ -4,43 +4,48 @@ body {
     margin: 0; /* Removes default browser margin */
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Header styling*/ 
+/* Header styling */
 .header {
+    background-color: #f8f9fa;
+    padding: 20px;
     text-align: center;
     border-bottom: 1px solid #ddd;
-    margin: 0;
-    padding-top: 0px;
+    margin: 0; /* Ensure no margin adds extra space */
 }
 
-/* Topnav container styling
+/* Topnav container styling */
 .topnav-container {
     width: 100%;
-    height: 100%; 
+    height: 100%; /* Matches the height of the topnav */
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between; /* Space between logo and menu */
     align-items: center;
-    padding: 0; 
-    margin: 0; 
-} */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
 
 /* Topnav logo styling */
 .topnav-logo {
     height: 100%; /* Ensure logo fits the height of the nav */
-    max-height: 100px; /* Optional: Limit max height for the logo */
+    max-height: 50px; /* Optional: Limit max height for the logo */
 }
 
 /* Top Navigation bar styling */
 .topnav {
     width: 100%;
+    height: 10%; /* Takes up 10% of the viewport height */
     background-color: white;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    padding: 0;
-    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the nav is above other content */
+    padding: 0; /* Removes padding from the nav */
 }
 
 /* Menu item styling */
@@ -68,7 +73,6 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
-    z-index: 1001;
 }
 
 .dropdown-content {
@@ -77,7 +81,7 @@ body {
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1001;
+    z-index: 1;
     border: 1px solid black;
     top: 100%; /* Align directly below the menu item */
     left: 0; /* Align dropdown text directly under the parent menu */
@@ -105,18 +109,6 @@ body {
 /* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-    z-index: 1001; /* Ensure it's above the nav bar */
-}
-
-/* Main content container styling */
-.main-content {
-    display: flex;
-    flex-direction: row; /* Ensure columns are side by side on larger screens */
-    padding: 20px;
-    flex-wrap: nowrap; /* Prevent wrapping on large screens */
-    width: 100%; /* Ensure it doesn't exceed the viewport width */
-    margin-top: 120px; /* Add margin equal to navbar height to prevent overlap */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* New main image section styling */
@@ -151,234 +143,36 @@ body {
     margin-bottom: 20px;
 }
 
-/* Gallery grid styling */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns wide */
     grid-gap: 10px; /* Space between images */
-    align-items: center;
 }
 
 /* Gallery item styling */
-.gallery-item {
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%; /* Creates a square aspect ratio */
-    position: relative;
-    overflow: hidden;
-}
-
 .gallery-item img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire grid item */
-    transform: translate(-50%, -50%);
+    height: auto;
     border-radius: 5px; /* Optional: adds rounded corners to images */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a slight shadow */
     transition: transform 0.3s ease;
 }
 
 .gallery-item img:hover {
-    transform: translate(-50%, -50%) scale(1.05); /* Slight zoom effect on hover */
-}
-
-/* Left column styling (Contact Form) */
-.left-column {
-    width: 40%;
-    padding: 20px;
-    background-color: #ffffff; /* Brighter white background */
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Right column styling (Text and Pictures) */
-.right-column {
-    width: 60%;
-    padding: 20px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column; /* Align items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    min-height: 100%; /* Ensure the right-column takes up full height */
-}
-
-/* Story image styling */
-.story-image {
-    width: 100px; /* Set the image width */
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    display: block; /* Ensure it's treated as a block element */
-    align-self: center; /* Center image horizontally if needed */
-}
-
-/* Form group styling */
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #666;
-}
-
-/* Submit button styling */
-.submit-button {
-    width: 100%;
-    padding: 10px 15px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-button:hover {
-    background-color: #555;
-}
-
-/* Modal container styling */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1001; /* Sits on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
-    /*display: flex;  Center the modal content */
-    justify-content: center;
-    align-items: center;
-}
-
-/* Modal content (image) */
-.modal-content {
-    width: 90%; /* Take up 90% of the width */
-    max-width: 600px; /* Limit maximum width */
-    max-height: 80%; /* Limit maximum height */
-    object-fit: contain; /* Scale image down to fit within these dimensions */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
-}
-
-/* Caption text */
-.modal-caption {
-    color: #ccc;
-    padding: 10px;
-    text-align: center;
-    max-width: 90%;
-}
-
-/* Close button */
-.modal-close {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    color: #fff;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.hamburger {
-    display: none; /* Hidden by default */
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    right: 20px; /* Position the hamburger icon on the right */
-    top: 20px;   /* Adjust the top position for alignment */
-    z-index: 1001; /* Ensure it stays above other content */
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Responsive styling for tablets and smaller desktops */
 @media (max-width: 768px) {
-    .main-content {
-        flex-direction: column; /* Stacks the left and right columns vertically on small screens */
-        margin-top: 140px; /* Increase margin to ensure no overlap on small screens */
-    }
-
-    .left-column,
-    .right-column {
-        width: 100%; /* Each column takes full width when stacked */
-        margin-left: 0; /* Remove left margin when stacked */
-        margin-bottom: 20px; /* Add space between the stacked columns */
-    }
-
-    .right-column {
-        margin-bottom: 0; /* Remove bottom margin from the last element */
-    }
-
-    .modal-content {
-        width: 90%; /* Take up more width on smaller screens */
-        max-height: 70%; /* Adjust height for smaller screens */
-    }
-
- .topnav {
+    .topnav {
         flex-direction: column;
         height: auto;
-        align-items: flex-start; /* Align the menu to the left on smaller screens */
     }
-
-    .hamburger {
-        display: block; /* Show the hamburger icon on smaller screens */
-    }
-
-    .topnav .menu {
-        display: none; /* Hide the menu by default */
-        flex-direction: column;
-        width: 100%; /* Full-width menu on smaller screens */
-        background-color: white;
-        position: absolute;
-        top: 100%; /* Position below the navbar */
-        left: 0;
-        z-index: 1000; /* Ensure the menu is on top */
-    }
-
-    .topnav .menu.active {
-        display: flex; /* Display the menu when active */
-    }
-
     .topnav .menu a,
     .topnav .submenu {
-        padding: 15px 20px;
-        text-align: left;
-        border-bottom: 1px solid #ddd; /* Add borders between items */
-        width: 100%; /* Make the links full width */
+        padding: 20px;
+        font-size: 1.2em;
     }
-
     .main-image {
         height: calc(80vh - 40px); /* Adjust height for smaller screens */
     }
@@ -386,31 +180,24 @@ body {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns wide on smaller screens */
     }
-
-     .dropdown-content {
-        position: static; /* Make dropdowns flow within the menu */
-        box-shadow: none;
-    }
-
-    .dropdown-content a {
-        padding: 10px 15px;
-    }
 }
 
 @media (max-width: 480px) {
-   .topnav .menu a,
+    .topnav {
+        height: auto;
+    }
+    .topnav .menu a,
     .topnav .submenu {
         padding: 15px;
         font-size: 1.1em;
     }
-    
     .main-image {
         height: calc(80vh - 40px); /* Adjust height for very small screens */
     }
-
     .gallery-grid {
         grid-template-columns: 1fr; /* Adjust to 1 column wide on very small screens */
     }
 }
+
 
 
