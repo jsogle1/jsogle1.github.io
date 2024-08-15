@@ -13,7 +13,6 @@ body {
     margin: 0; /* Ensure no margin adds extra space */
 }
 
-
 /* Topnav container styling */
 .topnav-container {
     width: 100%;
@@ -113,8 +112,9 @@ body {
 /* Main content container styling */
 .main-content {
     display: flex;
+    flex-direction: row; /* Ensure columns are side by side */
     padding: 20px;
-    flex-wrap: wrap; /* Allows the columns to wrap on smaller screens */
+    flex-wrap: nowrap; /* Prevent wrapping on large screens */
 }
 
 /* Left column styling (Contact Form) */
@@ -142,7 +142,7 @@ body {
 }
 
 .story-image {
-    width: 10px;
+    width: 100%; /* Ensure images take up the full width of the container */
     height: auto;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -208,7 +208,6 @@ body {
         margin-left: 0; /* Removes the left margin when stacked */
     }
 }
-
 
 /* New main image section styling */
 .main-image {
