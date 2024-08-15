@@ -142,7 +142,7 @@ body {
 }
 
 .story-image {
-    width: 10px; /* Ensure takes up only one inch */
+    width: 100%; /* Ensure images take up the full width of the container */
     height: auto;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -365,3 +365,4 @@ body {
         grid-template-columns: 1fr; /* Adjust to 1 column wide on very small screens */
     }
 }
+
