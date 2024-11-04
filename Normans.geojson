@@ -11,7 +11,7 @@
     "zoom":12,
     "title":"William the Conqueror",
     "content":"William the Conqueror born in Falaise, Normandy",
-    "image":"media/640px-John_Sell_Cotman_-_Architectural_Antiquities_of_Normandy_(Vol._II),_Pl._90-_Castle_of_Falaise_-_2010.670_-_Cleveland_Museum_of_Art",
+    "image":"media/640px-John_Sell_Cotman_-_Architectural_Antiquities_of_Normandy_(Vol._II),_Pl._90-_Castle_of_Falaise_-_2010.670_-_Cleveland_Museum_of_Art.jpg",
     "alt_text":"Castle of Falaise",
     "attribution":"Cleveland Museum of Art, CC0, via Wikimedia Commons",
     "symbol":"media/castle.png"
@@ -187,7 +187,7 @@
     "zoom":12,
     "title":"Beheading of Waltheof",
     "content":"Waltheof, Earl of Northumberland and Last Anglo-Saxon Earl was beheaded. It is said his wife, Judith, neice of William the Conqueror, who disliked and did not trust him, told of another plot to revolt to Archbishop LaFranc, who reported it to William. It is said after beheading his head was found reattached to his body in his coffin. A cult of martydom sprang up around him.",
-    "image":"media/Waltheof,_earl_of_Northumbria_Croyland_Abbey.jpg\tEarl Waltheof\tThorvaldsson, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
+    "image":"media/Waltheof,_earl_of_Northumbria_Croyland_Abbey.jpg",
     "alt_text":"Earl Waltheof",
     "attribution":"Thorvaldsson, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
     "symbol":"media/death.png"
@@ -411,7 +411,7 @@
     "zoom":12,
     "title":"Robert Curthose and Stephen of Blois at Nicea.",
     "content":"Robert Curthose and Stephen Henry of Bloise join the main body of troops as the seige Nicea.",
-    "image":"media/Siege_of_Nicea",
+    "image":"media/Siege_of_Nicea.jpg",
     "alt_text":"Siege of Nicea",
     "attribution":"By Anonymous - BNF Français 779 f.21v bnf.fr[1][2], Public Domain, https://commons.wikimedia.org/w/index.php?curid=9926546",
     "symbol":"media/castle.png"
