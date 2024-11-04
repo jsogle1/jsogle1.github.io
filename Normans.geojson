@@ -1,0 +1,853 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1975,48.897222 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"William the Conqueror",
+    "content":"William the Conqueror born in Falaise, Normandy",
+    "image":"media/640px-John_Sell_Cotman_-_Architectural_Antiquities_of_Normandy_(Vol._II),_Pl._90-_Castle_of_Falaise_-_2010.670_-_Cleveland_Museum_of_Art",
+    "alt_text":"Castle of Falaise",
+    "attribution":"Cleveland Museum of Art, CC0, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.07,53.931 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Fulford",
+    "content":"A battle between King Harold Godwinson’s northern earls and a Viking army led by Harald Hardrada. This led to the Battle of Stamford Bridge, weakening England before the Norman invasion.",
+    "image":"media/Battle_of_Fulford.jpg",
+    "alt_text":"Battle of Fulford, By Matthew Paris",
+    "attribution":"Matthew Paris, Public domain, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.9125,53.9925 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Stamford Bridge",
+    "content":"Harold Godwinson defeated the Viking forces of Harald Hardrada, ending the Viking threat. However, Harold’s forces were weakened before the upcoming Battle of Hastings.",
+    "image":"media/Arbo_-_Battle_of_Stamford_Bridge_(1870).jpg",
+    "alt_text":"Battle of Stamford Bridge, 1870, by Peter Nicolai Arbo",
+    "attribution":"Peter Nicolai Arbo, Public domain, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.485833,50.915 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Hastings",
+    "content":"William the Conqueror defeated King Harold II, leading to the Norman Conquest of England and William's eventual coronation as king.",
+    "image":"media/450px-Bayeux_Tapestry_scene57_Harold_death.jpg",
+    "alt_text":"Harold is dead",
+    "attribution":"Myrabella, Public domain, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1275,51.499444 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Coronation of William the Conqueror",
+    "content":"William I (\"the Conqueror\") was crowned King of England at Westminster Abbey after his victory at the Battle of Hastings.",
+    "image":"media/Vilem1.jpg",
+    "alt_text":"Coronation of William I",
+    "attribution":"Matthew Paris, Public domain, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.576111,54.774722 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Rebellions in Northumbria",
+    "content":"Multiple uprisings by Northumbrian nobles and locals against Norman rule. These rebellions, including the killing of Norman Baron Robert de Comines, were crushed by William, culminating in the Harrying of the North.",
+    "image":"media/Robert Batty - Durham; the Castle and Cathedral from the River - 9338.jpg",
+    "alt_text":"Durham-Site of Robert Comines Murder",
+    "attribution":"Robert Batty, Public domain, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.068056,53.784444 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Henry I Born",
+    "content":"Henry I born in Selby, Yorkshire, England",
+    "image":"media/Selby_Abbey_03.jpg",
+    "alt_text":"Selby, England - Site of Williams birth",
+    "attribution":"derek dye, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.08,53.955833 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Harrying of the North",
+    "content":"A brutal campaign by William the Conqueror to suppress rebellions in Northumbria. Villages were burned, crops destroyed, thousands were killed or displaced devastating the region for years. The accompanying famine killed 100,00.",
+    "image":"media/Great_men_and_famous_women_-_a_series_of_pen_and_pencil_sketches_of_the_lives_of_more_than_200_of_the_most_prominent_personages_in_history_Volume_1_(1894)_(14760340656).jpg",
+    "alt_text":"Rebellion culminating in the harrying",
+    "attribution":"Internet Archive Book Images, No restrictions, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.485833,50.915 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"William orders Battle Abbey Built",
+    "content":"Pope Alexander II orders William to do penance for killing so many during his conquest, so William commisions the building of Battle Abbey.",
+    "image":"media/Battleabbey-wyrdlight-0170.jpg",
+    "alt_text":"Battle Abbey",
+    "attribution":"WyrdLight.com, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.576111,54.773611 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Establishment of Durham Prince-Bishopric",
+    "content":"The Bishop of Durham was granted both secular and religious authority over the region, becoming a semi-independent prince-bishopric. This helped secure Norman control over northern England.",
+    "image":"media/Durham_-_Turner.jpg",
+    "alt_text":"Durham Cathedral by Turner",
+    "attribution":"Joseph Mallord William Turner, CC0, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.2964,52.6286 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Revolt of the Earls",
+    "content":"A rebellion by three English earls, Ralph de Gael, Roger de Breteuil, and Waltheof of Northumbria, against William the Conqueror. The revolt was quickly suppressed, cementing Norman control over England.",
+    "image":"media/Siege_of_Norwich_castle_from_Project_Gutenberg's_The_Siege_of_Norwich_Castle,_by_Matilda_Maria_Blake._2012.jpg",
+    "alt_text":"Ralph de Gael, a leader of the revolt.",
+    "attribution":"By Matilda Maria Blake - Project Gutenberg's The Siege of Norwich Castle, by Matilda Maria BlakeThis eBook is for the use of anyone anywhere at no cost and withalmost no restrictions whatsoever. You may copy it, give it away orre-use it under the terms of the Project Gutenberg License includedwith this eBook or online at www.gutenberg.org/licenseTitle: The Siege of Norwich Castle: A story of the last struggle against the ConquerorRelease Date: October 24, 2012 [EBook #41168]Language: English, Public Domain, https://commons.wikimedia.org/w/index.php?curid=126355547",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.3044904,51.0623525 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Beheading of Waltheof",
+    "content":"Waltheof, Earl of Northumberland and Last Anglo-Saxon Earl was beheaded. It is said his wife, Judith, neice of William the Conqueror, who disliked and did not trust him, told of another plot to revolt to Archbishop LaFranc, who reported it to William. It is said after beheading his head was found reattached to his body in his coffin. A cult of martydom sprang up around him.",
+    "image":"media/Waltheof,_earl_of_Northumbria_Croyland_Abbey.jpg\tEarl Waltheof\tThorvaldsson, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
+    "alt_text":"Earl Waltheof",
+    "attribution":"Thorvaldsson, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.076111,51.508056 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Construction of the Tower of London",
+    "content":"Begun under William I, the Tower of London was built to reinforce Norman dominance and control over London and England.",
+    "image":"media/Thomas_Hearne_-_The_Tower_of_London_-_B1986.29.411_-_Yale_Center_for_British_Art.jpg",
+    "alt_text":"Tower of London",
+    "attribution":"Thomas Hearne, CC0, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.6105,54.9688 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Building of Newcastle Castle",
+    "content":"Robert Curthose, son of William the Conqueror, built the original wooden motte-and-bailey castle at Newcastle to fortify the area and establish Norman dominance over the northern frontier.",
+    "image":"media/505px-Newcastle_Castle,_1814.jpg",
+    "alt_text":"Robert Curthose's Newcastle",
+    "attribution":"L. Connell, Public domain, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.363611,49.181389 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Marriage of Stephen Henry Bloise to William I daughter, Adela.",
+    "content":"William I daughter, Adela, marries Sephen Henry of Bloise.",
+    "image":"media/Adela.jpg",
+    "alt_text":"Stephen Henry's wife, Adela",
+    "attribution":"By Unknown author - http://numerique.bibliotheque.toulouse.fr/collect/general/index/assoc//ark:/74899/B315556101_MS0450_190R.dir/img0064_screen.jpeg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=9472395",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.246667,51.8675 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Domesday Book",
+    "content":"Commissioned by William the Conqueror in 1085 in Gloucester, the Domesday Book was a comprehensive survey of land and resources across England. It allowed William to assess wealth, land ownership, and taxes owed, consolidating Norman control over England and helping enforce Norman authority through taxation and feudal obligations.",
+    "image":"media/Domesday_Book_-_Warwickshire.jpg",
+    "alt_text":"Domesday page",
+    "attribution":"Birmingham 1066-1625, Public domain, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.5653,49.2794 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Death of William the Conqueror",
+    "content":"William I died at the Priory of St. Gervais in Rouen, Normandy, and his son, William II, became King of England. The succession stabilized Norman rule, but tensions remained, particularly in the northern regions.",
+    "image":"media/Chapelle_du_Prieuré_Saint_Gabriel_association_culturelle_du_Prieuré_Saint_Gabriel.jpg",
+    "alt_text":"Priory of St. Gervais",
+    "attribution":"By Sophie de Bourgoing - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=19322082",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1275,51.499444 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"William II Coronated after his father's death.",
+    "content":"William II (Rufus) coronated shortly after his father's death.",
+    "image":"media/Charles_Gore_-_A_Large_Church_(Westminster_Abbey)_at_Sunset_-_B1977.14.5030_-_Yale_Center_for_British_Art.jpg",
+    "alt_text":"Westminster Abbey",
+    "attribution":"Charles Gore, CC0, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.3342,50.8188 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Rebellion of 1088",
+    "content":"Nobles led by Bishop Odo of Bayeaux revolt against William Rufus on behalf of Robert Curthose to unite England and Normandy. Robert's failure to show, William Rufus' bribes, and capture of Odo at Pevesney Castle led to a quick end to the revolt.",
+    "image":"media/Pevensey_Castle_Buck_1737.jpg",
+    "alt_text":"Pevesney Castle",
+    "attribution":"By Samuel & Nathaniel Buck - http://archexpo.net/fr/contenu/la-baie-de-pevensey-gravure-de-francis-jukes#.U2lCC4FdXAx, Public Domain, https://commons.wikimedia.org/w/index.php?curid=32627063",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.941936,54.89726 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"William II’s Campaigns",
+    "content":"William II (Rufus) launched military campaigns to secure Northumberland and push back Scottish forces. His success at capturing Carlisle helped solidify Norman control over the northern border.",
+    "image":"media/Engraving_of_Carlisle_Castle_by_E._Francis_after_R._Westall.jpg",
+    "alt_text":"Engraving of Carlisle Castle",
+    "attribution":"Edward Francis, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.3281,47.5939 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Stephen of Blois is born.",
+    "content":"Stephen of Blois is born to Adela and Stephen Henry Blois.",
+    "image":"media/Ascalon.jpg",
+    "alt_text":"Ascalon, Site of Stephen's execution",
+    "attribution":"By Larisa sklar giller - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=52650162",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.7005,55.4262 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Alnwick",
+    "content":"Scottish King Malcolm III was killed during a raid into Northumberland at Alnwick. This defeat secured Norman control over the northern border and weakened Scottish ambitions in the region.",
+    "image":"media/Malcum_Camnoir.jpg",
+    "alt_text":"Portaiy of Malcolm III",
+    "attribution":"By Forman Armorial (produced for Mary, Queen of Scots) - This image is available from the National Library of Scotland under the sequence number or Shelfmark ID Adv.MS.31.4.2, fol.5r., Public Domain, https://commons.wikimedia.org/w/index.php?curid=1409450",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.7062,55.4158 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Construction of Alnwick Castle",
+    "content":"Alnwick Castle was built by Yves de Vescy as a defensive stronghold for Norman England against Scottish incursions. It played a key role in the defense of Northumberland and remains a symbol of Norman power.",
+    "image":"media/Alnwick_Castle_Lydon.jpg",
+    "alt_text":"Alnwick Castle",
+    "attribution":"By Alexander Francis Lydon (1836-1917) - book County Seats of The Noblemen and Gentlemen of Great Britain and Ireland, Public Domain, https://commons.wikimedia.org/w/index.php?curid=3850893",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.98,41.0125 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Robert Curthose and Stephen of Blois go on First Crusade",
+    "content":"Robert Curthose and Stephen Henry of Bloise, father of the later king of England, join forces and meet other rulers in Constantinople for the First Crusade.",
+    "image":"media/Saint_Sophia,_Constantinopolis.jpg",
+    "alt_text":"Hagia Sophia in Constantinople",
+    "attribution":"By Wilhelm Salzenberg (* 20. Januar 1803 in Münster; † 23. Oktober 1887 in Vernex-Montreux, Schweiz)Edited by Verlag von Ernst & Korn Berlin, 1854 - [1], Public Domain, https://commons.wikimedia.org/w/index.php?curid=98552725",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 17.116667,40.966667 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Robert Curthose meets wife, Sybilla de Conversano",
+    "content":"Robert Curthose meets Sybilla de Conversano while in Apulia and falls in love awaiting transport to the first crusade. She'll become his future wife.",
+    "image":"media/ScuolaMedicaMiniatura.jpg",
+    "alt_text":"Sybilla de Conversano",
+    "attribution":"By fol. 317v, Public Domain, https://commons.wikimedia.org/w/index.php?curid=354555",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.1333,40.5833 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Robert Curthose and Stephen of Blois at Nicea.",
+    "content":"Robert Curthose and Stephen Henry of Bloise join the main body of troops as the seige Nicea.",
+    "image":"media/Siege_of_Nicea",
+    "alt_text":"Siege of Nicea",
+    "attribution":"By Anonymous - BNF Français 779 f.21v bnf.fr[1][2], Public Domain, https://commons.wikimedia.org/w/index.php?curid=9926546",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.161389,36.202222 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Seige of Antioch.",
+    "content":"Robert Curthose, Stephen Henry of Blois, and other crusaders seige Antioch. Stephen Henry of Bloise departs back for France shortly thereafter.",
+    "image":"media/Robert_de_Normandie_at_the_Siege_of_Antioch_1097-1098.jpg",
+    "alt_text":"Robert Curthose at the Siege of Antioch",
+    "attribution":"By Jean-Joseph Dassy - Painting by J.J. Dassy, 1850, \"Croisades, origines et consequences.\", Public Domain, https://commons.wikimedia.org/w/index.php?curid=3112301",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.668331,35.643331 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Siege of Ma’arrat al-Numan",
+    "content":"Crusaders, including Robert Curthose, takes part in the Siege of Ma’arrat al-Numan, where lack of provisions, desperation, and possibly psychological warfare lead to cannibalism of the muslim dead.",
+    "image":"media/CrusaderAtrocitiesBibliothequeNationaleDeFrance.jpg",
+    "alt_text":"Robert Curthose takes part in the Siege of Ma’arrat al-Numan, where lack of provisions, desperation, and possibly psychological warfare lead to cannibalism of the muslim dead.",
+    "attribution":"By Unknown author - Les Croisades, Origines et consequences, by Claude Lebedel ISBN 2737341361, Public Domain, https://commons.wikimedia.org/w/index.php?curid=3200268",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.225556,31.778889 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Seige of Jerusalem.",
+    "content":"Crusaders and Robert Curthose seige the Holy City of Jerusalem.",
+    "image":"media/1099_Siege_of_Jerusalem.jpg",
+    "alt_text":"Siege of Jerusalem",
+    "attribution":"By Unknown author - Ökumenisches Heiligenlexikon; Quelle dort: \"Miniatur aus dem 13. Jahrhundert: Belagerung und Eroberung von Jerusalem, in der Bibliothèque Nationale in Paris\", Public Domain, https://commons.wikimedia.org/w/index.php?curid=3853070",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.558056,31.670556 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Ascalon",
+    "content":"Crusaders including Robert Curthose defeat Egyptian forces at Ascalon, temporarily ensuring their control of Jerusalem.",
+    "image":"media/1099_Ascalon.jpg",
+    "alt_text":"Battle of Ascalon",
+    "attribution":"By Victory Schnetz - http://collections.chateauversailles.fr/#57714ebb-1b3b-4095-afc0-7623c2e8ebf5, Public Domain, https://commons.wikimedia.org/w/index.php?curid=118325008",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.618056,50.863056 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Death of William II (Rufus) at New Forest",
+    "content":"William II was killed in a hunting accident in the New Forest, and his younger brother, Henry I, ascended to the throne.",
+    "image":"media/WilliamRufus.jpg",
+    "alt_text":"William Rufus death",
+    "attribution":"Grandes Chroniques de France, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1275,51.499444 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Coronation of Henry I",
+    "content":"Henry I was crowned king following the death of his brother, William II. He established legal and administrative reforms that influenced English law.",
+    "image":"media/Coronation_of_henry_i.jpg",
+    "alt_text":"Henry I coronated at Westminster Abbey",
+    "attribution":"Unknown author, Public domain, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1275,51.499444 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Marriage of Henry I to Matilda of Scotland",
+    "content":"Henry I married Matilda of Scotland, uniting the Norman and Anglo-Saxon royal lines, helping to legitimize Norman rule over England.",
+    "image":"media/Matylda_zena.jpg",
+    "alt_text":"Matilda, Henry I bride",
+    "attribution":"By Anonymous - http://molcat1.bl.uk/IllImages/Kslides%5Cmid/K066/K066599.jpg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=9643622",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.087222,50.805833 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Robert Curthose lands in Portsmouth with support of Anglo-Norman Barons attempting to oust Henry I, but to no avail.",
+    "content":"Robert Curthose lands in Portsmouth with support of Anglo-Norman Barons attempting to oust Henry I, but to no avail.",
+    "image":"media/800px-SelseyHaylingPortsea.jpg",
+    "alt_text":"Coast of Portsmouth",
+    "attribution":"By JohnArmagh - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=16374436",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.546111,31.661944 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Stephen Henry of Blois dies",
+    "content":"Stephen Henry of Blois dies, probably at Ascalon, after the Battle of Ramblah in the the Second Crusade.",
+    "image":"media/StepanBlois_1089.jpg",
+    "alt_text":"Stephen, Count of Blois",
+    "attribution":"By Roger de Gaignières - http://lamop.univ-paris1.fr/baudin/images/etienne-henri.jpg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=8381172",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.727778,48.765278 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Henry I defeats Robert Curthose at the Battle of Tinchebray",
+    "content":"Henry I defeats his brother Robert Curthose at the Battle of Tinchebray",
+    "image":"media/Tinchebray.jpg",
+    "alt_text":"Battle of Tinchebray",
+    "attribution":"By Rohan Master - [1], [2], [3], Public Domain, https://commons.wikimedia.org/w/index.php?curid=9477396",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.9985,51.3508 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Robert Curthose imprisoned and spends 20 years in Devizes Castle.",
+    "content":"Robert Curthose imprisoned and spends 20 years in Devizes Castle.",
+    "image":"media/Devizes_Castle,_St_Johns_Street,_Devizes_(geograph_2386448).jpg",
+    "alt_text":"Devizes Castle",
+    "attribution":"By Brian Robert Marshall, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=36437299",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.4058,49.3433 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Henry faces challenges to his French lands from Robert's son Clito and Louis VI of France",
+    "content":"Henry I faces challenges to his French realm from William Clito, Curthose's son, and Louis VI of France that culminate in the Battle of Brémule.",
+    "image":"media/Ludvik6_jindrichI_Bremule.jpg",
+    "alt_text":"Battle of Brémule",
+    "attribution":"Unknown author, Public domain, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.2633,49.6711 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"White Sail",
+    "content":"William Adelin and Half of the Norman nobility sink in the ship the 'White Sail' crossing the English Channel.",
+    "image":"media/Vilém_syn.jpg",
+    "alt_text":"William Adelin, who died on the White Ship in Harfleur Harbour",
+    "attribution":"By Anonymous - http://molcat1.bl.uk/IllImages/Kslides%5Cmid/K066/K066599.jpg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=9643675",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.1812,51.4823 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Robert Curthose dies after spending his last 6 years in the Cardiff Castle.",
+    "content":"Robert Curthose spends his final years at Cardiff Castle and dies in 1134, a year before Henry.",
+    "image":"media/The_West_Gate,_Cardiff,_by_Paul_Sandby.jpg",
+    "alt_text":"Cardiff Castle, site of Robert Curthose death.",
+    "attribution":"Paul Sandby, Public domain, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.4769,49.4003 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Henry I Dies",
+    "content":"Henry I dies at Saint-Denis-en-Lyons, Normandy, France",
+    "image":"media/Henry_I_Cotton_Claudius_D._ii,_f._45v.jpg",
+    "alt_text":"Picture of Henry I",
+    "attribution":"By Medieval artists - British Library manuscripts blog, Public Domain, https://commons.wikimedia.org/w/index.php?curid=18090729",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1275,51.499444 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Stephen of Blois claims the throne.",
+    "content":"Stephen of Blois claims the throne with the help of his brother Henry, Bishop of Winchester and Abbott of Glastonbury. He was crowned by William de Corbeil, Archbishop of Canterbury and powerful supporter.",
+    "image":"media/StepanAngl.jpg",
+    "alt_text":"Sephen's Coronation",
+    "attribution":"By Matthew Paris - Ms 6712 (A.6.89), fol.133rThis scan from http://images.bridgeman.co.uk/cgi-bin/bridgemanImage.cgi/400wm.CHL.8579020.7055475/206579.jpg, originally from Flores Historiarum (see Edmund King, \"King Stephen\" (2010), Yale University Press, illustration 5.), Public Domain, https://commons.wikimedia.org/w/index.php?curid=8099785",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.5975,51.453611 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Robert of Gloucester rebels against Stephen, seizing Bristol.",
+    "content":"Robert of Gloucester seizes Bristol.",
+    "image":"media/Robert_Ricart's_map_of_Bristol.jpg",
+    "alt_text":"Robert of Gloucester rebels along with other nobels of behalf of Matilda. He seizes Bristol.",
+    "attribution":"By Robert Ricart - From the folio Ricart's Maiores Kalendar and The Lord Mayors Calendar whose physical copy is at Bristol Archives, B Bond Warehouse, Smeaton Road, Bristol BS1 6XN. The document is reference number 04720 in the Office's catalogue., Public Domain, https://en.wikipedia.org/w/index.php?curid=34425323",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.44734,54.37354 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Standard",
+    "content":"Scottish soldiers invade from the North under King David I, taking most of Northumberland except Wark and Barmburgh. Atrocities are notably horrendous in this invasion and include dismembering and enslaving of the local Northumbrians by Scots. They continue into Yorkshire but are defeated at the Battle of Standard by Stephen's forces under the command of William of Aumale.",
+    "image":"media/Scottish_Atrocities.jpg",
+    "alt_text":"Scots ravaging the countryside.",
+    "attribution":"The original uploader was Deacon of Pndapetzim at English Wikipedia.(Original text: Unknown), Public domain, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.553611,50.856111 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Empress Matilda arrives at Arundel",
+    "content":"Empress Matilda arrives at Arundel joining forces with her half-brother Robert of Gloucester.",
+    "image":"media/Arundel_Castle,_from,_A_series_of_picturesque_views_of_seats_of_the_noblemen_and_gentlemen_of_Great_Britain_and_Ireland_(1840).jpg",
+    "alt_text":"Arundel Castle",
+    "attribution":"By Internet Archive Book Images - https://www.flickr.com/photos/internetarchivebookimages/14763983902/Source book page: https://archive.org/stream/seriesofpictures04morr/seriesofpictures04morr#page/n5/mode/1up, No restrictions, https://commons.wikimedia.org/w/index.php?curid=43928002",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.5386,53.235 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Lincoln",
+    "content":"Matilda's forces capture King Stephen at the Battle of Lincoln.",
+    "image":"media/BattleOf_Lincoln.jpg",
+    "alt_text":"The Battle of Lincoln in the Historia Anglorum",
+    "attribution":"By Unknown author - The British Library Catalogue of Illuminated Manuscripts, Public Domain, https://commons.wikimedia.org/w/index.php?curid=9059427",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.312523,51.060494 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Rout of Winchester",
+    "content":"The Army of Stephen under his wife Matilda of Boulogne, Henry of Blois, and William Ypres faced off against an army led by Empress Matilda and Robert of Gloucester. The imprisoned King's forces arrived to relieve the seige of Winchester by Empress Matilda. They were cutoff from supplies, retreated, and Robert of Gloucester was taken prisoner.",
+    "image":"media/Empress_Mathilda.jpg",
+    "alt_text":"Empress Matilda, who led her husbands army.",
+    "attribution":"By PurpleHz - Own work; alternative at http://imagesonline.bl.uk/imagemap/?cat_id=44&last_cat_id=4&level=2&page=30&search=Events+-and-+Movements+(Historical)&selectedLevels[0]=Historical, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1378038",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.312523,51.060494 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Exchange of Stephen of Blois for Robert Gloucester",
+    "content":"A prisoner exchange is agreed between the rival forces which includes King Stephen for the Empress Matilda's brother, Robert of Gloucester.",
+    "image":"media/RobertConsul_TewkesburyAbbey_FoundersBook.jpg",
+    "alt_text":"Robert of Gloucester and his wife, he was traded for Stephen",
+    "attribution":"By Monks of Tewkesbury Abbey, c. 1500-1525 - Bodleian Library Manuscript, Oxford: \"Founders' and benefectors' book of Tewkesbury Abbey\", (Top. Gloucester, d. 2) folio 15 recto, [1] made in Tewkesbury c.1500-1525, Public Domain, https://commons.wikimedia.org/w/index.php?curid=32083743",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.257778,51.751944 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Seige of Oxford",
+    "content":"Oxford Castle is beseiged and Matilda has to flee across the Thames dressed in white to blend in with the snow.",
+    "image":"media/Ancient_plan_of_Oxford_Castle.jpg",
+    "alt_text":"Oxford Castle",
+    "attribution":"Unknown Author, Public domain, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.864,51.08 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Wilton",
+    "content":"An army under Robert of Gloucester attacked Wilton Abbey defeating the army burning and looting the Abbey and nearby houses. His Stewart, William Martel, and his forces delayed Robert's forces giving the king time to escape. William Martel was captured and Sherborne Castle was given to Robert of Gloucester to secure William Martel's release.",
+    "image":"media/Wilton_House_Gardens.jpg",
+    "alt_text":"The Gardens at Wilton today.",
+    "attribution":"By Jan van der Crabben (Photographer) - Own work, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=304385",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.1221,51.6029 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Seige of Wallingford",
+    "content":"The seige of Wallingford ended in a stalemate but prompted negotiations.",
+    "image":"media/Model_of_Wallingford_castle.jpg",
+    "alt_text":"Model of Wallingford Castle",
+    "attribution":"U1097x, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.098,51.584 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Malmesbury",
+    "content":"Facing off at the River Avon at Malmesbury, Stephen yielded, leading soon after to the Treaty of Wallingford.",
+    "image":"media/Malmesbury.abbey.exterior.arp.jpg",
+    "alt_text":"Malmesbury Abbey",
+    "attribution":"Arpingstone, Public domain, via Wikimedia Commons",
+    "symbol":"media/castle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.1221,51.6029 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Treaty of Wallingford",
+    "content":"Treaty of Wallingford recognized Henry of Anjou, Matilda's son, as heir to Stephen leading to the end of the Anarchy.",
+    "image":"media/1024px-St_Nicholas_Wallingford_Castle.jpg",
+    "alt_text":"Wallingford Castle",
+    "attribution":"By Sciencebloke at the English language Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3651545",
+    "symbol":"media/castle.png"
+    }
+  }
+]
+}
