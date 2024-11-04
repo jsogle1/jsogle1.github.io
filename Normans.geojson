@@ -30,7 +30,7 @@
     "image":"media/Battle_of_Fulford.jpg",
     "alt_text":"Battle of Fulford, By Matthew Paris",
     "attribution":"Matthew Paris, Public domain, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -46,7 +46,7 @@
     "image":"media/Arbo_-_Battle_of_Stamford_Bridge_(1870).jpg",
     "alt_text":"Battle of Stamford Bridge, 1870, by Peter Nicolai Arbo",
     "attribution":"Peter Nicolai Arbo, Public domain, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -62,7 +62,7 @@
     "image":"media/450px-Bayeux_Tapestry_scene57_Harold_death.jpg",
     "alt_text":"Harold is dead",
     "attribution":"Myrabella, Public domain, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -78,7 +78,7 @@
     "image":"media/Vilem1.jpg",
     "alt_text":"Coronation of William I",
     "attribution":"Matthew Paris, Public domain, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/cathedral.png"
     }
   },
   {
@@ -94,7 +94,7 @@
     "image":"media/Robert Batty - Durham; the Castle and Cathedral from the River - 9338.jpg",
     "alt_text":"Durham-Site of Robert Comines Murder",
     "attribution":"Robert Batty, Public domain, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -126,7 +126,7 @@
     "image":"media/Great_men_and_famous_women_-_a_series_of_pen_and_pencil_sketches_of_the_lives_of_more_than_200_of_the_most_prominent_personages_in_history_Volume_1_(1894)_(14760340656).jpg",
     "alt_text":"Rebellion culminating in the harrying",
     "attribution":"Internet Archive Book Images, No restrictions, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -142,7 +142,7 @@
     "image":"media/Battleabbey-wyrdlight-0170.jpg",
     "alt_text":"Battle Abbey",
     "attribution":"WyrdLight.com, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/cathedral.png"
     }
   },
   {
@@ -158,7 +158,7 @@
     "image":"media/Durham_-_Turner.jpg",
     "alt_text":"Durham Cathedral by Turner",
     "attribution":"Joseph Mallord William Turner, CC0, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/cathedral.png"
     }
   },
   {
@@ -174,7 +174,7 @@
     "image":"media/Siege_of_Norwich_castle_from_Project_Gutenberg's_The_Siege_of_Norwich_Castle,_by_Matilda_Maria_Blake._2012.jpg",
     "alt_text":"Ralph de Gael, a leader of the revolt.",
     "attribution":"By Matilda Maria Blake - Project Gutenberg's The Siege of Norwich Castle, by Matilda Maria BlakeThis eBook is for the use of anyone anywhere at no cost and withalmost no restrictions whatsoever. You may copy it, give it away orre-use it under the terms of the Project Gutenberg License includedwith this eBook or online at www.gutenberg.org/licenseTitle: The Siege of Norwich Castle: A story of the last struggle against the ConquerorRelease Date: October 24, 2012 [EBook #41168]Language: English, Public Domain, https://commons.wikimedia.org/w/index.php?curid=126355547",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -190,7 +190,7 @@
     "image":"media/Waltheof,_earl_of_Northumbria_Croyland_Abbey.jpg\tEarl Waltheof\tThorvaldsson, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
     "alt_text":"Earl Waltheof",
     "attribution":"Thorvaldsson, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/death.png"
     }
   },
   {
@@ -238,7 +238,7 @@
     "image":"media/Adela.jpg",
     "alt_text":"Stephen Henry's wife, Adela",
     "attribution":"By Unknown author - http://numerique.bibliotheque.toulouse.fr/collect/general/index/assoc//ark:/74899/B315556101_MS0450_190R.dir/img0064_screen.jpeg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=9472395",
-    "symbol":"media/castle.png"
+    "symbol":"media/cathedral.png"
     }
   },
   {
@@ -270,7 +270,7 @@
     "image":"media/Chapelle_du_Prieuré_Saint_Gabriel_association_culturelle_du_Prieuré_Saint_Gabriel.jpg",
     "alt_text":"Priory of St. Gervais",
     "attribution":"By Sophie de Bourgoing - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=19322082",
-    "symbol":"media/castle.png"
+    "symbol":"media/death.png"
     }
   },
   {
@@ -286,7 +286,7 @@
     "image":"media/Charles_Gore_-_A_Large_Church_(Westminster_Abbey)_at_Sunset_-_B1977.14.5030_-_Yale_Center_for_British_Art.jpg",
     "alt_text":"Westminster Abbey",
     "attribution":"Charles Gore, CC0, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/cathedral.png"
     }
   },
   {
@@ -302,7 +302,7 @@
     "image":"media/Pevensey_Castle_Buck_1737.jpg",
     "alt_text":"Pevesney Castle",
     "attribution":"By Samuel & Nathaniel Buck - http://archexpo.net/fr/contenu/la-baie-de-pevensey-gravure-de-francis-jukes#.U2lCC4FdXAx, Public Domain, https://commons.wikimedia.org/w/index.php?curid=32627063",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -350,7 +350,7 @@
     "image":"media/Malcum_Camnoir.jpg",
     "alt_text":"Portaiy of Malcolm III",
     "attribution":"By Forman Armorial (produced for Mary, Queen of Scots) - This image is available from the National Library of Scotland under the sequence number or Shelfmark ID Adv.MS.31.4.2, fol.5r., Public Domain, https://commons.wikimedia.org/w/index.php?curid=1409450",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -382,7 +382,7 @@
     "image":"media/Saint_Sophia,_Constantinopolis.jpg",
     "alt_text":"Hagia Sophia in Constantinople",
     "attribution":"By Wilhelm Salzenberg (* 20. Januar 1803 in Münster; † 23. Oktober 1887 in Vernex-Montreux, Schweiz)Edited by Verlag von Ernst & Korn Berlin, 1854 - [1], Public Domain, https://commons.wikimedia.org/w/index.php?curid=98552725",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -398,7 +398,7 @@
     "image":"media/ScuolaMedicaMiniatura.jpg",
     "alt_text":"Sybilla de Conversano",
     "attribution":"By fol. 317v, Public Domain, https://commons.wikimedia.org/w/index.php?curid=354555",
-    "symbol":"media/castle.png"
+    "symbol":"media/cathedral.png"
     }
   },
   {
@@ -430,7 +430,7 @@
     "image":"media/Robert_de_Normandie_at_the_Siege_of_Antioch_1097-1098.jpg",
     "alt_text":"Robert Curthose at the Siege of Antioch",
     "attribution":"By Jean-Joseph Dassy - Painting by J.J. Dassy, 1850, \"Croisades, origines et consequences.\", Public Domain, https://commons.wikimedia.org/w/index.php?curid=3112301",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -446,7 +446,7 @@
     "image":"media/CrusaderAtrocitiesBibliothequeNationaleDeFrance.jpg",
     "alt_text":"Robert Curthose takes part in the Siege of Ma’arrat al-Numan, where lack of provisions, desperation, and possibly psychological warfare lead to cannibalism of the muslim dead.",
     "attribution":"By Unknown author - Les Croisades, Origines et consequences, by Claude Lebedel ISBN 2737341361, Public Domain, https://commons.wikimedia.org/w/index.php?curid=3200268",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -462,7 +462,7 @@
     "image":"media/1099_Siege_of_Jerusalem.jpg",
     "alt_text":"Siege of Jerusalem",
     "attribution":"By Unknown author - Ökumenisches Heiligenlexikon; Quelle dort: \"Miniatur aus dem 13. Jahrhundert: Belagerung und Eroberung von Jerusalem, in der Bibliothèque Nationale in Paris\", Public Domain, https://commons.wikimedia.org/w/index.php?curid=3853070",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -478,7 +478,7 @@
     "image":"media/1099_Ascalon.jpg",
     "alt_text":"Battle of Ascalon",
     "attribution":"By Victory Schnetz - http://collections.chateauversailles.fr/#57714ebb-1b3b-4095-afc0-7623c2e8ebf5, Public Domain, https://commons.wikimedia.org/w/index.php?curid=118325008",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -494,7 +494,7 @@
     "image":"media/WilliamRufus.jpg",
     "alt_text":"William Rufus death",
     "attribution":"Grandes Chroniques de France, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/death.png"
     }
   },
   {
@@ -510,7 +510,7 @@
     "image":"media/Coronation_of_henry_i.jpg",
     "alt_text":"Henry I coronated at Westminster Abbey",
     "attribution":"Unknown author, Public domain, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/cathedral.png"
     }
   },
   {
@@ -526,7 +526,7 @@
     "image":"media/Matylda_zena.jpg",
     "alt_text":"Matilda, Henry I bride",
     "attribution":"By Anonymous - http://molcat1.bl.uk/IllImages/Kslides%5Cmid/K066/K066599.jpg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=9643622",
-    "symbol":"media/castle.png"
+    "symbol":"media/cathedral.png"
     }
   },
   {
@@ -542,7 +542,7 @@
     "image":"media/800px-SelseyHaylingPortsea.jpg",
     "alt_text":"Coast of Portsmouth",
     "attribution":"By JohnArmagh - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=16374436",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -574,7 +574,7 @@
     "image":"media/Tinchebray.jpg",
     "alt_text":"Battle of Tinchebray",
     "attribution":"By Rohan Master - [1], [2], [3], Public Domain, https://commons.wikimedia.org/w/index.php?curid=9477396",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -606,7 +606,7 @@
     "image":"media/Ludvik6_jindrichI_Bremule.jpg",
     "alt_text":"Battle of Brémule",
     "attribution":"Unknown author, Public domain, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -622,7 +622,7 @@
     "image":"media/Vilém_syn.jpg",
     "alt_text":"William Adelin, who died on the White Ship in Harfleur Harbour",
     "attribution":"By Anonymous - http://molcat1.bl.uk/IllImages/Kslides%5Cmid/K066/K066599.jpg, Public Domain, https://commons.wikimedia.org/w/index.php?curid=9643675",
-    "symbol":"media/castle.png"
+    "symbol":"media/death.png"
     }
   },
   {
@@ -654,7 +654,7 @@
     "image":"media/Henry_I_Cotton_Claudius_D._ii,_f._45v.jpg",
     "alt_text":"Picture of Henry I",
     "attribution":"By Medieval artists - British Library manuscripts blog, Public Domain, https://commons.wikimedia.org/w/index.php?curid=18090729",
-    "symbol":"media/castle.png"
+    "symbol":"media/death.png"
     }
   },
   {
@@ -670,7 +670,7 @@
     "image":"media/StepanAngl.jpg",
     "alt_text":"Sephen's Coronation",
     "attribution":"By Matthew Paris - Ms 6712 (A.6.89), fol.133rThis scan from http://images.bridgeman.co.uk/cgi-bin/bridgemanImage.cgi/400wm.CHL.8579020.7055475/206579.jpg, originally from Flores Historiarum (see Edmund King, \"King Stephen\" (2010), Yale University Press, illustration 5.), Public Domain, https://commons.wikimedia.org/w/index.php?curid=8099785",
-    "symbol":"media/castle.png"
+    "symbol":"media/cathedral.png"
     }
   },
   {
@@ -686,7 +686,7 @@
     "image":"media/Robert_Ricart's_map_of_Bristol.jpg",
     "alt_text":"Robert of Gloucester rebels along with other nobels of behalf of Matilda. He seizes Bristol.",
     "attribution":"By Robert Ricart - From the folio Ricart's Maiores Kalendar and The Lord Mayors Calendar whose physical copy is at Bristol Archives, B Bond Warehouse, Smeaton Road, Bristol BS1 6XN. The document is reference number 04720 in the Office's catalogue., Public Domain, https://en.wikipedia.org/w/index.php?curid=34425323",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -702,7 +702,7 @@
     "image":"media/Scottish_Atrocities.jpg",
     "alt_text":"Scots ravaging the countryside.",
     "attribution":"The original uploader was Deacon of Pndapetzim at English Wikipedia.(Original text: Unknown), Public domain, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -734,7 +734,7 @@
     "image":"media/BattleOf_Lincoln.jpg",
     "alt_text":"The Battle of Lincoln in the Historia Anglorum",
     "attribution":"By Unknown author - The British Library Catalogue of Illuminated Manuscripts, Public Domain, https://commons.wikimedia.org/w/index.php?curid=9059427",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -750,7 +750,7 @@
     "image":"media/Empress_Mathilda.jpg",
     "alt_text":"Empress Matilda, who led her husbands army.",
     "attribution":"By PurpleHz - Own work; alternative at http://imagesonline.bl.uk/imagemap/?cat_id=44&last_cat_id=4&level=2&page=30&search=Events+-and-+Movements+(Historical)&selectedLevels[0]=Historical, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1378038",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -782,7 +782,7 @@
     "image":"media/Ancient_plan_of_Oxford_Castle.jpg",
     "alt_text":"Oxford Castle",
     "attribution":"Unknown Author, Public domain, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -798,7 +798,7 @@
     "image":"media/Wilton_House_Gardens.jpg",
     "alt_text":"The Gardens at Wilton today.",
     "attribution":"By Jan van der Crabben (Photographer) - Own work, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=304385",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -814,7 +814,7 @@
     "image":"media/Model_of_Wallingford_castle.jpg",
     "alt_text":"Model of Wallingford Castle",
     "attribution":"U1097x, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
@@ -830,7 +830,7 @@
     "image":"media/Malmesbury.abbey.exterior.arp.jpg",
     "alt_text":"Malmesbury Abbey",
     "attribution":"Arpingstone, Public domain, via Wikimedia Commons",
-    "symbol":"media/castle.png"
+    "symbol":"media/battle.png"
     }
   },
   {
