@@ -91,7 +91,7 @@
     "zoom":12,
     "title":"Rebellions in Northumbria",
     "content":"Multiple uprisings by Northumbrian nobles and locals against Norman rule. These rebellions, including the killing of Norman Baron Robert de Comines, were crushed by William, culminating in the Harrying of the North.",
-    "image":"media/Robert Batty - Durham; the Castle and Cathedral from the River - 9338.jpg",
+    "image":"media/Robert_Batty.jpg",
     "alt_text":"Durham-Site of Robert Comines Murder",
     "attribution":"Robert Batty, Public domain, via Wikimedia Commons",
     "symbol":"media/battle.png"
@@ -123,7 +123,7 @@
     "zoom":12,
     "title":"Harrying of the North",
     "content":"A brutal campaign by William the Conqueror to suppress rebellions in Northumbria. Villages were burned, crops destroyed, thousands were killed or displaced devastating the region for years. The accompanying famine killed 100,00.",
-    "image":"media/Great_men_and_famous_women_-_a_series_of_pen_and_pencil_sketches_of_the_lives_of_more_than_200_of_the_most_prominent_personages_in_history_Volume_1_(1894)_(14760340656).jpg",
+    "image":"media/Great_men.jpg",
     "alt_text":"Rebellion culminating in the harrying",
     "attribution":"Internet Archive Book Images, No restrictions, via Wikimedia Commons",
     "symbol":"media/battle.png"
@@ -267,7 +267,7 @@
     "zoom":12,
     "title":"Death of William the Conqueror",
     "content":"William I died at the Priory of St. Gervais in Rouen, Normandy, and his son, William II, became King of England. The succession stabilized Norman rule, but tensions remained, particularly in the northern regions.",
-    "image":"media/Chapelle_du_Prieuré_Saint_Gabriel_association_culturelle_du_Prieuré_Saint_Gabriel.jpg",
+    "image":"media/Chapelle.jpg",
     "alt_text":"Priory of St. Gervais",
     "attribution":"By Sophie de Bourgoing - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=19322082",
     "symbol":"media/death.png"
