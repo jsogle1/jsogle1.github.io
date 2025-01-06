@@ -1,0 +1,1205 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.53210054,49.50153114 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"La Platte Mare",
+    "content":"Cist-in-circle burial chamber. Guernsey. Channel islands. Neolithic or Early Bronze Age. 2500-1800 BC.",
+    "image":"media/LaPlatteMareCist-in-Circle_sr1.jpg",
+    "alt_text":"Cist-in-circle burial chamber. Guernsey. Channel islands. Neolithic or Early Bronze Age. 2500-1800 BC.",
+    "attribution":"Richard Scott-Robinson",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.130556,49.196389 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Ville-ès-Nouaux",
+    "content":"Cist-in-circle. Dolmen. First Tower, Saint Helier, Jersey, Channel Islands. Neolithic. 2800–2000 BC.",
+    "image":"media/1200px-Dolmens_La_Ville_ès_Nouaux_Saint_Hélyi_Jèrri.jpg",
+    "alt_text":"Cist-in-circle. Dolmen. First Tower, Saint Helier, Jersey, Channel Islands. Neolithic. 2800–2000 BC.",
+    "attribution":"Man vyi, Public domain, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.61958,50.09021 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Boscawen-Un",
+    "content":"Stone Circle. Penwith, Cornwall, England. Neolithic / Bronze Age.",
+    "image":"media/1200px-Boscawen-Un_stone_circle_2011.jpg",
+    "alt_text":"Stone Circle. Penwith, Cornwall, England. Neolithic / Bronze Age.",
+    "attribution":"Pasicles, CC0, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.593699,50.160541 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Boskednan",
+    "content":"Stone Circle. Boskednan, Cornwall, England. Late Neolithic / Bronze Age",
+    "image":"media/1024px-Boskednan_stones_at_sunset_penwith.jpg",
+    "alt_text":"Stone Circle. Boskednan, Cornwall, England. Late Neolithic / Bronze Age",
+    "attribution":"Jim Champion, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.4717,50.5199 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Craddock Moor ",
+    "content":"Stone Circle. Bodmin Moor, Cornwall, England. Bronze Age.",
+    "image":"media/Stone_circle_on_Craddock_Moor_-_geograph.org.uk_-_1511039.jpg",
+    "alt_text":"Stone Circle. Bodmin Moor, Cornwall, England. Bronze Age.",
+    "attribution":"Rod Allday / Stone circle on Craddock Moor",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.483628,50.398082 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Duloe",
+    "content":"Stone Circle. Duloe, Cornwall, England. Bronze Age.",
+    "image":"media/Duloe_Stone_Circle_-_geograph.org.uk_-_1242170.jpg",
+    "alt_text":"Stone Circle. Duloe, Cornwall, England. Bronze Age.",
+    "attribution":"Philip Halling / Duloe Stone Circle",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.635109,50.567448 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Emblance",
+    "content":"Two Stone Circles. Bodmin Moor, Cornwall, England.. Bronze Age.",
+    "image":"media/Stone_Circle_by_track_on_King_Arthur's_Downs_-_geograph.org.uk_-_29689.jpg",
+    "alt_text":"Two Stone Circles. Bodmin Moor, Cornwall, England.. Bronze Age.",
+    "attribution":"Sheila Russell / Stone Circle by track on King Arthur's Downs",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.62237,50.58995 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Fenacre ",
+    "content":"Stone Circle. Bodmin Moor, Cornwall, England.. Neolithic/Bronze Age.",
+    "image":"media/Stone_circle_near_Rough_Tor_-_geograph.org.uk_-_2820042.jpg",
+    "alt_text":"Stone Circle. Bodmin Moor, Cornwall, England.. Neolithic/Bronze Age.",
+    "attribution":"Philip Halling / Stone circle near Rough Tor",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.458,50.5164 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"The Hurlers",
+    "content":"Three Stone Circles. Bodmin Moor, Cornwall, England. Bronze Age.",
+    "image":"media/Hurlers_2017.jpg",
+    "alt_text":"Three Stone Circles. Bodmin Moor, Cornwall, England. Bronze Age.",
+    "attribution":"Murgatroyd49, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.58973,50.06504 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"The Merry Maidens",
+    "content":"Stone Circle. Penwith, Cornwall, England. Neolithic",
+    "image":"media/The_Merry_Maidens_Penwith.jpg",
+    "alt_text":"Stone Circle. Penwith, Cornwall, England. Neolithic",
+    "attribution":"Jim Champion, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.458,50.5164 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Altarnun ",
+    "content":"Stone Circle. Bodmin Moor, Cornwall, England.. Bronze Age.",
+    "image":"media/Ninestones_of_altarnun_bodmin_moor.jpg",
+    "alt_text":"Stone Circle. Bodmin Moor, Cornwall, England.. Bronze Age.",
+    "attribution":"JimChampion, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.650258,50.589546 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Stannon ",
+    "content":"Stone Circle. Bodmin Moor, Cornwall, England.. Late Neolithic/Bronze Age.",
+    "image":"media/Stone_Circle_with_modern_china_clay_works._-_geograph.org.uk_-_418770.jpg",
+    "alt_text":"Stone Circle. Bodmin Moor, Cornwall, England.. Late Neolithic/Bronze Age.",
+    "attribution":"Jon Coupland / Stone Circle with modern china clay works.",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.658519,50.133719 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Tregeseal East ",
+    "content":"Stone Circle. Near St. Just, Cornwall, England.",
+    "image":"media/1024px-Tregeseal_east_towards_carn_kenidjack.jpg",
+    "alt_text":"Stone Circle. Near St. Just, Cornwall, England.",
+    "attribution":"Jim Champion, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.639282,50.544821 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Trippet Stones",
+    "content":"Stone Circle. Bodmin Moor, Cornwall, England. Late Neolithic/Bronze Age.",
+    "image":"media/Trippet_Stones_-_geograph.org.uk_-_3273960.jpg",
+    "alt_text":"Stone Circle. Bodmin Moor, Cornwall, England. Late Neolithic/Bronze Age.",
+    "attribution":"Sandy Gerrard / Trippet Stones",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.08489,54.15647 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Birkrigg ",
+    "content":"Stone Circle. Birkrigg Common, Cumbria, England. Neolithic/Bronze Age.",
+    "image":"media/Birkrigg_stone_circle.jpg",
+    "alt_text":"Stone Circle. Birkrigg Common, Cumbria, England. Neolithic/Bronze Age.",
+    "attribution":"Yohan euan o4, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.274612,54.409776 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Brat Hills ",
+    "content":"Stone Circle. Brat's Hill, Cumbria, England, Bronze Age.",
+    "image":"media/Stone_Circle_-_geograph.org.uk_-_1175177.jpg",
+    "alt_text":"Stone Circle. Brat's Hill, Cumbria, England, Bronze Age.",
+    "attribution":"Michael Graham / Stone Circle",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.276475,54.410206 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"White Moss",
+    "content":"Stone Circle. Burnmoor, Cumbria, England Bronze Age.",
+    "image":"media/Stone_circle_on_White_Moss_-_geograph.org.uk_-_746574.jpg",
+    "alt_text":"Stone Circle. Burnmoor, Cumbria, England Bronze Age.",
+    "attribution":"David Brown / Stone circle on White Moss",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.277331,54.412983 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Low Longrigg ",
+    "content":"Stone Circle. Burnmoor, Cumbria, England Bronze Age.",
+    "image":"media/Stone_Circle_-_geograph.org.uk_-_1174563.jpg",
+    "alt_text":"Stone Circle. Burnmoor, Cumbria, England Bronze Age.",
+    "attribution":"Michael Graham / Stone Circle",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.098384,54.602837 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Castlerigg ",
+    "content":"Stone Circle. Lake District, Cumbria, England. Neolithic/Bronze Age",
+    "image":"media/1280px-Castlerigg2.jpg",
+    "alt_text":"Stone Circle. Lake District, Cumbria, England. Neolithic/Bronze Age",
+    "attribution":"Rob Bendall(For more information, see my userpage...), Attribution, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.556181,54.468337 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Gamelands ",
+    "content":"Stone Circle. Knot Hill, Cumbria, England. Neolithic/Broze Age",
+    "image":"media/Gamelands_stone_circle_2.jpg",
+    "alt_text":"Stone Circle. Knot Hill, Cumbria, England. Neolithic/Broze Age",
+    "attribution":"C1614, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.452687,54.513013 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Kinniside ",
+    "content":"Stone Circle. Kinniside, Cumbria, England, Neolithic/Bronze Age",
+    "image":"media/Kinninside_Stone_Circle_-_geograph.org.uk_-_1125881.jpg",
+    "alt_text":"Stone Circle. Kinniside, Cumbria, England, Neolithic/Bronze Age",
+    "attribution":"Michael Graham / Kinninside Stone Circle",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.66765,54.72794 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Long Meg and Her Daughters",
+    "content":"Stone Circle. Little Salkeld, Cumbria, England. Neolithic.",
+    "image":"media/LongMegAndHerDaughters(SimonLedingham)May2005.jpg",
+    "alt_text":"Stone Circle. Little Salkeld, Cumbria, England. Neolithic.",
+    "attribution":"Simon Ledingham, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.628,54.514 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Oddendale ",
+    "content":"Stone Circle. Penwrith, Cumbria, England. Neolithic/Early Bronze Age.",
+    "image":"media/Cairn_circle,_Oddendale_-_geograph.org.uk_-_2400493.jpg",
+    "alt_text":"Stone Circle. Penwrith, Cumbria, England. Neolithic/Early Bronze Age.",
+    "attribution":"Karl and Ali / Cairn circle, Oddendale",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.273845,54.282482 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Swinside ",
+    "content":"Stone Circle. Swinside Fell, Cumbria, England. Neolithic/Bronze Age.",
+    "image":"media/Swinside_Stone_Circle_02.jpg",
+    "alt_text":"Stone Circle. Swinside Fell, Cumbria, England. Neolithic/Bronze Age.",
+    "attribution":"Michal Gregor, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.761667,53.168889 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Arbor Low Henge",
+    "content":"Stone Circle. White Peak, Derbyshire, England.",
+    "image":"media/Arbor_Low_8.jpg",
+    "alt_text":"Stone Circle. White Peak, Derbyshire, England.",
+    "attribution":"Thebrainchamber1, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.583735,53.27652 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Barbrook One",
+    "content":"Stone Circle. Ramsey Moor, Derbyshire, England. Bronze Age.",
+    "image":"media/Stone_circle_and_cairn_-_geograph.org.uk_-_1214808.jpg",
+    "alt_text":"Stone Circle. Ramsey Moor, Derbyshire, England. Bronze Age.",
+    "attribution":"Martin Speck / Stone circle and cairn",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.645007,53.162497 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Doll Tor",
+    "content":"Stone Circle. Birchover, Derbyshire, England. Bronze Age.",
+    "image":"media/Doll_tor_stone_circle.jpg",
+    "alt_text":"Stone Circle. Birchover, Derbyshire, England. Bronze Age.",
+    "attribution":"Elfmeterschiessen, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.678056,53.378056 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"The Seven Stones of Hordron",
+    "content":"Stone Circle. Hordron, Derbyshire, England. Bronze Age.",
+    "image":"media/Hordron_Edge_stone_circle_-_geograph.org.uk_-_1365438.jpg",
+    "alt_text":"Stone Circle. Hordron, Derbyshire, England. Bronze Age.",
+    "attribution":"Martin Speck / Hordron Edge stone circle",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.628889,53.168056 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Nine Ladies",
+    "content":"Stone Circle, Stanton Moor, Derbyshire, England. Bronze Age",
+    "image":"media/Nine_Ladies_02.jpg",
+    "alt_text":"Stone Circle, Stanton Moor, Derbyshire, England. Bronze Age",
+    "attribution":"PaleCloudedWhite, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.664441,53.160457 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Grey Ladies",
+    "content":"Stone Circle. Harthill Moor, Derbyshire, England. Bronze Age.",
+    "image":"media/1280px-Nine_Stones_Close,_Derbyshire,_showing_the_four_stones_that_remain.jpg",
+    "alt_text":"Stone Circle. Harthill Moor, Derbyshire, England. Bronze Age.",
+    "attribution":"MichaelMaggs, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.59894,50.68856 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Gorwell Circle",
+    "content":"Stone Circle. Gorwell Farm, Devon, England. Bronze Age.",
+    "image":"media/Kingston_Russell_stone_circle_-_geograph.org.uk_-_6690140.jpg",
+    "alt_text":"Stone Circle. Gorwell Farm, Devon, England. Bronze Age.",
+    "attribution":"Kingston Russell stone circle by Sandy Gerrard, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.0089,50.6385 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Rempstone",
+    "content":"Stone Circle. Island of Purbeck, Devon, England. Neolithic/Bronze Age.",
+    "image":"media/Part_of_the_Rempstone_stone_circle_in_birch_woodland,_Purbeck_-_geograph.org.uk_-_25149.jpg",
+    "alt_text":"Stone Circle. Island of Purbeck, Devon, England. Neolithic/Bronze Age.",
+    "attribution":"Jim Champion / Part of the Rempstone stone circle in birch woodland, Purbeck",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.55266,50.71217 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Nine Stones",
+    "content":"Stone Circle. Winterbourne Abbas, Devon, England. Neolithic/Bronze Age.",
+    "image":"media/Nine_Stones_Close,_Derbyshire,_showing_the_four_stones_that_remain.jpg",
+    "alt_text":"Stone Circle. Winterbourne Abbas, Devon, England. Neolithic/Bronze Age.",
+    "attribution":"MichaelMaggs, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.431014,53.638839 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Cheetham Close",
+    "content":"Cheetham Close, Near Turton, on the West Pennine Moors., Lancashire, England",
+    "image":"media/1280px-Not_the_most_impressive_of_stone_circles_-_geograph.org.uk_-_2385288.jpg",
+    "alt_text":"Cheetham Close, Near Turton, on the West Pennine Moors., Lancashire, England",
+    "attribution":"By Ian Greig, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=32479920",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.112023,55.68677 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Duddo Five Stones",
+    "content":"Duddo Five Stones, Near Duddo, overlooking the River Tweed., Northumberland, England",
+    "image":"media/Duddo_Stone_Circle_-_geograph.org.uk_-_1729405.jpg",
+    "alt_text":"Duddo Five Stones, Near Duddo, overlooking the River Tweed., Northumberland, England",
+    "attribution":"By Andrew Curtis, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=14444807",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.269297,55.067372 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"The Goatstones",
+    "content":"The Goatstones, Near Ravensheugh Crags, west of Bellingham., Northumberland, England",
+    "image":"media/The_Goatstones_-_geograph.org.uk_-_1138462.jpg",
+    "alt_text":"The Goatstones, Near Ravensheugh Crags, west of Bellingham., Northumberland, England",
+    "attribution":"By Andrew Curtis, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=13850132",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.04692,55.4783 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Threestoneburn Stone Circle",
+    "content":"Threestoneburn Stone Circle, Near Ingram, in the Cheviot Hills., Northumberland, England",
+    "image":"media/Threestone_Burn_stone_circle_-_geograph.org.uk_-_384800.jpg",
+    "alt_text":"Threestoneburn Stone Circle, Near Ingram, in the Cheviot Hills., Northumberland, England",
+    "attribution":"By Kenneth Ross, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=12902576",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.5708,51.975553 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"The King's Men",
+    "content":"The King's Men, Part of the Rollright Stones, near Chipping Norton., Oxfordshire, England",
+    "image":"media/Rollright_Stones_-_Kings_Men_Blaeu_1645-1662_GMG1128-117_.jpg",
+    "alt_text":"The King's Men, Part of the Rollright Stones, near Chipping Norton., Oxfordshire, England",
+    "attribution":"Joan Blaeu, Public domain, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.0261,52.5787 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Mitchell's Fold",
+    "content":"Mitchell's Fold, Near Chirbury, on Stapeley Hill., Shropshire, England",
+    "image":"media/Mitchells_Fold_-_geograph.org.uk_-_558529.jpg",
+    "alt_text":"Mitchell's Fold, Near Chirbury, on Stapeley Hill., Shropshire, England",
+    "attribution":"By Richard Webb, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=13087561",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.576041,51.367114 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Stanton Drew",
+    "content":"Stanton Drew, Near the village of Stanton Drew, south of Bristol., Somerset, England",
+    "image":"media/Stanton_Drew_stone_circle_23.jpg",
+    "alt_text":"Stanton Drew, Near the village of Stanton Drew, south of Bristol., Somerset, England",
+    "attribution":"By Rodw - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=30107876",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.6604,51.0963 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Withypool Stone Circle",
+    "content":"Withypool Stone Circle, Near Withypool, on Exmoor., Somerset, England",
+    "image":"media/Withypool_Stone_Circle_Plan.jpg",
+    "alt_text":"Withypool Stone Circle, Near Withypool, on Exmoor., Somerset, England",
+    "attribution":"Midnightblueowl (talk) (Uploads) (after Gray 1906), CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.809494,53.9016 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Twelve Apostles",
+    "content":"Twelve Apostles, Near Ilkley Moor, on Burley Moor., West Yorkshire, England",
+    "image":"media/The_Twelve_Apostles_of_Ilkley_Moor_Stone_Circle_-_geograph.org.uk_-_12971.jpg",
+    "alt_text":"Twelve Apostles, Near Ilkley Moor, on Burley Moor., West Yorkshire, England",
+    "attribution":"Adam Guy / The Twelve Apostles of Ilkley Moor Stone Circle",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.854167,51.428611 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Avebury",
+    "content":"Avebury, In the village of Avebury, north of Marlborough., Wiltshire, England",
+    "image":"media/Avebury_aerial.jpg",
+    "alt_text":"Avebury, In the village of Avebury, north of Marlborough., Wiltshire, England",
+    "attribution":"By Detmar Owen - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=70228378",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.826111,51.178889 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Stonehenge",
+    "content":"Stonehenge, Near Amesbury, on Salisbury Plain., Wiltshire, England",
+    "image":"media/Stonehenge_Total.jpg",
+    "alt_text":"Stonehenge, Near Amesbury, on Salisbury Plain., Wiltshire, England",
+    "attribution":"Stefan Kühn, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.8969,51.7343 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Ardgroom",
+    "content":"Ardgroom Stone Circle, Near the village of Ardgroom, on the Beara Peninsula., County Cork, Ireland",
+    "image":"media/Ardgroom_Stone_Circle.jpg",
+    "alt_text":"Ardgroom Stone Circle, Near the village of Ardgroom, on the Beara Peninsula., County Cork, Ireland",
+    "attribution":"Ingo Mehling, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.375097,51.742145 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Brúine Móra",
+    "content":"Brúine Móra, great dwellings of the fairies. Southeast of Kealkill, overlooking Bantry Bay to the west, County Cork, Ireland.",
+    "image":"media/breenymore-boulder-burials-and-remains-of-stone-circle.jpg",
+    "alt_text":"Brúine Móra, great dwellings of the fairies. Southeast of Kealkill, overlooking Bantry Bay to the west, County Cork, Ireland.",
+    "attribution":"",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.91635,52.00043 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Carraig an Ghiolla",
+    "content":"Carraig an Ghiolla, 2.9 km north-east of Ballinagree, County Cork, Ireland",
+    "image":"media/640px-Carrigagulla_03.jpg",
+    "alt_text":"Carraig an Ghiolla, 2.9 km north-east of Ballinagree, County Cork, Ireland",
+    "attribution":"Ceoil at the English-language Wikipedia, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.371,51.745 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Kealkill Stone Circle",
+    "content":"Kealkill Stone Circle, Kealkill, County Cork, Ireland",
+    "image":"media/Kealkill_Stone_Circle_(geograph_3325717).jpg",
+    "alt_text":"Kealkill Stone Circle, Kealkill, County Cork, Ireland",
+    "attribution":"Hywel Williams / Kealkill Stone Circle",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.08702,51.56456 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Drombeg Stone Circle",
+    "content":"Drombeg Stone Circle, Near Glandore, approximately 2.4 km east of the village., County Cork, Ireland",
+    "image":"media/Drombeg_Stone_Circle_West.jpg",
+    "alt_text":"Drombeg Stone Circle, Near Glandore, approximately 2.4 km east of the village., County Cork, Ireland",
+    "attribution":"Ingo Mehling, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.998987,51.580102 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Bohonagh Stone Circle",
+    "content":"Bohonagh Stone Circle, Near Rosscarbery, west of the town., County Cork, Ireland",
+    "image":"media/Bohonagh_002L.jpg",
+    "alt_text":"Bohonagh Stone Circle, Near Rosscarbery, west of the town., County Cork, Ireland",
+    "attribution":"By Jack Dempsy",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.02448,52.0068 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Knocknakilla Stone Circle",
+    "content":"Knocknakilla Stone Circle, Near Millstreet, on the slopes of Musherabeg Mountain., County Cork, Ireland",
+    "image":"media/Knocknakilla.jpg",
+    "alt_text":"Knocknakilla Stone Circle, Near Millstreet, on the slopes of Musherabeg Mountain., County Cork, Ireland",
+    "attribution":"Ceoil, CC0, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.04485,52.004426 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Galtane Megalithic Complex",
+    "content":"Megalithic Complex containing two circles, a wedge tomb and stone alignments.",
+    "image":"media/1280px-Glantane_East_Wedge_Tomb.jpg",
+    "alt_text":"Megalithic Complex containing two circles, a wedge tomb and stone alignments.",
+    "attribution":"Coil00, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.883359,51.643162 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Templebryan (Druids Temple) Stone Circle",
+    "content":"Tembple Bry, Stone Cricle, County Cork, Ireland",
+    "image":"media/Templebryan_1.jpg",
+    "alt_text":"Tembple Bry, Stone Cricle, County Cork, Ireland",
+    "attribution":"By Ceoil at the English-language Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=32769550",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -7.604667,54.850417 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Uragh Stone Circle",
+    "content":"Uragh Stone Circle, Near Gleninchaquin Park, overlooking Lough Inchiquin., County Kerry, Ireland",
+    "image":"media/1920px-Beltony_stone_circle_at_sunset.jpg",
+    "alt_text":"Uragh Stone Circle, Near Gleninchaquin Park, overlooking Lough Inchiquin., County Kerry, Ireland",
+    "attribution":"By Mark McGaughey - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=68862040",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.158075,51.814914 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Eightercua Stone Row",
+    "content":"Eightercua Stone Row, Near Waterville, on the Iveragh Peninsula., County Kerry, Ireland",
+    "image":"media/1920px-Eightercua_Stone_Alignment,_Ring_of_Kerry_(506549)_(27422902643).jpg",
+    "alt_text":"Eightercua Stone Row, Near Waterville, on the Iveragh Peninsula., County Kerry, Ireland",
+    "attribution":"Robert Linsdell from St. Andrews, Canada, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.519167,54.250856 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Carrowmore Stone Circle",
+    "content":"Carrowmore Stone Circle, Near Sligo, part of a larger Neolithic cemetery., County Sligo, Ireland",
+    "image":"media/Carrowmore_Megalithic_Cemetery_P7_2015_09_08.jpg",
+    "alt_text":"Carrowmore Stone Circle, Near Sligo, part of a larger Neolithic cemetery., County Sligo, Ireland",
+    "attribution":"By Andreas F. Borchert, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=49887302",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -7.604667,54.850417 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Beltany Stone Circle",
+    "content":"Beltany Stone Circle, Near Raphoe, on a hilltop., County Donegal, Ireland",
+    "image":"media/1920px-Beltony_stone_circle_at_sunset.jpg",
+    "alt_text":"Beltany Stone Circle, Near Raphoe, on a hilltop., County Donegal, Ireland",
+    "attribution":"By Mark McGaughey - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=68862040",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.54189,52.514238 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Grange Stone Circle",
+    "content":"Grange Stone Circle, Near Lough Gur, southeast of Limerick city., County Limerick, Ireland",
+    "image":"media/640px-Lough_Gur_-_Grange_stone_circle_-_20180707165632640px-Lough_Gur_-_Grange_stone_circle_-_20180707165632g",
+    "alt_text":"Grange Stone Circle, Near Lough Gur, southeast of Limerick city., County Limerick, Ireland",
+    "attribution":"Ruhrfisch, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.44557,57.27702 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Easter Aquhorthies Stone Circle",
+    "content":"Easter Aquhorthies Stone Circle, Near Inverurie, overlooking Bennachie., Aberdeenshire, Scotland",
+    "image":"media/Easter_Aquhorthies_stone_circle_wide_view.jpg",
+    "alt_text":"Easter Aquhorthies Stone Circle, Near Inverurie, overlooking Bennachie., Aberdeenshire, Scotland",
+    "attribution":"By stu smith from Hampton Wick / Aberdeen, uk - easter aquhorthies stone circle, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=40210690",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.416667,57.333333 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Loanhead of Daviot Stone Circle",
+    "content":"Loanhead of Daviot Stone Circle, Near Inverurie, on farmland., Aberdeenshire, Scotland",
+    "image":"media/Loanhead_of_Daviot.jpg",
+    "alt_text":"Loanhead of Daviot Stone Circle, Near Inverurie, on farmland., Aberdeenshire, Scotland",
+    "attribution":"By Paul Allison, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=3948992",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.470833,57.141389 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Sunhoney Stone Circle",
+    "content":"Sunhoney Stone Circle, Near Echt, on the slopes of a hill., Aberdeenshire, Scotland",
+    "image":"media/Sunhoney_stone_circle_-_geograph.org.uk_-_74031.jpg",
+    "alt_text":"Sunhoney Stone Circle, Near Echt, on the slopes of a hill., Aberdeenshire, Scotland",
+    "attribution":"By Peter Ward, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=9186496",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.498722,56.12355 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Temple Wood Stone Circles",
+    "content":"Temple Wood (Half Moon Wood) Stone Circles, Near Kilmartin, in the Kilmartin Glen, Argyll and Bute, Scotland",
+    "image":"media/1024px-Temple_wood_2006.jpg",
+    "alt_text":"Temple Wood (Half Moon Wood) Stone Circles, Near Kilmartin, in the Kilmartin Glen, Argyll and Bute, Scotland",
+    "attribution":"By Lnolan at the English-language Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=7247430",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.17593,55.253879 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Girdle Stanes Stone Circle",
+    "content":"Girdle Stanes stone circle near Eskdalemuir, Dumfries",
+    "image":"media/The_Girdle_Stanes_stone_circle_-_geograph.org.uk_-_819407",
+    "alt_text":"Girdle Stanes stone circle near Eskdalemuir, Dumfries",
+    "attribution":"By Walter Baxter, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=13497406",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.4868,56.111 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Ballymeanoch Stone Circle",
+    "content":"Ballymeanoch Standing Stones, Near Kilmartin, part of a complex of monuments., Argyll and Bute, Scotland",
+    "image":"media/1024px-Ballymeanoch_stones_2006.jpg",
+    "alt_text":"Ballymeanoch Standing Stones, Near Kilmartin, part of a complex of monuments., Argyll and Bute, Scotland",
+    "attribution":"By User Lnolan on en.wikipedia - Photo by Laurence Nolan (April 2006), uploaded by Laurence Nolan., CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=1141064",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.745145,58.197541 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Callanish Stones",
+    "content":"Callanish Stones, Near Callanish, on the Isle of Lewis., Isle of Lewis, Scotland",
+    "image":"media/Callanish_at_sunset_-_geograph.org.uk_-_820680.jpg",
+    "alt_text":"Callanish Stones, Near Callanish, on the Isle of Lewis., Isle of Lewis, Scotland",
+    "attribution":"By Tom Richardson, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=13501511",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.229723,59.001482 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Ring of Brodgar",
+    "content":"Ring of Brodgar, Near Stromness, on Mainland Orkney., Orkney Islands, Scotland",
+    "image":"media/Ring_of_Brodgar,_Orkney_Standing_Stones_02.jpg",
+    "alt_text":"Ring of Brodgar, Near Stromness, on Mainland Orkney., Orkney Islands, Scotland",
+    "attribution":"By Accuruss - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=81493458",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.208056,58.993889 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Standing Stones of Stenness",
+    "content":"Standing Stones of Stenness, Near Stromness, on Mainland Orkney., Orkney Islands, Scotland",
+    "image":"media/Standing_Stones_of_Stenness_062015.jpg",
+    "alt_text":"Standing Stones of Stenness, Near Stromness, on Mainland Orkney., Orkney Islands, Scotland",
+    "attribution":"By Wilson44691 - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=41293576",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.960241,56.601805 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Croft Moraig Stone Circle",
+    "content":"Croft Moraig Stone Circle, Near Aberfeldy, on the A827 road., Perth and Kinross, Scotland",
+    "image":"media/Croft_Moraig_Stone_Circle_-_geograph.org.uk_-_550696.jpg",
+    "alt_text":"Croft Moraig Stone Circle, Near Aberfeldy, on the A827 road., Perth and Kinross, Scotland",
+    "attribution":"By Dave Farmer, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=13084191",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -7.2825,57.564444 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Pobull Fhinn stone",
+    "content":"Pobull Fhinn stone circle on the Isle of North Uist in the Outer Hebrides.",
+    "image":"media/Pobull_Fhinn_20090608_from_the_north.jpg",
+    "alt_text":"Pobull Fhinn stone circle on the Isle of North Uist in the Outer Hebrides.",
+    "attribution":"By Otter - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=7644731",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.77,51.999 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Pentre Ifan",
+    "content":"Pentre Ifan Dolmen, Near Nevern, on a hillside., Pembrokeshire, Wales",
+    "image":"media/DMPentreIfanSide.jpg",
+    "alt_text":"Pentre Ifan Dolmen, Near Nevern, on a hillside., Pembrokeshire, Wales",
+    "attribution":"By LinguisticDemographer at en.wikipedia - Transferred from en.wikipedia to Commons by User:Jordi RoquÃ© using CommonsHelper., Public Domain, https://commons.wikimedia.org/w/index.php?curid=4284531",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.40545,52.92335 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Moel Tŷ Uchaf",
+    "content":"Moel Tŷ Uchaf stone circle, near the village of Llandrillo, Denbighshire, north Wales.",
+    "image":"media/Stone_circle_on_Moel_Ty-uchaf_-_geograph.org.uk_-_385370.jpg",
+    "alt_text":"Moel Tŷ Uchaf stone circle, near the village of Llandrillo, Denbighshire, north Wales.",
+    "attribution":"By Espresso Addict, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=11882034",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.011372,52.898233 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Bryn Cader Faner",
+    "content":"Bryn Cader Faner, Near Llanbedr, in the Rhinogydd mountains., Gwynedd, Wales",
+    "image":"media/Bryn_Cader_Faner_stone_circle_-_geograph.org.uk_-_185579.jpg",
+    "alt_text":"Bryn Cader Faner, Near Llanbedr, in the Rhinogydd mountains., Gwynedd, Wales",
+    "attribution":"By Rudi Winter, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=9293580",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.103864,52.821861 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Druid's Circle",
+    "content":"Druid's Circle, Near Penmaenmawr, overlooking the coast., Gwynedd, Wales",
+    "image":"media/Penmaenmawr_Meini_Hirion_a_Tal-y-Fan.jpg",
+    "alt_text":"Druid's Circle, Near Penmaenmawr, overlooking the coast., Gwynedd, Wales",
+    "attribution":"Unknown, ",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.302127,53.177174 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Bryn Gwyn Stones",
+    "content":"Bryn Gwyn Stones, Near Llanddaniel Fab, close to Plas Newydd., Anglesey, Wales",
+    "image":"media/Bryn-gwyn_Stones_-_geograph.org.uk_-_978290.jpg",
+    "alt_text":"Bryn Gwyn Stones, Near Llanddaniel Fab, close to Plas Newydd., Anglesey, Wales",
+    "attribution":"By Bill Nicholls, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=13666976",
+    "Symbol":"media/stone_circle.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.0261,52.5787 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Mitchell's Fold Stone Circle",
+    "content":"Mitchell's Fold Stone Circle, Near Chirbury, on Stapeley Hill., Powys, Wales",
+    "image":"media/Mitchells_Fold_-_geograph.org.uk_-_558529.jpg",
+    "alt_text":"Mitchell's Fold Stone Circle, Near Chirbury, on Stapeley Hill., Powys, Wales",
+    "attribution":"By Richard Webb, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=13087561",
+    "Symbol":"media/stone_circle.png"
+    }
+  }
+]
+}
