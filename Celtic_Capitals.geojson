@@ -1,0 +1,373 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.0825,51.357222 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Calleva Atrebatum",
+    "content":"Capital-Calleva Atrebatum Tribe-Atrebatēs Modern-Silchester",
+    "image":"media/Silchester_mosaic",
+    "alt_text":"Capital-Calleva Atrebatum Tribe-Atrebatēs Modern-Silchester",
+    "attribution":"By Following Hadrian - Flickr, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=37894121",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.3816,54.0908 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Isurium Brigantum",
+    "content":"Capital-Isurium Brigantum Tribe-Brigantēs/Brigantī Modern-Aldborough",
+    "image":"media/Mosaic_depicting_the_She-wolf_with_Romulus_and_Remus,_from_Aldborough,_about_300-400_AD,_Leeds_City_Museum_(16025914306).jpg",
+    "alt_text":"Capital-Isurium Brigantum Tribe-Brigantēs/Brigantī Modern-Aldborough",
+    "attribution":"By Following Hadrian - Flickr, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=37894121",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.081944,51.278611 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Durovernum Cantiacorum",
+    "content":"Capital-Durovernum Cantiacorum Tribe-Cantiacī Modern-Canterbury",
+    "image":"media/Roman_Museum_146.jpg",
+    "alt_text":"Capital-Durovernum Cantiacorum Tribe-Cantiacī Modern-Canterbury",
+    "attribution":"By Linda Spashett (Storye book) - Own work, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=9377809",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.937,54.895 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Luguvalium",
+    "content":"Capital-Luguvalium Tribe-Carvetīī (*Carwetīī) Modern-Carlisle",
+    "image":"media/A7_Roadbridge_over_River_Eden_in_Carlisle_-_geograph.org.uk_-_92889.jpg",
+    "alt_text":"Capital-Luguvalium Tribe-Carvetīī (*Carwetīī) Modern-Carlisle",
+    "attribution":"Bob Jenkins / A7 Roadbridge over River Eden in Carlisle",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.3539,51.75 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Verulamium",
+    "content":"Capital-Verulamium Tribe-Catuvellaunī (*Catuwellaunī) Modern-St. Albans",
+    "image":"media/1280px-20050410-009-verulamium-wall.jpg",
+    "alt_text":"Capital-Verulamium Tribe-Catuvellaunī (*Catuwellaunī) Modern-St. Albans",
+    "attribution":"By Gary Houston - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=332468",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.1413,52.6349 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Ratae Corieltauvorum",
+    "content":"Capital-Ratae Corieltauvorum Tribe-Corieltauvī (*Corieltauī)",
+    "image":"media/Roman_bath_house55.jpg",
+    "alt_text":"Capital-Ratae Corieltauvorum Tribe-Corieltauvī (*Corieltauī)",
+    "attribution":"By Purusothaman - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=35435503",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.644167,52.674167 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Viroconium Cornoviorum",
+    "content":"Capital-Viroconium Cornoviorum Tribe-Cornovīī (*Cornowīī) Modern-Wroxeter",
+    "image":"media/Viroconium_Cornoviorum_08.jpg",
+    "alt_text":"Capital-Viroconium Cornoviorum Tribe-Cornovīī (*Cornowīī) Modern-Wroxeter",
+    "attribution":"By Alastair Rae from London, United Kingdom - Viroconium CornoviorumUploaded by Kurpfalzbilder.de, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=10781359",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.21168,55.61472 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Vanduara (Loudoun Hill or Walls Hill)",
+    "content":"Capital-Vanduara Tribe-Damnonīī Modern-Loudoun Hill",
+    "image":"media/800px-LoudounHill.jpg",
+    "alt_text":"Capital-Vanduara Tribe-Damnonīī Modern-Loudoun Hill",
+    "attribution":"By No machine-readable author provided. Supergolden assumed (based on copyright claims). - No machine-readable source provided. Own work assumed (based on copyright claims)., CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=407208",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.8341,53.2161 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Canovium or Clwydian hillforts",
+    "content":"Capital-Canovium Tribe-Deceanglī Modern-Caerhun",
+    "image":"media/CaerhunRiverConwy9010465.jpg",
+    "alt_text":"Capital-Canovium Tribe-Deceanglī Modern-Caerhun",
+    "attribution":"By NoelWalley at the English-language Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=18079821",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.31,51.86 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Moridunum",
+    "content":"Capital-Moridunum Tribe-Demetae Modern-Carmarthen",
+    "image":"media/Amphitheatre_Moridunum_-_geograph.org.uk_-_777546",
+    "alt_text":"Capital-Moridunum Tribe-Demetae Modern-Carmarthen",
+    "attribution":"By Marion Phillips, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=13444469",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.968056,51.718889 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Corinium Dobunnorum",
+    "content":"Capital-Corinium Dobunnorum Tribe-Dobunnī/Bodunnī Modern-Cirencester",
+    "image":"media/Roman_mosaic,_Corinium_Museum,_Cirencester.jpg",
+    "alt_text":"Capital-Corinium Dobunnorum Tribe-Dobunnī/Bodunnī Modern-Cirencester",
+    "attribution":"By Tony Grist - Photographer's own files, Public Domain, https://commons.wikimedia.org/w/index.php?curid=11016220",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.534,50.722 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Isca Dumnoniorum",
+    "content":"Capital-Isca Dumnoniorum Tribe-Dumnonīī Modern-Exeter",
+    "image":"media/Old_Exeter_City_wall_-_geograph.org.uk_-_1286996.jpg",
+    "alt_text":"Capital-Isca Dumnoniorum Tribe-Dumnonīī Modern-Exeter",
+    "attribution":"By Sarah Charlesworth, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=14010496",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.437,50.715 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Durnovaria; Maiden Castle",
+    "content":"Capital-Durnovaria Tribe-Durotrigēs Modern-Dorchester",
+    "image":"media/Map_of_Durnovaria.jpg",
+    "alt_text":"Capital-Durnovaria Tribe-Durotrigēs Modern-Dorchester",
+    "attribution":"By Harold9595959 - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=136740357",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.2909,52.5835 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Venta Icenorum",
+    "content":"Capital-Venta Icenorum Tribe-Īcenī/Ecenī Modern-Caistor St Edmund",
+    "image":"media/Venta_Icenorum_North_Wall.jpg",
+    "alt_text":"Capital-Venta Icenorum Tribe-Īcenī/Ecenī Modern-Caistor St Edmund",
+    "attribution":"By Evelyn Simak, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=8273402",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.440578,54.729786 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Rispain",
+    "content":"Capital-Rispain Tribe-Novantae (*Nowantī) Modern-Whithorn",
+    "image":"media/Rispain_Camp_panorama.jpg",
+    "alt_text":"Capital-Rispain Tribe-Novantae (*Nowantī) Modern-Whithorn",
+    "attribution":"By Stevouk at English Wikipedia - Composite photograph by David Kelly., Public Domain, https://commons.wikimedia.org/w/index.php?curid=27935000",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.114,53.135 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Dinas Dinorwig",
+    "content":"Capital-Dinas Dinorwi Tribe-Ordovicēs (*Ordowicī) Modern-Dinorwig",
+    "image":"media/Geifr_Dinorwig.jpg",
+    "alt_text":"Capital-Dinas Dinorwi Tribe-Ordovicēs (*Ordowicī) Modern-Dinorwig",
+    "attribution":"By Hogyncymru - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=65869950",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.576,53.728 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Petuaria",
+    "content":"Capital-Petuaria Tribe-Parisī Modern-Brough",
+    "image":"media/High_Street,_Kingston_upon_Hull_(geograph_3824295).jpg",
+    "alt_text":"Capital-Petuaria Tribe-Parisī Modern-Brough",
+    "attribution":"By Bernard Sharp, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=72432482",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.78,50.837 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Noviomagus Reginorum",
+    "content":"Capital-Noviomagus Reginorum Tribe-Reginī Modern-Chichester",
+    "image":"media/Chichester_Roman_Wall_-_geograph.org.uk_-_1012586.jpg",
+    "alt_text":"Capital-Noviomagus Reginorum Tribe-Reginī Modern-Chichester",
+    "attribution":"By OLU, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=13710934",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.71855,55.58134 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Eildon Hill",
+    "content":"Capital-Eildon Hill Tribe-Selgovae (*Selgowī) Modern Eildon Hill",
+    "image":"media/1024px-EildonScottsView.jpg",
+    "alt_text":"Capital-Eildon Hill Tribe-Selgovae (*Selgowī) Modern Eildon Hill",
+    "attribution":"CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=1865869",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.768,51.611 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Venta Silurum",
+    "content":"Capital-Venta Silurum Tribe-Silurēs Modern-Caerwent",
+    "image":"media/CaerwentWall.jpg",
+    "alt_text":"Capital-Venta Silurum Tribe-Silurēs Modern-Caerwent",
+    "attribution":"By MortimerCat - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=1861060",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.03316,54.9784 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Coria",
+    "content":"Capital-Coria Tribe-Textoverdī (*Textowerdī) Modern-Corbridge",
+    "image":"media/1024px-Corbridge_Roman_Ruins.jpg",
+    "alt_text":"Capital-Coria Tribe-Textoverdī (*Textowerdī) Modern-Corbridge",
+    "attribution":"By Glen Bowman from Newcastle, England - iphoto - Corbridge Roman Ruins - 12, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=4574168",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.898056,51.891944 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Camulodunum",
+    "content":"Capital-Camulodunum Tribe-Trinovantēs (*Trinowantī) Modern-Colchester",
+    "image":"",
+    "alt_text":"Capital-Camulodunum Tribe-Trinovantēs (*Trinowantī) Modern-Colchester",
+    "attribution":"By Maria - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=28475352",
+    "symbol":"media/capital.png"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.6725,55.963056 ]
+    },
+    "properties": {
+    "zoom":15,
+    "title":"Traprain",
+    "content":"Capital-Traprain Tribe-Votadīnī/Otadīnī Modern-Haddington",
+    "image":"",
+    "alt_text":"Capital-Traprain Tribe-Votadīnī/Otadīnī Modern-Haddington",
+    "attribution":"By Tyssil - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=34203862",
+    "symbol":"media/capital.png"
+    }
+  }
+]
+}
