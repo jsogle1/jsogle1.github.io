@@ -5,7 +5,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 53.96,-1.08 ]
+       "coordinates":  [ -1.08,53.96 ]
     },
     "properties": {
     "zoom":15,
@@ -14,14 +14,14 @@
     "image":"media/1024px-Roman_Fortifications_in_Museum_Gardens_York.jpg",
     "alt_text":"Roman Wall and Fortification at York",
     "attribution":"By Kaly99 at the English Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4200463",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 51.28,1.08 ]
+       "coordinates":  [ 1.08,51.28 ]
     },
     "properties": {
     "zoom":15,
@@ -30,14 +30,14 @@
     "image":"media/Canterbury_town_walls_-_geograph.org.uk_-_1117994.jpg",
     "alt_text":"Canterbury City Walls",
     "attribution":"By Ian Dalgliesh, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=13821495",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 53.283333,-4.333333 ]
+       "coordinates":  [ -4.333333,53.283333 ]
     },
     "properties": {
     "zoom":15,
@@ -46,14 +46,14 @@
     "image":"media/Beaumaris-Castle-0015.jpg",
     "alt_text":"Beaumaris Castle",
     "attribution":"By Stephen Colebourne - Flickr: https://www.flickr.com/photos/jodastephen/14818433584/, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=49799840",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 52.97,-3.17 ]
+       "coordinates":  [ -3.17,52.97 ]
     },
     "properties": {
     "zoom":15,
@@ -62,14 +62,14 @@
     "image":"media/Eglwyseg_1.jpg",
     "alt_text":"Hills outside Llangollen",
     "attribution":"Mattcymru2 at English Wikipedia, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 53.1393,-4.2769 ]
+       "coordinates":  [ -4.2769,53.1393 ]
     },
     "properties": {
     "zoom":15,
@@ -78,14 +78,14 @@
     "image":"media/A_north-west_view_of_Caernarvon_Castle.jpg",
     "alt_text":"Caernarvon Castle",
     "attribution":"By John Boydell - This image is available from the National Library of WalesYou can view this image in its original context on the NLW Catalogue, Public Domain, https://commons.wikimedia.org/w/index.php?curid=42211701",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 52.191111,-2.220556 ]
+       "coordinates":  [ -2.220556,52.191111 ]
     },
     "properties": {
     "zoom":15,
@@ -94,14 +94,14 @@
     "image":"media/Worcester,_1610_map.jpg",
     "alt_text":"Map of Worcester by John Speed",
     "attribution":"By John Speed, 17th century cartographer - John Speed's \"The Counties of Britain\", 1610, Public Domain, https://commons.wikimedia.org/w/index.php?curid=16733379",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 51.353,-1.101 ]
+       "coordinates":  [ -1.101,51.353 ]
     },
     "properties": {
     "zoom":15,
@@ -110,14 +110,14 @@
     "image":"media/Calleva_Atrebatum_-_geograph.org.uk_-_1341175.jpg",
     "alt_text":"Roman Wall at Silchester",
     "attribution":"By Richard Croft / Calleva Atrebatum",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 52.631944,1.301111 ]
+       "coordinates":  [ 1.301111,52.631944 ]
     },
     "properties": {
     "zoom":15,
@@ -126,14 +126,14 @@
     "image":"media/1280px-John_Crome_002.jpg",
     "alt_text":"Painting of Norwich by John Crome",
     "attribution":"By John Crome - The Yorck Project (2002) 10.000 Meisterwerke der Malerei (DVD-ROM), distributed by DIRECTMEDIA Publishing GmbH. ISBN: 3936122202., Public Domain, https://commons.wikimedia.org/w/index.php?curid=149899",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 51.856,-4.316 ]
+       "coordinates":  [ -4.316,51.856 ]
     },
     "properties": {
     "zoom":15,
@@ -142,14 +142,14 @@
     "image":"media/Speed_Carmarthen_insert.jpg",
     "alt_text":"Map of Carmarthen",
     "attribution":"By Speed, John, 1552?-1629. - The National Library of WalesThe source of this file is http://www.llgc.org.uk/en/. The website is managed by the National Library of Wales., Public Domain, https://commons.wikimedia.org/w/index.php?curid=44416123",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 50.842,-1.12 ]
+       "coordinates":  [ -1.12,50.842 ]
     },
     "properties": {
     "zoom":15,
@@ -158,14 +158,14 @@
     "image":"media/Church_within_Portchester_Castle.jpg",
     "alt_text":"Church within Portchester Castle",
     "attribution":"By Portchester_Castle_outer_bailey_from_the_keep,_2010.jpg: Charles Miller from Basingstoke, United Kingdomderivative work: Nev1 (talk) - Portchester_Castle_outer_bailey_from_the_keep,_2010.jpg, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=11230987",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 51.615,-2.959 ]
+       "coordinates":  [ -2.959,51.615 ]
     },
     "properties": {
     "zoom":15,
@@ -174,14 +174,14 @@
     "image":"media/Aerial_view_of_Caerleon_Roman_amphitheatre.jpg",
     "alt_text":"Amphitheatre in Caerleon",
     "attribution":"By CADW - directly from Visit Wales; agents of CADW, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=25009737",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 51.755,-0.336 ]
+       "coordinates":  [ -0.336,51.755 ]
     },
     "properties": {
     "zoom":15,
@@ -190,14 +190,14 @@
     "image":"media/StAlbansRomanWall-PS01.jpg",
     "alt_text":"Roman Wall in St. Albans",
     "attribution":"By Przemysław Sakrajda - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=7686238",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 54.377,-1.63 ]
+       "coordinates":  [ -1.63,54.377 ]
     },
     "properties": {
     "zoom":15,
@@ -206,14 +206,14 @@
     "image":"media/Catterick_-_geograph.org.uk_-_23564.jpg",
     "alt_text":"Church in Catterick",
     "attribution":"By Alison Stamp, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=9118775",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 51.716667,-1.966667 ]
+       "coordinates":  [ -1.966667,51.716667 ]
     },
     "properties": {
     "zoom":15,
@@ -222,14 +222,14 @@
     "image":"media/Roman_Amphitheatre_Cirencester.jpg",
     "alt_text":"Amphitheatre in Cirencester",
     "attribution":"By Davecrosby uk - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=18228113",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 51.866667,-2.25 ]
+       "coordinates":  [ -2.25,51.866667 ]
     },
     "properties": {
     "zoom":15,
@@ -238,14 +238,14 @@
     "image":"media/1024px-Ancient_Gloucester_from_Speed's_map_of_1610_and_Hall_&_Pinnell,_ex_Fosbroke.jpg",
     "alt_text":"Map of Ancient Gloucester",
     "attribution":"By Ancient Gloucester from Speed's map of 1610 and Hall & Pinnell, ex Fosbroke - https://babel.hathitrust.org/cgi/pt?id=uc2.ark:/13960/t9x06cq2v;view=1up;seq=7, Public Domain, https://commons.wikimedia.org/w/index.php?curid=78334175",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 54.89726,-2.941936 ]
+       "coordinates":  [ -2.941936,54.89726 ]
     },
     "properties": {
     "zoom":15,
@@ -254,14 +254,14 @@
     "image":"media/Carlisle_Castle_03.jpg",
     "alt_text":"Carlisle Castle",
     "attribution":"By Neil Boothman from Carlisle, United Kingdom - 30012008017, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=5993665",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 52.179,0.095 ]
+       "coordinates":  [ 0.095,52.179 ]
     },
     "properties": {
     "zoom":15,
@@ -270,14 +270,14 @@
     "image":"media/Millennium_bridge_at_Abington_-_geograph.org.uk_-_694505.jpg",
     "alt_text":"Bridge at Grantchester",
     "attribution":"By James Yardley, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=11752884",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 50.7154,-2.4367 ]
+       "coordinates":  [ -2.4367,50.7154 ]
     },
     "properties": {
     "zoom":15,
@@ -286,14 +286,14 @@
     "image":"media/Dorchester_Roman_Town_House_Hypocaust_-_geograph.org.uk_-_819711.jpg",
     "alt_text":"Ruins at Dorchester",
     "attribution":"By Nigel Mykura, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=13490721",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 51.453611,-2.5975 ]
+       "coordinates":  [ -2.5975,51.453611 ]
     },
     "properties": {
     "zoom":15,
@@ -302,14 +302,14 @@
     "image":"media/Robert_Ricart's_map_of_Bristol.jpg",
     "alt_text":"Robert Ricart's Map of England",
     "attribution":"By Robert Ricart - From the folio Ricart's Maiores Kalendar and The Lord Mayors Calendar whose physical copy is at Bristol Archives, B Bond Warehouse, Smeaton Road, Bristol BS1 6XN. The document is reference number 04720 in the Office's catalogue., Public Domain, https://en.wikipedia.org/w/index.php?curid=34425323",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 52.71,-3.25 ]
+       "coordinates":  [ -3.25,52.71 ]
     },
     "properties": {
     "zoom":15,
@@ -318,14 +318,14 @@
     "image":"media/SS_Tysilio_and_Mary,_Meifod_-_geograph.org.uk_-_518725.jpg",
     "alt_text":"Church of Saint Tysilio and Mary",
     "attribution":"By Sebastian Pether - Art UK, Public Domain, https://commons.wikimedia.org/w/index.php?curid=22442359",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 53.479,-2.2452 ]
+       "coordinates":  [ -2.2452,53.479 ]
     },
     "properties": {
     "zoom":15,
@@ -334,14 +334,14 @@
     "image":"media/View_from_Kersal_Moor,_Salford_-_1820.jpg",
     "alt_text":"Kersal Moor in Manchester",
     "attribution":"By Sebastian Pether, Public domain, via Wikimedia Commons",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 53.191389,-2.890278 ]
+       "coordinates":  [ -2.890278,53.191389 ]
     },
     "properties": {
     "zoom":15,
@@ -350,14 +350,14 @@
     "image":"media/Castle_Gate._Chester_02753.jpg",
     "alt_text":"Chester Castle",
     "attribution":"By Thomas Pennant - This image is available from the National Library of Wales, Public Domain, https://commons.wikimedia.org/w/index.php?curid=46359227",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 51.611389,-2.768611 ]
+       "coordinates":  [ -2.768611,51.611389 ]
     },
     "properties": {
     "zoom":15,
@@ -366,14 +366,14 @@
     "image":"media/Caerwent.jpg",
     "alt_text":"Ruins at Caerwent",
     "attribution":"By Colin Smith, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=5634695",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 51.8917,0.903 ]
+       "coordinates":  [ 0.903,51.8917 ]
     },
     "properties": {
     "zoom":15,
@@ -382,14 +382,14 @@
     "image":"media/1024px-Colchester,_St_Botolphs_Priory.jpg",
     "alt_text":"St. Botolphs Priory in London",
     "attribution":"By Michael Coppins - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=94571692",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 51.515556,-0.093056 ]
+       "coordinates":  [ -0.093056,51.515556 ]
     },
     "properties": {
     "zoom":15,
@@ -398,14 +398,14 @@
     "image":"media/London_Wall_fragment.jpg",
     "alt_text":"Roman London Wall Fragment",
     "attribution":"By John Winfield, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=3186845",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 51.677678,-4.920694 ]
+       "coordinates":  [ -4.920694,51.677678 ]
     },
     "properties": {
     "zoom":15,
@@ -414,14 +414,14 @@
     "image":"media/Pembroke_Castle_-_June_2011.jpg",
     "alt_text":"Pembroke Castle, site of Cair Guorcon",
     "attribution":"By JKMMX - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15641352",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 52.636111,-1.133056 ]
+       "coordinates":  [ -1.133056,52.636111 ]
     },
     "properties": {
     "zoom":15,
@@ -430,14 +430,14 @@
     "image":"media/Jewry_Wall_ruins_Apr10.jpg",
     "alt_text":"Ruins of the Jewry wall at Leicester",
     "attribution":"NotFromUtrecht, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 52.9044,-2.4848 ]
+       "coordinates":  [ -2.4848,52.9044 ]
     },
     "properties": {
     "zoom":15,
@@ -446,14 +446,14 @@
     "image":"media/StMary's,_Market_Drayton-geograph-771033-by-Geoff-Pick.jpg",
     "alt_text":"St. Mary's Church at Drayton",
     "attribution":"By Geoff Pick, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=9992245",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 50.820556,0.338056 ]
+       "coordinates":  [ 0.338056,50.820556 ]
     },
     "properties": {
     "zoom":15,
@@ -462,14 +462,14 @@
     "image":"media/Pevensey_Sussex.jpg",
     "alt_text":"Castle Ruins at Penvesney",
     "attribution":"By Yewenyi at the English-language Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4580301",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 50.5528699,-3.6298559 ]
+       "coordinates":  [ -3.6298559,50.5528699 ]
     },
     "properties": {
     "zoom":15,
@@ -478,14 +478,14 @@
     "image":"media/Meadows,_Teigngrace_-_geograph.org.uk_-_993202.jpg",
     "alt_text":"Meadows at Teign Grace",
     "attribution":"By Derek Harper / Meadows, Teigngrace",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 52.670556,-2.6475 ]
+       "coordinates":  [ -2.6475,52.670556 ]
     },
     "properties": {
     "zoom":15,
@@ -494,14 +494,14 @@
     "image":"media/Wroxeter_baths,_2010.jpg",
     "alt_text":"Roman Baths at Wroxeter",
     "attribution":"By stephen jones from uk - Flickr, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=18549437",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 51.0241,-2.5318 ]
+       "coordinates":  [ -2.5318,51.0241 ]
     },
     "properties": {
     "zoom":15,
@@ -510,14 +510,14 @@
     "image":"media/Idylls_of_the_King_3.jpg",
     "alt_text":"Camelot from Idylls of the King",
     "attribution":"By Gustave Doré - Enid, by Lord Alfred Tennyson. London: Edward Moxon & Co., 1868., Public Domain, https://commons.wikimedia.org/w/index.php?curid=678153",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   },
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 53.228333,-0.538889 ]
+       "coordinates":  [ -0.538889,53.228333 ]
     },
     "properties": {
     "zoom":15,
@@ -526,7 +526,7 @@
     "image":"media/Newport_Arch,_late_19th_century.jpg",
     "alt_text":"Roman Arch, Newport Arch at Lincoln",
     "attribution":"By Cornell University Library (originally James Valentine (1815-1880)) - Lincoln. The Newport Arch, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=7563159",
-    "symbol":"png/capital.png"
+    "symbol":"media/circle.png"
     }
   }
 ]
