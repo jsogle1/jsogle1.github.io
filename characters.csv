@@ -12,7 +12,7 @@ Bertrams Barmaid (Gillian/Gyl),Major,dark eyed,Raven hair,Tanned,BUXOM/MEDIUM,Pr
 Alexander,Major,Hazel,"Forest brown, changes with season",Freckled,MEDIUM/THIN,free-spirited,Huntsman,1270,,11,"Died at Stirling Bridge, Maggie's Brother",Shilvington,,alexander.png,alexander.png
 Nigel Morrell,Major,blue,long grey hair and beard (grey),Heavily aged,tall and stiff,Shrewed and cunning yet humble,"war scarred arms, known for saving Bamburgh castle, father-in-law of Hugh",1230,,51,68,Shilvington,"Mischievous elder, coming of age initiator",nigel-morrell.png,nigel-morrell.png
 Joan Morell Gubion,Major,BLUE,raven haired,FAIR SKINNED,TALL,SEVERE,"wife of Hugh, mother of Maggie",1250,,31,deceased,Shilvington,,joan-morell-gubium.png,joan-morell-gubium.png
-Hugh Gubium the younger,Major,Hazel,"Forest Brown, changes with season",war worn face,TALL,"hasty, brave",great swordsman and horseman but hasty,1265,,16,33,Shilvington,,hugh-gubium-the-younger,hugh-gubium-the-younger
+Hugh Gubium the younger,Major,Hazel,"Forest Brown, changes with season",war worn face,TALL,"hasty, brave",great swordsman and horseman but hasty,1265,,16,33,Shilvington,,hugh-gubium-the-younger.png,hugh-gubium-the-younger.png
 Maggie Gubium,Major,Hazel,"long, beautiful, fiery",fair skinned and freckled,short,"devout, loving",,1281,,newborn,17,Shilvington,"Marian, love-lorn war bride, foil to Gillian",maggie-gubium.png,maggie-gubium.png
 Maggie's cat,Major,blue eyed,white hair,pale,thin,regal strut,,null,,null,adult,Shilvington,,maggies-cat.png,maggies-cat.png
 Father Swineburn,Major,blue eyed,"grey, cropped, balding, beard",aged but pale,short and fat,benevolent,walks with a cane,1230,,51,68,Whalton,"Shepherd, foil to Lady Felton",father-swineburn.png,father-swineburn.png
@@ -27,7 +27,7 @@ Thomas Grey,Major,dark brown,reyish-black hair,pale,"tall, well built, and stron
 Elias de Martel,Minor,brown,black,pale but ashy-blacksmith,"Stocky, largest arms he'd ever seen",,a blacksmith and goldsmith,1277,March 1344,,21,Morpeth,,elias-de-martel.png,elias-de-martel.png
 Aymer de Valence,Minor,Dark eyed,Dark haired,TAN,"TALL, THIN",french aristocrats,"snobbish, elitist",1270,23 June 1324,,28,York Parliament/Falkirk,,aymer-de-valence.png,aymer-de-valence.png
 Humphrey de bohun VI,Minor,Hazel Eyes,Blonde Hair,Pale Skin,SHORT,,"Lord Constable, third earl of Herford and Essex",1276,16 March 1322,,22,York Parliament/Falkirk,,humphrey-de-bohun-vi.png,humphrey-de-bohun-vi.png
-Lord Marshall Roger Bigod V,Minor,BROWN EYES,BROWN,PALE,SHORT,"weak in stature, Haughty",Earl of Norfolk,1245,6 December 1306,,53,York Parliament/Falkirk,,lord-marshall-roger-bigod-v,lord-marshall-roger-bigod-v
+Lord Marshall Roger Bigod V,Minor,BROWN EYES,BROWN,PALE,SHORT,"weak in stature, Haughty",Earl of Norfolk,1245,6 December 1306,,53,York Parliament/Falkirk,,lord-marshall-roger-bigod-v.png,lord-marshall-roger-bigod-v.png
 John de Warrene,Minor,BLUE EYES,Grey haired,"aged, long scar across cheek",SHORT,Level-headed,Earl of Surray,June 1231,September 1304,,67,York Parliament/Falkirk,,john-de-warrene.png,john-de-warrene.png
 Richard Fitzallen,Minor,GREY-BLUE,"BLACK, SLIGHTLY WAVY",PALE,THIN,"loyal, battle-heartened",Earl of Arundel,3 February 1267,9 March 1302,,31,York Parliament/Falkirk,,richard-fitzallen.png,richard-fitzallen.png
 Baron Henry Percy of Northumberland,Minor,GREY-BLUE,LIGHT-BLONDE TO SHOULDERS,PALE,THIN,UNSURE/UNHAPPY,Baron,25 March 1273,October 1314,,25,York Parliament/Falkirk,,percy.png,percy.png
@@ -45,4 +45,5 @@ King Edward I,Minor,"slightly drooping left eye, chesnut brown","Curly black, gr
 John Langton,Minor,GREY-BLUE,"DARK BROWN, MEDIUM LENGTH",FAIR,"MEDIUM, LEAN","lord chancellor, keeper of seal, modest background, well liked","lord chancellor, keeper of seal, modest background, well liked",1260,1337,,38,York Parliament/Falkirk,,john-langton.png,john-langton.png
 Walter Langton,Minor,BLUE,"MEDIUM LENGTH, DARK BROWN",FAIR,"SMALL, SQUAT, OVERWEIGHT",,"lord treasure, Bishop of lichfield, speculated to have dabbled in witchcraft",1243,1321,,55,York Parliament/Falkirk,,walter-langton.png,walter-langton.png
 Henry of Newark,Minor,BROWN,BLONDE,FAIR,"TALL, LEAN",,Archbishop of YORK,1248,1299,,40,York Parliament/Falkirk,,henry-of-newark.png,henry-of-newark.png
+
 
