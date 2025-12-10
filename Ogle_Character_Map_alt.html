@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Layout</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 20px;
+      line-height: 1.4;
+    }
+
+    .profile-pair {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .profile {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .cols {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .col {
+      flex: 1;
+      min-width: 200px;
+      border: 2px solid #9ec7ff;      /* light blue outline */
+      padding: 10px;
+      border-radius: 6px;
+      background: #f6f9ff;            /* very light blue background */
+    }
+
+    .portrait {
+      text-align: center;
+      margin: 8px 0 8px 0;
+    }
+
+    .portrait img {
+      max-width: 100%;
+      height: auto;
+      display: inline-block;
+    }
+
+    .profile .portrait img {
+      max-width: 90%;  /* slightly smaller inside profile cards */
+      height: auto;
+      display: block;
+      margin: 10px auto 0 auto;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 24px 0;
+    }
+  </style>
+
+  <!-- PapaParse for robust CSV parsing (handles commas, quotes, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+
+  <div id="characters"></div>
+
+  <script>
+    // Helper: safely add a <p><strong>Label:</strong> value</p> only if value exists
+    function addField(container, label, value) {
+      if (!value || value.trim() === "") return;
+      const p = document.createElement('p');
+      const strong = document.createElement('strong');
+      strong.textContent = label + ':';
+      p.appendChild(strong);
+      p.appendChild(document.createTextNode(' ' + value));
+      container.appendChild(p);
+    }
+
+    // Build one profile DOM element from a row object
+    function buildProfile(row) {
+      const profile = document.createElement('div');
+      profile.className = 'profile';
+
+      const name = row['name'] || '(Unnamed)';
+      const importance = row['Character Importance'] || row['Importance'] || '';
+
+      // Title
+      const h2 = document.createElement('h2');
+      h2.textContent = name;
+      profile.appendChild(h2);
+
+      // Columns wrapper
+      const cols = document.createElement('div');
+      cols.className = 'cols';
+
+      const colLeft = document.createElement('div');
+      colLeft.className = 'col';
+
+      const colRight = document.createElement('div');
+      colRight.className = 'col';
+
+      // LEFT COLUMN: Character Importance, Eye, Hair, Skin, Build, Demeanor, Note
+      addField(colLeft, 'Character Importance', row['Character Importance']);
+      addField(colLeft, 'Eye Color', row['Eye Color']);
+      addField(colLeft, 'Hair Color', row['Hair Color']);
+      addField(colLeft, 'Skin', row['Skin']);
+      addField(colLeft, 'Build', row['Build']);
+      addField(colLeft, 'Demeanor', row['Demeanor']);
+      addField(colLeft, 'Notes', row['Note']);
+
+      // RIGHT COLUMN: Birth, Death, Age 1281, Age 1298, Location, Motifs
+      addField(colRight, 'Birth', row['Birth']);
+      addField(colRight, 'Death', row['Death']);
+      addField(colRight, 'Age 1281', row['Age 1281']);
+      addField(colRight, 'Age 1298', row['Age 1298']);
+      addField(colRight, 'Predominant Location', row['Predominate Location'] || row['Predominant Location']);
+      addField(colRight, 'Motifs', row['Motifs']);
+
+      cols.appendChild(colLeft);
+      cols.appendChild(colRight);
+      profile.appendChild(cols);
+
+      // Portrait
+      const portraitDiv = document.createElement('div');
+      portraitDiv.className = 'portrait';
+
+      const imgFile = row['Image'];
+      if (imgFile && imgFile.trim() !== '') {
+        const img = document.createElement('img');
+        img.src = 'media/' + imgFile.trim();
+        img.alt = 'Portrait of ' + name;
+        portraitDiv.appendChild(img);
+      }
+
+      profile.appendChild(portraitDiv);
+
+      return profile;
+    }
+
+    // Fetch and render CSV
+    fetch('characters.csv')
+      .then(response => response.text())
+      .then(csvText => {
+        const parsed = Papa.parse(csvText, {
+          header: true,
+          skipEmptyLines: true
+        });
+
+        const rows = parsed.data;
+        const container = document.getElementById('characters');
+
+        // Create profiles in pairs (two per row, like your existing layout)
+        for (let i = 0; i < rows.length; i += 2) {
+          const pairDiv = document.createElement('div');
+          pairDiv.className = 'profile-pair';
+
+          const row1 = rows[i];
+          const row2 = rows[i + 1];
+
+          if (row1) pairDiv.appendChild(buildProfile(row1));
+          if (row2) pairDiv.appendChild(buildProfile(row2));
+
+          container.appendChild(pairDiv);
+        }
+      })
+      .catch(err => {
+        console.error('Error loading characters.csv:', err);
+        document.getElementById('characters').textContent =
+          'Error loading character data.';
+      });
+  </script>
+</body>
+</html>
