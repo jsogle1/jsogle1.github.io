@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Layout</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 20px;
+      line-height: 1.4;
+    }
+
+    .profile-pair {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .profile {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .cols {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .col {
+      flex: 1;
+      min-width: 200px;
+      border: 2px solid #9ec7ff;      /* light blue outline */
+      padding: 10px;
+      border-radius: 6px;
+      background: #f6f9ff;            /* very light blue background */
+    }
+
+    .portrait {
+      text-align: center;
+      margin: 8px 0 8px 0;
+    }
+
+    .portrait img {
+      max-width: 100%;
+      height: auto;
+      display: inline-block;
+    }
+
+    .profile .portrait img {
+      max-width: 90%;  /* slightly smaller inside profile cards */
+      height: auto;
+      display: block;
+      margin: 10px auto 0 auto;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 24px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Pair 1: Gilbert Ogle / John Ogle -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Gilbert Ogle</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> no left eye/blue right</p>
+          <p><strong>Hair Color:</strong> BLONDE</p>
+          <p><strong>Skin:</strong> PALE</p>
+          <p><strong>Build:</strong> TALL/THIN</p>
+          <p><strong>Demeanor:</strong> Zealous Crusader</p>
+          <p><strong>Notes:</strong> Brought Holy Sepulchre to Sheepwash</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1144</p>
+          <p><strong>Death:</strong> 1180</p>
+          <p><strong>Predominant Location:</strong> Ogle/Whalton</p>
+          <p><strong>Motifs:</strong> Odin, Mimirs Well, Mythic</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/gilbert-ogle-portrait.png" alt="Portrait of Gilbert Ogle">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>John Ogle</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> blue</p>
+          <p><strong>Hair Color:</strong> blonde</p>
+          <p><strong>Skin:</strong> WAR DARKENED/SCARRED</p>
+          <p><strong>Build:</strong> MEDIUM/THIN</p>
+          <p><strong>Demeanor:</strong> POLITICAL/SERIOUS</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1256</p>
+          <p><strong>Age 1281:</strong> 25</p>
+          <p><strong>Age 1298:</strong> 42</p>
+          <p><strong>Predominant Location:</strong> Ogle/Whalton</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/john-ogle.png" alt="Portrait of John Ogle">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 2: Robert Ogle / Annabella Selby Ogle -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Robert Ogle</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> Azure Blue</p>
+          <p><strong>Hair Color:</strong> blonde</p>
+          <p><strong>Skin:</strong> PALE</p>
+          <p><strong>Build:</strong> MEDIUM/THIN</p>
+          <p><strong>Demeanor:</strong> DEVOUT/SENTIMENTAL</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1281</p>
+          <p><strong>Age 1281:</strong> newborn</p>
+          <p><strong>Age 1298:</strong> 17</p>
+          <p><strong>Predominant Location:</strong> Ogle/Whalton</p>
+          <p><strong>Motifs:</strong> Marion devoted, foil to Rob Bertram</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/robert-ogle.png" alt="Portrait of Robert Ogle">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Annabella Selby Ogle</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> sky blue</p>
+          <p><strong>Hair Color:</strong> /LIGHT BROWN</p>
+          <p><strong>Skin:</strong> PALE</p>
+          <p><strong>Build:</strong> MEDIUM/THIN</p>
+          <p><strong>Demeanor:</strong> MOTHERLY</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1255</p>
+          <p><strong>Age 1281:</strong> 26</p>
+          <p><strong>Age 1298:</strong> 43</p>
+          <p><strong>Predominant Location:</strong> Ogle/Whalton</p>
+          <p><strong>Motifs:</strong> Fate</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/annabella-selby-ogle.png" alt="Portrait of Annabella Selby Ogle">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 3: Isabella / John Ogle Jr -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Isabella</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> blue</p>
+          <p><strong>Hair Color:</strong> thin blonde-hair</p>
+          <p><strong>Skin:</strong> pale</p>
+          <p><strong>Build:</strong> thin</p>
+          <p><strong>Demeanor:</strong> UNSURE/HAPPY</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1293</p>
+          <p><strong>Death:</strong> null</p>
+          <p><strong>Age 1281:</strong> 5</p>
+          <p><strong>Predominant Location:</strong> Ogle/Whalton</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/isabella.png" alt="Portrait of Isabella">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>John Ogle Jr</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> blue</p>
+          <p><strong>Hair Color:</strong> thin blonde-hair</p>
+          <p><strong>Skin:</strong> pale</p>
+          <p><strong>Build:</strong> thin</p>
+          <p><strong>Demeanor:</strong> infantile</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1297</p>
+          <p><strong>Death:</strong> null</p>
+          <p><strong>Age 1281:</strong> 1</p>
+          <p><strong>Predominant Location:</strong> Ogle/Whalton</p>
+          <p><strong>Motifs:</strong> Innocence</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/john-ogle-jr.png" alt="Portrait of John Ogle Jr">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 4: Roger Bertram / Alice Gubium Bertram -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Roger Bertram</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> GREEN</p>
+          <p><strong>Hair Color:</strong> fiery red</p>
+          <p><strong>Skin:</strong> ruddy face</p>
+          <p><strong>Build:</strong> THIN/MEDIUM BUILD</p>
+          <p><strong>Demeanor:</strong> LOYAL/KIND WARRIOR</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1265</p>
+          <p><strong>Death:</strong> 1300</p>
+          <p><strong>Age 1281:</strong> 16</p>
+          <p><strong>Age 1298:</strong> 33</p>
+          <p><strong>Predominant Location:</strong> Bothal</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/roger-bertram.png" alt="Portrait of Roger Bertram">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Alice Gubium Bertram</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> Piercing/Fierce Hazel Eyes</p>
+          <p><strong>Hair Color:</strong> AUBURN</p>
+          <p><strong>Skin:</strong> FAIR-SKINNED</p>
+          <p><strong>Build:</strong> SHORT THIN</p>
+          <p><strong>Demeanor:</strong> fierce</p>
+          <p><strong>Notes:</strong> motherly</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1265</p>
+          <p><strong>Age 1281:</strong> 16</p>
+          <p><strong>Age 1298:</strong> 33</p>
+          <p><strong>Predominant Location:</strong> Bothal</p>
+          <p><strong>Motifs:</strong> Fate</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/alice-gubium-bertram.png" alt="Portrait of Alice Gubium Bertram">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 5: Robert Bertram / Bertrams Barmaid -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Robert Bertram</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> dark Green</p>
+          <p><strong>Hair Color:</strong> fiery red</p>
+          <p><strong>Skin:</strong> ruddy face</p>
+          <p><strong>Build:</strong> THIN/MEDIUM BUILD</p>
+          <p><strong>Demeanor:</strong> troubled, guilty</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1281</p>
+          <p><strong>Death:</strong> 1314</p>
+          <p><strong>Age 1281:</strong> newborn</p>
+          <p><strong>Age 1298:</strong> 17</p>
+          <p><strong>Predominant Location:</strong> Bothal</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/robert-bertram.png" alt="Portrait of Robert Bertram">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Bertrams Barmaid (Gillian/Gyl)</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> dark eyed</p>
+          <p><strong>Hair Color:</strong> Raven hair</p>
+          <p><strong>Skin:</strong> Tanned</p>
+          <p><strong>Build:</strong> BUXOM/MEDIUM</p>
+          <p><strong>Demeanor:</strong> Practical. loving</p>
+          <p><strong>Notes:</strong> on going affair with Robert Bertram, works at Black Stag</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1278</p>
+          <p><strong>Age 1281:</strong> 3</p>
+          <p><strong>Age 1298:</strong> 20</p>
+          <p><strong>Predominant Location:</strong> Bothal</p>
+          <p><strong>Motifs:</strong> dark beauty</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/bertrams-barmaid-gillian-gyl.png" alt="Portrait of Bertrams Barmaid (Gillian/Gyl)">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 6: Alexander / Nigel Morrell -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Alexander</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> Hazel</p>
+          <p><strong>Hair Color:</strong> Forest brown, changes with season</p>
+          <p><strong>Skin:</strong> Freckled</p>
+          <p><strong>Build:</strong> MEDIUM/THIN</p>
+          <p><strong>Demeanor:</strong> free-spirited</p>
+          <p><strong>Notes:</strong> Huntsman</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1270</p>
+          <p><strong>Age 1281:</strong> 11</p>
+          <p><strong>Age 1298:</strong> Died at Stirling Bridge, Maggie's Brother</p>
+          <p><strong>Predominant Location:</strong> Shilvington</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/alexander.png" alt="Portrait of Alexander">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Nigel Morrell</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> blue</p>
+          <p><strong>Hair Color:</strong> long grey hair and beard (grey)</p>
+          <p><strong>Skin:</strong> Heavily aged</p>
+          <p><strong>Build:</strong> tall and stiff</p>
+          <p><strong>Demeanor:</strong> Shrewed and cunning yet humble</p>
+          <p><strong>Notes:</strong> war scarred arms, known for saving Bamburgh castle, father-in-law of Hugh</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1230</p>
+          <p><strong>Age 1281:</strong> 51</p>
+          <p><strong>Age 1298:</strong> 68</p>
+          <p><strong>Predominant Location:</strong> Shilvington</p>
+          <p><strong>Motifs:</strong> Mischievous elder, coming of age initiator</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/nigel-morrell.png" alt="Portrait of Nigel Morrell">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 7: Joan Morell Gubion / Hugh Gubium the younger -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Joan Morell Gubium</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> BLUE</p>
+          <p><strong>Hair Color:</strong> raven haired</p>
+          <p><strong>Skin:</strong> FAIR SKINNED</p>
+          <p><strong>Build:</strong> TALL</p>
+          <p><strong>Demeanor:</strong> SEVERE</p>
+          <p><strong>Notes:</strong> wife of Hugh, mother of Maggie</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1250</p>
+          <p><strong>Death:</strong> 31</p>
+          <p><strong>Age 1281:</strong> deceased</p>
+          <p><strong>Predominant Location:</strong> Shilvington</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/joan-morell-gubium.png" alt="Portrait of Joan Morell Gubion">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Hugh Gubium the younger</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> Hazel</p>
+          <p><strong>Hair Color:</strong> Forest Brown, changes with season</p>
+          <p><strong>Skin:</strong> war worn face</p>
+          <p><strong>Build:</strong> TALL</p>
+          <p><strong>Demeanor:</strong> hasty, brave</p>
+          <p><strong>Notes:</strong> great swordsman and horseman but hasty</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1265</p>
+          <p><strong>Age 1281:</strong> 16</p>
+          <p><strong>Age 1298:</strong> 33</p>
+          <p><strong>Predominant Location:</strong> Shilvington</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/hugh-gubium-the-younger.png" alt="Portrait of Hugh Gubium the younger">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 8: Maggie Gubium / Maggie's cat -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Maggie Gubium</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> Hazel</p>
+          <p><strong>Hair Color:</strong> long, beautiful, fiery</p>
+          <p><strong>Skin:</strong> fair skinned and freckled</p>
+          <p><strong>Build:</strong> short</p>
+          <p><strong>Demeanor:</strong> devout, loving</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1281</p>
+          <p><strong>Age 1281:</strong> newborn</p>
+          <p><strong>Age 1298:</strong> 17</p>
+          <p><strong>Predominant Location:</strong> Shilvington</p>
+          <p><strong>Motifs:</strong> Marian, love-lorn war bride, foil to Gillian</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/maggie-gubium.png" alt="Portrait of Maggie Gubium">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Maggie's cat</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> blue eyed</p>
+          <p><strong>Hair Color:</strong> white hair</p>
+          <p><strong>Skin:</strong> pale</p>
+          <p><strong>Build:</strong> thin</p>
+          <p><strong>Demeanor:</strong> regal strut</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> null</p>
+          <p><strong>Death:</strong> null</p>
+          <p><strong>Age 1281:</strong> adult</p>
+          <p><strong>Predominant Location:</strong> Shilvington</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/maggies-cat.png" alt="Portrait of Maggie's cat">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 9: Father Swineburn / Lady Felton -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Father Swineburn</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> blue eyed</p>
+          <p><strong>Hair Color:</strong> grey, cropped, balding, beard</p>
+          <p><strong>Skin:</strong> aged but pale</p>
+          <p><strong>Build:</strong> short and fat</p>
+          <p><strong>Demeanor:</strong> benevolent</p>
+          <p><strong>Notes:</strong> walks with a cane</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1230</p>
+          <p><strong>Age 1281:</strong> 51</p>
+          <p><strong>Age 1298:</strong> 68</p>
+          <p><strong>Predominant Location:</strong> Whalton</p>
+          <p><strong>Motifs:</strong> Shepherd, foil to Lady Felton</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/father-swineburn.png" alt="Portrait of Father Swineburn">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Lady Felton</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> almond</p>
+          <p><strong>Hair Color:</strong> black streaked greyer</p>
+          <p><strong>Skin:</strong> slightly aged</p>
+          <p><strong>Build:</strong> tall, thin, straight-backed</p>
+          <p><strong>Demeanor:</strong> motherly, wise</p>
+          <p><strong>Notes:</strong> vibrance in step that makes you think she could live forever</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1258</p>
+          <p><strong>Age 1281:</strong> 23</p>
+          <p><strong>Age 1298:</strong> 40</p>
+          <p><strong>Predominant Location:</strong> Whalton</p>
+          <p><strong>Motifs:</strong> Prophetess, healer, fertility, pagan</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/lady-felton.png" alt="Portrait of Lady Felton">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 10: Beatrix / Eva -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Beatrix</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> DARK EYED</p>
+          <p><strong>Hair Color:</strong> dark haired</p>
+          <p><strong>Skin:</strong> PALE</p>
+          <p><strong>Build:</strong> SHORT/THIN</p>
+          <p><strong>Demeanor:</strong> INNERLY STRONG</p>
+          <p><strong>Notes:</strong> same as Robert Ogle and Bertram</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1281</p>
+          <p><strong>Age 1281:</strong> 0</p>
+          <p><strong>Age 1298:</strong> 17</p>
+          <p><strong>Predominant Location:</strong> Whalton</p>
+          <p><strong>Motifs:</strong> Orphan, apprentice, foil to Gilbert Middleton</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/beatrix.png" alt="Portrait of Beatrix">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Eva</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> Dark eyed</p>
+          <p><strong>Hair Color:</strong> black hair</p>
+          <p><strong>Skin:</strong> TANNED</p>
+          <p><strong>Build:</strong> BUXOM/MEDIUM</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1278</p>
+          <p><strong>Age 1281:</strong> 3</p>
+          <p><strong>Age 1298:</strong> 20</p>
+          <p><strong>Predominant Location:</strong> Ogle/Whalton</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/eva.png" alt="Portrait of Eva">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 11: Gilbert Middleton / Walter Selby -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Gilbert Middleton</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> GREEN</p>
+          <p><strong>Hair Color:</strong> BROWN</p>
+          <p><strong>Skin:</strong> PALE</p>
+          <p><strong>Build:</strong> medium/thin</p>
+          <p><strong>Demeanor:</strong> TOXIC/JEALOUS</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1279</p>
+          <p><strong>Age 1281:</strong> 2</p>
+          <p><strong>Age 1298:</strong> 19</p>
+          <p><strong>Predominant Location:</strong> Midford</p>
+          <p><strong>Motifs:</strong> Foil to Beatrix, indoctrinated in a zealous manner</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/gilbert-middleton.png" alt="Portrait of Gilbert Middleton">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Walter Selby</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> BLUE</p>
+          <p><strong>Hair Color:</strong> BLONDE</p>
+          <p><strong>Skin:</strong> PALE</p>
+          <p><strong>Build:</strong> Tall</p>
+          <p><strong>Demeanor:</strong> IMPRESSIONABLE/CONTEXT</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1280</p>
+          <p><strong>Death:</strong> 1346</p>
+          <p><strong>Age 1298:</strong> 18</p>
+          <p><strong>Predominant Location:</strong> Whalton</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/walter-selby.png" alt="Portrait of Walter Selby">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 12: William Felton / Sir Denum -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>William Felton</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> dark brown</p>
+          <p><strong>Hair Color:</strong> Sable hair, Dark ash colored hair</p>
+          <p><strong>Skin:</strong> Pale Skin</p>
+          <p><strong>Build:</strong> TALL</p>
+          <p><strong>Demeanor:</strong> slightly drunk, zealous</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1275</p>
+          <p><strong>Death:</strong> May 1328</p>
+          <p><strong>Predominant Location:</strong> Whalton</p>
+          <p><strong>Motifs:</strong> Orthoxdoxy, zealotry</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/william-felton.png" alt="Portrait of William Felton">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Sir Denum</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> brown</p>
+        </div>
+        <div class="col">
+          <p><strong>Predominant Location:</strong> Whalton</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/sir-denum.png" alt="Portrait of Sir Denum">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 13: Thomas Grey / Elias de Martel -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Thomas Grey</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> dark brown</p>
+          <p><strong>Hair Color:</strong> reyish-black hair</p>
+          <p><strong>Skin:</strong> pale</p>
+          <p><strong>Build:</strong> tall, well built, and strong</p>
+          <p><strong>Demeanor:</strong> Serious, sincere, pious</p>
+          <p><strong>Notes:</strong> His career, blemished by his suicidal charge at the Battle of Bannockburn, a contributing factor to the devastating English defeat, is perhaps best known for his role in the tale of Sir William Marmion, the chivalric knight of Norham Castle.</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1280</p>
+          <p><strong>Death:</strong> before March 1344</p>
+          <p><strong>Age 1281:</strong> 1</p>
+          <p><strong>Age 1298:</strong> 18</p>
+          <p><strong>Predominant Location:</strong> Whalton</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/thomas-grey.png" alt="Portrait of Thomas Grey">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Elias de Martel</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> brown</p>
+          <p><strong>Hair Color:</strong> black</p>
+          <p><strong>Skin:</strong> pale but ashy-blacksmith</p>
+          <p><strong>Build:</strong> Stocky, largest arms he'd ever seen</p>
+          <p><strong>Notes:</strong> a blacksmith and goldsmith</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1277</p>
+          <p><strong>Death:</strong> March 1344</p>
+          <p><strong>Age 1298:</strong> 21</p>
+          <p><strong>Predominant Location:</strong> Morpeth</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/elias-de-martel.png" alt="Portrait of Elias de Martel">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 14: Aymer de Valence / Humphrey de bohun VI -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Aymer de Valence</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> Dark eyed</p>
+          <p><strong>Hair Color:</strong> Dark haired</p>
+          <p><strong>Skin:</strong> TAN</p>
+          <p><strong>Build:</strong> TALL, THIN</p>
+          <p><strong>Demeanor:</strong> french aristocrats</p>
+          <p><strong>Notes:</strong> snobbish, elitist</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1270</p>
+          <p><strong>Death:</strong> 23 June 1324</p>
+          <p><strong>Age 1298:</strong> 28</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/aymer-de-valence.png" alt="Portrait of Aymer de Valence">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Humphrey de bohun VI</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> Hazel Eyes</p>
+          <p><strong>Hair Color:</strong> Blonde Hair</p>
+          <p><strong>Skin:</strong> Pale Skin</p>
+          <p><strong>Build:</strong> SHORT</p>
+          <p><strong>Notes:</strong> Lord Constable, third earl of Herford and Essex</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1276</p>
+          <p><strong>Death:</strong> 16 March 1322</p>
+          <p><strong>Age 1298:</strong> 22</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/humphrey-de-bohun-vi.png" alt="Portrait of Humphrey de bohun VI">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 15: Lord Marshall Roger Bigod V / John de Warrene -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Lord Marshall Roger Bigod V</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> BROWN EYES</p>
+          <p><strong>Hair Color:</strong> BROWN</p>
+          <p><strong>Skin:</strong> PALE</p>
+          <p><strong>Build:</strong> SHORT</p>
+          <p><strong>Demeanor:</strong> weak in stature, Haughty</p>
+          <p><strong>Notes:</strong> Earl of Norfolk</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1245</p>
+          <p><strong>Death:</strong> 6 December 1306</p>
+          <p><strong>Age 1298:</strong> 53</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/lord-marshall-roger-bigod-v.png" alt="Portrait of Lord Marshall Roger Bigod V">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>John de Warrene</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> BLUE EYES</p>
+          <p><strong>Hair Color:</strong> Grey haired</p>
+          <p><strong>Skin:</strong> aged, long scar across cheek</p>
+          <p><strong>Build:</strong> SHORT</p>
+          <p><strong>Demeanor:</strong> Level-headed</p>
+          <p><strong>Notes:</strong> Earl of Surray</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> June 1231</p>
+          <p><strong>Death:</strong> September 1304</p>
+          <p><strong>Age 1298:</strong> 67</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/john-de-warrene.png" alt="Portrait of John de Warrene">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 16: Richard Fitzallen / Baron Henry Percy of Northumberland -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Richard Fitzallen</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> GREY-BLUE</p>
+          <p><strong>Hair Color:</strong> BLACK, SLIGHTLY WAVY</p>
+          <p><strong>Skin:</strong> PALE</p>
+          <p><strong>Build:</strong> THIN</p>
+          <p><strong>Demeanor:</strong> loyal, battle-hardened</p>
+          <p><STRONG>Note:</STRONG>Earl of Arundel</p>
+          <p><strong>Quote(S)</strong> Earl of Arundel, His mother had been Isabella Mortimer, sister to Margaret making Robert his uncle. But where Oxford’s power lay in name, Richard bore the iron of the Marches in his blood. His grandfather had hacked down Simon de Montfort at Evesham, and the young earl seemed cut from the same unforgiving stone. He cut his teeth on the wars in the Welsh Marches and distinguished himself, and had been stationed in France fighting on behalf of King Edward these past few years. All knew his loyalty lay with Edward, and that went unquestioned.</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 3 February 1267</p>
+          <p><strong>Death:</strong> 9 March 1302</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/richard-fitzallen.png" alt="Portrait of Richard Fitzallen">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Baron Henry Percy of Northumberland</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> GREY-BLUE</p>
+          <p><strong>Hair Color:</strong> DARK BLOND, SLIGHTLY WAVY, WORN TO SHOULDERS</p>
+          <p><strong>Skin:</strong> PALE</p>
+          <p><strong>Build:</strong> THIN</p>
+          <p><strong>Demeanor:</strong> UNSURE/HAPPY</p>
+          <p><strong>Notes: LONG NOSE, SLIGHT SCAR AT EYEBROW</strong>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 25 March 1273</p>
+          <p><strong>Death:</strong> October 1314</p>
+          <p><strong>Predominant Location:</strong>York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/percy.png" alt="Portrait of Baron Henry Percy of Northumberland">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 17: Henry de Lacy / John De Britagnia -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Henry de Lacy</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> brown</p>
+          <p><strong>Hair Color:</strong> black</p>
+          <p><strong>Build:</strong> tall, broad, muscular</p>
+          <p><strong>Notes:</strong> well kept mustache, keen intelect, natural talent in marshall sports and art of war, charismatic, Earl of Lincoln</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1251</p>
+          <p><strong>Death:</strong> February 1311</p>
+          <p><strong>Age 1298:</strong> 37</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/henry-de-lacy.png" alt="Portrait of Henry de Lacy">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>John De Britagnia</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> GREY</p>
+          <p><strong>Hair Color:</strong> black</p>
+          <p><strong>Build:</strong> LONG FACE, STRAIGHT NOSE, CLEAN FEATURES</p>
+          <p><strong>Notes:</strong> not gifted in marshall sport and art of war, loved by king, filthy rich</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1266</p>
+          <p><strong>Death:</strong> 17 January 1344</p>
+          <p><strong>Age 1298:</strong> 32</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/john-de-britagnia.png" alt="Portrait of John De Britagnia">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 18: Thomas Earl of Lancaster / Henry of Lancaster -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Thomas Earl of Lancaster</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> icy light blue</p>
+          <p><strong>Hair Color:</strong> wavy blonde parted in middle, beginings of a good beard</p>
+          <p><strong>Skin:</strong> PALE SKIN</p>
+          <p><strong>Build:</strong> tall and thin</p>
+          <p><strong>Demeanor:</strong> Noble</p>
+          <p><strong>Notes:</strong> II earl of lancaster, one of most powerful men in kingdom, filthy rich, attractive</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1278</p>
+          <p><strong>Death:</strong> 22 March 1322</p>
+          <p><strong>Age 1298:</strong> 20</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/thomas-earl-of-lancaster.png" alt="Portrait of Thomas Earl of Lancaster">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Henry of Lancaster</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> blue</p>
+          <p><strong>Hair Color:</strong> plantagenet blonde, close cropped</p>
+          <p><strong>Skin:</strong> WAR_TANNED/MOLES</p>
+          <p><strong>Build:</strong> tall and sickly frame</p>
+          <p><strong>Demeanor:</strong> Awkward</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1281</p>
+          <p><strong>Death:</strong> 22 Septmer 1345</p>
+          <p><strong>Age 1298:</strong> 17</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/henry-of-lancaster.png" alt="Portrait of Henry of Lancaster">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 19: Guy Beauchamp / Patrick Dunbar -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Guy Beauchamp</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> BROWN</p>
+          <p><strong>Hair Color:</strong> Dark Haired</p>
+          <p><strong>Skin:</strong> TAN</p>
+          <p><strong>Build:</strong> Thin and Muscular</p>
+          <p><strong>Demeanor:</strong> Daring</p>
+          <p><strong>Notes:</strong> inteligent, skilled swordsman</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1272</p>
+          <p><strong>Death:</strong> 12 August 1315</p>
+          <p><strong>Age 1298:</strong> 26</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/guy-beauchamp.png" alt="Portrait of Guy Beauchamp">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Patrick Dunbar</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> Dark Green</p>
+          <p><strong>Hair Color:</strong> Red Hair</p>
+          <p><strong>Skin:</strong> PALE SKIN</p>
+          <p><strong>Build:</strong> Short, stocky, powerfully built; well-muscled frame</p>
+          <p><strong>Demeanor:</strong> Reserved</p>
+          <p><strong>Notes:</strong> Duplicitus, earl of march</p>
+        </div>
+        <div class="col">
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/patrick-dunbar.png" alt="Portrait of Patrick Dunbar">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 20: Gilbert de Umfraville / Robert de Vere -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Gilbert de Umfraville</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> Green</p>
+          <p><strong>Hair Color:</strong> long curled red locks, beard</p>
+          <p><strong>Skin:</strong> PALE SKIN</p>
+          <p><strong>Build:</strong> tall, broad shouldered</p>
+          <p><strong>Notes:</strong> earl of angus</p>
+        </div>
+        <div class="col">
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/gilbert-de-umfraville.png" alt="Portrait of Gilbert de Umfraville">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Robert de Vere</h2>
+        <div class="cols">
+            <div class="col">
+            <p><strong>Eyes:</strong>GREY</p>
+            <p><strong>Hair:</strong>MEDIUM BROWN</p>
+            <p><strong>Skin:</strong>DARK</p>
+            <p><strong>Build:</strong></p>
+            <p><strong>Notes:</strong> earl of oxford, owned little land, less power, betroathed to Mary Mortimer</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1257</p>
+          <p><strong>Death:</strong> 1331</p>
+          <p><strong>Age 1298:</strong> 41</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+          <p><strong>Quote(s)</strong>Earl of Oxford, it was an ancient title, but came with little land, and less power. However, he had married Margaret Mortimer. Her father Roger had crushed De Montfort at Evesham and was personally responsible for slaying him and Hugh Despenser. He had seen his commanders put to sword by this very Lord’s father-in-law, and for that reason Margaret had been a prize.</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/robert-de-vere.png" alt="Portrait of Robert de Vere">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 21: Ralph de Monthermer / Prince Bishop Bek -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Ralph de Monthermer</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> Emerald green</p>
+          <p><strong>Hair Color:</strong> Golden Ringlets</p>
+          <p><strong>Skin:</strong> PALE</p>
+          <p><strong>Build:</strong> Handsome, thin</p>
+          <p><strong>Demeanor:</strong> upstart</p>
+          <p><strong>Notes:</strong> Married Gilbert de Clairs widow, earl of Gloucester and Hertford</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1270</p>
+          <p><strong>Death:</strong> 1325</p>
+          <p><strong>Age 1298:</strong> 28</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/ralph-de-monthermer.png" alt="Portrait of Ralph de Monthermer">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Prince Bishop Bek</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> BROWN</p>
+          <p><strong>Hair Color:</strong> BROWN</p>
+          <p><strong>Skin:</strong> PALE</p>
+          <p><strong>Build:</strong> Tall, Thin</p>
+          <p><strong>Demeanor:</strong> Austere countance</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1245</p>
+          <p><strong>Death:</strong> 1311</p>
+          <p><strong>Age 1298:</strong> 53</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/prince-bishop-bek.png" alt="Portrait of Prince Bishop Bek">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 22: King Edward I / John Langton -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>King Edward I</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eye Color:</strong> slightly drooping left eye, chesnut brown</p>
+          <p><strong>Hair Color:</strong> Curly black, grey streaked</p>
+          <p><strong>Skin:</strong> Weathered and sun-browned from years of campaigning; lined, rugged, and slightly pallid with age.</p>
+          <p><strong>Build:</strong> Exceptionally tall (well over 6 feet), long-limbed, broad-shouldered, and powerfully built despite age; a warrior’s frame even late in life.</p>
+          <p><strong>Demeanor:</strong> Towering, relentless, iron-willed; judge-like in presence and expectation.</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1239</p>
+          <p><strong>Death:</strong> 1307</p>
+          <p><strong>Age 1298:</strong> 59</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/king-edward-i.png" alt="Portrait of King Edward I">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>John Langton</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eyes:GREY-BLUE</strong> </p>
+          <p><strong>Hair:DARK BROWN, MEDIUM LENGTH</strong> </p>
+          <p><strong>Skin:FAIR</strong> </p>
+          <p><strong>Build:</strong>MEDIUM, LEAN </p>
+          <p><strong>Demeanor</strong>Calm, deliberate, judicial
+          <p><strong>Notes:</strong> lord chancellor, keeper of seal, modest background, well liked</p>
+        </div>
+        <div class="col">
+          <p><strong>Birth:</strong> 1260</p>
+          <p><strong>Death:</strong> 1337</p>
+          <p><strong>Age 1298:</strong> 38</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/john-langton.png" alt="Portrait of John Langton">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pair 23: Walter Langton / Henry of Newark -->
+  <div class="profile-pair">
+
+    <div class="profile">
+      <h2>Walter Langton</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eyes:</strong>BLUE</p>
+          <p><strong>Hair:DARK BROWN, MEDIUM LENGTH</strong> </p>
+          <p><strong>Skin:FAIR</strong> </p>
+          <p><strong>Build:</strong>SHORT, SQUAT, FAT </p>
+          <p><strong>Demeanor</strong>Calm, deliberate, judicial</p>
+          <p><strong>Notes:</strong> lord treasure, Bishop of lichfield, speculated to have dabbled in witchcraft</p>
+        </div>
+        <div class="col">
+        <p><strong>Birth:</strong>1243</p>
+          <p><strong>Death:</strong>1321</p>
+          <p><strong>Age 1298:</strong>55</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/walter-langton.png" alt="Portrait of Walter Langton">
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Henry of Newark</h2>
+      <div class="cols">
+        <div class="col">
+          <p><strong>Eyes:</strong>BROWN</p>
+          <p><strong>Hair:</strong>BLONDE</p>
+          <p><strong>Build:</strong>TALL, LEAN</p>
+          <p><strong>Notes:</strong> Archbishop of York</p>
+        </div>
+        <div class="col">
+                <p><strong>Birth:</strong>1248</p>
+          <p><strong>Death:</strong>1299</p>
+          <p><strong>Age 1298:</strong>50</p>
+          <p><strong>Predominant Location:</strong> York Parliament/Falkirk</p>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Archive/henry-of-newark.png" alt="Portrait of Henry of Newark">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
