@@ -8,11 +8,11 @@ John Ogle Jr,Major,blue,thin blonde-hair,pale,thin,infantile,,1297,,null,1,Ogle/
 Roger Bertram,Major,GREEN,fiery red,ruddy face,THIN/MEDIUM BUILD,LOYAL/KIND WARRIOR,,1265,1300,16,33,Bothal,,roger-bertram.png
 Alice Gubium Bertram,Major,Piercing/Fierce Hazel Eyes,AUBURN,Fair Skinned,SHORT THIN,fierce,motherly,1265,,16,33,Bothal,Fate,alice-gubium-bertram.png
 Robert Bertram,Major,dark Green,fiery red,ruddy face,THIN/MEDIUM BUILD,"troubled, guilty",,1281,1314,newborn,17,Bothal,,robert-bertram.png
-Bertrams Barmaid (Gillian/Gyl),Major,dark eyed,Raven hair,Tanned,BUXOM/MEDIUM,Practical. loving,"on going affair with Robert Bertram, works at Black Stag",1278,,3,20,Bothal,dark beauty,gillian-gyl-barmaid.png
+Bertrams Barmaid (Gillian/Gyl),Major,dark eyed,Raven hair,Tanned,BUXOM/MEDIUM,Practical. loving,"on going affair with Robert Bertram, works at Black Stag",1278,,3,20,Bothal,dark beauty,bertrams-barmaid-gillian-gyl.png
 Alexander,Major,Hazel,"Forest brown, changes with season",Freckled,MEDIUM/THIN,free-spirited,Huntsman,1270,,11,"Died at Stirling Bridge, Maggie's Brother",Shilvington,,alexander.png
 Nigel Morrell,Major,blue,long grey hair and beard (grey),Heavily aged,tall and stiff,Shrewed and cunning yet humble,"war scarred arms, known for saving Bamburgh castle, father-in-law of Hugh",1230,,51,68,Shilvington,"Mischievous elder, coming of age initiator",nigel-morrell.png
-Joan Morell Gubion,Major,BLUE,raven haired,FAIR SKINNED,TALL,SEVERE,"wife of Hugh, mother of Maggie",1250,,31,deceased,Shilvington,,joan-morell-gubion.png
-Hugh Gubium the younger,Major,Hazel,"Forest Brown, changes with season",war worn face,TALL,"hasty, brave",great swordsman and horseman but hasty,1265,,16,33,Shilvington,,hugh-gubium.png
+Joan Morell Gubion,Major,BLUE,raven haired,FAIR SKINNED,TALL,SEVERE,"wife of Hugh, mother of Maggie",1250,,31,deceased,Shilvington,,joan-morell-gubium.png
+Hugh Gubium the younger,Major,Hazel,"Forest Brown, changes with season",war worn face,TALL,"hasty, brave",great swordsman and horseman but hasty,1265,,16,33,Shilvington,,hugh-gubium-the-younger.png
 Maggie Gubium,Major,Hazel,"long, beautiful, fiery",fair skinned and freckled,short,"devout, loving",,1281,,newborn,17,Shilvington,"Marian, love-lorn war bride, foil to Gillian",maggie-gubium.png
 Maggie's cat,Major,blue eyed,white hair,pale,thin,regal strut,,null,,null,adult,Shilvington,,maggies-cat.png
 Father Swineburn,Major,blue eyed,"grey, cropped, balding, beard",aged but pale,short and fat,benevolent,walks with a cane,1230,,51,68,Whalton,"Shepherd, foil to Lady Felton",father-swineburn.png
@@ -27,10 +27,10 @@ Thomas Grey,Major,dark brown,reyish-black hair,pale,"tall, well built, and stron
 Elias de Martel,Minor,brown,black,pale but ashy-blacksmith,"Stocky, largest arms he'd ever seen",,a blacksmith and goldsmith,1277,March 1344,,21,Morpeth,,elias-de-martel.png
 Aymer de Valence,Minor,Dark eyed,Dark haired,TAN,"TALL, THIN",french aristocrats,"snobbish, elitist",1270,23 June 1324,,28,York Parliament/Falkirk,,aymer-de-valence.png
 Humphrey de bohun VI,Minor,Hazel Eyes,Blonde Hair,Pale Skin,SHORT,,"Lord Constable, third earl of Herford and Essex",1276,16 March 1322,,22,York Parliament/Falkirk,,humphrey-de-bohun-vi.png
-Lord Marshall Roger Bigod V,Minor,BROWN EYES,BROWN,PALE,SHORT,"weak in stature, Haughty",Earl of Norfolk,1245,6 December 1306,,53,York Parliament/Falkirk,,roger-bigod-v.png
+Lord Marshall Roger Bigod V,Minor,BROWN EYES,BROWN,PALE,SHORT,"weak in stature, Haughty",Earl of Norfolk,1245,6 December 1306,,53,York Parliament/Falkirk,,lord-marshall-roger-bigod-v.png
 John de Warrene,Minor,BLUE EYES,Grey haired,"aged, long scar across cheek",SHORT,Level-headed,Earl of Surray,June 1231,September 1304,,67,York Parliament/Falkirk,,john-de-warrene.png
 Richard Fitzallen,Minor,GREY-BLUE,"BLACK, SLIGHTLY WAVY",PALE,THIN,"loyal, battle-heartened",Earl of Arundel,3 February 1267,9 March 1302,,31,York Parliament/Falkirk,,richard-fitzallen.png
-Baron Henry Percy of Northumberland,Minor,GREY-BLUE,LIGHT-BLONDE TO SHOULDERS,PALE,THIN,UNSURE/UNHAPPY,Baron,25 March 1273,October 1314,,25,York Parliament/Falkirk,,henry-percy.png
+Baron Henry Percy of Northumberland,Minor,GREY-BLUE,LIGHT-BLONDE TO SHOULDERS,PALE,THIN,UNSURE/UNHAPPY,Baron,25 March 1273,October 1314,,25,York Parliament/Falkirk,,percy.png
 Henry de Lacy,Minor,brown,black,,"tall, broad, muscular",,"well kept mustache, keen intelect, natural talent in marshall sports and art of war, charismatic, Earl of Lincoln",1251,February 1311,,37,York Parliament/Falkirk,,henry-de-lacy.png
 John De Britagnia,Minor,BROWN,DARK BROWN,PALE,"MEDIUM HEIGHT, WELL BUILT, FIT BUT NOT BULKY","OVAL FACE, PLANTGENET NOSE","not gifted in marshall sport and art of war, loved by king, filthy rich",1266,17 January 1344,,32,York Parliament/Falkirk,,john-de-britagnia.png
 Thomas Earl of Lancaster,Major,icy light blue,"wavy blonde parted in middle, beginings of a good beard",PALE SKIN,tall and thin,Noble,"II earl of lancaster, one of most powerful men in kingdom, filthy rich, attractive",1278,22 March 1322,,20,York Parliament/Falkirk,,thomas-earl-of-lancaster.png
@@ -40,9 +40,10 @@ Patrick Dunbar,Minor,Dark Green,Red Hair,PALE SKIN,"Short, stocky, powerfully bu
 Gilbert de Umfraville,Minor,Green,"long curled red locks, beard",PALE SKIN,"tall, broad shouldered",,earl of angus,1240,1307,,58,York Parliament/Falkirk,,gilbert-de-umfraville.png
 Robert de Vere,Minor,GREY,"MEDIUM BROWN, STRAIGHT, JAW-LEVEL",DARK,,"LONG FACE, STRAIGHT NOSE, CLEAN FEATURES","earl of oxford, owned little land, less power, betroathed to Mary Mortimer",1257,1331,,41,York Parliament/Falkirk,,robert-de-vere.png
 Ralph de Monthermer,Minor,Emerald green,Golden Ringlets,PALE,"Handsome, thin",upstart,"Married Gilbert de Clairs widow, earl of Gloucester and Hertford",1270,1325,,28,York Parliament/Falkirk,,ralph-de-monthermer.png
-Prince Bishop Bek,Major,BROWN,BROWN,PALE,"Tall, Thin",Austere countance,,1245,1311,,53,York Parliament/Falkirk,,bishop-bek.png
+Prince Bishop Bek,Major,BROWN,BROWN,PALE,"Tall, Thin",Austere countance,,1245,1311,,53,York Parliament/Falkirk,,prince-bishop-bek.png
 King Edward I,Minor,"slightly drooping left eye, chesnut brown","Curly black, grey streaked","Weathered and sun-browned from years of campaigning; lined, rugged, and slightly pallid with age.","Exceptionally tall (well over 6 feet), long-limbed, broad-shouldered, and powerfully built despite age; a warrior’s frame even late in life.","Towering, relentless, iron-willed; judge-like in presence and expectation.",,1239,1307,,59,York Parliament/Falkirk,,king-edward-i.png
 John Langton,Minor,GREY-BLUE,"DARK BROWN, MEDIUM LENGTH",FAIR,"MEDIUM, LEAN","lord chancellor, keeper of seal, modest background, well liked","lord chancellor, keeper of seal, modest background, well liked",1260,1337,,38,York Parliament/Falkirk,,john-langton.png
 Walter Langton,Minor,BLUE,"MEDIUM LENGTH, DARK BROWN",FAIR,"SMALL, SQUAT, OVERWEIGHT",,"lord treasure, Bishop of lichfield, speculated to have dabbled in witchcraft",1243,1321,,55,York Parliament/Falkirk,,walter-langton.png
 Henry of Newark,Minor,BROWN,BLONDE,FAIR,"TALL, LEAN",,Archbishop of YORK,1248,1299,,40,York Parliament/Falkirk,,henry-of-newark.png
+
 Edward Chartney,Minor,BROWN,WHITE HAIR,Fair,"MEDIUM, BIG",,"barkeep/tavernowne,knows the gossip from many towns",,,,,,,
