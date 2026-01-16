@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Northern English Tree Lore</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 20px;
+      line-height: 1.4;
+    }
+
+    .profile-pair {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .profile {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .cols {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .col {
+      flex: 1;
+      min-width: 200px;
+      border: 2px solid #9ec7ff;      /* light blue outline */
+      padding: 10px;
+      border-radius: 6px;
+      background: #f6f9ff;            /* very light blue background */
+    }
+
+    .portrait {
+      text-align: center;
+      margin: 8px 0 8px 0;
+    }
+
+    .portrait img {
+      max-width: 100%;
+      height: auto;
+      display: inline-block;
+    }
+
+    .profile .portrait img {
+      max-width: 90%;  /* slightly smaller inside profile cards */
+      height: auto;
+      display: block;
+      margin: 10px auto 0 auto;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 24px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Northern English Tree Lore: Multi-Lens Perspectives</h1>
+  <p>Layered folklore of upland/northern trees (e.g., Coquetdale contexts), drawing from Celtic/Brittonic, Norse/Germanic, Anglo-Saxon, and Christian/medieval lenses.</p>
+
+  <div id="trees"></div>
+
+  <script>
+    // Hardcoded tree data (from our improved table)
+    const trees = [
+      {
+        name: "Rowan (mountain ash)",
+        presence: "Moor edges, rocky slopes, high ground (ideal Coquetdale)",
+        celtic: "Protective threshold guardian; anti-enchantment, charms; fid na ndruad (\"wizard's tree\")",
+        norse: "Protective ward (Thor saved by rowan); runic/amuletic uses",
+        anglo: "Folk protection (charms, crosses); persists in leechcraft",
+        christian: "\"God's hedge\" vs. harm; churchyard planting in Wales/Scotland",
+        sources: "Woodland Trust; Trees for Life; Norse Thor legend; taboo cutting in Scotland",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Rowan_tree_in_autumn.jpg/800px-Rowan_tree_in_autumn.jpg"  // Rowan with berries, autumn upland feel
+      },
+      {
+        name: "Yew",
+        presence: "Churchyards, ancient boundaries, old estates",
+        celtic: "Death/rebirth, endurance, ancestral memory; longevity/toxicity",
+        norse: "Long-life/fate ties; bows (utility)",
+        anglo: "War bows; landscape memory; poisonous (avoided in pastures)",
+        christian: "Churchyard symbol of resurrection/eternity; eternal life",
+        sources: "Fortingall Yew legend; churchyard custom; Celtic death symbolism",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Ancient_yew_tree_in_Prestbury.jpg/800px-Ancient_yew_tree_in_Prestbury.jpg"  // Ancient churchyard yew
+      },
+      {
+        name: "Hawthorn",
+        presence: "Hedges, field edges, lone thorns on rises",
+        celtic: "Fairy/Otherworld threshold; perilous to cut; May blossom taboos",
+        norse: "Liminal boundary magic; hedge/order",
+        anglo: "Moot/boundary thorn; frequent in charters",
+        christian: "Crown-of-thorns; fertility but unlucky indoors",
+        sources: "Thomas the Rhymer; Maypole origin; Anglo-Saxon charters",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hawthorn_tree_in_blossom.jpg/800px-Hawthorn_tree_in_blossom.jpg"  // Lone flowering hawthorn
+      },
+      {
+        name: "Blackthorn (sloe)",
+        presence: "Hedges, rough pasture margins",
+        celtic: "Dark boundary; feared fairy gateway; strife/dark magic",
+        norse: "Thorn-ward; hostile boundary",
+        anglo: "Hedgerow defense; harsh land",
+        christian: "Sinister in folk Christianity; witchcraft ties",
+        sources: "Celtic fairy home; witchcraft wands",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Blackthorn_in_flower.jpg/800px-Blackthorn_in_flower.jpg"  // Blackthorn hedge blossom
+      },
+      {
+        name: "Oak",
+        presence: "Valleys/lowlands; symbolic even if scarcer on high moor",
+        celtic: "Sacred king-tree; sovereignty, strength",
+        norse: "Sacred groves; thunder (Donar/Thor oak)",
+        anglo: "Meeting trees/assemblies; law under oaks",
+        christian: "Moral steadfastness; strength/endurance emblem",
+        sources: "Germanic Donar's oak; Irish sacred oaks; place-names",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ancient_oak_tree_in_England.jpg/800px-Ancient_oak_tree_in_England.jpg"  // Majestic ancient English oak
+      },
+      {
+        name: "Ash",
+        presence: "Mixed woodland, river valleys, hedgerows",
+        celtic: "Healing/protective (Gaelic); world-tree echoes",
+        norse: "Yggdrasil (world-ash); cosmic center",
+        anglo: "Spear-wood; tools/war; healing in leechcraft",
+        christian: "Tree of life analogy; protective sap rituals",
+        sources: "Eddas (Yggdrasil as ash); Irish guardian trees; cleft-ash healing",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Ash_tree_in_river_valley.jpg/800px-Ash_tree_in_river_valley.jpg"  // Ash by water (Yggdrasil vibe)
+      },
+      {
+        name: "Hazel",
+        presence: "Woodland edge, copses, riverbanks",
+        celtic: "Wisdom/poetic inspiration; nuts/well myths",
+        norse: "Fate/hidden knowledge alignment",
+        anglo: "Rods/staves; authority/learning",
+        christian: "Wisdom subordinate to God",
+        sources: "Salmon of knowledge; Ogham letter; divination rods",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Hazel_tree_with_nuts.jpg/800px-Hazel_tree_with_nuts.jpg"  // Hazel with catkins/nuts
+      },
+      {
+        name: "Alder",
+        presence: "Wet ground, streams, riversides",
+        celtic: "Liminal water-tree; prophecy/otherworld margins",
+        norse: "Regional war/shield wood",
+        anglo: "Wetland boundary; practical uses",
+        christian: "Morally charged edges; red sap (\"bleeding\")",
+        sources: "Celtic doorway to fairy realm",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Alder_tree_by_stream.jpg/800px-Alder_tree_by_stream.jpg"  // Alder in wet habitat
+      },
+      {
+        name: "Willow",
+        presence: "River margins, wet meadows",
+        celtic: "Mourning/water-magic; healing",
+        norse: "Liminal water associations",
+        anglo: "Medicinal (leechcraft); binding/basketry",
+        christian: "Lamentation (Psalmic); sorrow by waters",
+        sources: "Sinister in English folklore; Palm Sunday substitute",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Weeping_willow_by_river.jpg/800px-Weeping_willow_by_river.jpg"
+      },
+      {
+        name: "Birch",
+        presence: "Pioneer woodland; regrowth zones",
+        celtic: "Renewal/purification; new beginnings",
+        norse: "Cleansing/seasonal logic",
+        anglo: "Domestic/new-start; brooms",
+        christian: "Humility/renewal; easily Christianized",
+        sources: "Goddess tree; protection vs. evil",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Silver_birch_in_woodland.jpg/800px-Silver_birch_in_woodland.jpg"  // Pioneer birch regrowth
+      },
+      {
+        name: "Elder",
+        presence: "Hedges, ruins, old farm edges",
+        celtic: "Spirit-haunted; medicinal; life/death boundary",
+        norse: "Old magic; protective/healing ambivalence",
+        anglo: "Leechcraft/medicine tradition",
+        christian: "Wary in folk Christianity; healing + fear",
+        sources: "Fairy/demon haunted; taboo cutting",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Elder_tree_in_hedge.jpg/800px-Elder_tree_in_hedge.jpg"
+      },
+      {
+        name: "Holly",
+        presence: "Woodland understory; hedges; evergreen",
+        celtic: "Winter protection/warding greenery",
+        norse: "Evergreen survival/endurance",
+        anglo: "Protective hedge; control (whips)",
+        christian: "Crown of thorns/blood; eternal life evergreen",
+        sources: "Thor affinity; lightning protection; Christmas symbolism",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Holly_with_berries.jpg/800px-Holly_with_berries.jpg"  // Evergreen holly
+      },
+      {
+        name: "Scots pine",
+        presence: "More northern/Bordered; culturally “northern”",
+        celtic: "Endurance/immortality; wild markers",
+        norse: "Warrior/burial associations",
+        anglo: "Practical timber; landscape marker",
+        christian: "Steadfastness/continuity emblem",
+        sources: "Pine cone fertility; burial markers; northern lore",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Scots_pine_in_highland_landscape.jpg/800px-Scots_pine_in_highland_landscape.jpg"  // Northern Scots pine
+      }
+    ];
+
+    // Helper: safely add a <p><strong>Label:</strong> value</p> only if value exists
+    function addField(container, label, value) {
+      if (!value || value.trim() === "") return;
+      const p = document.createElement('p');
+      const strong = document.createElement('strong');
+      strong.textContent = label + ':';
+      p.appendChild(strong);
+      p.appendChild(document.createTextNode(' ' + value));
+      container.appendChild(p);
+    }
+
+    // Build one profile DOM element from a tree object
+    function buildProfile(tree) {
+      const profile = document.createElement('div');
+      profile.className = 'profile';
+
+      // Title
+      const h2 = document.createElement('h2');
+      h2.textContent = tree.name;
+      profile.appendChild(h2);
+
+      // Columns wrapper
+      const cols = document.createElement('div');
+      cols.className = 'cols';
+
+      const colLeft = document.createElement('div');
+      colLeft.className = 'col';
+
+      const colRight = document.createElement('div');
+      colRight.className = 'col';
+
+      // LEFT: Presence, Celtic, Norse
+      addField(colLeft, 'North-of-England presence', tree.presence);
+      addField(colLeft, 'Celtic / Brittonic lens', tree.celtic);
+      addField(colLeft, 'Norse / Germanic lens', tree.norse);
+
+      // RIGHT: Anglo-Saxon, Christian, Sources
+      addField(colRight, 'Anglo-Saxon lens', tree.anglo);
+      addField(colRight, 'Christian / medieval lens', tree.christian);
+      addField(colRight, 'Sources / myths', tree.sources);
+
+      cols.appendChild(colLeft);
+      cols.appendChild(colRight);
+      profile.appendChild(cols);
+
+      // Portrait / Image
+      const portraitDiv = document.createElement('div');
+      portraitDiv.className = 'portrait';
+
+      if (tree.image) {
+        const img = document.createElement('img');
+        img.src = tree.image;
+        img.alt = tree.name + ' in northern/folklore context';
+        portraitDiv.appendChild(img);
+      }
+
+      profile.appendChild(portraitDiv);
+
+      return profile;
+    }
+
+    // Render the trees
+    const container = document.getElementById('trees');
+
+    for (let i = 0; i < trees.length; i += 2) {
+      const pairDiv = document.createElement('div');
+      pairDiv.className = 'profile-pair';
+
+      const tree1 = trees[i];
+      const tree2 = trees[i + 1];
+
+      if (tree1) pairDiv.appendChild(buildProfile(tree1));
+      if (tree2) pairDiv.appendChild(buildProfile(tree2));
+
+      container.appendChild(pairDiv);
+    }
+  </script>
+</body>
+</html>
