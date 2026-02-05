@@ -4,232 +4,249 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Moon Phase Calculator</title>
+
   <style>
-    body { max-width: 900px; margin: 2rem auto; padding: 0 1rem; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.45; }
+    body {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.45;
+    }
+
     h1, h2 { line-height: 1.15; }
-    .nav a { text-decoration: none; }
-    .nav a:hover { text-decoration: underline; }
-    .card { border: 1px solid #ddd; border-radius: 10px; padding: 1rem; margin: 1rem 0; }
-    .grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.75rem; }
-    .grid .span2 { grid-column: span 2; }
-    .grid .span3 { grid-column: span 3; }
-    .grid .span6 { grid-column: span 6; }
-    label { display: block; font-size: 0.9rem; margin-bottom: 0.25rem; }
-    input, select, button { width: 100%; padding: 0.55rem; font-size: 1rem; }
+
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .span2 { grid-column: span 2; }
+    .span3 { grid-column: span 3; }
+    .span6 { grid-column: span 6; }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 0.55rem;
+      font-size: 1rem;
+    }
+
     button { cursor: pointer; }
-    .result { font-size: 1.05rem; }
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
     .muted { color: #555; }
-    .warn { color: #7a4; }
+
     @media (max-width: 720px) {
       .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .grid .span2, .grid .span3, .grid .span6 { grid-column: span 2; }
+      .span2, .span3, .span6 { grid-column: span 2; }
     }
   </style>
 </head>
 
 <body>
-  <h1>Moon Phase Calculator</h1>
 
-  <div class="nav">
-    <p><a href="./">← Mythos and Monarchs</a></p>
-  </div>
+<h1>Moon Phase Calculator</h1>
+<p><a href="./">← Mythos and Monarchs</a></p>
 
-  <div class="card">
-    <h2>Why the calendar toggle matters (1300s England)</h2>
-    <p class="muted">
-      England in the 1300s used the <b>Julian calendar</b>. If you type a date as “Gregorian” you can shift the sky by ~8 days in that era,
-      which often means a completely different moon phase. Use <b>Julian</b> for “as contemporaries would date it.”
-    </p>
-  </div>
+<div class="card">
+  <h2>Historical accuracy</h2>
+  <p class="muted">
+    This calculator is anchored to a <b>known New Moon in January 1330</b>
+    (solar eclipse), avoiding century-scale drift.
+    Use <b>Julian</b> dates for medieval England.
+  </p>
+</div>
 
-  <div class="card">
-    <h2>Calculate</h2>
+<div class="card">
+  <h2>Calculate</h2>
 
-    <div class="grid">
-      <div class="span3">
-        <label for="calendar">Calendar</label>
-        <select id="calendar">
-          <option value="julian" selected>Julian (historical England)</option>
-          <option value="gregorian">Gregorian (proleptic)</option>
-        </select>
-      </div>
-
-      <div class="span2">
-        <label for="year">Year</label>
-        <input id="year" type="number" value="1330" />
-      </div>
-
-      <div class="span2">
-        <label for="month">Month</label>
-        <input id="month" type="number" min="1" max="12" value="3" />
-      </div>
-
-      <div class="span2">
-        <label for="day">Day</label>
-        <input id="day" type="number" min="1" max="31" value="15" />
-      </div>
-
-      <div class="span2">
-        <label for="hour">Hour (UTC)</label>
-        <input id="hour" type="number" min="0" max="23" value="12" />
-      </div>
-
-      <div class="span2">
-        <label for="minute">Minute (UTC)</label>
-        <input id="minute" type="number" min="0" max="59" value="0" />
-      </div>
-
-      <div class="span6">
-        <button id="btn">Compute moon phase</button>
-      </div>
+  <div class="grid">
+    <div class="span3">
+      <label>Calendar</label>
+      <select id="calendar">
+        <option value="julian" selected>Julian (historical England)</option>
+        <option value="gregorian">Gregorian (proleptic)</option>
+      </select>
     </div>
 
-    <p class="muted">
-      Tip: If you only care about the “day’s” phase for a book, keep the default time at <b>12:00 UTC</b>.
-    </p>
+    <div class="span2">
+      <label>Year</label>
+      <input id="year" type="number" value="1330">
+    </div>
+
+    <div class="span2">
+      <label>Month</label>
+      <input id="month" type="number" min="1" max="12" value="6">
+    </div>
+
+    <div class="span2">
+      <label>Day</label>
+      <input id="day" type="number" min="1" max="31" value="27">
+    </div>
+
+    <div class="span2">
+      <label>Hour (UTC)</label>
+      <input id="hour" type="number" min="0" max="23" value="12">
+    </div>
+
+    <div class="span2">
+      <label>Minute (UTC)</label>
+      <input id="minute" type="number" min="0" max="59" value="0">
+    </div>
+
+    <div class="span6">
+      <button id="btn">Compute moon phase</button>
+    </div>
   </div>
 
-  <div class="card">
-    <h2>Result</h2>
-    <div id="out" class="result">Enter a date and click “Compute.”</div>
-  </div>
+  <p class="muted">
+    Tip: For date-only historical use, keep the default <b>12:00 UTC</b>.
+  </p>
+</div>
 
-  <script>
-    // ---------- Math helpers ----------
-    function mod(n, m) { return ((n % m) + m) % m; }
-    function deg2rad(d) { return d * Math.PI / 180; }
+<div class="card">
+  <h2>Result</h2>
+  <div id="out">Enter a date and compute.</div>
+</div>
 
-    // ---------- Calendar date -> Julian Day (JD) ----------
-    // Supports proleptic Julian or proleptic Gregorian.
-    // month: 1..12
-    function julianDay(year, month, day, hour=12, minute=0, second=0, calendar="julian") {
-      let Y = year, M = month;
-      if (M <= 2) { Y -= 1; M += 12; }
+<script>
+  /* =======================
+     Constants & helpers
+     ======================= */
 
-      const A = Math.floor(Y / 100);
-      const isGregorian = (String(calendar).toLowerCase() === "gregorian");
-      const B = isGregorian ? (2 - A + Math.floor(A / 4)) : 0;
+  const SYNODIC_MONTH = 29.530588853;
 
-      const dayFraction = (hour + minute/60 + second/3600) / 24;
+  // New Moon anchor: 1330-01-19 (Julian), annular solar eclipse
+  // UT ≈ 21:21:39
+  const ANCHOR = {
+    year: 1330, month: 1, day: 19,
+    hour: 21, minute: 21, second: 39,
+    calendar: "julian"
+  };
 
-      const JD = Math.floor(365.25 * (Y + 4716))
-               + Math.floor(30.6001 * (M + 1))
-               + (day + dayFraction)
-               + B
-               - 1524.5;
+  function mod(n, m) {
+    return ((n % m) + m) % m;
+  }
 
-      return JD;
-    }
+  function deg2rad(d) {
+    return d * Math.PI / 180;
+  }
 
-    // ---------- Approx solar longitude (degrees) ----------
-    function sunEclipticLongitude(JD) {
-      const T = (JD - 2451545.0) / 36525.0;
+  /* =======================
+     Calendar → Julian Day
+     ======================= */
 
-      const L0 = mod(280.46646 + 36000.76983*T + 0.0003032*T*T, 360);
-      const M  = mod(357.52911 + 35999.05029*T - 0.0001537*T*T, 360);
+  function julianDay(y, m, d, h, min, s, cal) {
+    let Y = y, M = m;
+    if (M <= 2) { Y--; M += 12; }
 
-      const C = (1.914602 - 0.004817*T - 0.000014*T*T) * Math.sin(deg2rad(M))
-              + (0.019993 - 0.000101*T)               * Math.sin(deg2rad(2*M))
-              + 0.000289                               * Math.sin(deg2rad(3*M));
+    const A = Math.floor(Y / 100);
+    const B = (cal === "gregorian")
+      ? 2 - A + Math.floor(A / 4)
+      : 0;
 
-      return mod(L0 + C, 360);
-    }
+    const frac = (h + min / 60 + s / 3600) / 24;
 
-    // ---------- Approx lunar longitude (degrees) ----------
-    // Compact low-term approximation: good enough for “phase name / how full” across centuries.
-    function moonEclipticLongitude(JD) {
-      const T = (JD - 2451545.0) / 36525.0;
+    return Math.floor(365.25 * (Y + 4716))
+         + Math.floor(30.6001 * (M + 1))
+         + d + frac + B - 1524.5;
+  }
 
-      const Lp = mod(218.3164477 + 481267.88123421*T - 0.0015786*T*T + (T*T*T)/538841 - (T*T*T*T)/65194000, 360);
-      const D  = mod(297.8501921 + 445267.1114034*T - 0.0018819*T*T + (T*T*T)/545868 - (T*T*T*T)/113065000, 360);
-      const M  = mod(357.5291092 + 35999.0502909*T - 0.0001536*T*T + (T*T*T)/24490000, 360);
-      const Mp = mod(134.9633964 + 477198.8675055*T + 0.0087414*T*T + (T*T*T)/69699 - (T*T*T*T)/14712000, 360);
+  /* =======================
+     Anchored phase solver
+     ======================= */
 
-      let lon = Lp
-        + 6.289 * Math.sin(deg2rad(Mp))
-        + 1.274 * Math.sin(deg2rad(2*D - Mp))
-        + 0.658 * Math.sin(deg2rad(2*D))
-        + 0.214 * Math.sin(deg2rad(2*Mp))
-        + 0.110 * Math.sin(deg2rad(D))
-        - 0.186 * Math.sin(deg2rad(M))
-        - 0.059 * Math.sin(deg2rad(2*D - 2*Mp));
+  function computePhase(input) {
+    const JD = julianDay(
+      input.year, input.month, input.day,
+      input.hour, input.minute, 0,
+      input.calendar
+    );
 
-      lon += 0.057 * Math.sin(deg2rad(2*D - M - Mp))
-          +  0.053 * Math.sin(deg2rad(2*D + Mp))
-          +  0.046 * Math.sin(deg2rad(2*D - M))
-          +  0.041 * Math.sin(deg2rad(M - Mp));
+    const epochJD = julianDay(
+      ANCHOR.year, ANCHOR.month, ANCHOR.day,
+      ANCHOR.hour, ANCHOR.minute, ANCHOR.second,
+      ANCHOR.calendar
+    );
 
-      return mod(lon, 360);
-    }
+    const ageDays = mod(JD - epochJD, SYNODIC_MONTH);
+    const angle = 360 * (ageDays / SYNODIC_MONTH);
+    const illumination = 0.5 * (1 - Math.cos(deg2rad(angle)));
 
-    function phaseNameFromAngle(angleDeg) {
-      const a = mod(angleDeg, 360);
-      const idx = Math.floor(mod(a + 22.5, 360) / 45);
-      return [
-        "New Moon",
-        "Waxing Crescent",
-        "First Quarter",
-        "Waxing Gibbous",
-        "Full Moon",
-        "Waning Gibbous",
-        "Last Quarter",
-        "Waning Crescent"
-      ][idx];
-    }
+    return { JD, ageDays, angle, illumination };
+  }
 
-    function computePhase({year, month, day, hour, minute, calendar}) {
-      const JD = julianDay(year, month, day, hour, minute, 0, calendar);
-      const sunLon = sunEclipticLongitude(JD);
-      const moonLon = moonEclipticLongitude(JD);
+  function phaseName(angle) {
+    const bins = [
+      "New Moon",
+      "Waxing Crescent",
+      "First Quarter",
+      "Waxing Gibbous",
+      "Full Moon",
+      "Waning Gibbous",
+      "Last Quarter",
+      "Waning Crescent"
+    ];
+    return bins[Math.floor(mod(angle + 22.5, 360) / 45)];
+  }
 
-      const phaseAngle = mod(moonLon - sunLon, 360); // 0=new, 180=full
-      const illumination = 0.5 * (1 - Math.cos(deg2rad(phaseAngle))); // 0..1
+  /* =======================
+     UI
+     ======================= */
 
-      return {
-        JD,
-        sunLon,
-        moonLon,
-        phaseAngle,
-        illumination,
-        name: phaseNameFromAngle(phaseAngle)
-      };
-    }
+  const $ = id => document.getElementById(id);
 
-    // ---------- UI wiring ----------
-    const el = (id) => document.getElementById(id);
-    const out = el("out");
+  function render() {
+    const input = {
+      calendar: $("calendar").value,
+      year: +$("year").value,
+      month: +$("month").value,
+      day: +$("day").value,
+      hour: +$("hour").value,
+      minute: +$("minute").value
+    };
 
-    function render() {
-      const year = Number(el("year").value);
-      const month = Number(el("month").value);
-      const day = Number(el("day").value);
-      const hour = Number(el("hour").value);
-      const minute = Number(el("minute").value);
-      const calendar = el("calendar").value;
+    const r = computePhase(input);
 
-      // basic validation
-      if (!Number.isFinite(year) || !Number.isFinite(month) || !Number.isFinite(day)) {
-        out.textContent = "Please enter a valid year/month/day.";
-        return;
-      }
+    $("out").innerHTML = `
+      <div><b>${phaseName(r.angle)}</b></div>
+      <div>Illumination: <span class="mono">${(r.illumination * 100).toFixed(1)}%</span></div>
+      <div>Phase angle: <span class="mono">${r.angle.toFixed(1)}°</span> (0° = New, 180° = Full)</div>
+      <div>Moon age: <span class="mono">${r.ageDays.toFixed(2)}</span> days</div>
+      <div class="muted">
+        JD: <span class="mono">${r.JD.toFixed(5)}</span> ·
+        Calendar: <span class="mono">${input.calendar}</span> ·
+        UTC: <span class="mono">${String(input.hour).padStart(2,"0")}:${String(input.minute).padStart(2,"0")}</span>
+      </div>
+      <div class="muted">
+        Accuracy: best within the 13th–14th centuries (epoch-anchored)
+      </div>
+    `;
+  }
 
-      const r = computePhase({year, month, day, hour, minute, calendar});
+  $("btn").addEventListener("click", render);
+  render();
+</script>
 
-      const illumPct = (r.illumination * 100);
-      out.innerHTML = `
-        <div><b>${r.name}</b></div>
-        <div>Illumination: <span class="mono">${illumPct.toFixed(1)}%</span></div>
-        <div>Phase angle: <span class="mono">${r.phaseAngle.toFixed(1)}°</span> (0°=New, 180°=Full)</div>
-        <div class="muted">JD: <span class="mono">${r.JD.toFixed(5)}</span> • Calendar: <span class="mono">${calendar}</span> • UTC: <span class="mono">${String(hour).padStart(2,"0")}:${String(minute).padStart(2,"0")}</span></div>
-        <div class="muted">Sun λ: <span class="mono">${r.sunLon.toFixed(2)}°</span> • Moon λ: <span class="mono">${r.moonLon.toFixed(2)}°</span></div>
-      `;
-    }
-
-    el("btn").addEventListener("click", render);
-
-    // auto-run once on load
-    render();
-  </script>
 </body>
 </html>
