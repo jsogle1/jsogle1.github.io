@@ -1,0 +1,305 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.44,50.55 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"First recorded Viking raid - Isle of Portland, Dorset 789",
+    "content":"This is the earliest documented Viking encounter in England per the Anglo-Saxon Chronicle: three ships (likely Norwegian) landed, and a royal official (Beaduheard) was killed after a misunderstanding. It predates the more famous 793 raid.",
+    "image":"media/PortlandCoast.jpg",
+    "attribution":"By Wilson44691 at English Wikipedia - Photograph taken by Mark A. Wilson (Department of Geology, The College of Wooster).[1], Public Domain, https://commons.wikimedia.org/w/index.php?curid=3796792",
+    "alt_text":"Portland Coast"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.8025,55.68 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Raid on Lindisfarne monastery - Holy Island, Northumberland 793",
+    "content":"The sack of Lindisfarne (Holy Island) on 8 June 793 is iconic, often marking the symbolic start of the Viking Age in Britain due to its shock value and detailed contemporary accounts.",
+    "image":"media/Holy_Island_Sunrise_(again)_(15064111624).jpg",
+    "attribution":"By Chris Combe from York, UK - Holy Island Sunrise (again), CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=42080816",
+    "alt_text":"Holy Island at Dawn"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.49,54.981389 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Raid on Jarrow - St Paul’s Monastery, Jarrow, Tyne and Wear 794",
+    "content":"Follow-up raids hit Northumbrian monasteries, including Jarrow (associated with Bede) in 794.",
+    "image":"media/St_Pauls_Monastery_Jarrow.jpg",
+    "attribution":"By Mark Smiles, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=4528346",
+    "alt_text":"St. Paul's Ruins"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.383333,51.35 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"First Viking winter camp - Isle of Thanet, Kent 850",
+    "content":"Vikings overwintered on Thanet (then an island) around this time, a shift from hit-and-run raids to longer stays.",
+    "image":"media/330px-OldMapKent.jpg",
+    "attribution":"By S. R. Gardiner (d. 1902) - A School Atlas Of English History, Longmans, Green, 1892, Public Domain, https://commons.wikimedia.org/w/index.php?curid=4174443",
+    "alt_text":"Map of Old "
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.383333,51.35 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Great Heathen Army lands - Isle of Thanet (Kent) before crossing to East Anglia 865",
+    "content":"The Great Heathen Army (a large Danish-led force) landed on Thanet in late 865, extracted tribute, then moved into East Anglia for horses and further campaigns.",
+    "image":"media/England_Great_Army_map.svg.png",
+    "attribution":"By Hel-hama - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=20042870",
+    "alt_text":"Battles of the Great Heathen Army"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.08,53.96 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Vikings capture York - Eboracum (Roman York), North Yorkshire 866",
+    "content":"York (Jorvik) fell on 1 November 866 to the Great Army.",
+    "image":"media/Kingdom_of_Jórvik.svg.png",
+    "attribution":"By Yorkshirian at English Wikipedia - File:Kingdom of Jorvik.png, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=61453191",
+    "alt_text":"Viking York"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.08,53.96 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of York - Within the city walls of York 867",
+    "content":"Northumbrian forces attempted to retake York but were defeated inside or at the walls.",
+    "image":"media/500px-Multangular_tower.jpg",
+    "attribution":"ChrisO, Public domain, via Wikimedia Commons",
+    "alt_text":"Ancient York Tower"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.74,52.41 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"King Edmund killed - Thetford, Norfolk (traditional site) 869",
+    "content":"King Edmund of East Anglia was killed/martyred by Vikings; Thetford is the commonly cited traditional location, though exact details vary in sources.",
+    "image":"media/The_Death_of_Edmund_Ironside_in_the_Cambridge_University_Library.jpg",
+    "attribution":"By Matthew Paris - https://cudl.lib.cam.ac.uk/view/MS-EE-00003-00059/15, Public Domain, https://commons.wikimedia.org/w/index.php?curid=135510122",
+    "alt_text":"Death of Edmund by Matthew Paris"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.216389,51.528908 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Ashdown - Likely Lowbury Hill or Kingstanding Hill, Berkshire Downs 871",
+    "content":"Alfred (then prince) and his brother Æthelred defeated Vikings; the precise site is uncertain but often placed in the Berkshire Downs area (e.g., Lowbury Hill or nearby).",
+    "image":"media/960px-Battle_of_Ashdown.jpg",
+    "attribution":"By Richard Doyle (died 1883) - Hughes, T (1859). Scouring the White Horse; Or, the Long Vacation Ramble of a London Clerk., Public Domain, https://commons.wikimedia.org/w/index.php?curid=65467313",
+    "alt_text":"19th Century Depiction of the Battle of Ashdown"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.55102,52.841308 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Vikings camp for winter - Repton Abbey, Derbyshire (site of a mass Viking grave) 873",
+    "content":"The Great Army wintered at Repton; archaeological evidence includes a mass grave of Viking warriors.",
+    "image":"media/Saxon_crypt_at_Repton_-_geograph.org.uk_-_1089547.jpg",
+    "attribution":"By James Yardley, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=13793544",
+    "alt_text":"Repton Abbey Crypt"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.418889,55.010278 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Viking settlement begins - Primarily the Tyne valley and Yorkshire 876",
+    "content":"Permanent settlements expanded in northern/eastern England (e.g., Northumbria/Yorkshire) around this period, leading to the Danelaw.",
+    "image":"media/Source_of_the_River_North_Tyne.jpg",
+    "attribution":"By Taras Young - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=117596025",
+    "alt_text":"A stone marker shows the source of the River North Tyne"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.142778,51.263889 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Edington - Bratton Camp (hillfort) or Edington village, Wiltshire 878",
+    "content":"Alfred's decisive victory over Guthrum; site is debated but often linked to Edington or nearby Bratton Camp hillfort.",
+    "image":"media/King_Alfred's_Tower_(4546584778).jpg",
+    "attribution":"By Marilyn Peddle from England - King Alfred's Tower, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=95989707",
+    "alt_text":"King Alfred's Tower, Mustering Spot"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.81,51.226 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Treaty of Wedmore - Aller (baptism site) and Wedmore, Somerset 878",
+    "content":"After Edington, Guthrum was baptized at Aller (near Athelney), with confirmation/rituals at Wedmore; this led to the Treaty (or \"Peace\") of Wedmore, establishing boundaries (Danelaw).",
+    "image":"media/Illas_Britanicas_(vèrs_la_fin_dau_sègle_IX).jpg",
+    "attribution":"By Nicolas Eynaud - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=25576919",
+    "alt_text":"Map showing the Danelaw"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.093056,51.515556 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Alfred captures London - The City of London (Roman Lundeneburh) 886",
+    "content":"Alfred retook London from Viking control, marking a key recovery.",
+    "image":"media/Engraving_of_King_Alfred_the_Great_by_George_Vertue_for_Rapin's_History_of_England.png",
+    "attribution":"[[File:Engraving of King Alfred the Great by George Vertue for Rapin's History of England.png|Engraving of King Alfred the Great by George Vertue for Tindal's translation of Rapin's History of England.",
+    "alt_text":"Engraving of King Alfred"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.978,53.336 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Brunanburh - Often identified as Bromborough, Wirral 937",
+    "content":"Athelstan's victory over a coalition (Scots, Strathclyde, Vikings); the location is heavily debated, but Bromborough (Wirral) is a leading scholarly candidate due to linguistic and strategic fit, though alternatives (e.g., elsewhere in northern England) exist.",
+    "image":"media/Alfred_Pearseː_The_great_battle_of_Brunanburh_in_937_(Hutchinsons_Story_of_the_British_Nation,_1922).jpg",
+    "attribution":"Alfred Pearseː The great battle of Brunanburh in 937 (Hutchinsons Story of the British Nation, 1922).jpg",
+    "alt_text":"Battle of Brunanburh"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.259772,54.527879 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Death of Eric Bloodaxe - Stainmore Pass, on the border of Cumbria and Durham 954",
+    "content":"Eric (last Viking king of York/Jorvik) was killed at Stainmore (or nearby).",
+    "image":"media/Eric-Rex-coins.jpg",
+    "attribution":"By Clarendon Press (photographer not named) - https://archive.org/details/handbookofcoinso00brituoft, Public Domain, https://commons.wikimedia.org/w/index.php?curid=5994943",
+    "alt_text":"Coin of Erik Rex"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.700833,51.715278 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Maldon - Northey Island and the causeway, Essex 991",
+    "content":"Famous from the poem The Battle of Maldon; Vikings defeated Byrhtnoth's forces at the causeway to Northey Island.",
+    "image":"media/Battle_of_Maldon_in_991_(Hutchinson%27s_Story_of_the_British_Nation,_1922).jpg",
+    "attribution":"Alfred Pearse, Public domain, via Wikimedia Commons",
+    "alt_text":"Battle of Maldon"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.7732,53.4016 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Sweyn recognized as King - Gainsborough, Lincolnshire (his base of operations) 1013",
+    "content":"Sweyn Forkbeard conquered much of England; Gainsborough was a key base where he received submissions.",
+    "image":"media/640px-Sweyn_Forkbeard_02.jpg",
+    "attribution":"Anonymus (The Life of King Edward the Confessor), Public domain, via Wikimedia Commons",
+    "alt_text":"Sweyn Forkbeard from the Life of Edward the Confessor"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.093056,51.515556 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Cnut becomes King - London (following the Battle of Assandun in Essex) 1016",
+    "content":"After Assandun (near Ashingdon, Essex), Cnut (Canute) secured the throne and was recognized in London.",
+    "image":"media/Ashingdon_Hilltop.jpg",
+    "attribution":"David Kemp / Hilltop near Ashingdon",
+    "alt_text":"Hilltop at Ashingdon"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.9125,53.9925 ]
+    },
+    "properties": {
+    "zoom":12,
+    "title":"Battle of Stamford Bridge, River Derwent crossing - Stamford Bridge, East Riding of Yorkshire 1066",
+    "content":"Harald Hardrada's invasion ended here; English forces under Harold Godwinson defeated the Vikings at the Derwent crossing.",
+    "image":"media/Battle_of_Stamford_Bridge,_full.png",
+    "attribution":"By Matthew Paris - http://cudl.lib.cam.ac.uk/view/MS-EE-00003-00059/1, Public Domain, https://commons.wikimedia.org/w/index.php?curid=21914431",
+    "alt_text":"Battle of Stamford by Matthew Pairs"
+    }
+  }
+]
+}
