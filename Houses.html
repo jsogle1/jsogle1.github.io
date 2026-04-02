@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynastic Timeline Starter</title>
+  <style>
+    :root {
+      --year-width: 8px;         /* pixels per year */
+      --lane-height: 170px;      /* fixed height per house lane */
+      --header-width: 150px;     /* width of left-side house labels */
+      --ruler-height: 44px;
+      --event-label-height: 22px;
+      --bar-radius: 10px;
+      --bar-padding: 10px;
+      --bg: #f7f3ea;
+      --ink: #2b241c;
+      --muted: #6d6255;
+      --grid: #d7cebf;
+      --card: #fffdf8;
+      --accent: #8b5e3c;
+      --accent-soft: #dbc4a6;
+      --event: #7f1d1d;
+      --shadow: 0 2px 10px rgba(0,0,0,0.08);
+      --font: Georgia, "Times New Roman", serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    .app {
+      padding: 18px;
+    }
+
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      align-items: center;
+      margin-bottom: 16px;
+      padding: 14px;
+      background: var(--card);
+      border: 1px solid var(--grid);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    .topbar h1 {
+      margin: 0;
+      font-size: 1.35rem;
+      margin-right: 10px;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .control-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    label {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    input[type="range"] {
+      width: 180px;
+    }
+
+    .toggle-wrap {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-left: auto;
+    }
+
+    .timeline-shell {
+      background: var(--card);
+      border: 1px solid var(--grid);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .timeline-scroll {
+      overflow: auto;
+      position: relative;
+      max-height: 80vh;
+    }
+
+    .timeline {
+      position: relative;
+      min-height: 400px;
+    }
+
+    .ruler-left-corner,
+    .lane-label,
+    .details-panel {
+      background: #f3ede2;
+    }
+
+    .ruler-left-corner {
+      position: sticky;
+      left: 0;
+      top: 0;
+      z-index: 7;
+      width: var(--header-width);
+      height: var(--ruler-height);
+      border-right: 1px solid var(--grid);
+      border-bottom: 1px solid var(--grid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .year-ruler {
+      position: sticky;
+      top: 0;
+      z-index: 6;
+      left: var(--header-width);
+      height: var(--ruler-height);
+      background: linear-gradient(to bottom, #fbf8f1, #f1e9dc);
+      border-bottom: 1px solid var(--grid);
+    }
+
+    .year-mark {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-left: 1px solid var(--grid);
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding-left: 4px;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 5px;
+      white-space: nowrap;
+    }
+
+    .timeline-body {
+      position: relative;
+    }
+
+    .lane-row {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: var(--lane-height);
+      border-bottom: 1px solid var(--grid);
+    }
+
+    .lane-label {
+      position: sticky;
+      left: 0;
+      z-index: 5;
+      width: var(--header-width);
+      height: 100%;
+      border-right: 1px solid var(--grid);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .lane-label strong {
+      font-size: 1.05rem;
+    }
+
+    .lane-label span {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .lane-grid {
+      position: absolute;
+      left: var(--header-width);
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    .grid-year-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-left: 1px dotted rgba(0,0,0,0.12);
+      pointer-events: none;
+    }
+
+    .holding-bar {
+      position: absolute;
+      z-index: 2;
+      background: linear-gradient(180deg, #fbf0de 0%, #ecd4ad 100%);
+      border: 1px solid #b1884d;
+      border-radius: var(--bar-radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-width: 110px;
+    }
+
+    .holding-bar[data-houses-count="2"] {
+      background: linear-gradient(180deg, #f9edd6 0%, #e5c89a 100%);
+      border-color: #9e6a28;
+    }
+
+    .holding-bar[data-houses-count="3"] {
+      background: linear-gradient(180deg, #f5e2bc 0%, #dcb16d 100%);
+      border-color: #7f4f12;
+    }
+
+    .holding-header {
+      padding: 8px 10px 6px;
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+      background: rgba(255,255,255,0.25);
+      font-size: 0.93rem;
+      line-height: 1.2;
+    }
+
+    .holding-header strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+
+    .holding-meta {
+      font-size: 0.82rem;
+      color: #4b3c28;
+    }
+
+    .holding-content {
+      padding: var(--bar-padding);
+      overflow-y: auto;
+      font-size: 0.86rem;
+      line-height: 1.28;
+      height: calc(100% - 54px);
+    }
+
+    .holding-content p {
+      margin: 0 0 8px;
+    }
+
+    .holding-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .holding-bar:hover {
+      filter: brightness(1.02);
+      cursor: pointer;
+    }
+
+    .event-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      border-left: 2px solid rgba(127,29,29,0.72);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .event-label {
+      position: absolute;
+      top: 2px;
+      transform: translateX(4px);
+      font-size: 0.78rem;
+      color: var(--event);
+      background: rgba(255,255,255,0.9);
+      padding: 1px 4px;
+      border-radius: 4px;
+      border: 1px solid rgba(127,29,29,0.25);
+      white-space: nowrap;
+    }
+
+    .details-panel {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      width: min(420px, calc(100vw - 32px));
+      max-height: calc(100vh - 32px);
+      overflow: auto;
+      border: 1px solid var(--grid);
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+      padding: 16px;
+      z-index: 30;
+      display: none;
+    }
+
+    .details-panel.open {
+      display: block;
+    }
+
+    .details-panel h2 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+    }
+
+    .details-panel .meta {
+      color: var(--muted);
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .details-panel .close-btn {
+      float: right;
+      border: 1px solid var(--grid);
+      background: white;
+      border-radius: 6px;
+      padding: 5px 8px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .legend {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .legend .sample {
+      width: 22px;
+      height: 12px;
+      border-radius: 4px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+      border: 1px solid #9e6a28;
+      background: linear-gradient(180deg, #fbf0de 0%, #ecd4ad 100%);
+    }
+
+    .legend .merged2 { background: linear-gradient(180deg, #f9edd6 0%, #e5c89a 100%); }
+    .legend .merged3 { background: linear-gradient(180deg, #f5e2bc 0%, #dcb16d 100%); }
+
+    .hint {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 800px) {
+      :root {
+        --header-width: 118px;
+        --lane-height: 190px;
+      }
+      .topbar {
+        padding: 12px;
+      }
+      .toggle-wrap {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="topbar">
+      <h1>Dynastic House Timeline</h1>
+
+      <div class="controls">
+        <div class="control-group">
+          <label for="scaleSlider">Year scale</label>
+          <input id="scaleSlider" type="range" min="4" max="20" value="8" step="1" />
+          <span id="scaleValue">8 px/year</span>
+        </div>
+
+        <div class="control-group">
+          <label for="startYearInput">Start</label>
+          <input id="startYearInput" type="number" value="1066" style="width:80px;" />
+        </div>
+
+        <div class="control-group">
+          <label for="endYearInput">End</label>
+          <input id="endYearInput" type="number" value="1410" style="width:80px;" />
+        </div>
+      </div>
+
+      <div class="toggle-wrap">
+        <label><input type="checkbox" id="toggleEvents" checked /> Show events</label>
+        <label><input type="checkbox" id="toggleGrid" checked /> Show grid</label>
+      </div>
+    </div>
+
+    <div class="legend">
+      <span><span class="sample"></span> single house</span>
+      <span><span class="sample merged2"></span> merged across 2 houses</span>
+      <span><span class="sample merged3"></span> merged across 3 houses</span>
+    </div>
+
+    <div class="hint">
+      Click any holding block to inspect details. Add houses by appending to the <code>houses</code> array. Add merged segments by increasing <code>laneSpan</code> and listing multiple house ids in <code>houseIds</code>.
+    </div>
+
+    <div class="timeline-shell" style="margin-top: 12px;">
+      <div class="timeline-scroll">
+        <div id="timeline" class="timeline"></div>
+      </div>
+    </div>
+  </div>
+
+  <aside id="detailsPanel" class="details-panel" aria-live="polite">
+    <button class="close-btn" id="closePanel">Close</button>
+    <div id="detailsContent"></div>
+  </aside>
+
+  <script>
+    /**
+     * STARTER DATA MODEL
+     * ------------------
+     * Add more houses by appending to the houses array.
+     * laneStart is the zero-based index into the houses array.
+     * laneSpan controls vertical merge across adjacent lanes.
+     * houseIds is only descriptive, but useful for labels and future filtering.
+     */
+
+    const houses = [
+      { id: "mitford", label: "Mitford", subtitle: "Barony / senior Bertram line" },
+      { id: "bothal", label: "Bothal", subtitle: "Bertram cadet / later principal line" },
+      { id: "ogle", label: "Ogle", subtitle: "Parallel neighboring house" },
+    ];
+
+    const events = [
+      { year: 1066, label: "Hastings" },
+      { year: 1070, label: "Harrying" },
+      { year: 1138, label: "Standard" },
+      { year: 1215, label: "Magna Carta" },
+      { year: 1264, label: "Lewes" },
+      { year: 1265, label: "Evesham" },
+      { year: 1298, label: "Falkirk" },
+      { year: 1314, label: "Bannockburn" },
+      { year: 1346, label: "Neville's Cross" },
+    ];
+
+    /**
+     * Each segment is one visible bar.
+     * laneStart/laneSpan lets the bar merge houses vertically.
+     * notes can be very long; the card body scrolls internally.
+     */
+    const segments = [
+      {
+        id: "mitford-bertram-01",
+        label: "Bertram line at Mitford",
+        holder: "Richard / early Bertram successors",
+        spouse: "Sybil Mitford (traditionally)",
+        startYear: 1066,
+        endYear: 1152,
+        laneStart: 0,
+        laneSpan: 1,
+        houseIds: ["mitford"],
+        summary: "Senior Bertram line associated with Mitford after the Conquest.",
+        notes: "Use this sort of segment for an early, broad control period while your chronology is still being refined. You can later break this into smaller bars for Richard Bertram, William Bertram, Roger Bertram, and so on.",
+        source: "Starter placeholder"
+      },
+      {
+        id: "bothal-bertram-01",
+        label: "Bothal branch emerges",
+        holder: "Richard Bertram I",
+        spouse: "Menebell? / uncertain",
+        startYear: 1161,
+        endYear: 1211,
+        laneStart: 1,
+        laneSpan: 1,
+        houseIds: ["bothal"],
+        summary: "Cadet Bertram line at Bothal, later crucial to consolidation.",
+        notes: "Good place to put your full paragraph note, source excerpt, or working interpretation of how Bothal emerges from the broader Bertram line.",
+        source: "Bothal material"
+      },
+      {
+        id: "ogle-line-01",
+        label: "Early Ogle line",
+        holder: "Wulfric / Hunfrid / Gilbert sequence",
+        spouse: "various",
+        startYear: 1066,
+        endYear: 1250,
+        laneStart: 2,
+        laneSpan: 1,
+        houseIds: ["ogle"],
+        summary: "Parallel Ogle continuity through the same centuries.",
+        notes: "This can be split later into discrete Ogle holders once your chronology stabilizes. The current bar is intentionally broad to help you start visualizing the whole period.",
+        source: "Ogle material"
+      },
+      {
+        id: "mitford-bothal-merge-01",
+        label: "Bothal branch also holds Mitford",
+        holder: "Later Bertram consolidation",
+        spouse: "context-dependent",
+        startYear: 1301,
+        endYear: 1403,
+        laneStart: 0,
+        laneSpan: 2,
+        houseIds: ["mitford", "bothal"],
+        summary: "Merged visual block for a period when one line controls both Mitford and Bothal.",
+        notes: "This is the crucial merged behavior. The single bar spans the Mitford and Bothal lanes. When ownership splits again, replace this with two separate bars over the relevant years.",
+        source: "Working interpretation"
+      },
+      {
+        id: "ogle-line-02",
+        label: "High medieval Ogle line",
+        holder: "John / Robert / later Ogles",
+        spouse: "various",
+        startYear: 1250,
+        endYear: 1410,
+        laneStart: 2,
+        laneSpan: 1,
+        houseIds: ["ogle"],
+        summary: "Later Ogle continuity parallel to Bertram developments.",
+        notes: "When Ogle and Mitford ever overlap in ownership, you would create a merged bar with laneStart 0 and laneSpan 3 or 2 depending on adjacency and your chosen house order.",
+        source: "Ogle material"
+      },
+    ];
+
+    const timelineEl = document.getElementById('timeline');
+    const scaleSlider = document.getElementById('scaleSlider');
+    const scaleValue = document.getElementById('scaleValue');
+    const startYearInput = document.getElementById('startYearInput');
+    const endYearInput = document.getElementById('endYearInput');
+    const toggleEvents = document.getElementById('toggleEvents');
+    const toggleGrid = document.getElementById('toggleGrid');
+    const detailsPanel = document.getElementById('detailsPanel');
+    const detailsContent = document.getElementById('detailsContent');
+    const closePanel = document.getElementById('closePanel');
+
+    function pxPerYear() {
+      return parseInt(scaleSlider.value, 10);
+    }
+
+    function startYear() {
+      return parseInt(startYearInput.value, 10);
+    }
+
+    function endYear() {
+      return parseInt(endYearInput.value, 10);
+    }
+
+    function yearToLeft(year) {
+      return (year - startYear()) * pxPerYear();
+    }
+
+    function segmentWidth(seg) {
+      return Math.max((seg.endYear - seg.startYear + 1) * pxPerYear(), 110);
+    }
+
+    function getTimelineWidth() {
+      return (endYear() - startYear() + 1) * pxPerYear() + parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-width'));
+    }
+
+    function renderTimeline() {
+      const headerWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-width'));
+      const laneHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--lane-height'));
+      const rulerHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--ruler-height'));
+      const bodyHeight = houses.length * laneHeight;
+      const totalWidth = getTimelineWidth();
+
+      timelineEl.innerHTML = '';
+      timelineEl.style.width = `${totalWidth}px`;
+      timelineEl.style.height = `${rulerHeight + bodyHeight}px`;
+
+      // Sticky corner
+      const corner = document.createElement('div');
+      corner.className = 'ruler-left-corner';
+      corner.textContent = 'Houses';
+      timelineEl.appendChild(corner);
+
+      // Year ruler
+      const ruler = document.createElement('div');
+      ruler.className = 'year-ruler';
+      ruler.style.position = 'absolute';
+      ruler.style.left = `${headerWidth}px`;
+      ruler.style.width = `${totalWidth - headerWidth}px`;
+      timelineEl.appendChild(ruler);
+
+      for (let y = startYear(); y <= endYear(); y += 10) {
+        const mark = document.createElement('div');
+        mark.className = 'year-mark';
+        mark.style.left = `${yearToLeft(y)}px`;
+        mark.textContent = y;
+        ruler.appendChild(mark);
+      }
+
+      // Body container
+      const body = document.createElement('div');
+      body.className = 'timeline-body';
+      body.style.position = 'absolute';
+      body.style.top = `${rulerHeight}px`;
+      body.style.left = '0';
+      body.style.width = `${totalWidth}px`;
+      body.style.height = `${bodyHeight}px`;
+      timelineEl.appendChild(body);
+
+      // Lane rows, labels, and grids
+      houses.forEach((house, idx) => {
+        const row = document.createElement('div');
+        row.className = 'lane-row';
+        row.style.top = `${idx * laneHeight}px`;
+        row.style.height = `${laneHeight}px`;
+        body.appendChild(row);
+
+        const label = document.createElement('div');
+        label.className = 'lane-label';
+        label.innerHTML = `<strong>${house.label}</strong><span>${house.subtitle || ''}</span>`;
+        row.appendChild(label);
+
+        const grid = document.createElement('div');
+        grid.className = 'lane-grid';
+        row.appendChild(grid);
+
+        if (toggleGrid.checked) {
+          for (let y = startYear(); y <= endYear(); y++) {
+            const line = document.createElement('div');
+            line.className = 'grid-year-line';
+            line.style.left = `${yearToLeft(y)}px`;
+            if (y % 10 === 0) line.style.borderLeftStyle = 'solid';
+            grid.appendChild(line);
+          }
+        }
+      });
+
+      // Event lines
+      if (toggleEvents.checked) {
+        events.forEach(ev => {
+          if (ev.year < startYear() || ev.year > endYear()) return;
+          const line = document.createElement('div');
+          line.className = 'event-line';
+          line.style.left = `${headerWidth + yearToLeft(ev.year)}px`;
+          line.style.top = `${rulerHeight}px`;
+          line.style.height = `${bodyHeight}px`;
+          timelineEl.appendChild(line);
+
+          const label = document.createElement('div');
+          label.className = 'event-label';
+          label.style.left = `${headerWidth + yearToLeft(ev.year)}px`;
+          label.textContent = `${ev.year} ${ev.label}`;
+          timelineEl.appendChild(label);
+        });
+      }
+
+      // Segment bars
+      segments.forEach(seg => {
+        if (seg.endYear < startYear() || seg.startYear > endYear()) return;
+
+        const visibleStart = Math.max(seg.startYear, startYear());
+        const visibleEnd = Math.min(seg.endYear, endYear());
+        const housesCount = seg.houseIds?.length || seg.laneSpan || 1;
+
+        const bar = document.createElement('div');
+        bar.className = 'holding-bar';
+        bar.dataset.housesCount = String(housesCount);
+        bar.style.left = `${headerWidth + yearToLeft(visibleStart)}px`;
+        bar.style.top = `${rulerHeight + (seg.laneStart * laneHeight) + 8}px`;
+        bar.style.width = `${Math.max((visibleEnd - visibleStart + 1) * pxPerYear(), 110)}px`;
+        bar.style.height = `${(seg.laneSpan * laneHeight) - 16}px`;
+
+        const datesText = `${seg.startYear}–${seg.endYear}`;
+        const houseText = Array.isArray(seg.houseIds) ? seg.houseIds.join(' + ') : '';
+
+        bar.innerHTML = `
+          <div class="holding-header">
+            <strong>${seg.label}</strong>
+            <div class="holding-meta">${datesText} · ${houseText}</div>
+          </div>
+          <div class="holding-content">
+            <p><strong>Holder:</strong> ${seg.holder || '—'}</p>
+            <p><strong>Spouse:</strong> ${seg.spouse || '—'}</p>
+            <p><strong>Summary:</strong> ${seg.summary || ''}</p>
+            <p>${seg.notes || ''}</p>
+          </div>
+        `;
+
+        bar.addEventListener('click', () => openDetails(seg));
+        timelineEl.appendChild(bar);
+      });
+    }
+
+    function openDetails(seg) {
+      const houseText = (seg.houseIds || []).join(' + ');
+      detailsContent.innerHTML = `
+        <h2>${seg.label}</h2>
+        <div class="meta">${seg.startYear}–${seg.endYear} · ${houseText}</div>
+        <p><strong>Holder:</strong> ${seg.holder || '—'}</p>
+        <p><strong>Spouse:</strong> ${seg.spouse || '—'}</p>
+        <p><strong>Lane start:</strong> ${seg.laneStart} | <strong>Lane span:</strong> ${seg.laneSpan}</p>
+        <p><strong>Summary:</strong> ${seg.summary || '—'}</p>
+        <p><strong>Notes:</strong><br>${seg.notes || '—'}</p>
+        <p><strong>Source:</strong> ${seg.source || '—'}</p>
+        <hr>
+        <p><strong>Editing hint:</strong> To merge Mitford + Bothal, use <code>laneStart: 0</code> and <code>laneSpan: 2</code>. To merge all three current houses, use <code>laneStart: 0</code> and <code>laneSpan: 3</code>. If you later add a fourth or fifth house, just append it to the <code>houses</code> array and keep using adjacent lane spans.</p>
+      `;
+      detailsPanel.classList.add('open');
+    }
+
+    function updateScaleLabel() {
+      scaleValue.textContent = `${pxPerYear()} px/year`;
+      document.documentElement.style.setProperty('--year-width', `${pxPerYear()}px`);
+    }
+
+    [scaleSlider, startYearInput, endYearInput, toggleEvents, toggleGrid].forEach(el => {
+      el.addEventListener('input', () => {
+        updateScaleLabel();
+        renderTimeline();
+      });
+      el.addEventListener('change', () => {
+        updateScaleLabel();
+        renderTimeline();
+      });
+    });
+
+    closePanel.addEventListener('click', () => detailsPanel.classList.remove('open'));
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') detailsPanel.classList.remove('open');
+    });
+
+    updateScaleLabel();
+    renderTimeline();
+  </script>
+</body>
+</html>
