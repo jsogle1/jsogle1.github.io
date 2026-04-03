@@ -426,10 +426,14 @@
     /**
      * STARTER DATA MODEL
      * ------------------
-     * Add more houses by appending to the houses array.
-     * laneStart is the zero-based index into the houses array.
-     * laneSpan controls vertical merge across adjacent lanes.
-     * houseIds is only descriptive, but useful for labels and future filtering.
+     * Houses are timeline lanes.
+     * Segments now support two modes:
+     *  - type: "holding"  => head/control bar
+     *  - type: "person"   => thinner concurrent family-member bar within the lane
+     *
+     * laneStart is the zero-based house index.
+     * laneSpan allows merged control across adjacent houses.
+     * sublane is only used for person bars inside a house lane.
      */
 
     const houses = [
@@ -450,14 +454,10 @@
       { year: 1346, label: "Neville's Cross" },
     ];
 
-    /**
-     * Each segment is one visible bar.
-     * laneStart/laneSpan lets the bar merge houses vertically.
-     * notes can be very long; the card body scrolls internally.
-     */
     const segments = [
       {
         id: "mitford-bertram-01",
+        type: "holding",
         label: "Bertram line at Mitford",
         holder: "Richard / early Bertram successors",
         spouse: "Sybil Mitford (traditionally)",
@@ -467,11 +467,28 @@
         laneSpan: 1,
         houseIds: ["mitford"],
         summary: "Senior Bertram line associated with Mitford after the Conquest.",
-        notes: "Use this sort of segment for an early, broad control period while your chronology is still being refined. You can later break this into smaller bars for Richard Bertram, William Bertram, Roger Bertram, and so on.",
+        notes: "Use this broad holding segment while the chronology is still being refined. Later you can split it into smaller reign/holding bars.",
         source: "Starter placeholder"
       },
       {
+        id: "mitford-bertram-son-01",
+        type: "person",
+        label: "Younger Bertram son",
+        holder: "Non-holding family member",
+        spouse: "—",
+        startYear: 1118,
+        endYear: 1148,
+        laneStart: 0,
+        laneSpan: 1,
+        sublane: 1,
+        houseIds: ["mitford"],
+        summary: "Example of a son alive during the father's lifetime who never inherits.",
+        notes: "This is the new behavior. Use type: 'person' for sons, daughters, widows, brothers, heirs apparent, or other important simultaneous figures who do not themselves control the house.",
+        source: "Starter example"
+      },
+      {
         id: "bothal-bertram-01",
+        type: "holding",
         label: "Bothal branch emerges",
         holder: "Richard Bertram I",
         spouse: "Menebell? / uncertain",
@@ -481,11 +498,28 @@
         laneSpan: 1,
         houseIds: ["bothal"],
         summary: "Cadet Bertram line at Bothal, later crucial to consolidation.",
-        notes: "Good place to put your full paragraph note, source excerpt, or working interpretation of how Bothal emerges from the broader Bertram line.",
+        notes: "Main holding/control bar for the line at Bothal.",
         source: "Bothal material"
       },
       {
+        id: "bothal-heir-01",
+        type: "person",
+        label: "Robert Bertram (heir in youth)",
+        holder: "Concurrent heir",
+        spouse: "—",
+        startYear: 1176,
+        endYear: 1212,
+        laneStart: 1,
+        laneSpan: 1,
+        sublane: 0,
+        houseIds: ["bothal"],
+        summary: "Example concurrent person bar inside the same house lane.",
+        notes: "Use person bars when someone is alive, relevant, and visible in the story, but is not the principal holder for all or part of that span.",
+        source: "Starter example"
+      },
+      {
         id: "ogle-line-01",
+        type: "holding",
         label: "Early Ogle line",
         holder: "Wulfric / Hunfrid / Gilbert sequence",
         spouse: "various",
@@ -495,11 +529,12 @@
         laneSpan: 1,
         houseIds: ["ogle"],
         summary: "Parallel Ogle continuity through the same centuries.",
-        notes: "This can be split later into discrete Ogle holders once your chronology stabilizes. The current bar is intentionally broad to help you start visualizing the whole period.",
+        notes: "This can be split later into discrete Ogle holders once chronology stabilizes.",
         source: "Ogle material"
       },
       {
         id: "mitford-bothal-merge-01",
+        type: "holding",
         label: "Bothal branch also holds Mitford",
         holder: "Later Bertram consolidation",
         spouse: "context-dependent",
@@ -508,12 +543,29 @@
         laneStart: 0,
         laneSpan: 2,
         houseIds: ["mitford", "bothal"],
-        summary: "Merged visual block for a period when one line controls both Mitford and Bothal.",
-        notes: "This is the crucial merged behavior. The single bar spans the Mitford and Bothal lanes. When ownership splits again, replace this with two separate bars over the relevant years.",
+        summary: "Merged control bar spanning Mitford and Bothal.",
+        notes: "Single merged bar for one line controlling both houses. When control separates again, replace it with individual holding bars in separate lanes.",
         source: "Working interpretation"
       },
       {
+        id: "merge-heiress-01",
+        type: "person",
+        label: "Helen Bertram",
+        holder: "Heiress / transmission figure",
+        spouse: "Robert de Ogle / later husbands",
+        startYear: 1338,
+        endYear: 1403,
+        laneStart: 1,
+        laneSpan: 1,
+        sublane: 1,
+        houseIds: ["bothal"],
+        summary: "Important non-holding person who transmits control and links houses.",
+        notes: "This is exactly the kind of figure that disappears in a holder-only system. Person bars keep such people visible without pretending they are sole heads of house the whole time.",
+        source: "Starter example"
+      },
+      {
         id: "ogle-line-02",
+        type: "holding",
         label: "High medieval Ogle line",
         holder: "John / Robert / later Ogles",
         spouse: "various",
@@ -523,8 +575,24 @@
         laneSpan: 1,
         houseIds: ["ogle"],
         summary: "Later Ogle continuity parallel to Bertram developments.",
-        notes: "When Ogle and Mitford ever overlap in ownership, you would create a merged bar with laneStart 0 and laneSpan 3 or 2 depending on adjacency and your chosen house order.",
+        notes: "If Ogle and Mitford ever overlap in control, create another merged holding bar with laneSpan set appropriately.",
         source: "Ogle material"
+      },
+      {
+        id: "ogle-son-02",
+        type: "person",
+        label: "Ogle son who dies before inheritance",
+        holder: "Heir apparent",
+        spouse: "—",
+        startYear: 1285,
+        endYear: 1300,
+        laneStart: 2,
+        laneSpan: 1,
+        sublane: 0,
+        houseIds: ["ogle"],
+        summary: "Example of father and son visible at the same time in one house lane.",
+        notes: "Use sublanes to show simultaneous family members. The father can still be the holding bar while the son appears as a narrower person bar beneath or above it.",
+        source: "Starter example"
       },
     ];
 
@@ -555,12 +623,21 @@
       return (year - startYear()) * pxPerYear();
     }
 
-    function segmentWidth(seg) {
-      return Math.max((seg.endYear - seg.startYear + 1) * pxPerYear(), 110);
-    }
-
     function getTimelineWidth() {
       return (endYear() - startYear() + 1) * pxPerYear() + parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-width'));
+    }
+
+    function getHoldingHeight(laneSpan, laneHeight) {
+      return (laneSpan * laneHeight) - 16;
+    }
+
+    function getPersonBarMetrics(seg, laneHeight) {
+      const sublane = Number.isInteger(seg.sublane) ? seg.sublane : 0;
+      const topBase = seg.laneStart * laneHeight;
+      const barHeight = 34;
+      const spacing = 8;
+      const top = topBase + 10 + (sublane * (barHeight + spacing));
+      return { top, height: barHeight };
     }
 
     function renderTimeline() {
@@ -574,13 +651,11 @@
       timelineEl.style.width = `${totalWidth}px`;
       timelineEl.style.height = `${rulerHeight + bodyHeight}px`;
 
-      // Sticky corner
       const corner = document.createElement('div');
       corner.className = 'ruler-left-corner';
       corner.textContent = 'Houses';
       timelineEl.appendChild(corner);
 
-      // Year ruler
       const ruler = document.createElement('div');
       ruler.className = 'year-ruler';
       ruler.style.position = 'absolute';
@@ -596,7 +671,6 @@
         ruler.appendChild(mark);
       }
 
-      // Body container
       const body = document.createElement('div');
       body.className = 'timeline-body';
       body.style.position = 'absolute';
@@ -606,7 +680,6 @@
       body.style.height = `${bodyHeight}px`;
       timelineEl.appendChild(body);
 
-      // Lane rows, labels, and grids
       houses.forEach((house, idx) => {
         const row = document.createElement('div');
         row.className = 'lane-row';
@@ -634,7 +707,6 @@
         }
       });
 
-      // Event lines
       if (toggleEvents.checked) {
         events.forEach(ev => {
           if (ev.year < startYear() || ev.year > endYear()) return;
@@ -653,37 +725,51 @@
         });
       }
 
-      // Segment bars
       segments.forEach(seg => {
         if (seg.endYear < startYear() || seg.startYear > endYear()) return;
 
         const visibleStart = Math.max(seg.startYear, startYear());
         const visibleEnd = Math.min(seg.endYear, endYear());
         const housesCount = seg.houseIds?.length || seg.laneSpan || 1;
+        const width = Math.max((visibleEnd - visibleStart + 1) * pxPerYear(), seg.type === 'person' ? 70 : 110);
 
         const bar = document.createElement('div');
         bar.className = 'holding-bar';
         bar.dataset.housesCount = String(housesCount);
+        bar.dataset.segmentType = seg.type || 'holding';
         bar.style.left = `${headerWidth + yearToLeft(visibleStart)}px`;
-        bar.style.top = `${rulerHeight + (seg.laneStart * laneHeight) + 8}px`;
-        bar.style.width = `${Math.max((visibleEnd - visibleStart + 1) * pxPerYear(), 110)}px`;
-        bar.style.height = `${(seg.laneSpan * laneHeight) - 16}px`;
+        bar.style.width = `${width}px`;
 
-        const datesText = `${seg.startYear}–${seg.endYear}`;
-        const houseText = Array.isArray(seg.houseIds) ? seg.houseIds.join(' + ') : '';
+        if (seg.type === 'person') {
+          const metrics = getPersonBarMetrics(seg, laneHeight);
+          bar.classList.add('person-bar');
+          bar.style.top = `${rulerHeight + metrics.top}px`;
+          bar.style.height = `${metrics.height}px`;
+          bar.innerHTML = `
+            <div class="holding-header" style="padding:6px 8px;border-bottom:none;">
+              <strong style="font-size:0.88rem; margin-bottom:0;">${seg.label}</strong>
+              <div class="holding-meta">${seg.startYear}–${seg.endYear}</div>
+            </div>
+          `;
+        } else {
+          bar.style.top = `${rulerHeight + (seg.laneStart * laneHeight) + 8}px`;
+          bar.style.height = `${getHoldingHeight(seg.laneSpan, laneHeight)}px`;
 
-        bar.innerHTML = `
-          <div class="holding-header">
-            <strong>${seg.label}</strong>
-            <div class="holding-meta">${datesText} · ${houseText}</div>
-          </div>
-          <div class="holding-content">
-            <p><strong>Holder:</strong> ${seg.holder || '—'}</p>
-            <p><strong>Spouse:</strong> ${seg.spouse || '—'}</p>
-            <p><strong>Summary:</strong> ${seg.summary || ''}</p>
-            <p>${seg.notes || ''}</p>
-          </div>
-        `;
+          const datesText = `${seg.startYear}–${seg.endYear}`;
+          const houseText = Array.isArray(seg.houseIds) ? seg.houseIds.join(' + ') : '';
+          bar.innerHTML = `
+            <div class="holding-header">
+              <strong>${seg.label}</strong>
+              <div class="holding-meta">${datesText} · ${houseText}</div>
+            </div>
+            <div class="holding-content">
+              <p><strong>Holder:</strong> ${seg.holder || '—'}</p>
+              <p><strong>Spouse:</strong> ${seg.spouse || '—'}</p>
+              <p><strong>Summary:</strong> ${seg.summary || ''}</p>
+              <p>${seg.notes || ''}</p>
+            </div>
+          `;
+        }
 
         bar.addEventListener('click', () => openDetails(seg));
         timelineEl.appendChild(bar);
@@ -695,14 +781,16 @@
       detailsContent.innerHTML = `
         <h2>${seg.label}</h2>
         <div class="meta">${seg.startYear}–${seg.endYear} · ${houseText}</div>
-        <p><strong>Holder:</strong> ${seg.holder || '—'}</p>
+        <p><strong>Type:</strong> ${seg.type || 'holding'}</p>
+        <p><strong>Holder / role:</strong> ${seg.holder || '—'}</p>
         <p><strong>Spouse:</strong> ${seg.spouse || '—'}</p>
         <p><strong>Lane start:</strong> ${seg.laneStart} | <strong>Lane span:</strong> ${seg.laneSpan}</p>
+        <p><strong>Sublane:</strong> ${Number.isInteger(seg.sublane) ? seg.sublane : '—'}</p>
         <p><strong>Summary:</strong> ${seg.summary || '—'}</p>
         <p><strong>Notes:</strong><br>${seg.notes || '—'}</p>
         <p><strong>Source:</strong> ${seg.source || '—'}</p>
         <hr>
-        <p><strong>Editing hint:</strong> To merge Mitford + Bothal, use <code>laneStart: 0</code> and <code>laneSpan: 2</code>. To merge all three current houses, use <code>laneStart: 0</code> and <code>laneSpan: 3</code>. If you later add a fourth or fifth house, just append it to the <code>houses</code> array and keep using adjacent lane spans.</p>
+        <p><strong>Editing hint:</strong> Use <code>type: 'holding'</code> for control bars and <code>type: 'person'</code> for concurrent family members. Person bars stay inside a single house lane and can stack using <code>sublane</code>. Holding bars can merge houses using <code>laneSpan</code>.</p>
       `;
       detailsPanel.classList.add('open');
     }
@@ -733,3 +821,4 @@
   </script>
 </body>
 </html>
+
